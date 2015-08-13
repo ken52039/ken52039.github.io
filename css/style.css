@@ -523,6 +523,18 @@ ul.share-buttons li{
     right: 0;
     margin: auto;
 }
+.backtop i:hover,
+ul.share-buttons img:hover {
+    transform:rotate(360deg);
+    -webkit-transform:rotate(360deg);
+    -moz-transform:rotate(360deg);
+    -o-transform:rotate(360deg);
+    -ms-transform:rotate(360deg);
+    transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+}
 @media screen and (max-width: 400px) {
     header .intro-text .skills {
         font-size: 1em;
