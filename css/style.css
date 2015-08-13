@@ -1,9 +1,9 @@
 @import url(//fonts.googleapis.com/earlyaccess/cwtexhei.css);
-@import url(http://nicholastodor.com/sf/usesf.css);
 body {
     overflow-x: hidden;
-    font-family: 'San Francisco Display','cwtexhei', serif;
+    font-family: 'Dosis','cwtexhei', serif !important;
 }
+
 
 p {
     font-size: 20px;
@@ -29,8 +29,8 @@ h4,
 h5,
 h6 {
     text-transform: uppercase;
-    font-family: Montserrat,"Helvetica Neue",'cwtexhei',sans-serif;
-    font-weight: 700;
+    font-weight: 600;
+    font-family: 'Dosis','cwtexhei', serif;
 }
 
 hr.star-light,
@@ -103,7 +103,6 @@ header img {
 header .intro-text .name {
     display: block;
     text-transform: uppercase;
-    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
     font-size: 2em;
     font-weight: 700;
     text-shadow:0px 0px 5px #333;
@@ -160,7 +159,6 @@ header .intro-text .skills {
 }
 .navbar {
     text-transform: uppercase;
-    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
     font-weight: 700;
 }
 
