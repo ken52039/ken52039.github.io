@@ -504,7 +504,7 @@ footer .footer-below {
 		display: none;
 	}
     .navbar-default {
-        border-bottom: 3px solid #18bc9c !important;
+        border-bottom: 3px solid #CAAF92 !important;
         background: rgba(23, 60, 102, 0.95) !important;
     }
 }
@@ -523,7 +523,7 @@ ul.share-buttons li{
 .backtop {
     display: block;
     position: absolute;
-    top: -40px;
+    top: -35px;
     left: 0;
     right: 0;
     margin: auto;
@@ -547,4 +547,15 @@ ul.share-buttons img:hover {
 }
 div.row:last-child {
     margin-top: 20px;
+}
+.navbar-default .navbar-toggle {
+    background: rgba(202,175,146,0.85);
+    border-color: rgba(202,175,146,1);
+}
+.navbar-default .navbar-toggle:hover,
+.navbar-default .navbar-toggle:focus {
+    background: rgba(202,175,146,1);
+}
+.modal-body {
+    padding: 0 0 20px 0;
 }
