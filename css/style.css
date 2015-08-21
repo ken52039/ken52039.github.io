@@ -559,3 +559,6 @@ div.row:last-child {
 .modal-body {
     padding: 0 0 20px 0;
 }
+.navbar-shrink .navbar-nav > li.active >a:hover {
+    color: #fff !important;
+}
