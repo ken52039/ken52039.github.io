@@ -105,6 +105,8 @@ header {
   text-align: center;
   color: #fff;
   position: relative;
+  background: url('../img/top.jpg') center no-repeat;
+  background-size: 100%;
 }
 
 .parallax-window {
