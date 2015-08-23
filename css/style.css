@@ -108,7 +108,9 @@ header {
   background: url('../img/top.jpg') center no-repeat;
   background-size: 100%;
 }
-
+header.no-back {
+  background: none;
+}
 .parallax-window {
   height: 100%;
   background: transparent;
@@ -692,4 +694,10 @@ div.row:last-child {
 }
 .navbar-shrink .navbar-nav > li.active >a:hover {
   color: #fff !important;
+}
+.parallax-mirror {
+  display: none;
+}
+.parallax-mirror.show {
+  display: block;
 }

@@ -4,7 +4,7 @@
  *
  * Licensed under the MIT license.
  * http://www.opensource.org/licenses/mit-license.php
- * 
+ *
  * Copyright 2013, Codrops
  * http://www.codrops.com
  */
@@ -42,3 +42,17 @@ var cbpAnimatedHeader = (function() {
 	init();
 
 })();
+
+$(document).ready(function(){
+       $(window).bind('scroll', function() {
+       var navHeight = 0;
+             if ($(window).scrollTop() > navHeight) {
+                 $('header').addClass('no-back');
+								 $('.parallax-mirror').addClass('show');
+             }
+             else {
+                 $('header').removeClass('no-back');
+								 $('.parallax-mirror').removeClass('show');
+             }
+        });
+    });
