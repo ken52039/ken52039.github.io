@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Axroma Textile</title>
+  <meta name="keywords" content="">
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <link rel="shortcut icon" href="">
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+</head>
+<body>
+<div id="wrapper">
+  <nav>
+    <a href="#">Home</a>
+    <a href="#">Company Info</a>
+    <a href="javascript:" tabindex="0">
+      Products
+      <ul>
+        <li><i class="fa fa-angle-right"></i> Woven</li>
+        <li><i class="fa fa-angle-right"></i> Print</li>
+        <li><i class="fa fa-angle-right"></i>Dye</li>
+        <li><i class="fa fa-angle-right"></i> Environmental</li>
+        <li><i class="fa fa-angle-right"></i> Novelty</li>
+      </ul>
+      <div class="img"></div>
+    </a>
+    <a href="#">News</a>
+    <a href="#">Contact Us</a>
+    <a href="#">Career</a>
+  </nav>
+  <div class="box">
+    <h1>Textiles</h1>
+    are the perfect vehicle for providing stimulating, smart, immersive, sensorial, responsive and interactive experiences.
+    <label for="box1" class="box1"><i class="fa fa-chevron-down"></i> Read More</label>
+    <input type="radio" name="box" id="box1">
+    <div class="red">
+      It can be a basket dobby, or a tapestry jacquard. It composes a cloth, an exquisite fabric, a craft art, ever since the ancient time.
+      <label for="box2" class="box2"><i class="fa fa-chevron-up"></i> Read Less</label>
+      <input type="radio" name="box" id="box2" checked="">
+    </div>
+  </div>
+  <footer>
+    <span class="link">
+      <a href="#">Eng</a> | <a href="#">Chn</a>
+    </span>
+    Copyright © CONFER FRAGRANT CO., LTD  |   TEL : (05)551-1008  |  FAX : (05)551-1010   |  E-Mail : <a href="mailto:carol@axroma.com">carol@axroma.com</a>
+  </footer>
+</div>
+</body>
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery-backstretch/2.0.4/jquery.backstretch.min.js"></script>
+<script>
+$("#box1").click(function(){
+    $(".box1").hide();
+    $(".box2").show();
+});
+$("#box2").click(function(){
+    $(".box2").hide();
+    $(".box1").show();
+});
+$(function(){
+$("nav").delay(900).fadeIn(500).animate({left:0},900);
+$(".box").delay(2000).fadeIn(500).animate({bottom:330},900);
+});
+$.backstretch([
+  "img/bg01.jpg",
+  "img/bg02.jpg"
+], {
+  fade: 3000,
+  duration: 4000
+});
+</script>
+</html>
