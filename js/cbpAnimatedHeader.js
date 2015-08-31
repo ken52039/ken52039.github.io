@@ -42,17 +42,3 @@ var cbpAnimatedHeader = (function() {
 	init();
 
 })();
-
-$(document).ready(function(){
-       $(window).bind('scroll', function() {
-       var navHeight = 0;
-             if ($(window).scrollTop() > navHeight) {
-                 $('header').addClass('no-back');
-								 $('.parallax-mirror').addClass('show');
-             }
-             else {
-                 $('header').removeClass('no-back');
-								 $('.parallax-mirror').removeClass('show');
-             }
-        });
-    });

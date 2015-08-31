@@ -108,9 +108,6 @@ header {
   background: url('http://i.imgur.com/pr1Sj2m.jpg') center no-repeat;
   background-size: 100%;
 }
-header.no-back {
-  background: none;
-}
 .parallax-window {
   height: 100%;
   background: transparent;
