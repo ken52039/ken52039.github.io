@@ -107,6 +107,7 @@ header {
   position: relative;
   background: url('http://i.imgur.com/pr1Sj2m.jpg') center no-repeat;
   background-size: 100%;
+  background-attachment: fixed;
 }
 .parallax-window {
   height: 100%;
