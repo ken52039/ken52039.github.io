@@ -8,7 +8,6 @@ body {
   -webkit-animation-name: fadeIn;
   animation-name: fadeIn;
 }
-
 @-webkit-keyframes fadeIn {
   from {
     opacity: 0;
@@ -106,8 +105,10 @@ header {
   color: #fff;
   position: relative;
   background: url('http://i.imgur.com/pr1Sj2m.jpg') center no-repeat;
-  background-size: 100%;
-  background-attachment: fixed;
+  -moz-background-size: cover;
+  -webkit-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
 .parallax-window {
   height: 100%;
@@ -418,7 +419,6 @@ section.success a {
 #portfolio * {
   z-index: 2;
 }
-
 @media(min-width:767px) {
   #portfolio .portfolio-item {
     margin: 0 0 30px;
@@ -642,7 +642,11 @@ footer .footer-below {
     background: rgba(23, 60, 102, 0.95) !important;
   }
 }
-
+@media screen and (max-width: 1023px) {
+  section.success {
+    background-attachment: scroll;
+  }
+}
 ul.share-buttons{
   list-style: none;
   padding: 0;
