@@ -341,7 +341,10 @@ section.success {
   position: relative;
   text-shadow:0px 0px 5px #333;
   background: url('http://i.imgur.com/geuM36J.jpg') center no-repeat;
-  background-size: 100%;
+  -moz-background-size: cover;
+  -webkit-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
   background-attachment: fixed;
 }
 
