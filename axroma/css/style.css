@@ -4,7 +4,7 @@
   src: url('avenir.ttc');
 }
 body {
-  font-family: 'Avenir','Microsoft JhengHei', serif;
+  font-family: 'Avenir', 'Open Sans', 'Microsoft JhengHei', serif;
   color: #fff;
 }
 #wrapper {
