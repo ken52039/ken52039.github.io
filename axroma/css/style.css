@@ -200,13 +200,13 @@ input:checked + div.white {
 }
 div.white #word {
   float: left;
-  text-align: justify;
-  text-justify:inter-ideograph;
+  letter-spacing: 0.5px;
   width: calc(100% - 500px);
   padding: 50px 0;
   color: #595757;
   font-size: 16px;
   line-height: 24px;
+  text-align: left;
 }
 div.white #word h1 {
   font-size: 36px;
@@ -287,8 +287,8 @@ div.white .name {
 }
 div.white .note {
   float: right;
-  font-size: 14px;
-  line-height: 20px;
+  font-size: 16px;
+  line-height: 24px;
   color: #666;
   text-align: left;
   width: calc(100% - 160px);
@@ -296,6 +296,7 @@ div.white .note {
   overflow-y: scroll;
   height: 220px;
   padding-right: 10px;
+  letter-spacing: 0.5px;
 }
 div.white .note::-webkit-scrollbar-track
 {
