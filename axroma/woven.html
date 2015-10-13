@@ -33,17 +33,6 @@
     <a href="contact.html">聯絡我們</a>
     <a href="career.html">加入我們</a>
   </nav>
-  <!--<div class="box">
-    <h1>Woven</h1>
-    Color the yarns, thread each string through, warp it, and warve a pattern by shuttling the wefts.
-    <label for="box1" class="more"><i class="fa fa-chevron-down"></i> Read More</label>
-    <input type="radio" name="box" id="box1">
-    <div class="red">
-      It can be a basket dobby, or a tapestry jacquard. It composes a cloth, an exquisite favric, a craft art, ever since the ancient time.
-      <label for="box2" class="less"><i class="fa fa-chevron-up"></i> Read Less</label>
-      <input type="radio" name="box" id="box2" checked="">
-    </div>
-  </div>-->
   <input type="radio" name="p" id="p0">
   <div class="white" id="list" style="opacity:1;z-index:1;">
     <div id="word">
@@ -203,14 +192,6 @@ $(".name").mousedown(function(e) {
       fade: 1000,
       duration: 4000
     });
-});
-$("#box1").click(function(){
-    $(".more").hide();
-    $(".less").show();
-});
-$("#box2").click(function(){
-    $(".less").hide();
-    $(".more").show();
 });
 $(function(){
   $("nav").delay(0).fadeIn(500).animate({left:0},900);

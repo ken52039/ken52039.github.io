@@ -207,7 +207,6 @@ div.white #word {
   color: #595757;
   font-size: 16px;
   line-height: 24px;
-  letter-spacing: 1px;
 }
 div.white #word h1 {
   font-size: 36px;
@@ -291,12 +290,12 @@ div.white .note {
   font-size: 14px;
   line-height: 20px;
   color: #666;
-  letter-spacing: 1px;
   text-align: left;
   width: calc(100% - 160px);
   margin: 50px 0 0 0;
   overflow-y: scroll;
   height: 220px;
+  padding-right: 10px;
 }
 div.white .note::-webkit-scrollbar-track
 {
