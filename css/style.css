@@ -700,6 +700,10 @@ div.row:last-child {
 .modal-body {
   padding: 0 0 20px 0;
 }
+.modal-body p {
+  text-align: justify !important; 
+  text-justify:inter-ideograph; 
+}
 .navbar-shrink .navbar-nav > li.active >a:hover {
   color: #fff !important;
 }
