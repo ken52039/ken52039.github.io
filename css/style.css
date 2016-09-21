@@ -608,7 +608,7 @@ footer .footer-below {
 }
 
 .portfolio-modal .modal-content h2 {
-    margin: 0;
+    margin: 50px 0 0 0;
     font-size: 3em;
 }
 
@@ -923,4 +923,8 @@ ul.share-buttons img:hover {
 
 .container {
     width: 100%;
+}
+
+.modal .container {
+    max-width: 1170px;
 }
