@@ -101,11 +101,31 @@ header {
     text-align: center;
     color: #fff;
     position: relative;
-    background: url('http://i.imgur.com/pr1Sj2m.jpg') center no-repeat;
     -moz-background-size: cover;
     -webkit-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
+    background-attachment: fixed;
+    height: 100vh;
+    overflow: hidden;
+    background: url('http://i.imgur.com/kuHEfhB.jpg') center no-repeat;
+    -moz-background-size: cover;
+    -webkit-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+header video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: 0;
+    transform: translateX(-50%) translateY(-50%);
+    transition: 1s opacity;
 }
 
 .parallax-window {
@@ -118,8 +138,13 @@ header {
 }
 
 header .container {
-    padding-top: 100px;
-    padding-bottom: 50px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    height: 200px;
 }
 
 header img {
@@ -234,6 +259,14 @@ header .intro-text .skills:last-child {
     -webkit-border-radius: 0 0 50px 50px;
 }
 
+.navbar-fixed-top .navbar-brand:after {
+    content: "肯。網頁設計工作室";
+}
+
+.navbar-fixed-top.navbar-shrink .navbar-brand:after {
+    content: "Ken Design Studio";
+}
+
 @-webkit-keyframes fadeInUp {
     from {
         opacity: 0;
@@ -261,10 +294,6 @@ header .intro-text .skills:last-child {
 }
 
 @media(min-width:768px) {
-    header .container {
-        padding-top: 200px;
-        padding-bottom: 100px;
-    }
     header .intro-text .name {
         font-size: 4.75em;
     }
@@ -642,6 +671,16 @@ footer .footer-below {
         border-bottom: 3px solid #CAAF92 !important;
         background: rgba(23, 60, 102, 0.95) !important;
     }
+    header {
+        background-attachment: inherit;
+        height: 50vh;
+    }
+    header .container {
+        height: 100px;
+    }
+    header video {
+        display: none;
+    }
 }
 
 @media screen and (max-width: 1023px) {
@@ -690,10 +729,6 @@ ul.share-buttons img:hover {
     header .intro-text .skills {
         font-size: 1em;
     }
-}
-
-div.row:last-child {
-    margin-top: 20px;
 }
 
 .navbar-default .navbar-toggle {

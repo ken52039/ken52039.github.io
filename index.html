@@ -4,19 +4,19 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta property="og:title" content="Ken Design Studio">
+    <meta property="og:title" content="Ken Design Studio - 肯。網頁設計工作室">
     <meta property="og:description" content="您有網站想法要付諸行動？想用網路行銷幫助自己的事業？我們提供「網站開發」以及「專業諮詢顧問」服務。精通各類網頁開發語言、嫻熟網頁標準，不僅給您客製化的網站和傑出的介面設計，還幫您達到搜尋引擎最佳化( SEO )。">
-    <meta property="og:site_name" content="Ken Design Studio" />
+    <meta property="og:site_name" content="Ken Design Studio - 肯。網頁設計工作室" />
     <meta property="og:image" content="http://i.imgur.com/n5VAYal.jpg">
     <meta property="og:url" content="http://kenhuang.me/" />
     <meta name="keywords" content="網站規劃,網頁設計,DIV+CSS網站排版,網頁切版,W3C網站,網頁標準化,SEO架構,結構優化,Ken Design,Web Design">
     <meta name="description" content="您有網站想法要付諸行動？想用網路行銷幫助自己的事業？我們提供「網站開發」以及「專業諮詢顧問」服務。精通各類網頁開發語言、嫻熟網頁標準，不僅給您客製化的網站和傑出的介面設計，還幫您達到搜尋引擎最佳化SEO。">
-    <meta name="title" content="Ken Design Studio">
+    <meta name="title" content="Ken Design Studio - 肯。網頁設計工作室">
     <meta name="robots" content="index,nofollow">
     <meta name="author" content="kenhuang.me">
     <meta name="msvalidate.01" content="26E051148A27B5CF4F0F0CF47D2ACFF8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
-    <title>Ken Design Studio</title>
+    <title>Ken Design Studio - 肯。網頁設計工作室</title>
     <link rev="made" title="Author: Ken Huang" href="http://kenhuang.me/">
     <link rel="shortcut icon" href="img/favicon.ico">
     <!-- Bootstrap Core CSS - Uses Bootswatch Flatly Theme: http://bootswatch.com/flatly/ -->
@@ -74,7 +74,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="http://kenhuang.me/">Ken Design</a>
+                <a class="navbar-brand" href="http://kenhuang.me/"></a>
             </div>
 
             <!-- Collect the nav links, forms, and other content for toggling -->
@@ -101,6 +101,36 @@
 
     <!-- Header -->
     <header>
+        <video id="bgvid" playsinline autoplay muted loop>
+            <source src="video.mp4" type="video/mp4">
+        </video>
+        <script>
+            var vid = document.getElementById("bgvid");
+            var pauseButton = document.querySelector("#polina button");
+
+            function vidFade() {
+                vid.classList.add("stopfade");
+            }
+
+            vid.addEventListener('ended', function () {
+                // only functional if "loop" is removed 
+                vid.pause();
+                // to capture IE10
+                vidFade();
+            });
+
+
+            pauseButton.addEventListener("click", function () {
+                vid.classList.toggle("stopfade");
+                if (vid.paused) {
+                    vid.play();
+                    pauseButton.innerHTML = "Pause";
+                } else {
+                    vid.pause();
+                    pauseButton.innerHTML = "Paused";
+                }
+            })
+        </script>
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
@@ -420,7 +450,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col-lg-12">
-                        Copyright &copy; <a href="http://kenhuang.me/">Ken Design Studio</a> 2009-16
+                        Copyright &copy; <a href="http://kenhuang.me/">Ken Design Studio - 肯。網頁設計工作室</a> 2009-16
                         <ul class="share-buttons">
                             <li>
                                 <a href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Fkenhuang.me%2F&t=Ken%20Design%20Studio" title="Share on Facebook" target="_blank"><img src="https://cdn3.iconfinder.com/data/icons/social-rainbow-icons/512/Facebook-32.png"></a>
