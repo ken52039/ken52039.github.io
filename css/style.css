@@ -617,7 +617,7 @@ footer .footer-below {
 }
 
 .portfolio-modal .modal-content .item-details {
-    margin: 30px 0;
+    margin: -30px 0 20px 0;
 }
 
 .portfolio-modal .close-modal {
@@ -777,6 +777,7 @@ ul.share-buttons img:hover {
 .modal-body p {
     text-align: justify !important;
     text-justify: inter-ideograph;
+    margin-bottom: 50px;
 }
 
 .navbar-shrink .navbar-nav > li.active >a:hover {
@@ -829,7 +830,7 @@ ul.share-buttons img:hover {
 }
 
 #loader {
-    position: absolute;
+    position: fixed;
     left: 50%;
     top: 50%;
     z-index: 1;
