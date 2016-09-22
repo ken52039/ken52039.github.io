@@ -143,6 +143,7 @@
                     </div>
                 </div>
             </div>
+            <div class="mouse"><div class="wheel"></div></div>
         </header>
 
         <!-- Portfolio Grid Section -->
@@ -1101,6 +1102,7 @@
     $(window).scroll(function () {
         $("header video").css("opacity", 1 - $(window).scrollTop() / 400);
         $("header .container").css("opacity", 1 - $(window).scrollTop() / 200);
+        $("header .mouse").css("opacity", 1 - $(window).scrollTop() / 100);
     });
 </script>
 

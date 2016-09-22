@@ -295,6 +295,107 @@ header .intro-text .skills:last-child {
     header .intro-text .skills {
         font-size: 1.75em;
     }
+    #portfolio .portfolio-item {
+        margin: 0 0 30px;
+    }
+    nav .container {
+        padding: 0 100px;
+    }
+    .mouse {
+        height: 40px;
+        width: 25px;
+        border-radius: 20px;
+        -moz-border-radius: 20px;
+        -webkit-border-radius: 20px;
+        transform: none;
+        border: 2px solid white;
+        z-index: 1;
+        position: absolute;
+        bottom: 50px;
+        left: 0;
+        right: 0;
+        margin: auto;
+    }
+    .wheel {
+        height: 5px;
+        width: 2px;
+        display: block;
+        margin: 5px auto;
+        background: white;
+    }
+    .wheel {
+        -webkit-animation: mouse-wheel 1.2s ease infinite;
+        -moz-animation: mouse-wheel 1.2s ease infinite;
+    }
+    @-webkit-keyframes mouse-wheel {
+        0% {
+            opacity: 1;
+            -webkit-transform: translateY(0);
+            -ms-transform: translateY(0);
+            transform: translateY(0);
+        }
+        100% {
+            opacity: 0;
+            -webkit-transform: translateY(6px);
+            -ms-transform: translateY(6px);
+            transform: translateY(6px);
+        }
+    }
+    @-moz-keyframes mouse-wheel {
+        0% {
+            top: 1px;
+        }
+        50% {
+            top: 2px;
+        }
+        100% {
+            top: 3px;
+        }
+    }
+    @-webkit-keyframes mouse-scroll {
+        0% {
+            opacity: 0;
+        }
+        50% {
+            opacity: .5;
+        }
+        100% {
+            opacity: 1;
+        }
+    }
+    @-moz-keyframes mouse-scroll {
+        0% {
+            opacity: 0;
+        }
+        50% {
+            opacity: .5;
+        }
+        100% {
+            opacity: 1;
+        }
+    }
+    @-o-keyframes mouse-scroll {
+        0% {
+            opacity: 0;
+        }
+        50% {
+            opacity: .5;
+        }
+        100% {
+            opacity: 1;
+        }
+    }
+    @keyframes mouse-scroll {
+        0% {
+            opacity: 0;
+        }
+        50% {
+            opacity: .5;
+        }
+        100% {
+            opacity: 1;
+        }
+    }
 }
 
 @media(min-width:768px) {
@@ -375,10 +476,7 @@ section.success a {
 
 @media(max-width:767px) {
     section {
-        padding: 75px 0;
-    }
-    section.first {
-        padding-top: 75px;
+        padding: 50px 0;
     }
 }
 
@@ -447,15 +545,6 @@ section.success a {
 
 #portfolio * {
     z-index: 2;
-}
-
-@media(min-width:767px) {
-    #portfolio .portfolio-item {
-        margin: 0 0 30px;
-    }
-    nav .container {
-        padding: 0 100px;
-    }
 }
 
 .btn-outline {
@@ -700,7 +789,7 @@ footer .footer-below {
     }
     header {
         background-attachment: inherit;
-        height: 50vh;
+        height: 70vh;
         background: url('http://i.imgur.com/kuHEfhB.jpg') center no-repeat;
         -moz-background-size: cover;
         -webkit-background-size: cover;
