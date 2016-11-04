@@ -6,6 +6,7 @@ body {
     animation-duration: 2s;
     -webkit-animation-name: fadeIn;
     animation-name: fadeIn;
+    background: #000;
 }
 
 @-webkit-keyframes fadeIn {
@@ -926,7 +927,7 @@ ul.share-buttons img:hover {
     left: 50%;
     top: 50%;
     z-index: 1;
-    border: 5px solid #eee;
+    border: 5px solid #fff;
     border-radius: 50%;
     border-top: 5px solid #aaa;
     border-bottom: 5px solid #aaa;
@@ -950,7 +951,7 @@ ul.share-buttons img:hover {
     line-height: 100px;
     height: 100px;
     width: 100%;
-    color: #aaa;
+    color: #fff;
     font-weight: bold;
 }
 
