@@ -157,6 +157,28 @@
                 </div>
                 <div class="row">
                     <div class="col-sm-3 portfolio-item">
+                        <a href="#portfolioModal27" class="portfolio-link" data-toggle="modal">
+                            <div class="caption">
+                                <div class="caption-content">
+                                    <h3>The Sheek</h3>
+                                    <i class="fa fa-search-plus fa-2x"></i>
+                                </div>
+                            </div>
+                            <img src="img/portfolio/thesheek.png" class="img-responsive" alt="">
+                        </a>
+                    </div>
+                    <div class="col-sm-3 portfolio-item">
+                        <a href="#portfolioModal26" class="portfolio-link" data-toggle="modal">
+                            <div class="caption">
+                                <div class="caption-content">
+                                    <h3>TurboTattoo</h3>
+                                    <i class="fa fa-search-plus fa-2x"></i>
+                                </div>
+                            </div>
+                            <img src="img/portfolio/turbo.png" class="img-responsive" alt="">
+                        </a>
+                    </div>
+                    <div class="col-sm-3 portfolio-item">
                         <a href="#portfolioModal25" class="portfolio-link" data-toggle="modal">
                             <div class="caption">
                                 <div class="caption-content">
@@ -471,6 +493,70 @@
         </footer>
 
         <!-- Portfolio Modals -->
+        <div class="portfolio-modal modal fade" id="portfolioModal27" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-content">
+                <div class="close-modal" data-dismiss="modal">
+                    <div class="lr">
+                        <div class="rl">
+                        </div>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-8 col-lg-offset-2">
+                            <div class="modal-body">
+                                <h2>The Sheek</h2>
+                                <hr class="star-primary">
+                                <ul class="list-inline item-details">
+                                    <li>URL:
+                                        <strong>
+                                            <a href="http://www.thesheek.com/" target="_blank">http://www.thesheek.com/</a>
+                                        </strong>
+                                    </li>
+                                </ul>
+                                <img src="img/screenshot/thesheek.png" class="img-responsive img-centered" alt="">
+                                <p style="text-align:left;">
+                                    After 8 years experience as a jewelry shop owner, fine jewelry designer Naoko Zaima has now started up her eponymous brand called The Sheek. (Sheek = Chic = Iki "粋" in Japanese) Naoko offers pieces that reflect her clean spirit of Japan for minimal design with an avant-garde twist. Her handcrafted, one-of-a-kind pieces are lovingly created in her Santa Monica studio. 
+                                </p>
+                                <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="portfolio-modal modal fade" id="portfolioModal26" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-content">
+                <div class="close-modal" data-dismiss="modal">
+                    <div class="lr">
+                        <div class="rl">
+                        </div>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-8 col-lg-offset-2">
+                            <div class="modal-body">
+                                <h2>TurboTattoo</h2>
+                                <hr class="star-primary">
+                                <ul class="list-inline item-details">
+                                    <li>URL:
+                                        <strong>
+                                            <a href="http://www.turbotattoosupply.com/" target="_blank">http://www.turbotattoosupply.com/</a>
+                                        </strong>
+                                    </li>
+                                </ul>
+                                <img src="img/screenshot/turbo.png" class="img-responsive img-centered" alt="">
+                                <p style="text-align:left;">
+                                    We offer High Quality Tattoo Cartridge Needles, Motors, & Grips. All our supplies are compatible with all other cartridge systems products. We offer FREE Shipping if you spend over $50. We also offer domestic express and International shipping for an additional fee.
+                                </p>
+                                <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
         <div class="portfolio-modal modal fade" id="portfolioModal25" tabindex="-1" role="dialog" aria-hidden="true">
             <div class="modal-content">
                 <div class="close-modal" data-dismiss="modal">
@@ -1129,9 +1215,9 @@
     }
     
     $(window).scroll(function () {
-        $("header video").css("opacity", 1 - $(window).scrollTop() / 400);
-        $("header .container").css("opacity", 1 - $(window).scrollTop() / 200);
-        $("header .mouse").css("opacity", 1 - $(window).scrollTop() / 100);
+        $("header video").css("opacity", 1 - $(window).scrollTop() / 1000);
+        $("header .container").css("opacity", 1 - $(window).scrollTop() / 400);
+        $("header .mouse").css("opacity", 1 - $(window).scrollTop() / 200);
     });
 </script>
 
