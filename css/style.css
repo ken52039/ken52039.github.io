@@ -325,8 +325,8 @@ header .intro-text .skills:last-child {
         background: white;
     }
     .wheel {
-        -webkit-animation: mouse-wheel 1.2s ease infinite;
-        -moz-animation: mouse-wheel 1.2s ease infinite;
+        -webkit-animation: mouse-wheel 1.2s ease-in-out infinite;
+        -moz-animation: mouse-wheel 1.2s ease-in-out infinite;
     }
     @-webkit-keyframes mouse-wheel {
         0% {
@@ -491,7 +491,21 @@ section.success a {
     position: relative;
     margin: 0 auto;
     max-width: 400px;
-    border: 1px solid #ddd;
+    box-shadow: 1px 1px 10px #aaa; 
+    -moz-box-shadow: 1px 1px 10px #aaa; 
+    -webkit-box-shadow: 1px 1px 10px #aaa; 
+    -webkit-transition: all ease-in-out .5s;
+    -moz-transition: all ease-in-out .5s;
+    transition: all ease-in-out .5s;
+    border-radius: 5px; 
+    -moz-border-radius: 5px; 
+    -webkit-border-radius: 5px;
+}
+
+#portfolio .portfolio-item .portfolio-link img {
+    border-radius: 5px; 
+    -moz-border-radius: 5px; 
+    -webkit-border-radius: 5px;
 }
 
 #portfolio .portfolio-item .portfolio-link .caption {
@@ -500,13 +514,21 @@ section.success a {
     height: 100%;
     opacity: 0;
     background: #000;
-    -webkit-transition: all ease .5s;
-    -moz-transition: all ease .5s;
-    transition: all ease .5s;
+    -webkit-transition: all ease-in-out .5s;
+    -moz-transition: all ease-in-out .5s;
+    transition: all ease-in-out .5s;
+    border-radius: 5px; 
+    -moz-border-radius: 5px; 
+    -webkit-border-radius: 5px;
 }
 
-#portfolio .portfolio-item .portfolio-link .caption:hover {
-    opacity: 1;
+#portfolio .portfolio-item .portfolio-link:hover {
+    box-shadow: 1px 1px 10px #000; 
+    -moz-box-shadow: 1px 1px 10px #000; 
+    -webkit-box-shadow: 1px 1px 10px #000; 
+}
+
+#portfolio .portfolio-item .portfolio-link:hover .caption {
     filter: alpha(opacity=80);
     -moz-opacity: 0.80;
     opacity: 0.80;
@@ -1007,7 +1029,7 @@ ul.share-buttons img:hover {
 }
 
 #myDiv {
-    background-color: #fff;
+    background: url(../img/bg.png) repeat;
     opacity: 0;
     transition: all 1s ease-in-out;
     -moz-transition: all 1s ease-in-out;
@@ -1021,4 +1043,14 @@ ul.share-buttons img:hover {
 
 .modal .container {
     max-width: 1170px;
+}
+
+.row iframe {
+    border-radius: 5px !important; 
+    -moz-border-radius: 5px !important; 
+    -webkit-border-radius: 5px !important;
+    border: 20px solid #fff !important;
+    box-shadow: 1px 1px 20px #ccc; 
+    -moz-box-shadow: 1px 1px 20px #ccc;
+    -webkit-box-shadow: 1px 1px 20px #ccc; 
 }
