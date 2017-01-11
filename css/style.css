@@ -296,9 +296,6 @@ header .intro-text .skills:last-child {
     header .intro-text .skills {
         font-size: 1.75em;
     }
-    #portfolio .portfolio-item {
-        margin: 0 0 30px;
-    }
     nav .container {
         padding: 0 100px;
     }
@@ -483,7 +480,7 @@ section.success a {
 
 #portfolio .portfolio-item {
     right: 0;
-    margin: 0 0 30px;
+    margin: 0 0 30px !important;
 }
 
 #portfolio .portfolio-item .portfolio-link {
