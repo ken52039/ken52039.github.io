@@ -25,7 +25,7 @@
     <!-- Custom CSS -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css" rel="stylesheet">
     <link href="css/style.css?=20150901-01" rel="stylesheet">
-    
+
     <!-- Custom Fonts -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
     <link href='http://fonts.googleapis.com/css?family=Dosis:400,600' rel='stylesheet' type='text/css'>
@@ -51,7 +51,7 @@
         _gaq.push(['_trackPageview']);
         _gaq.push(['_trackPageLoadTime']);
 
-        (function () {
+        (function() {
             var ga = document.createElement('script');
             ga.type = 'text/javascript';
             ga.async = true;
@@ -114,7 +114,7 @@
                     vid.classList.add("stopfade");
                 }
 
-                vid.addEventListener('ended', function () {
+                vid.addEventListener('ended', function() {
                     // only functional if "loop" is removed 
                     vid.pause();
                     // to capture IE10
@@ -122,7 +122,7 @@
                 });
 
 
-                pauseButton.addEventListener("click", function () {
+                pauseButton.addEventListener("click", function() {
                     vid.classList.toggle("stopfade");
                     if (vid.paused) {
                         vid.play();
@@ -507,6 +507,11 @@
             </div>
         </footer>
 
+        <script>
+            var facebookPageId = "kenhuang.me";
+        </script>
+        <script type="text/javascript" src="https://messengerify.me/api/chat-head/embed.js"></script>
+
         <!-- Portfolio Modals -->
         <div class="portfolio-modal modal fade" id="portfolioModal31" tabindex="-1" role="dialog" aria-hidden="true">
             <div class="modal-content">
@@ -563,7 +568,7 @@
                                 </ul>
                                 <a href="http://stg-www.wakentemple.org/english/" target="_blank"><img src="img/screenshot/wakentemple.png" class="img-responsive img-centered" alt="The Sheek" title="前往案例"></a>
                                 <p style="text-align:left;">
-                                    Buddha Dharma is Compassion, Wisdom and Enlightenment. May all sentients find their own Sunyata, the true Buddha-nature. Thus, uncover the Dharma within one's Heart. 
+                                    Buddha Dharma is Compassion, Wisdom and Enlightenment. May all sentients find their own Sunyata, the true Buddha-nature. Thus, uncover the Dharma within one's Heart.
                                 </p>
                                 <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
                             </div>
@@ -1254,7 +1259,7 @@
         document.getElementById("myDiv").style.opacity = "1";
     }
 
-    $(window).scroll(function () {
+    $(window).scroll(function() {
         $("header video").css("opacity", 1 - $(window).scrollTop() / 800);
         $("header .container").css("opacity", 1 - $(window).scrollTop() / 400);
         $("header .mouse").css("opacity", 1 - $(window).scrollTop() / 200);
