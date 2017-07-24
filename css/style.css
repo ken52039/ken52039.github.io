@@ -1027,7 +1027,7 @@ ul.share-buttons img:hover {
 
 #myDiv {
     background: url(../img/bg.png) repeat;
-    opacity: 0;
+    opacity: 1;
     transition: all 1s ease-in-out;
     -moz-transition: all 1s ease-in-out;
     -webkit-transition: all 1s ease-in-out;
