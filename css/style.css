@@ -478,9 +478,16 @@ section.success a {
     }
 }
 
+.row {
+    text-align: center;
+}
+
 #portfolio .portfolio-item {
     right: 0;
     margin: 0 0 30px !important;
+    float: none;
+    display: inline-block;
+    vertical-align: top;
 }
 
 #portfolio .portfolio-item .portfolio-link {
@@ -725,6 +732,10 @@ footer .footer-below {
 
 .portfolio-modal .modal-content .item-details {
     margin: -30px 0 20px 0;
+}
+
+.portfolio-modal .modal-content .item-details li img {
+    width: 150px;
 }
 
 .portfolio-modal .close-modal {
