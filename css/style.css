@@ -484,7 +484,7 @@ section.success a {
 
 #portfolio .portfolio-item {
     right: 0;
-    margin: 0 0 30px !important;
+    margin: 0 -5px 30px -5px !important;
     float: none;
     display: inline-block;
     vertical-align: top;
