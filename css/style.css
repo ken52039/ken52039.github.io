@@ -6,7 +6,7 @@ body {
     animation-duration: 2s;
     -webkit-animation-name: fadeIn;
     animation-name: fadeIn;
-    background: #000;
+    background: #fff;
 }
 
 @-webkit-keyframes fadeIn {
