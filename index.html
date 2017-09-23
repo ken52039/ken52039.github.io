@@ -63,7 +63,6 @@
 </head>
 
 <body onload="myFunction()" id="page-top" class="index">
-    <!--<div id="loader"></div>-->
     <div id="myDiv">
         <!-- Navigation -->
         <nav class="navbar navbar-default navbar-fixed-top">
@@ -1308,17 +1307,6 @@
 
 </body>
 <script>
-    var myVar;
-
-    function myFunction() {
-        myVar = setTimeout(showPage, 0);
-    }
-
-    /* function showPage() {
-        document.getElementById("loader").style.opacity = "0";
-        document.getElementById("myDiv").style.opacity = "1";
-    } */
-
     $(window).scroll(function() {
         $("header video").css("opacity", 1 - $(window).scrollTop() / 800);
         $("header .container").css("opacity", 1 - $(window).scrollTop() / 400);

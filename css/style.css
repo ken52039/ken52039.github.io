@@ -953,39 +953,6 @@ ul.share-buttons img:hover {
     animation-duration: 1s;
 }
 
-#loader {
-    position: fixed;
-    left: 50%;
-    top: 50%;
-    z-index: 1;
-    border: 5px solid #fff;
-    border-radius: 50%;
-    border-top: 5px solid #aaa;
-    border-bottom: 5px solid #aaa;
-    margin: -35px 0 0 -35px;
-    width: 70px;
-    height: 70px;
-    -webkit-animation: spin 2s linear infinite;
-    animation: spin 2s linear infinite;
-}
-
-#loader:after {
-    position: fixed;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    top: 0;
-    margin: auto;
-    content: "KEN";
-    display: block;
-    text-align: center;
-    line-height: 100px;
-    height: 100px;
-    width: 100%;
-    color: #fff;
-    font-weight: bold;
-}
-
 @-webkit-keyframes spin {
     0% {
         -webkit-transform: rotate(0deg);
