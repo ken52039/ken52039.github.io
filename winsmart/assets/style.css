@@ -34,7 +34,7 @@ nav {
 }
 
 .slogan {
-    background: url(https://i.imgur.com/9ULkoTH.jpg) center no-repeat;
+    background: url(https://i.imgur.com/9ULkoTH.jpg) right no-repeat;
     -moz-background-size: cover; 
     -webkit-background-size: cover; 
     -o-background-size: cover; 
@@ -364,6 +364,7 @@ body > img {
         margin-bottom: 10px;
     }
     .slogan {
+        background: url(https://i.imgur.com/9ULkoTH.jpg) center no-repeat;
         padding: 10vh 0;
     }
     .btn-danger.go {
