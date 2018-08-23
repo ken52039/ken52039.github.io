@@ -5,11 +5,14 @@
  */
 
 // jQuery for page scrolling feature - requires jQuery plugin
-$('#page-top').on('click', function (e) {
-    e.preventDefault();
-    $('html,body').animate({
-        scrollTop: 0
-    }, 500);
+$(function() {
+    $('.page-scroll a').bind('click', function(event) {
+        var $anchor = $(this);
+        $('html, body').stop().animate({
+            scrollTop: $($anchor.attr('href')).offset().top
+        }, 1500, 'easeInOutExpo');
+        event.preventDefault();
+    });
 });
 
 // Floating label headings for the contact form
