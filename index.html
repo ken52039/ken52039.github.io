@@ -485,7 +485,17 @@
                         </div>
                         <div class="footer-col col-md-4">
                             <h3>Facebook</h3>
-                            <div class="fb-page" data-href="https://www.facebook.com/kenhuang.me" data-small-header="true" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true" data-show-posts="false"></div>
+                            <div id="fb-root"></div>
+                            <script>
+                                (function(d, s, id) {
+                                      var js, fjs = d.getElementsByTagName(s)[0];
+                                      if (d.getElementById(id)) return;
+                                      js = d.createElement(s); js.id = id;
+                                      js.src = 'https://connect.facebook.net/zh_TW/sdk.js#xfbml=1&version=v3.2&appId=207476185986381&autoLogAppEvents=1';
+                                      fjs.parentNode.insertBefore(js, fjs);
+                                    }(document, 'script', 'facebook-jssdk'));
+                            </script>
+                            <div class="fb-page" data-href="https://www.facebook.com/kenhuang.me/" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="false"></div>
                         </div>
                     </div>
                 </div>
@@ -501,18 +511,16 @@
                 </div>
             </div>
         </footer>
-        
+
         <!-- Load Facebook SDK for JavaScript -->
         <div id="fb-root"></div>
-        <script>
-            (function(d, s, id) {
+        <script>(function(d, s, id) {
               var js, fjs = d.getElementsByTagName(s)[0];
               if (d.getElementById(id)) return;
               js = d.createElement(s); js.id = id;
               js.src = 'https://connect.facebook.net/zh_TW/sdk/xfbml.customerchat.js';
               fjs.parentNode.insertBefore(js, fjs);
-            }(document, 'script', 'facebook-jssdk'));
-        </script>
+            }(document, 'script', 'facebook-jssdk'));</script>
 
         <!-- Your customer chat code -->
         <div class="fb-customerchat" attribution=setup_tool page_id="138579287541" theme_color="#caaf92" logged_in_greeting="請詳細說明您的需求，Ken Design Studio將會立即與您聯繫洽談！" logged_out_greeting="請詳細說明您的需求，Ken Design Studio將會立即與您聯繫洽談！">
@@ -1223,6 +1231,9 @@
             </div>
         </div>
     </div>
+
+    <div id="fb-root"></div>
+
     <!-- jQuery -->
     <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
 
@@ -1236,8 +1247,6 @@
 
     <!-- Custom Theme JavaScript -->
     <script src="js/freelancer.min.js" defer></script>
-
-    <script src="js/facebook.js" defer></script>
 
 </body>
 <script>
