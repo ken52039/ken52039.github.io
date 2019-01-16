@@ -8,21 +8,30 @@
 </head>
 
 <body>
-    <!-- Load Facebook SDK for JavaScript -->
-    <div id="fb-root"></div>
+    <div class="fb-customerchat" page_id="138579287541" minimized="true">
+    </div>
     <script>
+        window.fbAsyncInit = function() {
+            FB.init({
+                appId: '912333495590130',
+                autoLogAppEvents: true,
+                xfbml: true,
+                version: 'v2.11',
+                logged_in_greeting: '請詳細說明您的需求，Ken Design Studio將會立即與您聯繫洽談！',
+            });
+        };
         (function(d, s, id) {
             var js, fjs = d.getElementsByTagName(s)[0];
-            if (d.getElementById(id)) return;
+            if (d.getElementById(id)) {
+                return;
+            }
             js = d.createElement(s);
             js.id = id;
-            js.src = 'https://connect.facebook.net/zh_TW/sdk/xfbml.customerchat.js';
+            js.src = "https://connect.facebook.net/en_US/sdk.js";
             fjs.parentNode.insertBefore(js, fjs);
         }(document, 'script', 'facebook-jssdk'));
+
     </script>
-    <!-- Your customer chat code -->
-    <div class="fb-customerchat" page_id="138579287541" logged_in_greeting="請詳細說明您的需求，Ken Design Studio將會立即與您聯繫洽談！" logged_out_greeting="請詳細說明您的需求，Ken Design Studio將會立即與您聯繫洽談！">
-    </div>
 </body>
 
 </html>
