@@ -1002,7 +1002,7 @@ ul.share-buttons img:hover {
     max-width: 1170px;
 }
 
-.row > div > iframe {
+.row > div > iframe:not(.fb-page) {
     border-radius: 5px !important; 
     -moz-border-radius: 5px !important; 
     -webkit-border-radius: 5px !important;
