@@ -104,7 +104,7 @@
 
         <!-- Header -->
         <header>
-            <video id="bgvid" playsinline autoplay muted loop>
+            <!--<video id="bgvid" playsinline autoplay muted loop>
                 <source src="https://i.imgur.com/p6yORj1.mp4" type="video/mp4">
             </video>
             <script>
@@ -133,7 +133,7 @@
                         pauseButton.innerHTML = "Paused";
                     }
                 })
-            </script>
+            </script>-->
             <div class="container">
                 <div class="row">
                     <div class="col-lg-12">
@@ -1422,16 +1422,6 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js" async="async"></script>
 
     <script src="//instant.page/1.1.0" type="module" integrity="sha384-EwBObn5QAxP8f09iemwAJljc+sU+eUXeL9vSBw1eNmVarwhKk2F9vBEpaN9rsrtp"></script>
-
-    <script>
-        $(window).scroll(function() {
-            $("header video").css("opacity", 1 - $(window).scrollTop() / 800);
-            $("header .container").css("opacity", 1 - $(window).scrollTop() / 400);
-            $("header .mouse").css("opacity", 1 - $(window).scrollTop() / 200);
-        });
-
-        new WOW().init();
-    </script>
 
 </body>
 

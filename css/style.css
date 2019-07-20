@@ -99,6 +99,7 @@ hr.star-primary:after {
 }
 
 header {
+    background: url('https://i.imgur.com/0atgPWg.png') center no-repeat;
     text-align: center;
     color: #fff;
     position: relative;
