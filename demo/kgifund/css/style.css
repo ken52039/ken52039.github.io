@@ -166,7 +166,7 @@ header ul li.active a {
 
 .banner .slogan h1 {
     font-size: 2vw;
-    font-weight: 700;
+    font-weight: bold !important;
     margin-bottom: 0px;
 }
 
@@ -181,7 +181,7 @@ header ul li.active a {
 
 .banner .slogan p.gray {
     color: #717171;
-    font-weight: 500;
+    font-weight: bold !important;
     text-align: center;
     margin: 0;
 }
@@ -951,7 +951,7 @@ footer {
 }
 
 footer p {
-    font-weight: 500;
+    font-weight: bold !important;
 }
 
 _:-ms-lang(x),
