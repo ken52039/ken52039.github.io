@@ -962,7 +962,7 @@ footer p {
 footer .uk-text-center {
     color: #002F7C;
     font-size: 13px;
-    font-weight: 300;
+    font-weight: normal!important;
 }
 
 _:-ms-lang(x),
