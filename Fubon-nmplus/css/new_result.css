@@ -4,6 +4,7 @@ body .scrollContainer .content .chart {
     -webkit-border-radius: 0 0 8px 8px;
     -moz-border-radius: 0 0 8px 8px;
     border-radius: 0 0 8px 8px;
+    font-family: "Rajdhani", "Noto Sans TC", "Helvetica Neue", Helvetica, Arial, "SourceHanSansTW", "Microsoft JhengHei", "微軟正黑體", sans-serif;
 }
 
 #contentid {
@@ -14,24 +15,24 @@ body .scrollContainer .content .chart {
     margin-top: 0;
 }
 
-.ui-tabs .ui-tabs-nav {
+.content .ui-tabs .ui-tabs-nav {
     list-style: none;
     margin: 0;
     padding: 0;
 }
 
-.ui-tabs .ui-tabs-nav:after {
+.content .ui-tabs .ui-tabs-nav:after {
     content: "";
     display: block;
     clear: both;
 }
 
-.ui-tabs .ui-tabs-nav li {
+.content .ui-tabs .ui-tabs-nav li {
     float: left;
     width: 50%;
 }
 
-.ui-tabs .ui-tabs-nav li a {
+.content .ui-tabs .ui-tabs-nav li a {
     display: block;
     width: 100%;
     line-height: 50px;
@@ -42,15 +43,15 @@ body .scrollContainer .content .chart {
     color: #828282;
 }
 
-.ui-tabs .ui-tabs-nav li:first-of-type a {
+.content .ui-tabs .ui-tabs-nav li:first-of-type a {
     border-radius: 12px 0 0 0;
 }
 
-.ui-tabs .ui-tabs-nav li:last-of-type a {
+.content .ui-tabs .ui-tabs-nav li:last-of-type a {
     border-radius: 0 12px 0 0;
 }
 
-.ui-tabs .ui-tabs-nav li.ui-tabs-active a {
+.content .ui-tabs .ui-tabs-nav li.ui-tabs-active a {
     color: #fff;
     background-color: #048fb3;
 }
@@ -177,6 +178,10 @@ body .scrollContainer .content .chart {
     padding: 30px 100px 42px 80px;
 }
 
+.popup.info {
+    padding: 30px 60px;
+}
+
 .popup .fancybox-close-small {
     width: 20px;
     height: 20px;
@@ -262,7 +267,6 @@ body .scrollContainer .content .chart {
     border-bottom: solid 1px #0087d5;
     text-align: right;
     color: #0087d5;
-    font-family: Rajdhani;
     font-size: 24px;
     font-weight: 600;
     border-radius: 0 !important;
@@ -362,7 +366,6 @@ body .scrollContainer .content .chart {
 
 .popup .category-list li span {
     float: right;
-    font-family: Rajdhani;
     font-size: 26px;
     font-weight: 600;
     letter-spacing: 0.81px;
@@ -373,6 +376,159 @@ body .scrollContainer .content .chart {
 .popup .category-list li span small {
     font-size: 20px;
     letter-spacing: 0.63px;
+}
+
+.popup p {
+    font-size: 16px;
+    font-weight: 500;
+    color: #191919;
+    line-height: 30px;
+    margin: 0;
+    padding: 0;
+}
+
+.popup p small {
+    display: block;
+    font-size: 14px;
+    color: #828282;
+}
+
+.popup .blue {
+    color: #0087d5;
+}
+
+.popup .green {
+    color: #15bd7a;
+}
+
+.popup .list {
+    margin: 0 0 0 20px;
+    padding: 0;
+}
+
+.popup .list li {
+    display: block;
+    font-size: 16px;
+    font-weight: 500;
+    color: #191919;
+    line-height: 30px;
+    margin: 0;
+    padding: 0;
+    position: relative;
+}
+
+.popup .list li:before {
+    content: "";
+    display: block;
+    position: absolute;
+    left: -15px;
+    top: 12px;
+    width: 5px;
+    height: 5px;
+    background: #000;
+}
+
+.popup .list.number li:before {
+    display: none;
+}
+
+.popup .list.number li i {
+    display: block;
+    position: absolute;
+    left: -20px;
+    top: 0;
+    font-style: normal;
+}
+
+.popup .link {
+    margin: 20px 0 0 0;
+}
+
+.popup .link:after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.popup .link label {
+    float: left;
+    width: 50%;
+    line-height: 45px;
+}
+
+.popup .link label span {
+    display: block;
+    background: #ecf6fa;
+    font-size: 18px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    color: #828282;
+    text-align: center;
+    cursor: pointer;
+}
+
+.popup .link label input {
+    display: none;
+}
+
+.popup .link label.active span {
+    background: #15bd7a;
+    color: #fff;
+}
+
+.popup .link label:last-of-type.active span {
+    background: #0087d5;
+}
+
+.popup input + div {
+    display: none;
+}
+
+.popup input:checked + div {
+    display: block;
+}
+
+.popup .ui-tabs .ui-tabs-nav {
+    padding: 0;
+    margin: 20px 0;
+    list-style: none;
+    border-bottom: solid 0.7px #15bd7a;
+}
+
+.popup .ui-tabs .ui-tabs-nav.blue {
+    border-bottom: solid 0.7px #0087d5;
+}
+
+.popup .ui-tabs .ui-tabs-nav:after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.popup .ui-tabs .ui-tabs-nav li {
+    float: left;
+    width: 25%;
+}
+
+.popup .ui-tabs .ui-tabs-nav li.ui-tabs-active {
+    border-bottom: solid 4px #15bd7a;
+}
+
+.popup .ui-tabs .ui-tabs-nav.blue li.ui-tabs-active {
+    border-bottom: solid 4px #0087d5;
+}
+
+.popup .ui-tabs .ui-tabs-nav li a {
+    display: block;
+    line-height: 33px;
+    font-size: 20px;
+    font-weight: 600;
+    text-align: center;
+    color: #15bd7a;
+}
+
+.popup .ui-tabs .ui-tabs-nav.blue li a {
+    color: #0087d5;
 }
 
 .colum_group {
@@ -451,6 +607,27 @@ body .scrollContainer .content .chart {
     margin: 0 0 0 5px;
 }
 
+.popup-link {
+    cursor: pointer;
+    text-decoration: underline;
+    display: block;
+    font-size: 12px;
+    font-weight: normal;
+    line-height: 16px;
+    letter-spacing: 1.5px;
+    text-align: right;
+    color: #4a4a4a;
+    background: url('../svg/blue.svg') no-repeat right top;
+    background-size: 16px 16px;
+    height: 16px;
+    margin: 0 40px 24px 0;
+}
+
+.popup-link span {
+    display: block;
+    padding-right: 20px;
+}
+
 @media screen and (max-width: 768px) {
     .fix_btn {
         top: auto;
@@ -482,7 +659,7 @@ body .scrollContainer .content .chart {
         margin-top: 0;
     }
 
-    .ui-tabs .ui-tabs-nav li a {
+    .content .ui-tabs .ui-tabs-nav li a {
         line-height: 40px;
         font-size: 16px;
     }
@@ -512,6 +689,10 @@ body .scrollContainer .content .chart {
 
     .popup {
         padding: 30px 33px 37px 21px;
+    }
+
+    .popup.info {
+        padding: 30px 13px 40px 13px;
     }
 
     .popup form fieldset label {

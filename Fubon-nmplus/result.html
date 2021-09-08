@@ -49,9 +49,6 @@
                 clicktext.innerText='點我看過去歷史績效-';
             }   
 }
-        $( function() {
-    $( "#tabs1,#tabs2" ).tabs();
-  } );
 </script>
 </head>
 
@@ -80,13 +77,13 @@
                                     </button>
                                 </div>
                                 <div class="dropdown warp">
-                                    <a data-fancybox data-src="#info1" href="javascript:;">投資術</a>
+                                    <a data-fancybox data-src="#info1" href="javascript:">投資術</a>
                                     <button type="button">
                                         奈米1號-全球ETF
                                     </button>
                                 </div>
                                 <div class="dropdown warp info">
-                                    <a data-fancybox data-src="#info2" href="javascript:;">投資組合</a>
+                                    <a data-fancybox data-src="#info2" href="javascript:">投資組合</a>
                                     <button type="button">
                                         Level 3
                                     </button>
@@ -113,19 +110,19 @@
                     </div>
                     <div class="clearfix"></div>
                 </div>
-                
-                <div class="panel">
+
+                <!--<div class="panel">
                     <div class="content">
                         <div class="section">
                             <div class="colum_group">
                                 <div class="dropdown warp">
-                                    <a data-fancybox data-src="#info1" href="javascript:;">投資術</a>
+                                    <a data-fancybox data-src="#info1" href="javascript:">投資術</a>
                                     <button type="button">
                                         奈米2號-台灣ETF
                                     </button>
                                 </div>
                                 <div class="dropdown warp info">
-                                    <a data-fancybox data-src="#info2" href="javascript:;">投資組合</a>
+                                    <a data-fancybox data-src="#info2" href="javascript:">投資組合</a>
                                     <button type="button">
                                         Level 3
                                     </button>
@@ -157,7 +154,7 @@
                         </div>
                     </div>
                     <div class="clearfix"></div>
-                </div>
+                </div>-->
             </div>
             <div id="historical_chart_section" class="section4" style="display:none">&nbsp; </div>
             <!--/你的專屬計畫-->
@@ -192,7 +189,7 @@
                                 </div>
                             </div>
                             <div class="f-16 f-b w90pct center">
-                                <a data-fancybox data-src="#popup2" href="javascript:;" class="title-right-link">產業類別 <img src="svg/result/result_go_btn3.svg"></a>
+                                <a data-fancybox data-src="#popup2" href="javascript:" class="title-right-link">產業類別 <img src="svg/result/result_go_btn3.svg"></a>
                                 股票型ETF <br>
                                 <span class="f-14 f-gray">透過買進一籃子的股票追蹤各國市場的主要指數！</span>
                             </div>
@@ -206,7 +203,7 @@
                             <div class="footer gray memo">
                                 <h5>小提醒：因無法完整評估你的所有情況，例如經濟狀況與財務需要、稅務概況、投資回收期間長短等，故系統所提供之投資組合建議僅供參考，未必完全適用於個別客戶，你可自行選擇適合的投組風險等級。</h5>
                             </div>
-                            <div class="footer gray"> <a id="search_mode_3" href="iframe_investment_3.html">閱讀ETF投資須知</a> </div>
+                            <div class="popup-link"> <a data-fancybox data-src="#info3" href="javascript:"><span>閱讀ETF投資須知</span></a> </div>
                         </div>
                     </div>
                     <div id="tabs1-2">
@@ -228,7 +225,7 @@
 
                             </div>
                             <div class="f-15 lh180 mt10 mb10">專屬投資組合過去的歷史績效
-                                <div class="f-12 lh140 tar right mt5">歷史績效計算說明<a href="" class="info-1"></a></div>
+                                <div class="f-12 lh140 tar right mt5">歷史績效計算說明<a data-fancybox data-src="#info4" href="javascript:" class="info-1"></a></div>
                             </div>
                             <div class="tabset">
                                 <!-- Tab 1 -->
@@ -343,7 +340,7 @@
                             <div class="memo">
                                 <h5>小提醒：投資一定有風險，若遇較差情況時，你的投資可能會少於較差情況的試算結果。</h5>
                             </div>
-                            <div class="footer"><a id="search_mode_3" href="iframe_investment_3.html">閱讀ETF投資須知</a> </div>
+                            <div class="popup-link"><a data-fancybox data-src="#info3" href="javascript:"><span>閱讀ETF投資須知</span></a> </div>
                         </div>
                     </div>
                 </div>
@@ -505,358 +502,337 @@
                 </div>
             </div>
             <!--/使用者分享-->
-
-            <!--右邊fix按鈕-->
-            <div class="fix_btn">
-                <a data-fancybox data-src="#popup1" href="javascript:;">重新試算 <img src="svg/result/result_go_btn1.svg"></a>
-                <a href="">點我開始投 <img src="svg/result/result_go_btn2.svg"></a>
-            </div>
-            <!--/右邊fix按鈕-->
-            
-            <!--投資術彈窗-->
-            <div class="popup" style="display: none;" id="info1">
-                <strong>投資術</strong>
-                <p>奈米投數位理財服務分為兩種投資術，皆有奈米投投資團隊每日幫你盯盤，主動為你的投資汰弱留強。</p>
-                <p>奈米投分為兩種投資術：</p>
-                <ul>
-                    <li>奈米1號：投資的是在英國倫敦交易所交易的ETF，提供「4種風險等級」投資組合，從保守到積極，35元美金即可投資全世界，輕鬆參與歐美、新興市場趨勢發展。英國倫敦交易所掛牌的ETF相較美國掛牌的ETF更具稅務優勢。</li>
-                    <li>奈米2號：投資的是台灣證券交易所交易的ETF，提供「4種投資主題」投資組合，台幣1000元即可投資，不論你是投資新手，還是有經驗的投資人，主題式投資幫助你突破盲點、強化策略，讓投資成為一件輕鬆的事。</li>
-                </ul>
-                <p>(皆不含倍數槓桿型及反向型ETF)</p>
-            </div>
-
-            <!--調整投資方式-->
-            <div class="popup" style="display: none;" id="popup2">
-                <strong>產業類別</strong>
-                <ul class="category-list">
-                    <li>資訊科技 <span>38<small>%</small></span></li>
-                    <li>金融服務 <span>17<small>%</small></span></li>
-                    <li>半導體產業 <span>12<small>%</small></span></li>
-                    <li>通訊電信 <span>9<small>%</small></span></li>
-                    <li>醫療服務 <span>7<small>%</small></span></li>
-                    <li>能源產業 <span>5<small>%</small></span></li>
-                    <li>其他 <span>12<small>%</small></span></li>
-                </ul>
-            </div>
-
-            <!--調整投資方式-->
-            <div class="popup" style="display: none;" id="popup1">
-                <strong>調整投資方式</strong>
-                <form>
-                    <fieldset>
-                        <label>投資市場</label>
-                        <div class="right">
-                            <select id="select">
-                                <option value="world">全球市場</option>
-                                <option>台灣市場</option>
-                            </select>
-                            <b class="select-title" id="select-title">全球市場</b>
-                        </div>
-                    </fieldset>
-                    <div id="world">
-                        <fieldset>
-                            <label>投資目標</label>
-                            <div class="right">
-                                <select id="select1-1">
-                                    <option value="請選擇">請選擇</option>
-                                    <option>旅遊購物</option>
-                                    <option>準備創業圓夢基金</option>
-                                    <option>準備購屋頭期款</option>
-                                    <option>存小孩教育費</option>
-                                    <option>增加收入提早退休</option>
-                                    <option>不為什麼，就是要有錢</option>
-                                </select>
-                                <b class="select-title" id="select-title1-1">請選擇</b>
-                            </div>
-                        </fieldset>
-                        <fieldset>
-                            <label>投資心態</label>
-                            <div class="right">
-                                <select id="select1-2">
-                                    <option value="請選擇">請選擇</option>
-                                    <option>我只想穩穩賺，不想承受太大的波動</option>
-                                    <option>我想要安心賺，可承受一點市場波動</option>
-                                    <option>我追求資產穩健成長，可承受市場波動</option>
-                                    <option>我追求資產加速增值，可承受市場波動</option>
-                                </select>
-                                <b class="select-title" id="select-title1-2">請選擇</b>
-                            </div>
-                        </fieldset>
-                        <fieldset>
-                            <label>投資方式</label>
-                            <div class="right">
-                                <select id="select1-3">
-                                    <option value="請選擇">請選擇</option>
-                                    <option>一筆錢一次投入</option>
-                                    <option>每個月定期投資</option>
-                                    <option>一筆錢一次投入，搭配每月定期投資</option>
-                                </select>
-                                <b class="select-title" id="select-title1-3">請選擇</b>
-                            </div>
-                        </fieldset>
-                        <fieldset style="display: none;" id="money1-input">
-                            <label for="money1">單筆投資金額</label>
-                            <div class="right">
-                                <div class="title">美金</div>
-                                <input type="tel" min="35" max="250000" placeholder="請輸入數字" id="money1" class="small">
-                                <small>請輸入35~250,000的整數</small>
-                                <div class="unit">元</div>
-                            </div>
-                        </fieldset>
-                        <fieldset>
-                            <label for="time1">投資期間</label>
-                            <div class="right">
-                                <input type="tel" min="1" max="30" placeholder="請輸入數字" id="time1">
-                                <small>請輸入1~30的整數</small>
-                                <div class="unit">年</div>
-                            </div>
-                        </fieldset>
-                        <fieldset class="submit" id="submit1">
-                            <button type="button">重新試算 <img src="svg/result/icon-return-web.svg"></button>
-                        </fieldset>
-                    </div>
-                    <div id="taiwan" style="display: none;">
-                        <fieldset>
-                            <label>投資心態</label>
-                            <div class="right">
-                                <select id="select2-1">
-                                    <option value="請選擇">請選擇</option>
-                                    <option>我比較保守，只想讓資產穩穩成長</option>
-                                    <option>我偏好領配息，追求穩定收益</option>
-                                    <option>我看好永續議題，追求企業永續成長</option>
-                                    <option>我喜歡超前部署，掌握未來新趨勢</option>
-                                </select>
-                                <b class="select-title" id="select-title2-1">請選擇</b>
-                            </div>
-                        </fieldset>
-                        <fieldset>
-                            <label>投資方式</label>
-                            <div class="right">
-                                <select id="select2-2">
-                                    <option value="請選擇">請選擇</option>
-                                    <option>一筆錢一次投入</option>
-                                    <option>每個月定期投資</option>
-                                    <option>一筆錢一次投入，搭配每月定期投資</option>
-                                </select>
-                                <b class="select-title" id="select-title2-2">請選擇</b>
-                            </div>
-                        </fieldset>
-                        <fieldset style="display: none;" id="money2-input">
-                            <label for="money2">單筆投資金額</label>
-                            <div class="right">
-                                <div class="title">台幣</div>
-                                <input type="tel" min="1000" max="10000000" placeholder="請輸入數字" id="money2" class="small">
-                                <small>請輸入1,000~10,000,000的整數</small>
-                                <div class="unit">元</div>
-                            </div>
-                        </fieldset>
-                        <fieldset>
-                            <label>配息方式</label>
-                            <div class="right">
-                                <select id="select2-3">
-                                    <option value="請選擇">請選擇</option>
-                                    <option>配息再投資</option>
-                                    <option>配息入帳戶</option>
-                                </select>
-                                <b class="select-title" id="select-title2-3">請選擇</b>
-                            </div>
-                        </fieldset>
-                        <fieldset>
-                            <label for="time2">投資期間</label>
-                            <div class="right">
-                                <input type="tel" min="1" max="30" placeholder="請輸入數字" id="time2">
-                                <small>請輸入1~30的整數</small>
-                                <div class="unit">年</div>
-                            </div>
-                        </fieldset>
-                        <fieldset class="submit" id="submit2">
-                            <button type="button">重新試算 <img src="svg/result/icon-return-web.svg"></button>
-                        </fieldset>
-                    </div>
-                </form>
-            </div>
-            <script>
-                $("#submit1 button").click(function() {
-                    var t1 = $('#time1').val();
-                    var m1 = $('#money1').val();
-                    if ($.trim($("#select1-1").val()) == "請選擇") {
-                        alert("請確實選擇投資目標");
-                    } else if ($.trim($("#select1-2").val()) == "請選擇") {
-                        alert("請確實選擇投資心態");
-                    } else if ($.trim($("#select1-3").val()) == "請選擇") {
-                        alert("請確實選擇投資方式");
-                    } else if (m1 < 35) {
-                        alert("請確認單筆投資金額");
-                    } else if (m1 > 250000) {
-                        alert("請確認單筆投資金額");
-                    } else if (t1 < 1) {
-                        alert("請確認投資期間");
-                    } else if (t1 > 30) {
-                        alert("請確認投資期間");
-                    } else {
-                        window.location.reload();
-                    }
-                });
-                
-                $("#submit2 button").click(function() {
-                    var t2 = $('#time2').val();
-                    var m2 = $('#money2').val();
-                    if ($.trim($("#select2-1").val()) == "請選擇") {
-                        alert("請確實選擇投資心態");
-                    } else if ($.trim($("#select2-2").val()) == "請選擇") {
-                        alert("請確實選擇投資方式");
-                    } else if (m2 < 35) {
-                        alert("請確認單筆投資金額");
-                    } else if (m2 > 250000) {
-                        alert("請確認單筆投資金額");
-                    } else if ($.trim($("#select2-3").val()) == "請選擇") {
-                        alert("請確實選擇配息方式");
-                    } else if (t2 < 1) {
-                        alert("請確認投資期間");
-                    } else if (t2 > 30) {
-                        alert("請確認投資期間");
-                    } else {
-                        window.location.reload();
-                    }
-                });
-
-                $('.more-btn1').on('click', function() {
-                    $(this).hide();
-                    $('#more-show1').show();
-                });
-                
-                $('.more-btn2').on('click', function() {
-                    $(this).hide();
-                    $('#more-show2').show();
-                });
-
-                $(document).ready(function() {
-                    $('#time1').on('input', function(e) {
-                        var n = $('#time1').val();
-                        $('#time1+small').hide();
-
-                        if (n < 1) {
-                            $('#time1+small').show();
-                        }
-
-                        if (n > 30) {
-                            $('#time1+small').show();
-                        }
-
-                    });
-                    $('#time2').on('input', function(e) {
-                        var n = $('#time2').val();
-                        $('#time2+small').hide();
-
-                        if (n < 1) {
-                            $('#time2+small').show();
-                        }
-
-                        if (n > 30) {
-                            $('#time2+small').show();
-                        }
-
-                    });
-                    $('#money1').on('input', function(e) {
-
-                        var n = $('#money1').val();
-                        $('#money1+small').hide();
-
-                        if (n < 35) {
-                            $('#money1+small').show();
-                        }
-
-                        if (n > 250000) {
-                            $('#money1+small').show();
-                        }
-
-                    });
-                    $('#money2').on('input', function(e) {
-                        var n = $('#money2').val();
-                        $('#money2+small').hide();
-
-                        if (n < 1000) {
-                            $('#money2+small').show();
-                        }
-
-                        if (n > 10000000) {
-                            $('#money2+small').show();
-                        }
-
-                    });
-                });
-
-                $('#select').on('change', function() {
-                    if (this.value == "world") {
-                        $('#world').show();
-                        $('#taiwan').hide();
-                    } else {
-                        $('#taiwan').show();
-                        $('#world').hide();
-                    }
-                    $('#select-title').text($('option:selected', this).text());
-                }).change();
-                $('#select1-1').on('change', function() {
-                    $('#select-title1-1').text($('option:selected', this).text());
-                    if (this.value == "請選擇") {
-                        $('#select-title1-1').css("color", "#828282");
-                    } else {
-                        $('#select-title1-1').css("color", "#191919");
-                    }
-                }).change();
-                $('#select1-2').on('change', function() {
-                    $('#select-title1-2').text($('option:selected', this).text());
-                    if (this.value == "請選擇") {
-                        $('#select-title1-2').css("color", "#828282");
-                    } else {
-                        $('#select-title1-2').css("color", "#191919");
-                    }
-
-                }).change();
-                $('#select1-3').on('change', function() {
-                    $('#select-title1-3').text($('option:selected', this).text());
-                    if (this.value == "請選擇") {
-                        $('#select-title1-3').css("color", "#828282");
-                        $('#money1-input').hide();
-                    } else {
-                        $('#select-title1-3').css("color", "#191919");
-                        $('#money1-input').show();
-                    }
-
-                }).change();
-                $('#select2-1').on('change', function() {
-                    $('#select-title2-1').text($('option:selected', this).text());
-                    if (this.value == "請選擇") {
-                        $('#select-title2-1').css("color", "#828282");
-                    } else {
-                        $('#select-title2-1').css("color", "#191919");
-                    }
-
-                }).change();
-                $('#select2-2').on('change', function() {
-                    $('#select-title2-2').text($('option:selected', this).text());
-                    if (this.value == "請選擇") {
-                        $('#select-title2-2').css("color", "#828282");
-                        $('#money2-input').hide();
-                    } else {
-                        $('#select-title2-2').css("color", "#191919");
-                        $('#money2-input').show();
-                    }
-
-                }).change();
-                $('#select2-3').on('change', function() {
-                    $('#select-title2-3').text($('option:selected', this).text());
-                    if (this.value == "請選擇") {
-                        $('#select-title2-3').css("color", "#828282");
-                    } else {
-                        $('#select-title2-3').css("color", "#191919");
-                    }
-
-                }).change();
-            </script>
-            <!--/調整投資方式-->
         </div>
         <!--content end -->
+
+        <!--右邊fix按鈕-->
+        <div class="fix_btn">
+            <a data-fancybox data-src="#popup1" href="javascript:">重新試算 <img src="svg/result/result_go_btn1.svg"></a>
+            <a href="">點我開始投 <img src="svg/result/result_go_btn2.svg"></a>
+        </div>
+        <!--/右邊fix按鈕-->
+
+        <!--彈窗投資術-->
+        <div class="popup info" style="display: none;" id="info1">
+            <strong>投資術</strong>
+            <br>
+            <p>奈米投數位理財服務分為兩種投資術，皆有奈米投投資團隊每日幫你盯盤，主動為你的投資汰弱留強。</p>
+            <p>奈米投分為兩種投資術：</p>
+            <ul class="list">
+                <li><span class="blue">奈米1號</span>：投資的是在<span class="blue">英國倫敦交易所交易的ETF</span>，提供「4種風險等級」投資組合，<span class="blue">從保守到積極，35元美金即可投資全世界</span>，輕鬆參與歐美、新興市場趨勢發展。英國倫敦交易所掛牌的ETF相較美國掛牌的ETF更具稅務優勢。</li>
+                <li><span class="blue">奈米2號</span>：投資的是<span class="blue">台灣證券交易所交易的ETF</span>，提供「4種投資主題」投資組合，<span class="blue">台幣1000元即可投資</span>，不論你是投資新手，還是有經驗的投資人，主題式投資幫助你突破盲點、強化策略，讓投資成為一件輕鬆的事。</li>
+            </ul>
+            <p>(皆不含倍數槓桿型及反向型ETF)</p>
+        </div>
+
+        <!--彈窗投資組合說明-->
+        <div class="popup info" style="display: none;" id="info2">
+            <strong>投資組合說明</strong>
+            <div class="link">
+                <label for="one" class="active" id="link1">
+                    <span>奈米1號</span>
+                </label>
+                <label for="two" id="link2">
+                    <span>奈米2號</span>
+                </label>
+            </div>
+
+            <input type="radio" name="popup-sm-tab" checked id="one" style="display: none;">
+            <div>
+                <div id="sm-tabs1">
+                    <ul>
+                        <li><a href="#sm-tabs1-1">Level 1</a></li>
+                        <li><a href="#sm-tabs1-2">Level 2</a></li>
+                        <li><a href="#sm-tabs1-3">Level 3</a></li>
+                        <li><a href="#sm-tabs1-4">Level 4</a></li>
+                    </ul>
+                    <div id="sm-tabs1-1">
+                        <ul class="list">
+                            <li>個人風險屬性至少為<span class="green">C1保守型客戶</span>。</li>
+                            <li>投資方法：<span class="green">以債券型ETF為主</span>，建構出保守型投資組合。</li>
+                            <li>投資範圍：符合英國金融法規，於倫敦交易所掛牌交易之交易所買賣基金ETF(不含倍數槓桿型及反向型ETF)及現金存款。</li>
+                            <li>依15年期歷史數據回測，本策略之長期年化目標波動率約為7.8%。</li>
+                            <li>投組中債券型ETF加上現金之投資比重不低於投資組合之60%。</li>
+                            <li>分散投資於至少10檔以上之ETF標的。</li>
+                        </ul>
+                    </div>
+                    <div id="sm-tabs1-2">
+                        <ul class="list">
+                            <li>個人風險屬性至少為<span class="green">C1保守型客戶</span>。</li>
+                            <li>投資方法：<span class="green">以債券型搭配成熟市場股票型的ETF為主</span>，建構出穩健型投資組合。</li>
+                            <li>投資範圍：符合英國金融法規，於倫敦交易所掛牌交易之交易所買賣基金ETF(不含倍數槓桿型及反向型ETF)及現金存款。</li>
+                            <li>依15年期歷史數據回測，本策略之長期年化目標波動率約為7.8%。</li>
+                            <li>投組中債券型ETF加上現金之投資比重不低於投資組合之40%，非成熟國家股票型ETF之投資比重不高於投資組合之20%。</li>
+                            <li>分散投資於至少10檔以上之ETF標的。</li>
+                        </ul>
+                    </div>
+                    <div id="sm-tabs1-3">
+                        <ul class="list">
+                            <li>個人風險屬性至少為<span class="green">C2穩健型客戶</span>。</li>
+                            <li>投資方法：<span class="green">以債券型搭配成熟市場股票型與新興市場股票型的ETF為主</span>，建構出成長型投資組合。</li>
+                            <li>投資範圍：符合英國金融法規，於倫敦交易所掛牌交易之交易所買賣基金ETF(不含倍數槓桿型及反向型ETF)及現金存款。</li>
+                            <li>依15年期歷史數據回測，本策略之長期年化目標波動率約為12.3%。</li>
+                            <li>投組中債券型ETF加上現金之投資比重不低於投資組合之20%，非成熟國家股票型ETF之投資比重不高於投資組合之30%。</li>
+                            <li>分散投資於至少10檔以上之ETF標的。</li>
+                        </ul>
+                    </div>
+                    <div id="sm-tabs1-4">
+                        <ul class="list">
+                            <li>個人風險屬性至少為<span class="green">C3成長型客戶</span>。</li>
+                            <li>投資方法：<span class="green">以成熟市場股票型搭配新興市場股票型ETF為主</span>，建構出積極型投資組合。</li>
+                            <li>投資範圍：符合英國金融法規，於倫敦交易所掛牌交易之交易所買賣基金ETF(不含倍數槓桿型及反向型ETF)及現金存款。</li>
+                            <li>依15年期歷史數據回測，本策略之長期年化目標波動率約為15.4%。</li>
+                            <li>投組中成熟國家股票型ETF之投資比重不低於投資組合之60%。</li>
+                            <li>分散投資於至少10檔以上之ETF標的。</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <input type="radio" name="popup-sm-tab" id="two" style="display: none;">
+            <div>
+                <div id="sm-tabs2">
+                    <ul class="blue">
+                        <li><a href="#sm-tabs2-1">穩穩投</a></li>
+                        <li><a href="#sm-tabs2-2">高息投</a></li>
+                        <li><a href="#sm-tabs2-3">永續投</a></li>
+                        <li><a href="#sm-tabs2-4">趨勢投</a></li>
+                    </ul>
+                    <div id="sm-tabs2-1">
+                        <ul class="list">
+                            <li>個人風險屬性至少為<span class="blue">C1保守型客戶</span>。</li>
+                            <li>投資方法：<span class="blue">以債券型ETF為主</span>，為保守型投資操作。</li>
+                            <li>投資範圍：以國內證券投資信託事業在中華民國境內募集發行及上市(櫃)交易之新臺幣計價ETF（不含槓桿型及反向型ETF）為投資標的，建立分散投資在全球債券型和臺灣股票型的投資組合。</li>
+                            <li>依15年期歷史數據回測，本策略之長期年化目標波動率約為4.5%。</li>
+                            <li>債券型ETF加上現金之投資比重不低於投資組合之60%。</li>
+                            <li>需分散投資於至少5檔以上之ETF標的。</li>
+                        </ul>
+                    </div>
+                    <div id="sm-tabs2-2">
+                        <ul class="list">
+                            <li>個人風險屬性至少為<span class="blue">C1保守型客戶</span>。</li>
+                            <li>投資方法：<span class="blue">以債券搭配高股息股票、REITs及特別股型ETF為主</span>，為安穩型投資操作。</li>
+                            <li>投資範圍：以國內證券投資信託事業在中華民國境內募集發行及上市(櫃)交易之新臺幣計價ETF（不含槓桿型及反向型ETF）為投資標的，建立分散投資在全球債券型和臺灣股票型的投資組合。</li>
+                            <li>依15年期歷史數據回測，本策略之長期年化目標波動率約為7.5%。</li>
+                            <li>債券型ETF加上現金之投資比重不低於投資組合之40%。</li>
+                            <li>需分散投資於至少5檔以上之ETF標的。</li>
+                        </ul>
+                    </div>
+                    <div id="sm-tabs2-3">
+                        <ul class="list">
+                            <li>個人風險屬性至少為<span class="blue">C2穩健型客戶</span>。</li>
+                            <li>投資方法：<span class="blue">以永續題材之股票及債券型ETF為主</span>，為穩健型投資操作。</li>
+                            <li>投資範圍：以國內證券投資信託事業在中華民國境內募集發行及上市(櫃)交易之新臺幣計價ETF（不含槓桿型及反向型ETF）為投資標的，建立分散投資在全球債券型和臺灣股票型的投資組合。依15年期歷史數據回測，本策略之長期年化目標波動率約為10.5%。</li>
+                            <li>債券型ETF加上現金之投資比重不低於投資組合之20%。</li>
+                            <li>需分散投資於至少5檔以上之ETF標的。</li>
+                        </ul>
+                    </div>
+                    <div id="sm-tabs2-4">
+                        <ul class="list">
+                            <li>個人風險屬性至少為<span class="blue">C3成長型客戶</span>。</li>
+                            <li>投資方法：<span class="blue">以市場指數、大型股及主題式股票型ETF為主</span>，為成長型投資操作。</li>
+                            <li>投資範圍：以國內證券投資信託事業在中華民國境內募集發行及上市(櫃)交易之新臺幣計價ETF（不含槓桿型及反向型ETF）為投資標的，建立分散投資在全球債券型和臺灣股票型的投資組合。</li>
+                            <li>依15年期歷史數據回測，本策略之長期年化目標波動率約為15%。</li>
+                            <li>股票型ETF之投資比重不低於投資組合之60%。</li>
+                            <li>需分散投資於至少5檔以上之ETF標的。</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!--彈窗ETF投資須知-->
+        <div class="popup info" style="display: none;" id="info3">
+            <strong>ETF投資須知</strong>
+            <br>
+            <ul class="list number">
+                <li><i>1.</i>本文宣網站頁面並非為ETF/股票(以下簡稱本商品)銷售之要約或要約之引誘。本行未就本商品之收益或盈虧為任何保證，亦不分擔投資風險。</li>
+                <li><i>2.</i>本商品投資並非存款；亦非屬存款保險承保範圍，客戶投資本商品前應自行了解判斷並自負盈虧。</li>
+                <li><i>3.</i>投資人於交易前應充分了解本商品之性質及相關財務、會計、稅制或法律等事宜，自行審度本身財務狀況及風險承受程度，始決定是否進行投資，以免因交易遭到無法承受之損失。</li>
+                <li><i>4.</i>本商品投資之各項風險均應由客戶自行承擔，相關風險包括市場風險、匯兌風險、投資風險、流動性風險及信用風險等，最大可能損失為全部投資本金。</li>
+                <li><i>5.</i>本商品過去的績效不代表未來的表現，其價格可能上漲或下跌。</li>
+                <li><i>6.</i>本商品之公開資訊可由國內外有價證券交易所或該公司官方網站上獲得，客戶應自行了解相關資訊。</li>
+                <li><i>7.</i>外幣投資及外幣存款可能產生匯兌收益或損失，投資人承作各幣別存款或投資仍應審慎評估，並自行承擔因此產生之風險。</li>
+                <li><i>8.</i>奈米投平台本頁面上所提供的資料只供參考用途，未經台北富邦銀行(本行)同意，不得複製、轉載或為任何散佈。本行將盡力提供正確之資訊，惟本行對於所載資料之完整性、即時性和正確性不做任何擔保，如有錯誤或疏漏，本行或關係企業與其任何董事或受僱人，並不負任何法律責任。投資人應自行判斷資料內容之正確性。</li>
+            </ul>
+        </div>
+        
+        <!--彈窗歷史績效計算說明-->
+        <div class="popup info" style="display: none;" id="info4">
+            <strong>歷史績效計算說明</strong>
+            <br>
+            <ul class="list number">
+                <li><i>1.</i>歷史報酬表現係依照所選擇之投資策略下指定風險偏好等級的標的配置與投資比例進行最近15個年度績效回測試算，若標的歷史資料期間未滿15個年度，則以該標的所對應市場之市場主要指數進行替代。因此本績效回測有可能有部分資料非為標的之真實歷史資料，且其結果並未考量費用、標的流動性、以及投資人交易方式與投資時間落差。</li>
+                <li><i>2.</i>本數據主要目的為提供客戶所選擇之投資策略下指定風險偏好等級於過去年度之漲跌表現參考，並非以過去之績效做為未來績效之保證。</li>
+                <li><i>3.</i>各年度報酬率計算，若有該年度資料未滿一年之狀況，該年度報酬率一律依未滿一年的實際資料計算後再轉換成年化報酬率呈現。</li>
+                <li><i>4.</i>績效回測試算的基準日原則上為產出試算數據的前一月底日，舉例來說，若2021/5/10進行試算，則試算的期間將為2007/1/1~2021/4/30 (共15個年度)。</li>
+            </ul>
+            <p><small>資料來源：Bloomberg</small></p>
+        </div>
+        
+        <!--彈窗投資模擬說明-->
+        <div class="popup info" style="display: none;" id="info5">
+            <strong>投資模擬說明</strong>
+            <br>
+            <ul class="list number">
+                <li><i>1.</i>本績效模擬乃是根據投資策略下指定風險偏好等級的標的配置結果所產出之投組報酬率與投組波動度(標準差)為基準，並假設投資組合價格未來變動符合幾何布朗運動(Geometric Browning Motion)走勢，且投組報酬率分配呈現常態分配。以投資金額、投組報酬率、投組波動度(標準差)、投資期間、標準常態分配累積機率值等變數進行統計運算，推估投資組合價格變化的可能結果。惟本模擬之結果僅供參考，無法保證其準確性，亦不代表本投資組合之實際報酬率及未來績效保證，未來實際狀況有可能與模擬數值出現大幅落差。</li>
+                <li><i>2.</i>綠色區域(模擬90%的機率下，投資金額在未來特定時點的可能價值區間；綠色圓點數值代表為一般情況下，模擬投資金額在未來特定時點之平均可能價值)</li>
+                <li><i>3.</i>灰色圓點數值代表較差情況(即模擬投資金額在未來遇到較差情況(5%機率)下的最大值。也就是說，有5%的機率會小於或等於此數值。代表在較差情況發生時，投資金額在未來特定時點不會高過此價值)</li>
+                <li><i>4.</i>資料期間：投資試算日當月月底日~投資模擬截止日</li>
+            </ul>
+        </div>
+
+        <!--彈窗產業類別-->
+        <div class="popup" style="display: none;" id="popup2">
+            <strong>產業類別</strong>
+            <ul class="category-list">
+                <li>資訊科技 <span>38<small>%</small></span></li>
+                <li>金融服務 <span>17<small>%</small></span></li>
+                <li>半導體產業 <span>12<small>%</small></span></li>
+                <li>通訊電信 <span>9<small>%</small></span></li>
+                <li>醫療服務 <span>7<small>%</small></span></li>
+                <li>能源產業 <span>5<small>%</small></span></li>
+                <li>其他 <span>12<small>%</small></span></li>
+            </ul>
+        </div>
+
+        <!--彈窗調整投資方式-->
+        <div class="popup" style="display: none;" id="popup1">
+            <strong>調整投資方式</strong>
+            <form>
+                <fieldset>
+                    <label>投資市場</label>
+                    <div class="right">
+                        <select id="select">
+                            <option value="world">全球市場</option>
+                            <option>台灣市場</option>
+                        </select>
+                        <b class="select-title" id="select-title">全球市場</b>
+                    </div>
+                </fieldset>
+                <div id="world">
+                    <fieldset>
+                        <label>投資目標</label>
+                        <div class="right">
+                            <select id="select1-1">
+                                <option value="請選擇">請選擇</option>
+                                <option>旅遊購物</option>
+                                <option>準備創業圓夢基金</option>
+                                <option>準備購屋頭期款</option>
+                                <option>存小孩教育費</option>
+                                <option>增加收入提早退休</option>
+                                <option>不為什麼，就是要有錢</option>
+                            </select>
+                            <b class="select-title" id="select-title1-1">請選擇</b>
+                        </div>
+                    </fieldset>
+                    <fieldset>
+                        <label>投資心態</label>
+                        <div class="right">
+                            <select id="select1-2">
+                                <option value="請選擇">請選擇</option>
+                                <option>我只想穩穩賺，不想承受太大的波動</option>
+                                <option>我想要安心賺，可承受一點市場波動</option>
+                                <option>我追求資產穩健成長，可承受市場波動</option>
+                                <option>我追求資產加速增值，可承受市場波動</option>
+                            </select>
+                            <b class="select-title" id="select-title1-2">請選擇</b>
+                        </div>
+                    </fieldset>
+                    <fieldset>
+                        <label>投資方式</label>
+                        <div class="right">
+                            <select id="select1-3">
+                                <option value="請選擇">請選擇</option>
+                                <option>一筆錢一次投入</option>
+                                <option>每個月定期投資</option>
+                                <option>一筆錢一次投入，搭配每月定期投資</option>
+                            </select>
+                            <b class="select-title" id="select-title1-3">請選擇</b>
+                        </div>
+                    </fieldset>
+                    <fieldset style="display: none;" id="money1-input">
+                        <label for="money1">單筆投資金額</label>
+                        <div class="right">
+                            <div class="title">美金</div>
+                            <input type="tel" min="35" max="250000" placeholder="請輸入數字" id="money1" class="small">
+                            <small>請輸入35~250,000的整數</small>
+                            <div class="unit">元</div>
+                        </div>
+                    </fieldset>
+                    <fieldset>
+                        <label for="time1">投資期間</label>
+                        <div class="right">
+                            <input type="tel" min="1" max="30" placeholder="請輸入數字" id="time1">
+                            <small>請輸入1~30的整數</small>
+                            <div class="unit">年</div>
+                        </div>
+                    </fieldset>
+                    <fieldset class="submit" id="submit1">
+                        <button type="button">重新試算 <img src="svg/result/icon-return-web.svg"></button>
+                    </fieldset>
+                </div>
+                <div id="taiwan" style="display: none;">
+                    <fieldset>
+                        <label>投資心態</label>
+                        <div class="right">
+                            <select id="select2-1">
+                                <option value="請選擇">請選擇</option>
+                                <option>我比較保守，只想讓資產穩穩成長</option>
+                                <option>我偏好領配息，追求穩定收益</option>
+                                <option>我看好永續議題，追求企業永續成長</option>
+                                <option>我喜歡超前部署，掌握未來新趨勢</option>
+                            </select>
+                            <b class="select-title" id="select-title2-1">請選擇</b>
+                        </div>
+                    </fieldset>
+                    <fieldset>
+                        <label>投資方式</label>
+                        <div class="right">
+                            <select id="select2-2">
+                                <option value="請選擇">請選擇</option>
+                                <option>一筆錢一次投入</option>
+                                <option>每個月定期投資</option>
+                                <option>一筆錢一次投入，搭配每月定期投資</option>
+                            </select>
+                            <b class="select-title" id="select-title2-2">請選擇</b>
+                        </div>
+                    </fieldset>
+                    <fieldset style="display: none;" id="money2-input">
+                        <label for="money2">單筆投資金額</label>
+                        <div class="right">
+                            <div class="title">台幣</div>
+                            <input type="tel" min="1000" max="10000000" placeholder="請輸入數字" id="money2" class="small">
+                            <small>請輸入1,000~10,000,000的整數</small>
+                            <div class="unit">元</div>
+                        </div>
+                    </fieldset>
+                    <fieldset>
+                        <label>配息方式</label>
+                        <div class="right">
+                            <select id="select2-3">
+                                <option value="請選擇">請選擇</option>
+                                <option>配息再投資</option>
+                                <option>配息入帳戶</option>
+                            </select>
+                            <b class="select-title" id="select-title2-3">請選擇</b>
+                        </div>
+                    </fieldset>
+                    <fieldset>
+                        <label for="time2">投資期間</label>
+                        <div class="right">
+                            <input type="tel" min="1" max="30" placeholder="請輸入數字" id="time2">
+                            <small>請輸入1~30的整數</small>
+                            <div class="unit">年</div>
+                        </div>
+                    </fieldset>
+                    <fieldset class="submit" id="submit2">
+                        <button type="button">重新試算 <img src="svg/result/icon-return-web.svg"></button>
+                    </fieldset>
+                </div>
+            </form>
+        </div>
+        <!--/調整投資方式-->
 
         <!--buy button-->
         <div class="new-plan pc-show"> <img src="svg/robot-02.svg" alt=""> <a href="#">新增<br>
@@ -955,5 +931,198 @@
     <!-- NAVIGATION BAR END -->
 
 </body>
+<script>
+    $(function() {
+        $("#tabs1,#tabs2,#sm-tabs1,#sm-tabs2").tabs();
+    });
+
+    $(".popup #link1").click(function() {
+        $(this).addClass('active');
+        $('.popup #link2').removeClass('active');
+    });
+
+    $(".popup #link2").click(function() {
+        $(this).addClass('active');
+        $('.popup #link1').removeClass('active');
+    });
+
+    $("#submit1 button").click(function() {
+        var t1 = $('#time1').val();
+        var m1 = $('#money1').val();
+        if ($.trim($("#select1-1").val()) == "請選擇") {
+            alert("請確實選擇投資目標");
+        } else if ($.trim($("#select1-2").val()) == "請選擇") {
+            alert("請確實選擇投資心態");
+        } else if ($.trim($("#select1-3").val()) == "請選擇") {
+            alert("請確實選擇投資方式");
+        } else if (m1 < 35) {
+            alert("請確認單筆投資金額");
+        } else if (m1 > 250000) {
+            alert("請確認單筆投資金額");
+        } else if (t1 < 1) {
+            alert("請確認投資期間");
+        } else if (t1 > 30) {
+            alert("請確認投資期間");
+        } else {
+            window.location.reload();
+        }
+    });
+
+    $("#submit2 button").click(function() {
+        var t2 = $('#time2').val();
+        var m2 = $('#money2').val();
+        if ($.trim($("#select2-1").val()) == "請選擇") {
+            alert("請確實選擇投資心態");
+        } else if ($.trim($("#select2-2").val()) == "請選擇") {
+            alert("請確實選擇投資方式");
+        } else if (m2 < 35) {
+            alert("請確認單筆投資金額");
+        } else if (m2 > 250000) {
+            alert("請確認單筆投資金額");
+        } else if ($.trim($("#select2-3").val()) == "請選擇") {
+            alert("請確實選擇配息方式");
+        } else if (t2 < 1) {
+            alert("請確認投資期間");
+        } else if (t2 > 30) {
+            alert("請確認投資期間");
+        } else {
+            window.location.reload();
+        }
+    });
+
+    $('.more-btn1').on('click', function() {
+        $(this).hide();
+        $('#more-show1').show();
+    });
+
+    $('.more-btn2').on('click', function() {
+        $(this).hide();
+        $('#more-show2').show();
+    });
+
+    $(document).ready(function() {
+        $('#time1').on('input', function(e) {
+            var n = $('#time1').val();
+            $('#time1+small').hide();
+
+            if (n < 1) {
+                $('#time1+small').show();
+            }
+
+            if (n > 30) {
+                $('#time1+small').show();
+            }
+
+        });
+        $('#time2').on('input', function(e) {
+            var n = $('#time2').val();
+            $('#time2+small').hide();
+
+            if (n < 1) {
+                $('#time2+small').show();
+            }
+
+            if (n > 30) {
+                $('#time2+small').show();
+            }
+
+        });
+        $('#money1').on('input', function(e) {
+
+            var n = $('#money1').val();
+            $('#money1+small').hide();
+
+            if (n < 35) {
+                $('#money1+small').show();
+            }
+
+            if (n > 250000) {
+                $('#money1+small').show();
+            }
+
+        });
+        $('#money2').on('input', function(e) {
+            var n = $('#money2').val();
+            $('#money2+small').hide();
+
+            if (n < 1000) {
+                $('#money2+small').show();
+            }
+
+            if (n > 10000000) {
+                $('#money2+small').show();
+            }
+
+        });
+    });
+
+    $('#select').on('change', function() {
+        if (this.value == "world") {
+            $('#world').show();
+            $('#taiwan').hide();
+        } else {
+            $('#taiwan').show();
+            $('#world').hide();
+        }
+        $('#select-title').text($('option:selected', this).text());
+    }).change();
+    $('#select1-1').on('change', function() {
+        $('#select-title1-1').text($('option:selected', this).text());
+        if (this.value == "請選擇") {
+            $('#select-title1-1').css("color", "#828282");
+        } else {
+            $('#select-title1-1').css("color", "#191919");
+        }
+    }).change();
+    $('#select1-2').on('change', function() {
+        $('#select-title1-2').text($('option:selected', this).text());
+        if (this.value == "請選擇") {
+            $('#select-title1-2').css("color", "#828282");
+        } else {
+            $('#select-title1-2').css("color", "#191919");
+        }
+
+    }).change();
+    $('#select1-3').on('change', function() {
+        $('#select-title1-3').text($('option:selected', this).text());
+        if (this.value == "請選擇") {
+            $('#select-title1-3').css("color", "#828282");
+            $('#money1-input').hide();
+        } else {
+            $('#select-title1-3').css("color", "#191919");
+            $('#money1-input').show();
+        }
+
+    }).change();
+    $('#select2-1').on('change', function() {
+        $('#select-title2-1').text($('option:selected', this).text());
+        if (this.value == "請選擇") {
+            $('#select-title2-1').css("color", "#828282");
+        } else {
+            $('#select-title2-1').css("color", "#191919");
+        }
+
+    }).change();
+    $('#select2-2').on('change', function() {
+        $('#select-title2-2').text($('option:selected', this).text());
+        if (this.value == "請選擇") {
+            $('#select-title2-2').css("color", "#828282");
+            $('#money2-input').hide();
+        } else {
+            $('#select-title2-2').css("color", "#191919");
+            $('#money2-input').show();
+        }
+
+    }).change();
+    $('#select2-3').on('change', function() {
+        $('#select-title2-3').text($('option:selected', this).text());
+        if (this.value == "請選擇") {
+            $('#select-title2-3').css("color", "#828282");
+        } else {
+            $('#select-title2-3').css("color", "#191919");
+        }
+
+    }).change();
+</script>
 
 </html>
