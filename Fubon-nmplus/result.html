@@ -597,6 +597,17 @@
                                 <div class="unit">元</div>
                             </div>
                         </fieldset>
+                        <fieldset>
+                            <label for="time1">投資期間</label>
+                            <div class="right">
+                                <input type="tel" min="1" max="30" placeholder="請輸入數字" id="time1">
+                                <small>請輸入1~30的整數</small>
+                                <div class="unit">年</div>
+                            </div>
+                        </fieldset>
+                        <fieldset class="submit" id="submit1">
+                            <button type="button">重新試算 <img src="svg/result/icon-return-web.svg"></button>
+                        </fieldset>
                     </div>
                     <div id="taiwan" style="display: none;">
                         <fieldset>
@@ -644,37 +655,94 @@
                                 <b class="select-title" id="select-title2-3">請選擇</b>
                             </div>
                         </fieldset>
+                        <fieldset>
+                            <label for="time2">投資期間</label>
+                            <div class="right">
+                                <input type="tel" min="1" max="30" placeholder="請輸入數字" id="time2">
+                                <small>請輸入1~30的整數</small>
+                                <div class="unit">年</div>
+                            </div>
+                        </fieldset>
+                        <fieldset class="submit" id="submit2">
+                            <button type="button">重新試算 <img src="svg/result/icon-return-web.svg"></button>
+                        </fieldset>
                     </div>
-                    <fieldset>
-                        <label for="time">投資期間</label>
-                        <div class="right">
-                            <input type="tel" min="1" max="30" placeholder="請輸入數字" id="time">
-                            <small>請輸入1~30的整數</small>
-                            <div class="unit">年</div>
-                        </div>
-                    </fieldset>
-                    <fieldset class="submit">
-                        <button>重新試算 <img src="svg/result/icon-return-web.svg"></button>
-                    </fieldset>
                 </form>
             </div>
             <script>
+                $("#submit1 button").click(function() {
+                    var t1 = $('#time1').val();
+                    var m1 = $('#money1').val();
+                    if ($.trim($("#select1-1").val()) == "請選擇") {
+                        alert("請確實選擇投資目標");
+                    } else if ($.trim($("#select1-2").val()) == "請選擇") {
+                        alert("請確實選擇投資心態");
+                    } else if ($.trim($("#select1-3").val()) == "請選擇") {
+                        alert("請確實選擇投資方式");
+                    } else if (m1 < 35) {
+                        alert("請確認單筆投資金額");
+                    } else if (m1 > 250000) {
+                        alert("請確認單筆投資金額");
+                    } else if (t1 < 1) {
+                        alert("請確認投資期間");
+                    } else if (t1 > 30) {
+                        alert("請確認投資期間");
+                    } else {
+                        window.location.reload();
+                    }
+                });
+                
+                $("#submit2 button").click(function() {
+                    var t2 = $('#time2').val();
+                    var m2 = $('#money2').val();
+                    if ($.trim($("#select2-1").val()) == "請選擇") {
+                        alert("請確實選擇投資心態");
+                    } else if ($.trim($("#select2-2").val()) == "請選擇") {
+                        alert("請確實選擇投資方式");
+                    } else if (m2 < 35) {
+                        alert("請確認單筆投資金額");
+                    } else if (m2 > 250000) {
+                        alert("請確認單筆投資金額");
+                    } else if ($.trim($("#select2-3").val()) == "請選擇") {
+                        alert("請確實選擇配息方式");
+                    } else if (t2 < 1) {
+                        alert("請確認投資期間");
+                    } else if (t2 > 30) {
+                        alert("請確認投資期間");
+                    } else {
+                        window.location.reload();
+                    }
+                });
+
                 $('.more-btn').on('click', function() {
                     $(this).hide();
                     $('#more-show').show();
                 });
 
                 $(document).ready(function() {
-                    $('#time').on('input', function(e) {
-                        var n = $('#time').val();
-                        $('#time+small').hide();
+                    $('#time1').on('input', function(e) {
+                        var n = $('#time1').val();
+                        $('#time1+small').hide();
 
                         if (n < 1) {
-                            $('#time+small').show();
+                            $('#time1+small').show();
                         }
 
                         if (n > 30) {
-                            $('#time+small').show();
+                            $('#time1+small').show();
+                        }
+
+                    });
+                    $('#time2').on('input', function(e) {
+                        var n = $('#time2').val();
+                        $('#time2+small').hide();
+
+                        if (n < 1) {
+                            $('#time2+small').show();
+                        }
+
+                        if (n > 30) {
+                            $('#time2+small').show();
                         }
 
                     });
