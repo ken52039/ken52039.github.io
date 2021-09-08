@@ -265,6 +265,7 @@ body .scrollContainer .content .chart {
     font-family: Rajdhani;
     font-size: 24px;
     font-weight: 600;
+    border-radius: 0 !important;
 }
 
 .popup form fieldset input.small {
