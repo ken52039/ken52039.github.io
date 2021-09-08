@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="73" height="72" viewBox="0 0 73 72">
+    <defs>
+        <circle id="a" cx="36" cy="36" r="36"/>
+        <path id="c" d="M0 0h23.538v10.385c0 6.5-5.269 11.769-11.769 11.769S0 16.884 0 10.384V0z"/>
+    </defs>
+    <g fill="none" fill-rule="evenodd" transform="translate(.5)">
+        <mask id="b" fill="#fff">
+            <use xlink:href="#a"/>
+        </mask>
+        <use fill="#90A4E0" xlink:href="#a"/>
+        <g mask="url(#b)">
+            <g transform="translate(4 4)">
+                <circle cx="32" cy="32" r="30" stroke="#CAD3F0"/>
+                <circle cx="32" cy="62" r="2" fill="#CAD3F0"/>
+                <circle cx="32" cy="2" r="2" fill="#FECF64"/>
+                <circle cx="2" cy="32" r="2" fill="#FECF64"/>
+                <circle cx="62" cy="32" r="2" fill="#CAD3F0"/>
+            </g>
+        </g>
+        <g mask="url(#b)">
+            <g transform="rotate(45 36 36)">
+                <circle cx="36" cy="36" r="25" stroke="#CAD3F0"/>
+                <circle cx="35.828" cy="10.828" r="2" fill="#FECF64" transform="rotate(45 35.828 10.828)"/>
+                <circle cx="35.828" cy="60.828" r="2" fill="#FECF64" transform="rotate(45 35.828 60.828)"/>
+                <circle cx="10.828" cy="35.828" r="2" fill="#CAD3F0" transform="rotate(45 10.828 35.828)"/>
+                <circle cx="60.828" cy="35.828" r="2" fill="#FECF64" transform="rotate(45 60.828 35.828)"/>
+            </g>
+        </g>
+        <g mask="url(#b)">
+            <path fill="#FECF64" fill-rule="nonzero" d="M44.308 33.423V35.5c6.197 0 9.436-3.24 9.344-9.362l-.016-1.023h-9.328v2.077h7.247c-.248 4.25-2.564 6.231-7.247 6.231zM27.346 33.423V35.5c-6.197 0-9.436-3.24-9.344-9.362l.015-1.023h9.33v2.077h-7.248c.248 4.25 2.563 6.231 7.247 6.231z"/>
+            <use fill="#FECF64" transform="translate(24.23 22)" xlink:href="#c"/>
+            <path fill="#FECF64" d="M33.231 35.846h5.538v14.538h-5.538z"/>
+            <path fill="#FECF64" d="M33.23 46.23h5.54a7.615 7.615 0 0 1 7.615 7.616h-20.77a7.615 7.615 0 0 1 7.616-7.615z"/>
+            <g fill="#CC9945">
+                <path d="M36 27.538h5.538v5.622c0 1.671-.86 3.224-2.277 4.11L36 39.308v-11.77z"/>
+                <path fill-rule="nonzero" d="M31.154 28.23v4.93c0 1.432.738 2.764 1.952 3.523L36 38.49l2.894-1.808a4.154 4.154 0 0 0 1.952-3.523v-4.93h-9.692zm-.692-.692h11.076v5.622c0 1.671-.86 3.224-2.277 4.11L36 39.308l-3.26-2.038a4.846 4.846 0 0 1-2.278-4.11v-5.622z"/>
+            </g>
+            <path fill="#FEF9ED" d="M24.231 22h23.538v1.385H24.231z"/>
+        </g>
+    </g>
+</svg>

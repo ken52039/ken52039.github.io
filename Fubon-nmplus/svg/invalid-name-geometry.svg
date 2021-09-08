@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1403" height="945" viewBox="0 0 1403 945">
+    <g fill="none" fill-rule="evenodd" opacity=".3">
+        <path stroke="#4668CB" stroke-width="3" d="M656.799 275.997l31.18-7.198 7.198 31.18-31.18 7.198zM1103.799 406.997l31.18-7.198 7.198 31.18-31.18 7.198zM656.799 657.997l31.18-7.198 7.198 31.18-31.18 7.198z" opacity=".6" style="mix-blend-mode:overlay"/>
+        <path stroke="#4668CB" stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M1383.5 10l17.5 35h-35zM868.123 410.374l-12.374 37.123L831 422.75zM612.99 41.573L581.92 17.787l31.458-15.343zM36.29 905.093L1.88 886.46l28.67-20.075z" opacity=".6" style="mix-blend-mode:overlay"/>
+        <circle cx="19.5" cy="19.5" r="17.5" stroke="#4668CB" stroke-width="3" opacity=".6" style="mix-blend-mode:overlay" transform="translate(1082 119)"/>
+        <circle cx="19.5" cy="19.5" r="17.5" stroke="#4668CB" stroke-width="3" opacity=".6" style="mix-blend-mode:overlay" transform="translate(55 521)"/>
+        <circle cx="19.5" cy="19.5" r="17.5" stroke="#4668CB" stroke-width="3" opacity=".6" style="mix-blend-mode:overlay" transform="translate(829 851)"/>
+        <circle cx="19.5" cy="19.5" r="17.5" stroke="#4668CB" stroke-width="3" opacity=".6" style="mix-blend-mode:overlay" transform="translate(186 48)"/>
+        <g fill="#4668CB" opacity=".6">
+            <path fill-rule="nonzero" d="M899.598 7.098l-14.5 25.115 25.115 14.5 14.5-25.115-25.115-14.5zM898.5 3l30.31 17.5-17.5 30.31L881 33.31 898.5 3z"/>
+            <path d="M893.598 17.49l25.115 14.5 1.5-2.598-25.115-14.5z"/>
+        </g>
+        <g fill="#4668CB" opacity=".6">
+            <path fill-rule="nonzero" d="M258.178 397.934l23.756 16.633 16.633-23.755-23.755-16.634-16.634 23.756zm-4.178.736L274.075 370l28.67 20.075-20.075 28.67L254 398.67z"/>
+            <path d="M268.008 404.817l16.634-23.756-2.458-1.72-16.633 23.755z"/>
+        </g>
+        <g fill="#4668CB" opacity=".6">
+            <path fill-rule="nonzero" d="M1287.178 923.934l23.756 16.633 16.633-23.755-23.755-16.634-16.634 23.756zm-4.178.736l20.075-28.67 28.67 20.075-20.075 28.67L1283 924.67z"/>
+            <path d="M1297.008 930.817l16.634-23.756-2.458-1.72-16.633 23.755z"/>
+        </g>
+        <g fill="#4668CB" opacity=".6">
+            <path fill-rule="nonzero" d="M360.867 795.083l22.216-18.641-18.641-22.216-22.216 18.641 18.641 22.216zm-.37 4.226L338 772.498 364.812 750l22.497 26.812-26.811 22.497z"/>
+            <path d="M370.06 787.37l-18.641-22.216-2.298 1.928 18.64 22.216z"/>
+        </g>
+        <g fill="#4668CB" fill-rule="nonzero" opacity=".6">
+            <path d="M1233.098 267.213l14.5-25.115 25.115 14.5-14.5 25.115-25.115-14.5zM1229 268.31l30.31 17.5 17.5-30.311-30.31-17.5-17.5 30.31z"/>
+            <path d="M1239.098 256.82l25.115 14.5-1.5 2.599-25.115-14.5z"/>
+        </g>
+        <circle cx="19.5" cy="19.5" r="17.5" stroke="#4668CB" stroke-width="3" opacity=".6" style="mix-blend-mode:overlay" transform="translate(426 172)"/>
+        <g stroke="#4668CB" stroke-linecap="round" stroke-linejoin="round" stroke-width="3" opacity=".597">
+            <path d="M931 234l11.25-11 11.25 11 11.25-11L976 234M931 252l11.25-11 11.25 11 11.25-11L976 252" style="mix-blend-mode:overlay"/>
+        </g>
+        <g stroke="#4668CB" stroke-linecap="round" stroke-linejoin="round" stroke-width="3" opacity=".597">
+            <path d="M448 540l11.25-11 11.25 11 11.25-11L493 540M448 558l11.25-11 11.25 11 11.25-11L493 558" style="mix-blend-mode:overlay"/>
+        </g>
+        <g stroke="#4668CB" stroke-linecap="round" stroke-linejoin="round" stroke-width="3" opacity=".597">
+            <path d="M97 291l11.25-11 11.25 11 11.25-11L142 291M97 309l11.25-11 11.25 11 11.25-11L142 309" style="mix-blend-mode:overlay"/>
+        </g>
+        <g stroke="#4668CB" stroke-linecap="round" stroke-linejoin="round" stroke-width="3" opacity=".597">
+            <path d="M1334 500l11.25-11 11.25 11 11.25-11 11.25 11M1334 518l11.25-11 11.25 11 11.25-11 11.25 11" style="mix-blend-mode:overlay"/>
+        </g>
+        <g stroke="#4668CB" stroke-linecap="round" stroke-linejoin="round" stroke-width="3" opacity=".597">
+            <path d="M1034 564l11.25-11 11.25 11 11.25-11 11.25 11M1034 582l11.25-11 11.25 11 11.25-11 11.25 11" style="mix-blend-mode:overlay"/>
+        </g>
+    </g>
+</svg>

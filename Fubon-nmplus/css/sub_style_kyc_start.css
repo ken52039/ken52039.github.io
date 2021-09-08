@@ -1,0 +1,323 @@
+/*font-----------------------------------------------------------------------------------*/
+html { font-family: Verdana, 'Microsoft JhengHei', '微軟正黑體', sans-serif; } 
+/*@font-face {
+  font-family: 'cwTeXHei';
+  font-style: normal;
+  font-weight: 500;
+  src: url(//fonts.gstatic.com/ea/cwtexhei/v3/cwTeXHei-zhonly.eot);
+  src: url(//fonts.gstatic.com/ea/cwtexhei/v3/cwTeXHei-zhonly.eot?#iefix) format('embedded-opentype'), url(//fonts.gstatic.com/ea/cwtexhei/v3/cwTeXHei-zhonly.woff2) format('woff2'), url(//fonts.gstatic.com/ea/cwtexhei/v3/cwTeXHei-zhonly.woff) format('woff'), url(//fonts.gstatic.com/ea/cwtexhei/v3/cwTeXHei-zhonly.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Noto Sans TC';
+  font-style: normal;
+  font-weight: 100;
+  src: url(//fonts.gstatic.com/ea/notosanstc/v1/NotoSansTC-Thin.woff2) format('woff2'), url(//fonts.gstatic.com/ea/notosanstc/v1/NotoSansTC-Thin.woff) format('woff'), url(//fonts.gstatic.com/ea/notosanstc/v1/NotoSansTC-Thin.otf) format('opentype');
+}
+@font-face {
+  font-family: 'Noto Sans TC';
+  font-style: normal;
+  font-weight: 300;
+  src: url(//fonts.gstatic.com/ea/notosanstc/v1/NotoSansTC-Light.woff2) format('woff2'), url(//fonts.gstatic.com/ea/notosanstc/v1/NotoSansTC-Light.woff) format('woff'), url(//fonts.gstatic.com/ea/notosanstc/v1/NotoSansTC-Light.otf) format('opentype');
+}
+@font-face {
+  font-family: 'Noto Sans TC';
+  font-style: normal;
+  font-weight: 400;
+  src: url(//fonts.gstatic.com/ea/notosanstc/v1/NotoSansTC-Regular.woff2) format('woff2'), url(//fonts.gstatic.com/ea/notosanstc/v1/NotoSansTC-Regular.woff) format('woff'), url(//fonts.gstatic.com/ea/notosanstc/v1/NotoSansTC-Regular.otf) format('opentype');
+}
+@font-face {
+  font-family: 'Noto Sans TC';
+  font-style: normal;
+  font-weight: 500;
+  src: url(//fonts.gstatic.com/ea/notosanstc/v1/NotoSansTC-Medium.woff2) format('woff2'), url(//fonts.gstatic.com/ea/notosanstc/v1/NotoSansTC-Medium.woff) format('woff'), url(//fonts.gstatic.com/ea/notosanstc/v1/NotoSansTC-Medium.otf) format('opentype');
+}
+@font-face {
+  font-family: 'Noto Sans TC';
+  font-style: normal;
+  font-weight: 700;
+  src: url(//fonts.gstatic.com/ea/notosanstc/v1/NotoSansTC-Bold.woff2) format('woff2'), url(//fonts.gstatic.com/ea/notosanstc/v1/NotoSansTC-Bold.woff) format('woff'), url(//fonts.gstatic.com/ea/notosanstc/v1/NotoSansTC-Bold.otf) format('opentype');
+}
+@font-face {
+  font-family: 'Noto Sans TC';
+  font-style: normal;
+  font-weight: 900;
+  src: url(//fonts.gstatic.com/ea/notosanstc/v1/NotoSansTC-Black.woff2) format('woff2'), url(//fonts.gstatic.com/ea/notosanstc/v1/NotoSansTC-Black.woff) format('woff'), url(//fonts.gstatic.com/ea/notosanstc/v1/NotoSansTC-Black.otf) format('opentype');
+}*/
+
+/*color-------------------------------------------------------------------------------------*/
+@-webkit-keyframes fancybox-rotate {
+  from {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(359deg);
+    transform: rotate(359deg);
+  }
+}
+@keyframes fancybox-rotate {
+  from {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(359deg);
+    transform: rotate(359deg);
+  }
+}
+/*---------------------------------------------------
+    LESS Elements 0.9
+  ---------------------------------------------------
+    A set of useful LESS mixins
+    More info at: http://lesselements.com
+  ---------------------------------------------------*/
+.scrollContent {
+  background-image: url(../svg/blue_bg.svg);
+  background-position: center;
+  background-size: contain;
+  background-attachment: fixed;
+  background-color: #011b4e;
+  padding-top: 56px;
+}
+.scrollContent .main {
+  width: 100vw;
+  min-height: calc(100vh - 110px - 56px);
+  display: flex;
+}
+.scrollContent .main section {
+  display: inline-block;
+  width: 680px;
+  max-width: calc(100vw - 88px);
+  background: #FFF;
+  margin: 80px auto auto;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.6);
+}
+.scrollContent .main section .top {
+  width: 100%;
+  height: 145px;
+  display: inline-block;
+  border-radius: 8px 8px 0 0 ;
+  background-color: #316fc9;
+  text-align: center;
+  padding: 39px 0 80px;
+  letter-spacing: 1px;
+}
+.scrollContent .main section .top h1 {
+  font-size: 18px;
+  font-weight: 300;
+  color: #FFF;
+}
+.scrollContent .main section .bottom {
+  min-height: 218px;
+  width: 100%;
+  padding: 0 0 24px;
+}
+.scrollContent .main section .bottom .card {
+  width: 272px;
+  display: inline-block;
+  background: #FFF;
+  margin-top: -64px;
+  padding: 16px 16px 8px;
+  box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.3);
+  margin-left: calc(50% - 136px);
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+.scrollContent .main section .bottom .card h2 {
+  color: #316fc9;
+  font-weight: 500;
+  font-size: 20px;
+  text-align: center;
+  line-height: 28px;
+}
+.scrollContent .main section .bottom .card p {
+  font-size: 14px;
+  text-align: center;
+  font-weight: 300;
+  line-height: 22px;
+  margin: 8px 0;
+}
+.scrollContent .main section .bottom .card span {
+  font-size: 12px;
+  text-align: center;
+  display: block;
+  font-weight: 300;
+  color: #7f7f7f;
+}
+.scrollContent .main section .bottom > a {
+  font-size: 14px;
+  font-weight: 300;
+  letter-spacing: 1px;
+  color: #316fc9;
+  display: inline-block;
+  margin-top: 16px;
+  margin-left: calc(50% - 20px);
+  text-decoration: underline;
+}
+.scrollContent .main section .bottom .btn-box {
+  margin-top: 40px;
+  margin-left: calc(50% - 160px);
+}
+.scrollContent .main section .bottom .btn-box a {
+  width: 140px;
+  display: inline-block;
+  line-height: 48px;
+  font-size: 16px;
+  text-align: center;
+  border-radius: 100px;
+  letter-spacing: 1px;
+  font-weight: 500;
+}
+.scrollContent .main section .bottom .btn-box a:nth-child(1) {
+  border: 1px solid #01b1b1;
+  color: #01b1b1;
+  box-sizing: border-box;
+}
+.scrollContent .main section .bottom .btn-box a:nth-child(2) {
+  color: #FFF;
+  background-image: linear-gradient(90deg, #093e7e, #2ad2b8);
+  margin-left: 40px;
+}
+.scrollContent .main section .notice {
+  width: 100%;
+  height: 32px;
+  overflow-y: hidden;
+  background-color: #f5f5f5;
+  border-radius: 0 0 8px 8px;
+  -webkit-tap-highlight-color: transparent;
+  letter-spacing: 1px;
+  padding: 0 32px;
+  transition: .5s;
+}
+.scrollContent .main section .notice h2 {
+  text-align: center;
+  cursor: pointer;
+  line-height: 32px;
+  font-size: 12px;
+  font-weight: 300;
+}
+.scrollContent .main section .notice h2:after {
+  content: '';
+  display: inline-block;
+  width: 0;
+  transition: .5s;
+  transform-origin: 50% 33%;
+  height: 0;
+  border-top: 5px solid #000;
+  border-right: 5px solid transparent;
+  border-bottom: 1.5px solid transparent;
+  border-left: 5px solid transparent;
+  margin-left: 15px;
+}
+.scrollContent .main section .notice ol {
+  margin: 9px 0 16px;
+  line-height: 20px;
+  padding-left: 24px;
+  font-size: 12px;
+  font-weight: 300;
+}
+.scrollContent .main section .notice.open h2:after {
+  transform: rotateZ(180deg);
+}
+@media screen and (max-width: 1300px) {
+  .scrollContent .main {
+    min-height: calc(100vh - 138px - 56px);
+  }
+}
+
+/*color-------------------------------------------------------------------------------------*/
+@-webkit-keyframes fancybox-rotate {
+  from {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(359deg);
+    transform: rotate(359deg);
+  }
+}
+@keyframes fancybox-rotate {
+  from {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(359deg);
+    transform: rotate(359deg);
+  }
+}
+/*---------------------------------------------------
+    LESS Elements 0.9
+  ---------------------------------------------------
+    A set of useful LESS mixins
+    More info at: http://lesselements.com
+  ---------------------------------------------------*/
+@media screen and (max-width: 992px) {
+  .scrollContent .main {
+    min-height: calc(100vh - 185px - 56px);
+  }
+  .scrollContent .main section {
+    margin-bottom: auto;
+    min-height: 395px;
+  }
+}
+
+/*color-------------------------------------------------------------------------------------*/
+@-webkit-keyframes fancybox-rotate {
+  from {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(359deg);
+    transform: rotate(359deg);
+  }
+}
+@keyframes fancybox-rotate {
+  from {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(359deg);
+    transform: rotate(359deg);
+  }
+}
+/*---------------------------------------------------
+    LESS Elements 0.9
+  ---------------------------------------------------
+    A set of useful LESS mixins
+    More info at: http://lesselements.com
+  ---------------------------------------------------*/
+@media screen and (max-width: 600px) {
+  .scrollContent {
+    padding-top: 48px;
+  }
+  .scrollContent .main {
+    min-height: calc(100vh - 364px - 48px);
+    align-items: flex-start;
+  }
+  .scrollContent .main section {
+    height: auto;
+    min-height: 395px;
+    margin: 24px auto;
+    max-width: calc(100vw - 16px);
+  }
+  .scrollContent .main section .bottom .btn-box {
+    width: 100%;
+    margin-left: 0;
+    display: flex;
+  }
+  .scrollContent .main section .bottom .btn-box a {
+    margin: auto;
+    line-height: 48px;
+    height: 48px;
+  }
+  .scrollContent .main section .bottom .btn-box a:nth-child(1) {
+    margin-right: 0px;
+  }
+  .scrollContent .main section .bottom .btn-box a:nth-child(2) {
+    margin-left: 8px;
+  }
+}

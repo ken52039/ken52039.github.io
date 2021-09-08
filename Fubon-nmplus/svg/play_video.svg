@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="68" height="68" viewBox="0 0 68 68">
+  <defs>
+    <circle id="play_video-b" cx="32" cy="32" r="30"/>
+    <filter id="play_video-a" width="123.3%" height="123.3%" x="-8.3%" y="-8.3%" filterUnits="objectBoundingBox">
+      <feOffset dx="2" dy="2" in="SourceAlpha" result="shadowOffsetOuter1"/>
+      <feGaussianBlur in="shadowOffsetOuter1" result="shadowBlurOuter1" stdDeviation="2"/>
+      <feComposite in="shadowBlurOuter1" in2="SourceAlpha" operator="out" result="shadowBlurOuter1"/>
+      <feColorMatrix in="shadowBlurOuter1" values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.4 0"/>
+    </filter>
+  </defs>
+  <g fill="none" fill-rule="evenodd">
+    <use fill="#000" filter="url(#play_video-a)" xlink:href="#play_video-b"/>
+    <use fill="#FFF" fill-opacity=".9" xlink:href="#play_video-b"/>
+    <path fill="#4A4A4A" d="M21.503871,15.8772581 L48.5192362,31.6362211 C48.9962881,31.9145014 49.1574243,32.5268191 48.879144,33.003871 C48.7922253,33.1528747 48.6682398,33.2768601 48.5192362,33.3637789 L21.503871,49.1227419 C21.0268191,49.4010222 20.4145014,49.2398859 20.1362211,48.762834 C20.0470084,48.609898 20,48.4360176 20,48.258963 L20,16.741037 C20,16.1887522 20.4477153,15.741037 21,15.741037 C21.1770546,15.741037 21.350935,15.7880454 21.503871,15.8772581 Z"/>
+  </g>
+</svg>

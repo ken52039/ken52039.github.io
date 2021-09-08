@@ -1,0 +1,591 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1403" height="900" viewBox="0 0 1403 900">
+  <defs>
+    <rect id="幾何黃-a" width="56" height="16" rx="2"/>
+    <rect id="幾何黃-c" width="56" height="16" rx="2"/>
+    <rect id="幾何黃-e" width="56" height="16" rx="2"/>
+    <rect id="幾何黃-g" width="56" height="16" rx="2"/>
+    <rect id="幾何黃-i" width="56" height="16" rx="2"/>
+    <rect id="幾何黃-k" width="56" height="16" rx="2"/>
+    <rect id="幾何黃-m" width="56" height="16" rx="2"/>
+    <rect id="幾何黃-o" width="56" height="16" rx="2"/>
+    <rect id="幾何黃-q" width="56" height="16" rx="2"/>
+    <rect id="幾何黃-s" width="56" height="16" rx="2"/>
+    <rect id="幾何黃-u" width="56" height="16" rx="2"/>
+    <rect id="幾何黃-w" width="56" height="16" rx="2"/>
+    <rect id="幾何黃-y" width="56" height="16" rx="2"/>
+    <rect id="幾何黃-A" width="56" height="16" rx="2"/>
+    <rect id="幾何黃-C" width="56" height="16" rx="2"/>
+    <rect id="幾何黃-E" width="56" height="16" rx="2"/>
+    <rect id="幾何黃-G" width="56" height="16" rx="2"/>
+    <rect id="幾何黃-I" width="56" height="16" rx="2"/>
+    <rect id="幾何黃-K" width="56" height="16" rx="2"/>
+    <rect id="幾何黃-M" width="56" height="16" rx="2"/>
+    <rect id="幾何黃-O" width="56" height="16" rx="2"/>
+    <rect id="幾何黃-Q" width="56" height="16" rx="2"/>
+    <rect id="幾何黃-S" width="56" height="16" rx="2"/>
+    <rect id="幾何黃-U" width="56" height="16" rx="2"/>
+    <rect id="幾何黃-W" width="56" height="16" rx="2"/>
+    <rect id="幾何黃-Y" width="56" height="16" rx="2"/>
+    <rect id="幾何黃-aa" width="56" height="16" rx="2"/>
+    <rect id="幾何黃-ac" width="56" height="16" rx="2"/>
+    <rect id="幾何黃-ae" width="56" height="16" rx="2"/>
+    <rect id="幾何黃-ag" width="56" height="16" rx="2"/>
+    <rect id="幾何黃-ai" width="56" height="16" rx="2"/>
+    <rect id="幾何黃-ak" width="56" height="16" rx="2"/>
+    <rect id="幾何黃-am" width="56" height="16" rx="2"/>
+    <rect id="幾何黃-ao" width="56" height="16" rx="2"/>
+    <rect id="幾何黃-aq" width="56" height="16" rx="2"/>
+    <rect id="幾何黃-as" width="56" height="16" rx="2"/>
+    <rect id="幾何黃-au" width="56" height="16" rx="2"/>
+    <rect id="幾何黃-aw" width="56" height="16" rx="2"/>
+    <rect id="幾何黃-ay" width="56" height="16" rx="2"/>
+    <rect id="幾何黃-aA" width="56" height="16" rx="2"/>
+    <rect id="幾何黃-aC" width="56" height="16" rx="2"/>
+    <rect id="幾何黃-aE" width="56" height="16" rx="2"/>
+    <rect id="幾何黃-aG" width="56" height="16" rx="2"/>
+    <rect id="幾何黃-aI" width="56" height="16" rx="2"/>
+  </defs>
+  <g fill="none" fill-rule="evenodd" transform="translate(-3)">
+    <g opacity=".25">
+      <rect width="32" height="32" x="1109.988" y="439.988" stroke="#F5AC02" stroke-width="3" opacity=".6" style="mix-blend-mode:overlay" transform="rotate(-13 1125.988 455.988)"/>
+      <polygon stroke="#F5AC02" stroke-linecap="round" stroke-linejoin="round" stroke-width="3" points="17.5 0 35 35 0 35" opacity=".6" style="mix-blend-mode:overlay" transform="translate(1369 97)"/>
+      <polygon stroke="#F5AC02" stroke-linecap="round" stroke-linejoin="round" stroke-width="3" points="24.749 7.249 42.249 42.249 7.249 42.249" opacity=".6" style="mix-blend-mode:overlay" transform="rotate(45 -194.053 1323.118)"/>
+      <polygon stroke="#F5AC02" stroke-linecap="round" stroke-linejoin="round" stroke-width="3" points="24.749 7.249 42.249 42.249 7.249 42.249" opacity=".6" style="mix-blend-mode:overlay" transform="rotate(154 262.137 99.617)"/>
+      <circle cx="17.5" cy="17.5" r="17.5" stroke="#F5AC02" stroke-width="3" opacity=".6" style="mix-blend-mode:overlay" transform="translate(1087 158)"/>
+      <circle cx="17.5" cy="17.5" r="17.5" stroke="#F5AC02" stroke-width="3" opacity=".6" style="mix-blend-mode:overlay" transform="translate(60 560)"/>
+      <circle cx="17.5" cy="17.5" r="17.5" stroke="#F5AC02" stroke-width="3" opacity=".6" style="mix-blend-mode:overlay" transform="translate(834 890)"/>
+      <circle cx="17.5" cy="17.5" r="17.5" stroke="#F5AC02" stroke-width="3" opacity=".6" style="mix-blend-mode:overlay" transform="translate(171 117)"/>
+      <g fill="#F5AC02" opacity=".6" transform="rotate(30 465.75 1738.203)">
+        <path fill-rule="nonzero" d="M3,3 L3,32 L32,32 L32,3 L3,3 Z M-1.13686838e-13,0 L35,0 L35,35 L-1.13686838e-13,35 L-1.13686838e-13,0 Z"/>
+        <polygon points="3 15 32 15 32 12 3 12"/>
+      </g>
+      <g fill="#F5AC02" opacity=".6" transform="rotate(-55 546.957 -29.011)">
+        <path fill-rule="nonzero" d="M3,3 L3,32 L32,32 L32,3 L3,3 Z M-1.13686838e-13,0 L35,0 L35,35 L-1.13686838e-13,35 L-1.13686838e-13,0 Z"/>
+        <polygon points="3 15 32 15 32 12 3 12"/>
+      </g>
+      <g fill="#F5AC02" opacity=".6" transform="rotate(-130 376.737 333.404)">
+        <path fill-rule="nonzero" d="M3,3 L3,32 L32,32 L32,3 L3,3 Z M-1.13686838e-13,0 L35,0 L35,35 L-1.13686838e-13,35 L-1.13686838e-13,0 Z"/>
+        <polygon points="3 15 32 15 32 12 3 12"/>
+      </g>
+      <g fill="#F5AC02" fill-rule="nonzero" opacity=".6" transform="scale(1 -1) rotate(-30 46.282 -2451.599)">
+        <path d="M3,3 L3,32 L32,32 L32,3 L3,3 Z M0,0 L35,0 L35,35 L0,35 L0,0 Z"/>
+        <polygon points="3 15 32 15 32 12 3 12"/>
+      </g>
+      <circle cx="17.5" cy="17.5" r="17.5" stroke="#F5AC02" stroke-width="3" opacity=".6" style="mix-blend-mode:overlay" transform="translate(431 211)"/>
+      <g stroke="#F5AC02" stroke-linecap="round" stroke-linejoin="round" stroke-width="3" opacity=".597" transform="translate(934 260)">
+        <polyline points="0 11 11.25 0 22.5 11 33.75 0 45 11" style="mix-blend-mode:overlay"/>
+        <polyline points="0 29 11.25 18 22.5 29 33.75 18 45 29" style="mix-blend-mode:overlay"/>
+      </g>
+      <g stroke="#F5AC02" stroke-linecap="round" stroke-linejoin="round" stroke-width="3" opacity=".597" transform="translate(451 566)">
+        <polyline points="0 11 11.25 0 22.5 11 33.75 0 45 11" style="mix-blend-mode:overlay"/>
+        <polyline points="0 29 11.25 18 22.5 29 33.75 18 45 29" style="mix-blend-mode:overlay"/>
+      </g>
+      <g stroke="#F5AC02" stroke-linecap="round" stroke-linejoin="round" stroke-width="3" opacity=".597" transform="translate(100 317)">
+        <polyline points="0 11 11.25 0 22.5 11 33.75 0 45 11" style="mix-blend-mode:overlay"/>
+        <polyline points="0 29 11.25 18 22.5 29 33.75 18 45 29" style="mix-blend-mode:overlay"/>
+      </g>
+      <g stroke="#F5AC02" stroke-linecap="round" stroke-linejoin="round" stroke-width="3" opacity=".597" transform="translate(1337 526)">
+        <polyline points="0 11 11.25 0 22.5 11 33.75 0 45 11" style="mix-blend-mode:overlay"/>
+        <polyline points="0 29 11.25 18 22.5 29 33.75 18 45 29" style="mix-blend-mode:overlay"/>
+      </g>
+      <g stroke="#F5AC02" stroke-linecap="round" stroke-linejoin="round" stroke-width="3" opacity=".597" transform="translate(1037 654)">
+        <polyline points="0 11 11.25 0 22.5 11 33.75 0 45 11" style="mix-blend-mode:overlay"/>
+        <polyline points="0 29 11.25 18 22.5 29 33.75 18 45 29" style="mix-blend-mode:overlay"/>
+      </g>
+    </g>
+    <g transform="translate(49 675)">
+      <g transform="translate(6 89)">
+        <g transform="matrix(-1 0 0 1 1278 85)">
+          <mask id="幾何黃-b" fill="#fff">
+            <use xlink:href="#幾何黃-a"/>
+          </mask>
+          <use fill="#F5AC02" xlink:href="#幾何黃-a"/>
+          <rect width="60" height="3" x="-2" fill="#FAC343" mask="url(#幾何黃-b)" style="mix-blend-mode:hard-light"/>
+          <rect width="2" height="13" x="6" y="3" fill="#FAC343" mask="url(#幾何黃-b)" style="mix-blend-mode:hard-light"/>
+          <rect width="2" height="13" x="24" y="3" fill="#FAC343" mask="url(#幾何黃-b)" style="mix-blend-mode:hard-light"/>
+          <rect width="2" height="13" x="42" y="3" fill="#FAC343" mask="url(#幾何黃-b)" style="mix-blend-mode:hard-light"/>
+        </g>
+        <g transform="translate(1222 102)">
+          <mask id="幾何黃-d" fill="#fff">
+            <use xlink:href="#幾何黃-c"/>
+          </mask>
+          <use fill="#F5AC02" xlink:href="#幾何黃-c"/>
+          <rect width="60" height="3" x="-2" fill="#FAC343" mask="url(#幾何黃-d)" style="mix-blend-mode:hard-light"/>
+          <rect width="2" height="13" x="6" y="3" fill="#FAC343" mask="url(#幾何黃-d)" style="mix-blend-mode:hard-light"/>
+          <rect width="2" height="13" x="24" y="3" fill="#FAC343" mask="url(#幾何黃-d)" style="mix-blend-mode:hard-light"/>
+          <rect width="2" height="13" x="42" y="3" fill="#FAC343" mask="url(#幾何黃-d)" style="mix-blend-mode:hard-light"/>
+        </g>
+        <g transform="matrix(-1 0 0 1 1278 119)">
+          <mask id="幾何黃-f" fill="#fff">
+            <use xlink:href="#幾何黃-e"/>
+          </mask>
+          <use fill="#F5AC02" xlink:href="#幾何黃-e"/>
+          <rect width="60" height="3" x="-2" fill="#FAC343" mask="url(#幾何黃-f)" style="mix-blend-mode:hard-light"/>
+          <rect width="2" height="13" x="6" y="3" fill="#FAC343" mask="url(#幾何黃-f)" style="mix-blend-mode:hard-light"/>
+          <rect width="2" height="13" x="24" y="3" fill="#FAC343" mask="url(#幾何黃-f)" style="mix-blend-mode:hard-light"/>
+          <rect width="2" height="13" x="42" y="3" fill="#FAC343" mask="url(#幾何黃-f)" style="mix-blend-mode:hard-light"/>
+        </g>
+        <g transform="translate(1094 85)">
+          <mask id="幾何黃-h" fill="#fff">
+            <use xlink:href="#幾何黃-g"/>
+          </mask>
+          <use fill="#F5AC02" xlink:href="#幾何黃-g"/>
+          <rect width="60" height="3" x="-2" fill="#FAC343" mask="url(#幾何黃-h)" style="mix-blend-mode:hard-light"/>
+          <rect width="2" height="13" x="6" y="3" fill="#FAC343" mask="url(#幾何黃-h)" style="mix-blend-mode:hard-light"/>
+          <rect width="2" height="13" x="24" y="3" fill="#FAC343" mask="url(#幾何黃-h)" style="mix-blend-mode:hard-light"/>
+          <rect width="2" height="13" x="42" y="3" fill="#FAC343" mask="url(#幾何黃-h)" style="mix-blend-mode:hard-light"/>
+        </g>
+        <g transform="matrix(-1 0 0 1 1150 102)">
+          <mask id="幾何黃-j" fill="#fff">
+            <use xlink:href="#幾何黃-i"/>
+          </mask>
+          <use fill="#F5AC02" xlink:href="#幾何黃-i"/>
+          <rect width="60" height="3" x="-2" fill="#FAC343" mask="url(#幾何黃-j)" style="mix-blend-mode:hard-light"/>
+          <rect width="2" height="13" x="6" y="3" fill="#FAC343" mask="url(#幾何黃-j)" style="mix-blend-mode:hard-light"/>
+          <rect width="2" height="13" x="24" y="3" fill="#FAC343" mask="url(#幾何黃-j)" style="mix-blend-mode:hard-light"/>
+          <rect width="2" height="13" x="42" y="3" fill="#FAC343" mask="url(#幾何黃-j)" style="mix-blend-mode:hard-light"/>
+        </g>
+        <g transform="translate(1094 119)">
+          <mask id="幾何黃-l" fill="#fff">
+            <use xlink:href="#幾何黃-k"/>
+          </mask>
+          <use fill="#F5AC02" xlink:href="#幾何黃-k"/>
+          <rect width="60" height="3" x="-2" fill="#FAC343" mask="url(#幾何黃-l)" style="mix-blend-mode:hard-light"/>
+          <rect width="2" height="13" x="6" y="3" fill="#FAC343" mask="url(#幾何黃-l)" style="mix-blend-mode:hard-light"/>
+          <rect width="2" height="13" x="24" y="3" fill="#FAC343" mask="url(#幾何黃-l)" style="mix-blend-mode:hard-light"/>
+          <rect width="2" height="13" x="42" y="3" fill="#FAC343" mask="url(#幾何黃-l)" style="mix-blend-mode:hard-light"/>
+        </g>
+        <g transform="translate(71 85)">
+          <mask id="幾何黃-n" fill="#fff">
+            <use xlink:href="#幾何黃-m"/>
+          </mask>
+          <use fill="#F5AC02" xlink:href="#幾何黃-m"/>
+          <rect width="60" height="3" x="-2" fill="#FAC343" mask="url(#幾何黃-n)" style="mix-blend-mode:hard-light"/>
+          <rect width="2" height="13" x="6" y="3" fill="#FAC343" mask="url(#幾何黃-n)" style="mix-blend-mode:hard-light"/>
+          <rect width="2" height="13" x="24" y="3" fill="#FAC343" mask="url(#幾何黃-n)" style="mix-blend-mode:hard-light"/>
+          <rect width="2" height="13" x="42" y="3" fill="#FAC343" mask="url(#幾何黃-n)" style="mix-blend-mode:hard-light"/>
+        </g>
+        <g transform="translate(71 102)">
+          <mask id="幾何黃-p" fill="#fff">
+            <use xlink:href="#幾何黃-o"/>
+          </mask>
+          <use fill="#F5AC02" xlink:href="#幾何黃-o"/>
+          <rect width="60" height="3" x="-2" fill="#FAC343" mask="url(#幾何黃-p)" style="mix-blend-mode:hard-light"/>
+          <rect width="2" height="13" x="6" y="3" fill="#FAC343" mask="url(#幾何黃-p)" style="mix-blend-mode:hard-light"/>
+          <rect width="2" height="13" x="24" y="3" fill="#FAC343" mask="url(#幾何黃-p)" style="mix-blend-mode:hard-light"/>
+          <rect width="2" height="13" x="42" y="3" fill="#FAC343" mask="url(#幾何黃-p)" style="mix-blend-mode:hard-light"/>
+        </g>
+        <g transform="matrix(-1 0 0 1 127 119)">
+          <mask id="幾何黃-r" fill="#fff">
+            <use xlink:href="#幾何黃-q"/>
+          </mask>
+          <use fill="#F5AC02" xlink:href="#幾何黃-q"/>
+          <rect width="60" height="3" x="-2" fill="#FAC343" mask="url(#幾何黃-r)" style="mix-blend-mode:hard-light"/>
+          <rect width="2" height="13" x="6" y="3" fill="#FAC343" mask="url(#幾何黃-r)" style="mix-blend-mode:hard-light"/>
+          <rect width="2" height="13" x="24" y="3" fill="#FAC343" mask="url(#幾何黃-r)" style="mix-blend-mode:hard-light"/>
+          <rect width="2" height="13" x="42" y="3" fill="#FAC343" mask="url(#幾何黃-r)" style="mix-blend-mode:hard-light"/>
+        </g>
+        <g transform="matrix(-1 0 0 1 56 119)">
+          <mask id="幾何黃-t" fill="#fff">
+            <use xlink:href="#幾何黃-s"/>
+          </mask>
+          <use fill="#F5AC02" xlink:href="#幾何黃-s"/>
+          <rect width="60" height="3" x="-2" fill="#FAC343" mask="url(#幾何黃-t)" style="mix-blend-mode:hard-light"/>
+          <rect width="2" height="13" x="6" y="3" fill="#FAC343" mask="url(#幾何黃-t)" style="mix-blend-mode:hard-light"/>
+          <rect width="2" height="13" x="24" y="3" fill="#FAC343" mask="url(#幾何黃-t)" style="mix-blend-mode:hard-light"/>
+          <rect width="2" height="13" x="42" y="3" fill="#FAC343" mask="url(#幾何黃-t)" style="mix-blend-mode:hard-light"/>
+        </g>
+        <g transform="matrix(-1 0 0 1 130 34)">
+          <mask id="幾何黃-v" fill="#fff">
+            <use xlink:href="#幾何黃-u"/>
+          </mask>
+          <use fill="#F5AC02" xlink:href="#幾何黃-u"/>
+          <rect width="60" height="3" x="-2" fill="#FAC343" mask="url(#幾何黃-v)" style="mix-blend-mode:hard-light"/>
+          <rect width="2" height="13" x="6" y="3" fill="#FAC343" mask="url(#幾何黃-v)" style="mix-blend-mode:hard-light"/>
+          <rect width="2" height="13" x="24" y="3" fill="#FAC343" mask="url(#幾何黃-v)" style="mix-blend-mode:hard-light"/>
+          <rect width="2" height="13" x="42" y="3" fill="#FAC343" mask="url(#幾何黃-v)" style="mix-blend-mode:hard-light"/>
+        </g>
+        <g transform="translate(71 51)">
+          <mask id="幾何黃-x" fill="#fff">
+            <use xlink:href="#幾何黃-w"/>
+          </mask>
+          <use fill="#F5AC02" xlink:href="#幾何黃-w"/>
+          <rect width="60" height="3" x="-2" fill="#FAC343" mask="url(#幾何黃-x)" style="mix-blend-mode:hard-light"/>
+          <rect width="2" height="13" x="6" y="3" fill="#FAC343" mask="url(#幾何黃-x)" style="mix-blend-mode:hard-light"/>
+          <rect width="2" height="13" x="24" y="3" fill="#FAC343" mask="url(#幾何黃-x)" style="mix-blend-mode:hard-light"/>
+          <rect width="2" height="13" x="42" y="3" fill="#FAC343" mask="url(#幾何黃-x)" style="mix-blend-mode:hard-light"/>
+        </g>
+        <g transform="translate(73)">
+          <mask id="幾何黃-z" fill="#fff">
+            <use xlink:href="#幾何黃-y"/>
+          </mask>
+          <use fill="#F5AC02" xlink:href="#幾何黃-y"/>
+          <rect width="60" height="3" x="-2" fill="#FAC343" mask="url(#幾何黃-z)" style="mix-blend-mode:hard-light"/>
+          <rect width="2" height="13" x="6" y="3" fill="#FAC343" mask="url(#幾何黃-z)" style="mix-blend-mode:hard-light"/>
+          <rect width="2" height="13" x="24" y="3" fill="#FAC343" mask="url(#幾何黃-z)" style="mix-blend-mode:hard-light"/>
+          <rect width="2" height="13" x="42" y="3" fill="#FAC343" mask="url(#幾何黃-z)" style="mix-blend-mode:hard-light"/>
+        </g>
+        <g transform="matrix(-1 0 0 1 132 17)">
+          <mask id="幾何黃-B" fill="#fff">
+            <use xlink:href="#幾何黃-A"/>
+          </mask>
+          <use fill="#F5AC02" xlink:href="#幾何黃-A"/>
+          <rect width="60" height="3" x="-2" fill="#FAC343" mask="url(#幾何黃-B)" style="mix-blend-mode:hard-light"/>
+          <rect width="2" height="13" x="6" y="3" fill="#FAC343" mask="url(#幾何黃-B)" style="mix-blend-mode:hard-light"/>
+          <rect width="2" height="13" x="24" y="3" fill="#FAC343" mask="url(#幾何黃-B)" style="mix-blend-mode:hard-light"/>
+          <rect width="2" height="13" x="42" y="3" fill="#FAC343" mask="url(#幾何黃-B)" style="mix-blend-mode:hard-light"/>
+        </g>
+        <g transform="matrix(-1 0 0 1 127 68)">
+          <mask id="幾何黃-D" fill="#fff">
+            <use xlink:href="#幾何黃-C"/>
+          </mask>
+          <use fill="#F5AC02" xlink:href="#幾何黃-C"/>
+          <rect width="60" height="3" x="-2" fill="#FAC343" mask="url(#幾何黃-D)" style="mix-blend-mode:hard-light"/>
+          <rect width="2" height="13" x="6" y="3" fill="#FAC343" mask="url(#幾何黃-D)" style="mix-blend-mode:hard-light"/>
+          <rect width="2" height="13" x="24" y="3" fill="#FAC343" mask="url(#幾何黃-D)" style="mix-blend-mode:hard-light"/>
+          <rect width="2" height="13" x="42" y="3" fill="#FAC343" mask="url(#幾何黃-D)" style="mix-blend-mode:hard-light"/>
+        </g>
+        <g transform="matrix(-1 0 0 1 267 85)">
+          <mask id="幾何黃-F" fill="#fff">
+            <use xlink:href="#幾何黃-E"/>
+          </mask>
+          <use fill="#F5AC02" xlink:href="#幾何黃-E"/>
+          <rect width="60" height="3" x="-2" fill="#FAC343" mask="url(#幾何黃-F)" style="mix-blend-mode:hard-light"/>
+          <rect width="2" height="13" x="6" y="3" fill="#FAC343" mask="url(#幾何黃-F)" style="mix-blend-mode:hard-light"/>
+          <rect width="2" height="13" x="24" y="3" fill="#FAC343" mask="url(#幾何黃-F)" style="mix-blend-mode:hard-light"/>
+          <rect width="2" height="13" x="42" y="3" fill="#FAC343" mask="url(#幾何黃-F)" style="mix-blend-mode:hard-light"/>
+        </g>
+        <g transform="matrix(-1 0 0 1 267 102)">
+          <mask id="幾何黃-H" fill="#fff">
+            <use xlink:href="#幾何黃-G"/>
+          </mask>
+          <use fill="#F5AC02" xlink:href="#幾何黃-G"/>
+          <rect width="60" height="3" x="-2" fill="#FAC343" mask="url(#幾何黃-H)" style="mix-blend-mode:hard-light"/>
+          <rect width="2" height="13" x="6" y="3" fill="#FAC343" mask="url(#幾何黃-H)" style="mix-blend-mode:hard-light"/>
+          <rect width="2" height="13" x="24" y="3" fill="#FAC343" mask="url(#幾何黃-H)" style="mix-blend-mode:hard-light"/>
+          <rect width="2" height="13" x="42" y="3" fill="#FAC343" mask="url(#幾何黃-H)" style="mix-blend-mode:hard-light"/>
+        </g>
+        <g transform="translate(211 119)">
+          <mask id="幾何黃-J" fill="#fff">
+            <use xlink:href="#幾何黃-I"/>
+          </mask>
+          <use fill="#F5AC02" xlink:href="#幾何黃-I"/>
+          <rect width="60" height="3" x="-2" fill="#FAC343" mask="url(#幾何黃-J)" style="mix-blend-mode:hard-light"/>
+          <rect width="2" height="13" x="6" y="3" fill="#FAC343" mask="url(#幾何黃-J)" style="mix-blend-mode:hard-light"/>
+          <rect width="2" height="13" x="24" y="3" fill="#FAC343" mask="url(#幾何黃-J)" style="mix-blend-mode:hard-light"/>
+          <rect width="2" height="13" x="42" y="3" fill="#FAC343" mask="url(#幾何黃-J)" style="mix-blend-mode:hard-light"/>
+        </g>
+        <g transform="translate(220 68)">
+          <mask id="幾何黃-L" fill="#fff">
+            <use xlink:href="#幾何黃-K"/>
+          </mask>
+          <use fill="#F5AC02" xlink:href="#幾何黃-K"/>
+          <rect width="60" height="3" x="-2" fill="#FAC343" mask="url(#幾何黃-L)" style="mix-blend-mode:hard-light"/>
+          <rect width="2" height="13" x="6" y="3" fill="#FAC343" mask="url(#幾何黃-L)" style="mix-blend-mode:hard-light"/>
+          <rect width="2" height="13" x="24" y="3" fill="#FAC343" mask="url(#幾何黃-L)" style="mix-blend-mode:hard-light"/>
+          <rect width="2" height="13" x="42" y="3" fill="#FAC343" mask="url(#幾何黃-L)" style="mix-blend-mode:hard-light"/>
+        </g>
+        <g transform="translate(923 119)">
+          <mask id="幾何黃-N" fill="#fff">
+            <use xlink:href="#幾何黃-M"/>
+          </mask>
+          <use fill="#F5AC02" xlink:href="#幾何黃-M"/>
+          <rect width="60" height="3" x="-2" fill="#FAC343" mask="url(#幾何黃-N)" style="mix-blend-mode:hard-light"/>
+          <rect width="2" height="13" x="6" y="3" fill="#FAC343" mask="url(#幾何黃-N)" style="mix-blend-mode:hard-light"/>
+          <rect width="2" height="13" x="24" y="3" fill="#FAC343" mask="url(#幾何黃-N)" style="mix-blend-mode:hard-light"/>
+          <rect width="2" height="13" x="42" y="3" fill="#FAC343" mask="url(#幾何黃-N)" style="mix-blend-mode:hard-light"/>
+        </g>
+        <g transform="matrix(-1 0 0 1 1047 102)">
+          <mask id="幾何黃-P" fill="#fff">
+            <use xlink:href="#幾何黃-O"/>
+          </mask>
+          <use fill="#F5AC02" xlink:href="#幾何黃-O"/>
+          <rect width="60" height="3" x="-2" fill="#FAC343" mask="url(#幾何黃-P)" style="mix-blend-mode:hard-light"/>
+          <rect width="2" height="13" x="6" y="3" fill="#FAC343" mask="url(#幾何黃-P)" style="mix-blend-mode:hard-light"/>
+          <rect width="2" height="13" x="24" y="3" fill="#FAC343" mask="url(#幾何黃-P)" style="mix-blend-mode:hard-light"/>
+          <rect width="2" height="13" x="42" y="3" fill="#FAC343" mask="url(#幾何黃-P)" style="mix-blend-mode:hard-light"/>
+        </g>
+        <g transform="translate(991 119)">
+          <mask id="幾何黃-R" fill="#fff">
+            <use xlink:href="#幾何黃-Q"/>
+          </mask>
+          <use fill="#F5AC02" xlink:href="#幾何黃-Q"/>
+          <rect width="60" height="3" x="-2" fill="#FAC343" mask="url(#幾何黃-R)" style="mix-blend-mode:hard-light"/>
+          <rect width="2" height="13" x="6" y="3" fill="#FAC343" mask="url(#幾何黃-R)" style="mix-blend-mode:hard-light"/>
+          <rect width="2" height="13" x="24" y="3" fill="#FAC343" mask="url(#幾何黃-R)" style="mix-blend-mode:hard-light"/>
+          <rect width="2" height="13" x="42" y="3" fill="#FAC343" mask="url(#幾何黃-R)" style="mix-blend-mode:hard-light"/>
+        </g>
+      </g>
+      <g transform="translate(949)">
+        <polygon fill="#C5C5C5" fill-rule="nonzero" points="133.438 192.875 140.938 192.875 140.938 224.875 133.438 224.875" transform="matrix(-1 0 0 1 274.375 0)"/>
+        <polygon fill="#C5C5C5" fill-rule="nonzero" points="97.813 192.875 105.313 192.875 105.313 224.875 97.813 224.875" transform="matrix(-1 0 0 1 203.125 0)"/>
+        <g transform="translate(70 20)">
+          <path stroke="#C5C5C5" stroke-width="7" d="M14.0640825,119.139687 C5.56086432,98.3313032 3.92518701,81.3581705 9.15705055,68.2202892 C14.3889141,55.082408 23.8375435,46.7379479 37.5029388,43.1869091" transform="rotate(-4 21.835 81.163)"/>
+          <rect width="95.625" height="110" x="4.35" y="72.293" fill="#E1E1E1" transform="scale(-1 1) rotate(-4 0 1621.022)"/>
+          <rect width="20" height="110" x="79.883" y="74.93" fill="#C5C5C5" transform="scale(-1 1) rotate(-4 0 2703.83)"/>
+          <g transform="scale(-1 1) rotate(-4 1369.313 892.627)">
+            <polygon fill="#E82087" points="21.605 4.065 25.98 15.94 17.23 15.94"/>
+            <rect width="9.375" height="13.75" fill="#4668CB" rx="4.688"/>
+            <rect width="8.75" height="13.75" x="30.541" fill="#4668CB" rx="4.375"/>
+          </g>
+          <g transform="rotate(16 15.687 137.206)">
+            <circle cx="28" cy="28" r="28" fill="#FAC343"/>
+            <circle cx="28" cy="28" r="24" fill="#F5AC02" stroke="#FFF" stroke-width="2"/>
+            <path fill="#FFF" d="M28.3100808,14 C31.5636657,14 34.1200538,14.6584636 35.940512,16.014124 C37.8771696,17.4472506 39.0004311,19.6937735 39.2715632,22.7149595 L34.7785174,22.7149595 C34.3911858,21.0107008 33.6552559,19.7712398 32.6481939,19.0353099 C31.641132,18.2606469 30.0918058,17.9120485 28.0776819,17.9120485 C26.33469,17.9120485 25.0177627,18.1444474 24.0881671,18.6479784 C22.9261725,19.2289757 22.3839083,20.1973045 22.3839083,21.5142317 C22.3839083,22.6762263 23.0036388,23.6445552 24.320566,24.3417519 C24.9015633,24.6516172 26.4896226,25.2326145 29.0460107,26.0460107 C32.8031266,27.2080053 35.2045821,28.137601 36.2891104,28.7573314 C38.6905659,30.1904581 39.8912936,32.1658489 39.8912936,34.722237 C39.8912936,37.2011588 38.9229648,39.1765497 36.9863071,40.6096763 C35.0496495,42.0040699 32.2995956,42.7399998 28.7748786,42.7399998 C25.3663611,42.7399998 22.6937735,42.0815362 20.795849,40.764609 C18.4718598,39.1378165 17.1936658,36.5814284 17,33.0567114 L21.4930458,33.0567114 C21.802911,35.1483017 22.5388409,36.6588947 23.7395687,37.5497572 C24.824097,38.3244203 26.4896226,38.750485 28.7748786,38.750485 C30.7890026,38.750485 32.415795,38.4018866 33.5777896,37.743423 C34.7397842,37.0462262 35.3595147,36.1553637 35.3595147,34.9933691 C35.3595147,33.5215093 34.4686522,32.3595147 32.7643934,31.5073853 C32.2221293,31.2362532 30.4404042,30.6165228 27.3804851,29.6869271 C23.9719676,28.6023988 21.8416442,27.8277357 21.0282479,27.3629379 C18.8979245,26.0847438 17.8521294,24.2255525 17.8521294,21.7853638 C17.8521294,19.3451752 18.8591914,17.4085175 20.9507816,16.014124 C22.8874393,14.6584636 25.327628,14 28.3100808,14 Z"/>
+            <rect width="5" height="4" x="26" y="11" fill="#FFF"/>
+            <rect width="5" height="4" x="26" y="42" fill="#FFF"/>
+          </g>
+          <path stroke="#E1E1E1" stroke-width="7" d="M95.8084011,122.005899 C81.4587882,105.761791 75.684616,89.6045112 78.4858847,73.534059 C81.2871533,57.4636067 92.5265028,46.9477372 112.203933,41.9864502" transform="scale(-1 1) rotate(-4 0 2802.49)"/>
+        </g>
+        <path fill="#F8BE5F" d="M75.5 0C78.8012412 11.6666667 84.6345746 17.5 93 17.5 84.6741961 17.5 78.8408628 23.3333333 75.5 35 72.4709892 23.3333333 66.6376558 17.5 58 17.5 66.6376558 17.5 72.4709892 11.6666667 75.5 0zM177.5 22C179.858029 30.3333333 184.024696 34.5 190 34.5 184.052997 34.5 179.886331 38.6666667 177.5 47 175.336421 38.6666667 171.169754 34.5 165 34.5 171.169754 34.5 175.336421 30.3333333 177.5 22zM45.5 47C47.8580295 55.3333333 52.0246961 59.5 58 59.5 52.0529972 59.5 47.8863306 63.6666667 45.5 72 43.3364208 63.6666667 39.1697542 59.5 33 59.5 39.1697542 59.5 43.3364208 55.3333333 45.5 47z"/>
+      </g>
+      <g>
+        <g transform="translate(6 89)">
+          <g transform="matrix(-1 0 0 1 1278 85)">
+            <mask id="幾何黃-T" fill="#fff">
+              <use xlink:href="#幾何黃-S"/>
+            </mask>
+            <use fill="#F5AC02" xlink:href="#幾何黃-S"/>
+            <rect width="60" height="3" x="-2" fill="#FAC343" mask="url(#幾何黃-T)" style="mix-blend-mode:hard-light"/>
+            <rect width="2" height="13" x="6" y="3" fill="#FAC343" mask="url(#幾何黃-T)" style="mix-blend-mode:hard-light"/>
+            <rect width="2" height="13" x="24" y="3" fill="#FAC343" mask="url(#幾何黃-T)" style="mix-blend-mode:hard-light"/>
+            <rect width="2" height="13" x="42" y="3" fill="#FAC343" mask="url(#幾何黃-T)" style="mix-blend-mode:hard-light"/>
+          </g>
+          <g transform="translate(1222 102)">
+            <mask id="幾何黃-V" fill="#fff">
+              <use xlink:href="#幾何黃-U"/>
+            </mask>
+            <use fill="#F5AC02" xlink:href="#幾何黃-U"/>
+            <rect width="60" height="3" x="-2" fill="#FAC343" mask="url(#幾何黃-V)" style="mix-blend-mode:hard-light"/>
+            <rect width="2" height="13" x="6" y="3" fill="#FAC343" mask="url(#幾何黃-V)" style="mix-blend-mode:hard-light"/>
+            <rect width="2" height="13" x="24" y="3" fill="#FAC343" mask="url(#幾何黃-V)" style="mix-blend-mode:hard-light"/>
+            <rect width="2" height="13" x="42" y="3" fill="#FAC343" mask="url(#幾何黃-V)" style="mix-blend-mode:hard-light"/>
+          </g>
+          <g transform="matrix(-1 0 0 1 1278 119)">
+            <mask id="幾何黃-X" fill="#fff">
+              <use xlink:href="#幾何黃-W"/>
+            </mask>
+            <use fill="#F5AC02" xlink:href="#幾何黃-W"/>
+            <rect width="60" height="3" x="-2" fill="#FAC343" mask="url(#幾何黃-X)" style="mix-blend-mode:hard-light"/>
+            <rect width="2" height="13" x="6" y="3" fill="#FAC343" mask="url(#幾何黃-X)" style="mix-blend-mode:hard-light"/>
+            <rect width="2" height="13" x="24" y="3" fill="#FAC343" mask="url(#幾何黃-X)" style="mix-blend-mode:hard-light"/>
+            <rect width="2" height="13" x="42" y="3" fill="#FAC343" mask="url(#幾何黃-X)" style="mix-blend-mode:hard-light"/>
+          </g>
+          <g transform="translate(1094 85)">
+            <mask id="幾何黃-Z" fill="#fff">
+              <use xlink:href="#幾何黃-Y"/>
+            </mask>
+            <use fill="#F5AC02" xlink:href="#幾何黃-Y"/>
+            <rect width="60" height="3" x="-2" fill="#FAC343" mask="url(#幾何黃-Z)" style="mix-blend-mode:hard-light"/>
+            <rect width="2" height="13" x="6" y="3" fill="#FAC343" mask="url(#幾何黃-Z)" style="mix-blend-mode:hard-light"/>
+            <rect width="2" height="13" x="24" y="3" fill="#FAC343" mask="url(#幾何黃-Z)" style="mix-blend-mode:hard-light"/>
+            <rect width="2" height="13" x="42" y="3" fill="#FAC343" mask="url(#幾何黃-Z)" style="mix-blend-mode:hard-light"/>
+          </g>
+          <g transform="matrix(-1 0 0 1 1150 102)">
+            <mask id="幾何黃-ab" fill="#fff">
+              <use xlink:href="#幾何黃-aa"/>
+            </mask>
+            <use fill="#F5AC02" xlink:href="#幾何黃-aa"/>
+            <rect width="60" height="3" x="-2" fill="#FAC343" mask="url(#幾何黃-ab)" style="mix-blend-mode:hard-light"/>
+            <rect width="2" height="13" x="6" y="3" fill="#FAC343" mask="url(#幾何黃-ab)" style="mix-blend-mode:hard-light"/>
+            <rect width="2" height="13" x="24" y="3" fill="#FAC343" mask="url(#幾何黃-ab)" style="mix-blend-mode:hard-light"/>
+            <rect width="2" height="13" x="42" y="3" fill="#FAC343" mask="url(#幾何黃-ab)" style="mix-blend-mode:hard-light"/>
+          </g>
+          <g transform="translate(1094 119)">
+            <mask id="幾何黃-ad" fill="#fff">
+              <use xlink:href="#幾何黃-ac"/>
+            </mask>
+            <use fill="#F5AC02" xlink:href="#幾何黃-ac"/>
+            <rect width="60" height="3" x="-2" fill="#FAC343" mask="url(#幾何黃-ad)" style="mix-blend-mode:hard-light"/>
+            <rect width="2" height="13" x="6" y="3" fill="#FAC343" mask="url(#幾何黃-ad)" style="mix-blend-mode:hard-light"/>
+            <rect width="2" height="13" x="24" y="3" fill="#FAC343" mask="url(#幾何黃-ad)" style="mix-blend-mode:hard-light"/>
+            <rect width="2" height="13" x="42" y="3" fill="#FAC343" mask="url(#幾何黃-ad)" style="mix-blend-mode:hard-light"/>
+          </g>
+          <g transform="translate(71 85)">
+            <mask id="幾何黃-af" fill="#fff">
+              <use xlink:href="#幾何黃-ae"/>
+            </mask>
+            <use fill="#F5AC02" xlink:href="#幾何黃-ae"/>
+            <rect width="60" height="3" x="-2" fill="#FAC343" mask="url(#幾何黃-af)" style="mix-blend-mode:hard-light"/>
+            <rect width="2" height="13" x="6" y="3" fill="#FAC343" mask="url(#幾何黃-af)" style="mix-blend-mode:hard-light"/>
+            <rect width="2" height="13" x="24" y="3" fill="#FAC343" mask="url(#幾何黃-af)" style="mix-blend-mode:hard-light"/>
+            <rect width="2" height="13" x="42" y="3" fill="#FAC343" mask="url(#幾何黃-af)" style="mix-blend-mode:hard-light"/>
+          </g>
+          <g transform="translate(71 102)">
+            <mask id="幾何黃-ah" fill="#fff">
+              <use xlink:href="#幾何黃-ag"/>
+            </mask>
+            <use fill="#F5AC02" xlink:href="#幾何黃-ag"/>
+            <rect width="60" height="3" x="-2" fill="#FAC343" mask="url(#幾何黃-ah)" style="mix-blend-mode:hard-light"/>
+            <rect width="2" height="13" x="6" y="3" fill="#FAC343" mask="url(#幾何黃-ah)" style="mix-blend-mode:hard-light"/>
+            <rect width="2" height="13" x="24" y="3" fill="#FAC343" mask="url(#幾何黃-ah)" style="mix-blend-mode:hard-light"/>
+            <rect width="2" height="13" x="42" y="3" fill="#FAC343" mask="url(#幾何黃-ah)" style="mix-blend-mode:hard-light"/>
+          </g>
+          <g transform="matrix(-1 0 0 1 127 119)">
+            <mask id="幾何黃-aj" fill="#fff">
+              <use xlink:href="#幾何黃-ai"/>
+            </mask>
+            <use fill="#F5AC02" xlink:href="#幾何黃-ai"/>
+            <rect width="60" height="3" x="-2" fill="#FAC343" mask="url(#幾何黃-aj)" style="mix-blend-mode:hard-light"/>
+            <rect width="2" height="13" x="6" y="3" fill="#FAC343" mask="url(#幾何黃-aj)" style="mix-blend-mode:hard-light"/>
+            <rect width="2" height="13" x="24" y="3" fill="#FAC343" mask="url(#幾何黃-aj)" style="mix-blend-mode:hard-light"/>
+            <rect width="2" height="13" x="42" y="3" fill="#FAC343" mask="url(#幾何黃-aj)" style="mix-blend-mode:hard-light"/>
+          </g>
+          <g transform="matrix(-1 0 0 1 56 119)">
+            <mask id="幾何黃-al" fill="#fff">
+              <use xlink:href="#幾何黃-ak"/>
+            </mask>
+            <use fill="#F5AC02" xlink:href="#幾何黃-ak"/>
+            <rect width="60" height="3" x="-2" fill="#FAC343" mask="url(#幾何黃-al)" style="mix-blend-mode:hard-light"/>
+            <rect width="2" height="13" x="6" y="3" fill="#FAC343" mask="url(#幾何黃-al)" style="mix-blend-mode:hard-light"/>
+            <rect width="2" height="13" x="24" y="3" fill="#FAC343" mask="url(#幾何黃-al)" style="mix-blend-mode:hard-light"/>
+            <rect width="2" height="13" x="42" y="3" fill="#FAC343" mask="url(#幾何黃-al)" style="mix-blend-mode:hard-light"/>
+          </g>
+          <g transform="matrix(-1 0 0 1 130 34)">
+            <mask id="幾何黃-an" fill="#fff">
+              <use xlink:href="#幾何黃-am"/>
+            </mask>
+            <use fill="#F5AC02" xlink:href="#幾何黃-am"/>
+            <rect width="60" height="3" x="-2" fill="#FAC343" mask="url(#幾何黃-an)" style="mix-blend-mode:hard-light"/>
+            <rect width="2" height="13" x="6" y="3" fill="#FAC343" mask="url(#幾何黃-an)" style="mix-blend-mode:hard-light"/>
+            <rect width="2" height="13" x="24" y="3" fill="#FAC343" mask="url(#幾何黃-an)" style="mix-blend-mode:hard-light"/>
+            <rect width="2" height="13" x="42" y="3" fill="#FAC343" mask="url(#幾何黃-an)" style="mix-blend-mode:hard-light"/>
+          </g>
+          <g transform="translate(71 51)">
+            <mask id="幾何黃-ap" fill="#fff">
+              <use xlink:href="#幾何黃-ao"/>
+            </mask>
+            <use fill="#F5AC02" xlink:href="#幾何黃-ao"/>
+            <rect width="60" height="3" x="-2" fill="#FAC343" mask="url(#幾何黃-ap)" style="mix-blend-mode:hard-light"/>
+            <rect width="2" height="13" x="6" y="3" fill="#FAC343" mask="url(#幾何黃-ap)" style="mix-blend-mode:hard-light"/>
+            <rect width="2" height="13" x="24" y="3" fill="#FAC343" mask="url(#幾何黃-ap)" style="mix-blend-mode:hard-light"/>
+            <rect width="2" height="13" x="42" y="3" fill="#FAC343" mask="url(#幾何黃-ap)" style="mix-blend-mode:hard-light"/>
+          </g>
+          <g transform="translate(73)">
+            <mask id="幾何黃-ar" fill="#fff">
+              <use xlink:href="#幾何黃-aq"/>
+            </mask>
+            <use fill="#F5AC02" xlink:href="#幾何黃-aq"/>
+            <rect width="60" height="3" x="-2" fill="#FAC343" mask="url(#幾何黃-ar)" style="mix-blend-mode:hard-light"/>
+            <rect width="2" height="13" x="6" y="3" fill="#FAC343" mask="url(#幾何黃-ar)" style="mix-blend-mode:hard-light"/>
+            <rect width="2" height="13" x="24" y="3" fill="#FAC343" mask="url(#幾何黃-ar)" style="mix-blend-mode:hard-light"/>
+            <rect width="2" height="13" x="42" y="3" fill="#FAC343" mask="url(#幾何黃-ar)" style="mix-blend-mode:hard-light"/>
+          </g>
+          <g transform="matrix(-1 0 0 1 132 17)">
+            <mask id="幾何黃-at" fill="#fff">
+              <use xlink:href="#幾何黃-as"/>
+            </mask>
+            <use fill="#F5AC02" xlink:href="#幾何黃-as"/>
+            <rect width="60" height="3" x="-2" fill="#FAC343" mask="url(#幾何黃-at)" style="mix-blend-mode:hard-light"/>
+            <rect width="2" height="13" x="6" y="3" fill="#FAC343" mask="url(#幾何黃-at)" style="mix-blend-mode:hard-light"/>
+            <rect width="2" height="13" x="24" y="3" fill="#FAC343" mask="url(#幾何黃-at)" style="mix-blend-mode:hard-light"/>
+            <rect width="2" height="13" x="42" y="3" fill="#FAC343" mask="url(#幾何黃-at)" style="mix-blend-mode:hard-light"/>
+          </g>
+          <g transform="matrix(-1 0 0 1 127 68)">
+            <mask id="幾何黃-av" fill="#fff">
+              <use xlink:href="#幾何黃-au"/>
+            </mask>
+            <use fill="#F5AC02" xlink:href="#幾何黃-au"/>
+            <rect width="60" height="3" x="-2" fill="#FAC343" mask="url(#幾何黃-av)" style="mix-blend-mode:hard-light"/>
+            <rect width="2" height="13" x="6" y="3" fill="#FAC343" mask="url(#幾何黃-av)" style="mix-blend-mode:hard-light"/>
+            <rect width="2" height="13" x="24" y="3" fill="#FAC343" mask="url(#幾何黃-av)" style="mix-blend-mode:hard-light"/>
+            <rect width="2" height="13" x="42" y="3" fill="#FAC343" mask="url(#幾何黃-av)" style="mix-blend-mode:hard-light"/>
+          </g>
+          <g transform="matrix(-1 0 0 1 267 85)">
+            <mask id="幾何黃-ax" fill="#fff">
+              <use xlink:href="#幾何黃-aw"/>
+            </mask>
+            <use fill="#F5AC02" xlink:href="#幾何黃-aw"/>
+            <rect width="60" height="3" x="-2" fill="#FAC343" mask="url(#幾何黃-ax)" style="mix-blend-mode:hard-light"/>
+            <rect width="2" height="13" x="6" y="3" fill="#FAC343" mask="url(#幾何黃-ax)" style="mix-blend-mode:hard-light"/>
+            <rect width="2" height="13" x="24" y="3" fill="#FAC343" mask="url(#幾何黃-ax)" style="mix-blend-mode:hard-light"/>
+            <rect width="2" height="13" x="42" y="3" fill="#FAC343" mask="url(#幾何黃-ax)" style="mix-blend-mode:hard-light"/>
+          </g>
+          <g transform="matrix(-1 0 0 1 267 102)">
+            <mask id="幾何黃-az" fill="#fff">
+              <use xlink:href="#幾何黃-ay"/>
+            </mask>
+            <use fill="#F5AC02" xlink:href="#幾何黃-ay"/>
+            <rect width="60" height="3" x="-2" fill="#FAC343" mask="url(#幾何黃-az)" style="mix-blend-mode:hard-light"/>
+            <rect width="2" height="13" x="6" y="3" fill="#FAC343" mask="url(#幾何黃-az)" style="mix-blend-mode:hard-light"/>
+            <rect width="2" height="13" x="24" y="3" fill="#FAC343" mask="url(#幾何黃-az)" style="mix-blend-mode:hard-light"/>
+            <rect width="2" height="13" x="42" y="3" fill="#FAC343" mask="url(#幾何黃-az)" style="mix-blend-mode:hard-light"/>
+          </g>
+          <g transform="translate(211 119)">
+            <mask id="幾何黃-aB" fill="#fff">
+              <use xlink:href="#幾何黃-aA"/>
+            </mask>
+            <use fill="#F5AC02" xlink:href="#幾何黃-aA"/>
+            <rect width="60" height="3" x="-2" fill="#FAC343" mask="url(#幾何黃-aB)" style="mix-blend-mode:hard-light"/>
+            <rect width="2" height="13" x="6" y="3" fill="#FAC343" mask="url(#幾何黃-aB)" style="mix-blend-mode:hard-light"/>
+            <rect width="2" height="13" x="24" y="3" fill="#FAC343" mask="url(#幾何黃-aB)" style="mix-blend-mode:hard-light"/>
+            <rect width="2" height="13" x="42" y="3" fill="#FAC343" mask="url(#幾何黃-aB)" style="mix-blend-mode:hard-light"/>
+          </g>
+          <g transform="translate(220 68)">
+            <mask id="幾何黃-aD" fill="#fff">
+              <use xlink:href="#幾何黃-aC"/>
+            </mask>
+            <use fill="#F5AC02" xlink:href="#幾何黃-aC"/>
+            <rect width="60" height="3" x="-2" fill="#FAC343" mask="url(#幾何黃-aD)" style="mix-blend-mode:hard-light"/>
+            <rect width="2" height="13" x="6" y="3" fill="#FAC343" mask="url(#幾何黃-aD)" style="mix-blend-mode:hard-light"/>
+            <rect width="2" height="13" x="24" y="3" fill="#FAC343" mask="url(#幾何黃-aD)" style="mix-blend-mode:hard-light"/>
+            <rect width="2" height="13" x="42" y="3" fill="#FAC343" mask="url(#幾何黃-aD)" style="mix-blend-mode:hard-light"/>
+          </g>
+          <g transform="translate(923 119)">
+            <mask id="幾何黃-aF" fill="#fff">
+              <use xlink:href="#幾何黃-aE"/>
+            </mask>
+            <use fill="#F5AC02" xlink:href="#幾何黃-aE"/>
+            <rect width="60" height="3" x="-2" fill="#FAC343" mask="url(#幾何黃-aF)" style="mix-blend-mode:hard-light"/>
+            <rect width="2" height="13" x="6" y="3" fill="#FAC343" mask="url(#幾何黃-aF)" style="mix-blend-mode:hard-light"/>
+            <rect width="2" height="13" x="24" y="3" fill="#FAC343" mask="url(#幾何黃-aF)" style="mix-blend-mode:hard-light"/>
+            <rect width="2" height="13" x="42" y="3" fill="#FAC343" mask="url(#幾何黃-aF)" style="mix-blend-mode:hard-light"/>
+          </g>
+          <g transform="matrix(-1 0 0 1 1047 102)">
+            <mask id="幾何黃-aH" fill="#fff">
+              <use xlink:href="#幾何黃-aG"/>
+            </mask>
+            <use fill="#F5AC02" xlink:href="#幾何黃-aG"/>
+            <rect width="60" height="3" x="-2" fill="#FAC343" mask="url(#幾何黃-aH)" style="mix-blend-mode:hard-light"/>
+            <rect width="2" height="13" x="6" y="3" fill="#FAC343" mask="url(#幾何黃-aH)" style="mix-blend-mode:hard-light"/>
+            <rect width="2" height="13" x="24" y="3" fill="#FAC343" mask="url(#幾何黃-aH)" style="mix-blend-mode:hard-light"/>
+            <rect width="2" height="13" x="42" y="3" fill="#FAC343" mask="url(#幾何黃-aH)" style="mix-blend-mode:hard-light"/>
+          </g>
+          <g transform="translate(991 119)">
+            <mask id="幾何黃-aJ" fill="#fff">
+              <use xlink:href="#幾何黃-aI"/>
+            </mask>
+            <use fill="#F5AC02" xlink:href="#幾何黃-aI"/>
+            <rect width="60" height="3" x="-2" fill="#FAC343" mask="url(#幾何黃-aJ)" style="mix-blend-mode:hard-light"/>
+            <rect width="2" height="13" x="6" y="3" fill="#FAC343" mask="url(#幾何黃-aJ)" style="mix-blend-mode:hard-light"/>
+            <rect width="2" height="13" x="24" y="3" fill="#FAC343" mask="url(#幾何黃-aJ)" style="mix-blend-mode:hard-light"/>
+            <rect width="2" height="13" x="42" y="3" fill="#FAC343" mask="url(#幾何黃-aJ)" style="mix-blend-mode:hard-light"/>
+          </g>
+        </g>
+        <g transform="translate(949)">
+          <polygon fill="#C5C5C5" fill-rule="nonzero" points="133.438 192.875 140.938 192.875 140.938 224.875 133.438 224.875" transform="matrix(-1 0 0 1 274.375 0)"/>
+          <polygon fill="#C5C5C5" fill-rule="nonzero" points="97.813 192.875 105.313 192.875 105.313 224.875 97.813 224.875" transform="matrix(-1 0 0 1 203.125 0)"/>
+          <g transform="translate(70 20)">
+            <path stroke="#C5C5C5" stroke-width="7" d="M14.0640825,119.139687 C5.56086432,98.3313032 3.92518701,81.3581705 9.15705055,68.2202892 C14.3889141,55.082408 23.8375435,46.7379479 37.5029388,43.1869091" transform="rotate(-4 21.835 81.163)"/>
+            <rect width="95.625" height="110" x="4.35" y="72.293" fill="#E1E1E1" transform="scale(-1 1) rotate(-4 0 1621.022)"/>
+            <rect width="20" height="110" x="79.883" y="74.93" fill="#C5C5C5" transform="scale(-1 1) rotate(-4 0 2703.83)"/>
+            <g transform="scale(-1 1) rotate(-4 1369.313 892.627)">
+              <polygon fill="#E82087" points="21.605 4.065 25.98 15.94 17.23 15.94"/>
+              <rect width="9.375" height="13.75" fill="#4668CB" rx="4.688"/>
+              <rect width="8.75" height="13.75" x="30.541" fill="#4668CB" rx="4.375"/>
+            </g>
+            <g transform="rotate(16 15.687 137.206)">
+              <circle cx="28" cy="28" r="28" fill="#FAC343"/>
+              <circle cx="28" cy="28" r="24" fill="#F5AC02" stroke="#FFF" stroke-width="2"/>
+              <path fill="#FFF" d="M28.3100808,14 C31.5636657,14 34.1200538,14.6584636 35.940512,16.014124 C37.8771696,17.4472506 39.0004311,19.6937735 39.2715632,22.7149595 L34.7785174,22.7149595 C34.3911858,21.0107008 33.6552559,19.7712398 32.6481939,19.0353099 C31.641132,18.2606469 30.0918058,17.9120485 28.0776819,17.9120485 C26.33469,17.9120485 25.0177627,18.1444474 24.0881671,18.6479784 C22.9261725,19.2289757 22.3839083,20.1973045 22.3839083,21.5142317 C22.3839083,22.6762263 23.0036388,23.6445552 24.320566,24.3417519 C24.9015633,24.6516172 26.4896226,25.2326145 29.0460107,26.0460107 C32.8031266,27.2080053 35.2045821,28.137601 36.2891104,28.7573314 C38.6905659,30.1904581 39.8912936,32.1658489 39.8912936,34.722237 C39.8912936,37.2011588 38.9229648,39.1765497 36.9863071,40.6096763 C35.0496495,42.0040699 32.2995956,42.7399998 28.7748786,42.7399998 C25.3663611,42.7399998 22.6937735,42.0815362 20.795849,40.764609 C18.4718598,39.1378165 17.1936658,36.5814284 17,33.0567114 L21.4930458,33.0567114 C21.802911,35.1483017 22.5388409,36.6588947 23.7395687,37.5497572 C24.824097,38.3244203 26.4896226,38.750485 28.7748786,38.750485 C30.7890026,38.750485 32.415795,38.4018866 33.5777896,37.743423 C34.7397842,37.0462262 35.3595147,36.1553637 35.3595147,34.9933691 C35.3595147,33.5215093 34.4686522,32.3595147 32.7643934,31.5073853 C32.2221293,31.2362532 30.4404042,30.6165228 27.3804851,29.6869271 C23.9719676,28.6023988 21.8416442,27.8277357 21.0282479,27.3629379 C18.8979245,26.0847438 17.8521294,24.2255525 17.8521294,21.7853638 C17.8521294,19.3451752 18.8591914,17.4085175 20.9507816,16.014124 C22.8874393,14.6584636 25.327628,14 28.3100808,14 Z"/>
+              <rect width="5" height="4" x="26" y="11" fill="#FFF"/>
+              <rect width="5" height="4" x="26" y="42" fill="#FFF"/>
+            </g>
+            <path stroke="#E1E1E1" stroke-width="7" d="M95.8084011,122.005899 C81.4587882,105.761791 75.684616,89.6045112 78.4858847,73.534059 C81.2871533,57.4636067 92.5265028,46.9477372 112.203933,41.9864502" transform="scale(-1 1) rotate(-4 0 2802.49)"/>
+          </g>
+          <path fill="#F8BE5F" d="M75.5 0C78.8012412 11.6666667 84.6345746 17.5 93 17.5 84.6741961 17.5 78.8408628 23.3333333 75.5 35 72.4709892 23.3333333 66.6376558 17.5 58 17.5 66.6376558 17.5 72.4709892 11.6666667 75.5 0zM177.5 22C179.858029 30.3333333 184.024696 34.5 190 34.5 184.052997 34.5 179.886331 38.6666667 177.5 47 175.336421 38.6666667 171.169754 34.5 165 34.5 171.169754 34.5 175.336421 30.3333333 177.5 22zM45.5 47C47.8580295 55.3333333 52.0246961 59.5 58 59.5 52.0529972 59.5 47.8863306 63.6666667 45.5 72 43.3364208 63.6666667 39.1697542 59.5 33 59.5 39.1697542 59.5 43.3364208 55.3333333 45.5 47z"/>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

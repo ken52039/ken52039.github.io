@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="72" height="72" viewBox="0 0 72 72">
+    <defs>
+        <circle id="a" cx="36" cy="36" r="36"/>
+        <rect id="c" width="9" height="9" x="11" rx="4.5"/>
+        <rect id="d" width="9" height="9" rx="4.5"/>
+    </defs>
+    <g fill="none" fill-rule="evenodd">
+        <mask id="b" fill="#fff">
+            <use xlink:href="#a"/>
+        </mask>
+        <use fill="#90A4E0" xlink:href="#a"/>
+        <g fill="#CAD3F0" mask="url(#b)">
+            <g transform="translate(47 24)">
+                <path d="M9 17h8v10H9z"/>
+                <path d="M7.526 23h10.948C22.63 23 26 26.42 26 30.639V48H0V30.639C0 26.42 3.37 23 7.526 23zM12.333 0h1.334C17.717 0 21 3.386 21 7.563v6.875C21 18.614 17.717 22 13.667 22h-1.334C8.283 22 5 18.614 5 14.437V7.564C5 3.386 8.283 0 12.333 0z"/>
+                <circle cx="20" cy="13" r="3"/>
+                <circle cx="6" cy="13" r="3"/>
+            </g>
+        </g>
+        <g fill="#CAD3F0" mask="url(#b)">
+            <g transform="translate(-1 24)">
+                <path d="M9 17h8v10H9z"/>
+                <path d="M7.526 23h10.948C22.63 23 26 26.42 26 30.639V48H0V30.639C0 26.42 3.37 23 7.526 23zM12.333 0h1.334C17.717 0 21 3.386 21 7.563v6.875C21 18.614 17.717 22 13.667 22h-1.334C8.283 22 5 18.614 5 14.437V7.564C5 3.386 8.283 0 12.333 0z"/>
+                <circle cx="20" cy="13" r="3"/>
+                <circle cx="6" cy="13" r="3"/>
+            </g>
+        </g>
+        <g mask="url(#b)">
+            <g transform="translate(16 8)">
+                <path fill="#FFF" d="M14 25h12v14H14z"/>
+                <path fill="#FFF" d="M12 34h16c6.075 0 11 4.925 11 11v25H1V45c0-6.075 4.925-11 11-11z"/>
+                <rect width="24" height="32" x="8" fill="#FFF" rx="11"/>
+                <path stroke="#FECF64" stroke-linecap="round" stroke-width="2" d="M16 23c.401 1.667 1.735 2.5 4 2.5 2.265 0 3.599-.833 4-2.5"/>
+                <circle cx="31" cy="17" r="4" fill="#FFF"/>
+                <circle cx="9" cy="17" r="4" fill="#FFF"/>
+                <path fill="#FECF64" d="M21.047 40.673l1.845 12.975a1 1 0 0 1-.194.747l-1.951 2.561a1 1 0 0 1-1.591 0l-1.951-2.56a1 1 0 0 1-.195-.748l1.845-12.975A1.998 1.998 0 0 1 17.951 39v-2h4v2c0 .7-.36 1.316-.904 1.673z"/>
+                <g transform="translate(10 10)">
+                    <use fill="#FFF" xlink:href="#c"/>
+                    <rect width="7" height="7" x="12" y="1" stroke="#FECF64" stroke-width="2" rx="3.5"/>
+                </g>
+                <g transform="translate(10 10)">
+                    <use fill="#FFF" xlink:href="#d"/>
+                    <rect width="7" height="7" x="1" y="1" stroke="#FECF64" stroke-width="2" rx="3.5"/>
+                </g>
+                <path fill="#FECF64" d="M18 14h4v2h-4z"/>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,395 @@
+/*font-----------------------------------------------------------------------------------*/
+html { font-family: Verdana, 'Microsoft JhengHei', '微軟正黑體', sans-serif;}
+/*@font-face {
+  font-family: 'cwTeXHei';
+  font-style: normal;
+  font-weight: 500;
+  src: url(//fonts.gstatic.com/ea/cwtexhei/v3/cwTeXHei-zhonly.eot);
+  src: url(//fonts.gstatic.com/ea/cwtexhei/v3/cwTeXHei-zhonly.eot?#iefix) format('embedded-opentype'), url(//fonts.gstatic.com/ea/cwtexhei/v3/cwTeXHei-zhonly.woff2) format('woff2'), url(//fonts.gstatic.com/ea/cwtexhei/v3/cwTeXHei-zhonly.woff) format('woff'), url(//fonts.gstatic.com/ea/cwtexhei/v3/cwTeXHei-zhonly.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Noto Sans TC';
+  font-style: normal;
+  font-weight: 100;
+  src: url(//fonts.gstatic.com/ea/notosanstc/v1/NotoSansTC-Thin.woff2) format('woff2'), url(//fonts.gstatic.com/ea/notosanstc/v1/NotoSansTC-Thin.woff) format('woff'), url(//fonts.gstatic.com/ea/notosanstc/v1/NotoSansTC-Thin.otf) format('opentype');
+}
+@font-face {
+  font-family: 'Noto Sans TC';
+  font-style: normal;
+  font-weight: 300;
+  src: url(//fonts.gstatic.com/ea/notosanstc/v1/NotoSansTC-Light.woff2) format('woff2'), url(//fonts.gstatic.com/ea/notosanstc/v1/NotoSansTC-Light.woff) format('woff'), url(//fonts.gstatic.com/ea/notosanstc/v1/NotoSansTC-Light.otf) format('opentype');
+}
+@font-face {
+  font-family: 'Noto Sans TC';
+  font-style: normal;
+  font-weight: 400;
+  src: url(//fonts.gstatic.com/ea/notosanstc/v1/NotoSansTC-Regular.woff2) format('woff2'), url(//fonts.gstatic.com/ea/notosanstc/v1/NotoSansTC-Regular.woff) format('woff'), url(//fonts.gstatic.com/ea/notosanstc/v1/NotoSansTC-Regular.otf) format('opentype');
+}
+@font-face {
+  font-family: 'Noto Sans TC';
+  font-style: normal;
+  font-weight: 500;
+  src: url(//fonts.gstatic.com/ea/notosanstc/v1/NotoSansTC-Medium.woff2) format('woff2'), url(//fonts.gstatic.com/ea/notosanstc/v1/NotoSansTC-Medium.woff) format('woff'), url(//fonts.gstatic.com/ea/notosanstc/v1/NotoSansTC-Medium.otf) format('opentype');
+}
+@font-face {
+  font-family: 'Noto Sans TC';
+  font-style: normal;
+  font-weight: 700;
+  src: url(//fonts.gstatic.com/ea/notosanstc/v1/NotoSansTC-Bold.woff2) format('woff2'), url(//fonts.gstatic.com/ea/notosanstc/v1/NotoSansTC-Bold.woff) format('woff'), url(//fonts.gstatic.com/ea/notosanstc/v1/NotoSansTC-Bold.otf) format('opentype');
+}
+@font-face {
+  font-family: 'Noto Sans TC';
+  font-style: normal;
+  font-weight: 900;
+  src: url(//fonts.gstatic.com/ea/notosanstc/v1/NotoSansTC-Black.woff2) format('woff2'), url(//fonts.gstatic.com/ea/notosanstc/v1/NotoSansTC-Black.woff) format('woff'), url(//fonts.gstatic.com/ea/notosanstc/v1/NotoSansTC-Black.otf) format('opentype');
+}*/
+
+/*color-------------------------------------------------------------------------------------*/
+@-webkit-keyframes fancybox-rotate {
+  from {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(359deg);
+    transform: rotate(359deg);
+  }
+}
+@keyframes fancybox-rotate {
+  from {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(359deg);
+    transform: rotate(359deg);
+  }
+}
+/*---------------------------------------------------
+    LESS Elements 0.9
+  ---------------------------------------------------
+    A set of useful LESS mixins
+    More info at: http://lesselements.com
+  ---------------------------------------------------*/
+body {
+  margin: 0;
+  overflow-x: hidden;
+}
+body .textInput {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  position: relative;
+  width: 100%;
+}
+body .textInput label {
+  white-space: nowrap;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 1.57;
+  letter-spacing: normal;
+  color: #7f7f7f;
+  margin-bottom: 4px;
+}
+body .textInput .block {
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+body .textInput .block input {
+  max-width: 128px;
+}
+body .textInput .block .code {
+  width: 100px;
+  height: 30px;
+  margin-left: 8px;
+}
+body .textInput .block .refresh {
+  width: 24px;
+  height: 24px;
+  cursor: pointer;
+  margin-left: 12px;
+}
+body .textInput input {
+  height: 26px;
+  width: 100%;
+  font-size: 16px;
+  font-weight: 300;
+  letter-spacing: 1px;
+  text-align: left;
+  line-height: 1.5;
+  color: #404040;
+  padding: 1px 0 2px;
+  border: none;
+  border-bottom: solid 1px #c0c0c0;
+  margin-bottom: 4px;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0;
+}
+body .textInput input:focus {
+  height: 25px;
+  border-bottom: solid 2px #316fc9;
+}
+body .textInput input:-webkit-autofill {
+  -webkit-text-fill-color: #404040;
+  -webkit-box-shadow: 0 0 0px 1000px white inset;
+}
+body .textInput input::-ms-clear {
+  display: none;
+}
+body .textInput input::placeholder {
+  color: #c0c0c0;
+}
+body .textInput .input_error {
+  width: 100%;
+  font-size: 12px;
+  font-weight: 300;
+  line-height: 1.67;
+  letter-spacing: 1px;
+  text-align: left;
+  color: #f77ebc;
+  min-height: 20px;
+}
+body .textInput.error input {
+  height: 25px;
+  border-bottom: solid 2px #f77ebc;
+}
+body .textInput.error input:focus {
+  height: 25px;
+  border-bottom: solid 2px #f77ebc;
+}
+/*body button { 
+  width: 140px;
+  height: 48px;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 1px;
+  text-align: center;
+  padding: 12px 0;
+  color: #ffffff;
+  border: none;
+  background-image: linear-gradient(to right, #093e7e, #2ad2b8);
+  cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
+  white-space: nowrap;
+  -webkit-border-radius: 24px;
+  -moz-border-radius: 24px;
+  border-radius: 24px;
+}*/ /*20190117*/
+.buttons { /*20190117*/
+  margin-top: 40px;
+  text-align: center;
+}
+.buttons a { /*20190117*/
+  display: inline-block;
+  width: 140px;
+  height: 48px;
+  border: solid 1px #01b1b1;
+  border-radius: 100px;
+  line-height: 48px;
+  background-color: #ffffff;
+  color: #01b1b1;
+}
+.buttons a.blue { /*20190117*/
+  display: inline-block;
+  width: 140px;
+  height: 48px;
+  border: solid 1px #01b1b1;
+  border-radius: 100px;
+  line-height: 48px;
+  border: none;
+  background-image: linear-gradient(to right, #093e7e, #2ad2b8);
+  color: white;
+}
+
+body .login {
+  padding: 39px 0 0;
+}
+body .login .header {
+  border-bottom: solid 1px #f0f0f0;
+  background: url(../svg/invalid-name10.svg) 100% bottom no-repeat;
+  padding-top: 15px;
+  margin: 0 88px 0;
+}
+body .login .header h2 {
+  font-size: 18px;
+  font-weight: 400;
+  letter-spacing: 1px;
+  text-align: center;
+  color: #4668cb;
+  line-height: 52px;
+  line-height: 1.44;
+  margin-bottom: 16px;
+}
+body .login .header h2 br {
+  display: none;
+}
+body .login .content {
+  position: relative;
+  padding: 44px 88px 24px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+body .login .content > .error {
+  box-sizing: border-box;
+  padding: 0;
+  position: relative;
+  margin-top: -32px;
+  width: 100%;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 1.43;
+  letter-spacing: 1px;
+  text-align: center;
+  color: #f77ebc;
+}
+body .login .content .input_box {
+  width: 100%;
+  margin-top: 12px;
+  min-height: 304px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+body .login .content .input_box .textInput {
+  margin-bottom: 8px;
+  max-width: 272px;
+}
+body .login .content .input_box .textInput:nth-child(3) {
+  margin-bottom: 0;
+}
+body .login .content .input_box .textInput:nth-child(3) .input_error {
+  min-height: 18px;
+}
+body .login .content .input_box .textInput:nth-child(3) .password_forgot {
+  position: absolute;
+  top: 55px;
+  right: 0;
+  font-size: 12px;
+  font-weight: 300;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.67;
+  letter-spacing: 1px;
+  text-align: right;
+  color: #316fc9;
+  display: inline-block;
+  text-decoration: underline;
+}
+body .footer {
+  background: #F6F6F6;
+  height: 48px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+body .footer a {
+  color: #316fc9;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 1.57;
+  letter-spacing: 1px;
+  text-align: center;
+  text-decoration: underline;
+  margin: 0 27px;
+}
+
+
+/*color-------------------------------------------------------------------------------------*/
+@-webkit-keyframes fancybox-rotate {
+  from {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(359deg);
+    transform: rotate(359deg);
+  }
+}
+@keyframes fancybox-rotate {
+  from {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(359deg);
+    transform: rotate(359deg);
+  }
+}
+/*---------------------------------------------------
+    LESS Elements 0.9
+  ---------------------------------------------------
+    A set of useful LESS mixins
+    More info at: http://lesselements.com
+  ---------------------------------------------------*/
+@media screen and (max-width: 599px) {
+  html {
+    height: 100%;
+    overflow: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+  body {
+    height: 100%;
+    overflow: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+  body .textInput .block input {
+    max-width: 100%;
+  }
+  body .login {
+    padding: 40px 0 48px;
+  }
+  body .login .header {
+    padding-top: 0;
+    margin: 0;
+    background: none;
+    border-bottom: none;
+    padding: 0 16px;
+  }
+  body .login .header h2 {
+    line-height: 26px;
+    font-size: 16px;
+    border-bottom: 1px solid #f0f0f0;
+    letter-spacing: 1.5px;
+    margin-bottom: 0;
+    padding-bottom: 8px;
+    background: url(../svg/invalid-name10.svg) 100% bottom no-repeat;
+  }
+  body .login .header h2 br {
+    display: inline-block;
+  }
+  body .login .content {
+    padding: 44px 16px 24px;
+  }
+  body .login .content .input_box .textInput {
+    max-width: 100%;
+    margin-bottom: 0;
+  }
+  body .login .content .input_box .textInput:nth-child(3) .password_forgot {
+    top: 55px;
+  }
+  body .login .content .input_box .textInput:nth-child(3) .input_error {
+    min-height: 0;
+  }
+  body .login .content .input_box .textInput .input_error {
+    min-height: 0;
+    margin-bottom: 20px;
+  }
+  body .footer {
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+  }
+  body .footer a {
+    font-size: 12px;
+    line-height: 1.67;
+    margin: 0 20px;
+  }
+}

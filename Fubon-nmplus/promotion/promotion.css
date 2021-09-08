@@ -1,0 +1,54 @@
+@charset "utf-8";
+/* CSS Document */
+
+/***==============gif animation==============**/
+.floating {display: block; width:90px; height:110px; background: url(../promotion/cube.png) no-repeat left top; background-size:90px; position:fixed; right:30px; top:520px; z-index: 100000; }
+ 
+@media only screen 
+and (min-device-width : 320px) 
+and (max-device-width : 767px) { 
+.floating {display: block; width:90px; height:110px; background: url(../promotion/cube.png) no-repeat left top; background-size:90px; position:fixed; right:5px; top:400px; z-index: 100000; }  
+} /*phone*/
+
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) 
+and (orientation : portrait) { 
+.floating {top:310px; } 
+} /*iPad9.7 in portrait*/
+
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) 
+and (orientation : landscape) { 
+.floating { } 
+} /*iPad9.7 in landscape*/
+
+@media only screen 
+and (min-device-width : 834px) 
+and (max-device-width : 1112px) 
+and (orientation : portrait) { 
+.floating { top:390px; }
+} /*iPad10.5 in portrait*/
+
+@media only screen 
+and (min-device-width : 834px) 
+and (max-device-width : 1112px) 
+and (orientation : landscape) { 
+.floating { top:370px; }
+} /*iPad10.5 in landscape*/
+
+@media only screen 
+and (min-device-width : 1024px) 
+and (max-device-width : 1366px) 
+and (orientation : portrait) { 
+.floating {  } 
+} /*iPadPro in portrait*/ 
+
+
+
+
+
+
+
+ 

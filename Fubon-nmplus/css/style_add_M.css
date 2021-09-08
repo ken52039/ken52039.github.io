@@ -1,0 +1,146 @@
+@charset "utf-8";
+/* CSS Document */
+.clearfix { overflow: auto; zoom: 1;}
+.clear {clear:both;}
+
+.ph10 {padding:0 10px;}
+.pv10 {padding:10px 0;}
+
+.f-orange {color:#fb7a23!important;}
+.f-yellow {color:#ffff00!important;}
+.f-aqua {color:#99ffff!important;}
+ 
+.mt10 {margin-top:10px!important;}
+.mt20 {margin-top:20px!important;}
+.mt30 {margin-top:30px!important;}
+.mt45 {margin-top:45px!important;}
+.mt60 {margin-top:60px!important;}
+.mt80 {margin-top:80px!important;}
+.mt100 {margin-top:100px!important;}
+.mt150 {margin-top:150px!important;}
+.mt-30 {margin-top:-30px!important;}
+.m1-30 {margin-left:-30px!important;}
+
+.h10 {height:10px!important;}
+.h20 {height:20px!important;}
+.h30 {height:30px!important;}
+.h60 {height:60px!important;}
+.h100 {height:100px!important;}
+.h150 {height:150px!important;}
+
+.f-b {font-weight:800;}
+.f-14 {font-size:14px;}
+.f-16 {font-size:16px;}
+.f-20 {font-size:20px;}
+.f-24 {font-size:24px;}
+.f-30 {font-size:30px;}
+.f-udl {text-decoration:underline;}
+a:link.f-udl, a:visited.f-udl  {text-decoration:underline;}
+a:hover.f-udl { text-decoration:none; }
+
+.pc-show {display:none;}
+.mo-show {display:block;}
+
+/*------ index- 投資報告按鈕 -----------------------------------------------*/
+a:link.m-report, a:visited {min-width:60px; height:24px; display:block; float:right; text-align:center; color:#fff!important; font-size:14px; font-weight:bold; border-radius: 6px; background-color:#869cdc; color:#333; margin:0 -15px 0 0; padding:2px 5px; }
+
+/*------ Mobile Device -----------------------------------------------*/
+.event { background: url(../img/event_M.png) no-repeat center 35px; 
+	background-size: 375px;  
+	display:block;    
+	width: auto;  
+	height: 350px!important; 
+	margin: -150px auto 0 auto;
+	color:#fff; font-size:16px;
+	line-height: 110%!important;
+	text-align:center;
+	padding: 0px;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;	}
+@media all and (-ms-high-contrast:none) { 
+    *::-ms-backdrop, .event { background: url(../img/event_M.png) no-repeat center 35px; 
+	background-size: 375px;   
+	display:block;    
+	width: auto;  
+	height: 250px!important; 
+	margin: 100px auto 0 auto!important;
+	color:#fff; font-size:16px;
+	line-height: 110%!important; 
+	text-align:center;
+	padding: 0px;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;	} /* IE11 */
+     }
+.event .countdown { background: url(../img/countdown_M.png) no-repeat center top; margin: 0 auto 30px auto; padding: 90px 5px 10px 5px; background-size: 100%; width:355px; height:300px; display:block; font-size:30px; line-height:160%; font-weight:800; }
+.event .countdown .text-s { margin: 15px auto -15px auto; padding: 10px 20px 10px 20px; font-size:14px; line-height:300%; letter-spacing: 0; }
+ 
+.btn a:link,.btn a:visited  { width:300px; padding: 10px 50px; background-color:#29adf2; margin:60px auto 0 auto!important; border-radius:5px; font-size:22px; clear:both; }
+.btn a:hover { background-color:#3c9ce6; }
+a.f-yellow {color:#fed558!important;} 
+
+/*------ Pad -----------------------------------------------*/
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) 
+and (orientation : portrait) { 
+.event {background: url(../img/event_W.png) no-repeat center 120px;
+	background-size: 170%!important; /*border:1px solid blue;*/ 
+	display:block;   
+	width: 100%;
+	height: 500px!important; 
+	margin: -300px auto 0 auto;
+	color:#fff; font-size:18px;
+	line-height: 160%; 
+	text-align:center;
+	padding: 30px 20px;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	} 
+.event .countdown { background: url(../img/countdown_M.png) no-repeat center top; margin: 0 auto 30px auto; padding: 160px 5px 10px 5px; background-size: 100%; width:600px; height:400px; display:block; font-size:24px; line-height:160%; /*border:1px solid red;*/ }
+.event .countdown .text-s { margin: 0 auto -15px auto; padding: 50px 20px 10px 20px; font-size:18px; letter-spacing: 6px; }
+} /*iPad in portrait*/
+
+@media only screen 
+and (min-device-width : 834px) 
+and (max-device-width : 1112px) 
+and (orientation : portrait) { 
+.event {background: url(../img/event_W.png) no-repeat center 120px; 
+	background-size: 170%!important;   
+	display:block;   
+	width: 100%;
+	height: 550px!important; 
+	margin: -300px auto 0 auto;
+	color:#fff; font-size:18px;
+	line-height: 160%; 
+	text-align:center;
+	padding: 30px 20px;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	} 
+.event .countdown .text-s { margin: 0 auto -15px auto; padding: 50px 20px 10px 20px; font-size:18px; letter-spacing: 6px; }
+} /*iPad10.5 in portrait*/
+
+
+/*------ 結果頁 -----------------------------------------------*/  
+.notice { width:100%!important; font-size:13px; } 
+.notice-cube { height:65px; float:left; margin: 0 10px 0 5px; } 
+ 
+/*------ 對話招呼頁 -----------------------------------------------*/
+.dialog-txt {width:80%; text-align: center; color:#fff; font-size:16px; line-height: 160%; margin:30px auto 0 auto; }
+.dialog-txt a:link, .dialog-txt a:visited {color:#ffff00!important; text-decoration:underline;}
+.dialog-txt a:hover {text-decoration:none;}
+.dialog-tips {font-size:13px; line-height: 220%; width:330px; padding: 0 0 0 20px; margin:5px auto 0 auto; 
+background: url(../img/role_cube/robot-explain@3x.png) no-repeat left 5px; background-size: 25px; }
+
+/*------ 活動提示彈窗 -----------------------------------------------*/
+.EDM { background: url(../img/EDM_M.png) no-repeat center top; background-size: 100%; width:280px;
+height:270px; margin:5px auto 20px auto; }
+
+
+/*------ 報告頁 -----------------------------------------------*/  
+.report-date {margin:12px 6px 2px 2px;}
+

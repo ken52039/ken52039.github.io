@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40">
+    <g fill="none" fill-rule="evenodd">
+        <circle cx="20" cy="20" r="20" fill="#4668CB"/>
+        <g fill="#FFF">
+            <text font-family="STHeitiTC-Medium, Heiti TC" font-size="30" font-weight="bold" transform="translate(5 4)">
+                <tspan x="0" y="27">Ｓ</tspan>
+            </text>
+            <path d="M18.2 4h4v5h-4zM18.2 29h4v5h-4z"/>
+        </g>
+        <g fill="#FFF" transform="translate(30 12)">
+            <rect width="6" height="2" y="2" rx="1"/>
+            <rect width="2" height="6" x="2" rx="1"/>
+        </g>
+        <g fill="#FFF" transform="translate(3 21)">
+            <rect width="6" height="2" y="2" rx="1"/>
+            <rect width="2" height="6" x="2" rx="1"/>
+        </g>
+    </g>
+</svg>
