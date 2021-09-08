@@ -266,6 +266,7 @@ body .scrollContainer .content .chart {
     font-size: 24px;
     font-weight: 600;
     border-radius: 0 !important;
+    padding: 0 !important;
 }
 
 .popup form fieldset input.small {
@@ -387,8 +388,22 @@ body .scrollContainer .content .chart {
 }
 
 .dropdown.warp label,
+.dropdown.warp a,
 .textinput label {
     float: left;
+    line-height: 27px;
+}
+
+.dropdown.warp a {
+    font-size: 13px;
+    font-weight: normal;
+    letter-spacing: 1px;
+    text-align: left;
+    color: #949494;
+    cursor: pointer;
+    padding-right: 20px;
+    background: url('../svg/blue.svg') no-repeat right center;
+    background-size: 15px 15px;
 }
 
 .dropdown.warp:after,
@@ -403,6 +418,8 @@ body .scrollContainer .content .chart {
     float: right;
     width: calc(100% - 140px);
     border: 0;
+    cursor: default;
+    padding: 0;
 }
 
 .dropdown button input,

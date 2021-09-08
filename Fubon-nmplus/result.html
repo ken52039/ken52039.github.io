@@ -73,91 +73,85 @@
                     <div class="content">
                         <div class="section">
                             <div class="colum_group">
-                                <div class="dropdown warp info">
-                                    <label>投資術</label>
+                                <div class="dropdown warp">
+                                    <label>投資目標</label>
                                     <button type="button">
-                                        <input id="search_mode_keeper" type="text" name="search_mode" readonly='readonly' tabindex="-1">
-                                        <img class="arrow" src="svg/black.svg">
+                                        旅遊購物
                                     </button>
-                                    <ul>
-                                        <li><a value="2">智能投資術-ETF</a></li>
-                                        <li><a value="1">AI投資術-基金</a></li>
-                                    </ul>
-                                </div>
-                                <div class="dropdown warp info">
-                                    <label>投組風險偏好</label>
-                                    <button type="button">
-                                        <input id="risk_keeper" type="text" readonly='readonly' name="risk_add" tabindex="-1">
-                                        <img class="arrow" src="svg/black.svg">
-                                    </button>
-                                    <ul>
-                                        <li><a value="1">Level1</a></li>
-                                        <li><a value="2">Level2</a></li>
-                                        <li><a value="3">Level3</a></li>
-                                        <li><a value="4">Level4</a></li>
-                                    </ul>
                                 </div>
                                 <div class="dropdown warp">
-                                    <label>投資方式</label>
+                                    <a data-fancybox data-src="#info1" href="javascript:;">投資術</a>
                                     <button type="button">
-                                        <textarea id="mode_keeper" tabindex="-1" type="text" readonly='readonly' name="mode"></textarea>
-                                        <img class="arrow" src="svg/black.svg">
+                                        奈米1號-全球ETF
                                     </button>
-                                    <ul>
-                                        <li><a value="2">每個月定期投資</a></li>
-                                        <li><a value="1">一筆錢一次投入</a></li>
-                                        <li><a value="3">一筆錢一次投入，<br class="w3-hide-large w3-hide-medium" />
-                                                搭配每個月定期投資</a></li>
-                                    </ul>
+                                </div>
+                                <div class="dropdown warp info">
+                                    <a data-fancybox data-src="#info2" href="javascript:;">投資組合</a>
+                                    <button type="button">
+                                        Level 3
+                                    </button>
                                 </div>
                             </div>
                         </div>
-                        <a href="javascript:" class="more-btn">查看詳細內容 <img src="svg/result/more-arrow.png"></a>
-                        <div class="sub_section" style="display: none;" id="more-show">
+                        <a href="javascript:" class="more-btn more-btn1">查看詳細內容 <img src="svg/result/more-arrow.png"></a>
+                        <div class="sub_section" style="display: none;" id="more-show1">
                             <div class="colum_group">
-                                <div class="textinput">
-                                    <label>投資金額</label>
-                                    <div>
-                                        <input id="once_keeper" tabindex="3" type="tel" name="once" maxlength="4">
-                                        <span class="unit">美元</span>
-                                    </div>
-                                    <span>請輸入2~1000的整數數字</span>
+                                <div class="dropdown warp">
+                                    <label>單筆投資金額</label>
+                                    <button type="button">
+                                        美金 35 元
+                                    </button>
                                 </div>
-                                <div class="textinput">
-                                    <label>每月投資USD</label>
-                                    <div>
-                                        <input id="perMonth_keeper" tabindex="3" type="tel" name="perMonth" maxlength="7">
-                                        <span class="unit">元</span>
-                                    </div>
-                                    <span>請以千元為單位，輸入3,000~1,000,000 的整數</span>
-                                </div>
-                                <div class="textinput">
-                                    <label>單筆投入USD</label>
-                                    <div>
-                                        <input id="mix_once_keeper" tabindex="3" type="tel" name="mix_once" maxlength="4">
-                                        <span class="unit">萬元</span>
-                                    </div>
-                                    <span>請輸入2~1000的整數數字</span>
+                                <div class="dropdown warp">
+                                    <label>投資期間</label>
+                                    <button type="button">
+                                        1 年
+                                    </button>
                                 </div>
                             </div>
+                        </div>
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+                
+                <div class="panel">
+                    <div class="content">
+                        <div class="section">
                             <div class="colum_group">
-                                <div class="textinput">
-                                    <label>投資時間</label>
-                                    <div>
-                                        <input id="years_keeper" tabindex="2" type="tel" name="years">
-                                        <span class="unit">年</span>
-                                    </div>
-                                    <span>請輸入3~30的整數數字</span>
+                                <div class="dropdown warp">
+                                    <a data-fancybox data-src="#info1" href="javascript:;">投資術</a>
+                                    <button type="button">
+                                        奈米2號-台灣ETF
+                                    </button>
+                                </div>
+                                <div class="dropdown warp info">
+                                    <a data-fancybox data-src="#info2" href="javascript:;">投資組合</a>
+                                    <button type="button">
+                                        Level 3
+                                    </button>
                                 </div>
                             </div>
+                        </div>
+                        <a href="javascript:" class="more-btn more-btn2">查看詳細內容 <img src="svg/result/more-arrow.png"></a>
+                        <div class="sub_section" style="display: none;" id="more-show2">
                             <div class="colum_group">
-                                <div class="textinput">
-                                    <label>每月投資USD</label>
-                                    <div>
-                                        <input id="mix_perMonth_keeper" tabindex="4" type="tel" name="mix_perMonth" maxlength="7">
-                                        <span class="unit">元</span>
-                                    </div>
-                                    <span>請以千元為單位，輸入3,000~1,000,000 的整數</span>
+                                <div class="dropdown warp">
+                                    <label>單筆投資金額</label>
+                                    <button type="button">
+                                        台幣 1,000 元
+                                    </button>
+                                </div>
+                                <div class="dropdown warp">
+                                    <label>配息方式</label>
+                                    <button type="button">
+                                        配息再投資
+                                    </button>
+                                </div>
+                                <div class="dropdown warp">
+                                    <label>投資期間</label>
+                                    <button type="button">
+                                        1 年
+                                    </button>
                                 </div>
                             </div>
                         </div>
@@ -518,6 +512,18 @@
                 <a href="">點我開始投 <img src="svg/result/result_go_btn2.svg"></a>
             </div>
             <!--/右邊fix按鈕-->
+            
+            <!--投資術彈窗-->
+            <div class="popup" style="display: none;" id="info1">
+                <strong>投資術</strong>
+                <p>奈米投數位理財服務分為兩種投資術，皆有奈米投投資團隊每日幫你盯盤，主動為你的投資汰弱留強。</p>
+                <p>奈米投分為兩種投資術：</p>
+                <ul>
+                    <li>奈米1號：投資的是在英國倫敦交易所交易的ETF，提供「4種風險等級」投資組合，從保守到積極，35元美金即可投資全世界，輕鬆參與歐美、新興市場趨勢發展。英國倫敦交易所掛牌的ETF相較美國掛牌的ETF更具稅務優勢。</li>
+                    <li>奈米2號：投資的是台灣證券交易所交易的ETF，提供「4種投資主題」投資組合，台幣1000元即可投資，不論你是投資新手，還是有經驗的投資人，主題式投資幫助你突破盲點、強化策略，讓投資成為一件輕鬆的事。</li>
+                </ul>
+                <p>(皆不含倍數槓桿型及反向型ETF)</p>
+            </div>
 
             <!--調整投資方式-->
             <div class="popup" style="display: none;" id="popup2">
@@ -714,9 +720,14 @@
                     }
                 });
 
-                $('.more-btn').on('click', function() {
+                $('.more-btn1').on('click', function() {
                     $(this).hide();
-                    $('#more-show').show();
+                    $('#more-show1').show();
+                });
+                
+                $('.more-btn2').on('click', function() {
+                    $(this).hide();
+                    $('#more-show2').show();
                 });
 
                 $(document).ready(function() {
