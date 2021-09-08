@@ -1,0 +1,621 @@
+/*font-----------------------------------------------------------------------------------*/
+html { font-family: Verdana, 'Microsoft JhengHei', '微軟正黑體', sans-serif; }
+/*@font-face {
+  font-family: 'cwTeXHei';
+  font-style: normal;
+  font-weight: 500;
+  src: url(//fonts.gstatic.com/ea/cwtexhei/v3/cwTeXHei-zhonly.eot);
+  src: url(//fonts.gstatic.com/ea/cwtexhei/v3/cwTeXHei-zhonly.eot?#iefix) format('embedded-opentype'), url(//fonts.gstatic.com/ea/cwtexhei/v3/cwTeXHei-zhonly.woff2) format('woff2'), url(//fonts.gstatic.com/ea/cwtexhei/v3/cwTeXHei-zhonly.woff) format('woff'), url(//fonts.gstatic.com/ea/cwtexhei/v3/cwTeXHei-zhonly.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Noto Sans TC';
+  font-style: normal;
+  font-weight: 100;
+  src: url(//fonts.gstatic.com/ea/notosanstc/v1/NotoSansTC-Thin.woff2) format('woff2'), url(//fonts.gstatic.com/ea/notosanstc/v1/NotoSansTC-Thin.woff) format('woff'), url(//fonts.gstatic.com/ea/notosanstc/v1/NotoSansTC-Thin.otf) format('opentype');
+}
+@font-face {
+  font-family: 'Noto Sans TC';
+  font-style: normal;
+  font-weight: 300;
+  src: url(//fonts.gstatic.com/ea/notosanstc/v1/NotoSansTC-Light.woff2) format('woff2'), url(//fonts.gstatic.com/ea/notosanstc/v1/NotoSansTC-Light.woff) format('woff'), url(//fonts.gstatic.com/ea/notosanstc/v1/NotoSansTC-Light.otf) format('opentype');
+}
+@font-face {
+  font-family: 'Noto Sans TC';
+  font-style: normal;
+  font-weight: 400;
+  src: url(//fonts.gstatic.com/ea/notosanstc/v1/NotoSansTC-Regular.woff2) format('woff2'), url(//fonts.gstatic.com/ea/notosanstc/v1/NotoSansTC-Regular.woff) format('woff'), url(//fonts.gstatic.com/ea/notosanstc/v1/NotoSansTC-Regular.otf) format('opentype');
+}
+@font-face {
+  font-family: 'Noto Sans TC';
+  font-style: normal;
+  font-weight: 500;
+  src: url(//fonts.gstatic.com/ea/notosanstc/v1/NotoSansTC-Medium.woff2) format('woff2'), url(//fonts.gstatic.com/ea/notosanstc/v1/NotoSansTC-Medium.woff) format('woff'), url(//fonts.gstatic.com/ea/notosanstc/v1/NotoSansTC-Medium.otf) format('opentype');
+}
+@font-face {
+  font-family: 'Noto Sans TC';
+  font-style: normal;
+  font-weight: 700;
+  src: url(//fonts.gstatic.com/ea/notosanstc/v1/NotoSansTC-Bold.woff2) format('woff2'), url(//fonts.gstatic.com/ea/notosanstc/v1/NotoSansTC-Bold.woff) format('woff'), url(//fonts.gstatic.com/ea/notosanstc/v1/NotoSansTC-Bold.otf) format('opentype');
+}
+@font-face {
+  font-family: 'Noto Sans TC';
+  font-style: normal;
+  font-weight: 900;
+  src: url(//fonts.gstatic.com/ea/notosanstc/v1/NotoSansTC-Black.woff2) format('woff2'), url(//fonts.gstatic.com/ea/notosanstc/v1/NotoSansTC-Black.woff) format('woff'), url(//fonts.gstatic.com/ea/notosanstc/v1/NotoSansTC-Black.otf) format('opentype');
+}*/
+
+/*color-------------------------------------------------------------------------------------*/
+/*---------------------------------------------------
+    LESS Elements 0.9
+  ---------------------------------------------------
+    A set of useful LESS mixins
+    More info at: http://lesselements.com
+  ---------------------------------------------------*/
+body {
+  position: relative !important;
+  width: 100%;
+  height: auto;
+  background-color: #f6f6f6;
+}
+body .button {
+  -webkit-tap-highlight-color: transparent;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 1.5px;
+  text-align: center;
+  padding: 14px 25px;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  white-space: nowrap;
+  -webkit-border-radius: 100px;
+  -moz-border-radius: 100px;
+  border-radius: 100px;
+}
+body .button.large {
+  width: 180px;
+  font-size: 18px;
+  font-weight: 400;
+  letter-spacing: 1.5px;
+  text-align: center;
+  padding: 15px 30px;
+}
+body .button.fill {
+  color: #ffffff;
+  background-color: #4668cb;
+  border: solid 1px #4668cb;
+}
+body .button.fill:hover {
+  background-color: #90a4e0;
+  border: solid 1px #90a4e0;
+}
+body .button.outline {
+  color: #4668cb;
+  background-color: transparent;
+  border: solid 1px #4668cb;
+}
+body .button.outline:hover {
+  color: #ffffff;
+  background-color: #4668cb;
+  border: solid 1px #4668cb;
+}
+body .section1 {
+  margin-top: 56px;
+  min-height: 518px;
+  background-color: #5f7cd1;
+  background-image: url(../svg/invalid-name3.svg);
+  background-size: 1288px 379px;
+  background-position: center 20%;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+body .section1 h1 {
+  box-sizing: border-box;
+  padding-top: 5px;
+  width: 440px;
+  height: 132px;
+  font-size: 40px;
+  font-weight: 400;
+  line-height: 1.4;
+  letter-spacing: 8px;
+  vertical-align: middle;
+  color: white;
+  position: relative;
+  background: rgba(247, 126, 188, 0.8);
+  text-align: center;
+  margin-top: 93px;
+}
+body .section1 h1:before,
+body .section1 h1:after {
+  border-color: rgba(247, 126, 188, 0.8) transparent;
+  top: 0;
+  border-style: solid;
+  height: 0;
+  width: 0;
+  display: block;
+  content: "";
+  position: absolute;
+}
+body .section1 h1:before {
+  left: -40px;
+  border-width: 66px 0 66px 40px;
+}
+body .section1 h1:after {
+  right: -40px;
+  border-width: 66px 40px 66px 0;
+}
+body .section1 h1 span {
+  display: block;
+  position: absolute;
+  width: 140px;
+  height: 140px;
+  top: -87px;
+  left: -83px;
+  text-indent: -9999px;
+  background: url(../img/party_tag.png) no-repeat;
+}
+body .section1 h2 {
+  margin-top: 52px;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 1.33;
+  letter-spacing: 2px;
+  text-align: center;
+  color: #ffffff;
+}
+body .section2 {
+  height: 1302px;
+  background: #fdfced url(../svg/invalid-name.svg) 50% 100% no-repeat;
+}
+body .section2 .card_container {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background: url(../svg/invalid-name2.svg) 50% 100% no-repeat;
+  height: 498px;
+}
+body .section2 .card_container .role {
+  position: absolute;
+  -moz-transform: scaleX(-1);
+  -o-transform: scaleX(-1);
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
+  filter: FlipH;
+  -ms-filter: "FlipH";
+  z-index: 0;
+  right: calc(50% + 295px);
+  bottom: 35px;
+}
+body .section2 .card_container .card {
+  right: calc(50% + 20px);
+  top: -85px;
+  position: absolute;
+  width: 272px;
+  height: 388px;
+  border-radius: 8px;
+  background-color: white;
+  border: solid 2px transparent;
+  background-image: linear-gradient(#ffffff, #ffffff), linear-gradient(to bottom, #6ac6fb, #4668cb);
+  background-origin: border-box;
+  background-clip: content-box, border-box;
+}
+body .section2 .card_container .card.pink {
+  left: calc(50% + 20px);
+  background-image: linear-gradient(#ffffff, #ffffff), linear-gradient(to bottom, #ffb9c9, #f99cb1);
+}
+body .section2 .card_container .card.pink .txt h3 {
+  color: #f77ebc;
+}
+body .section2 .card_container .card.pink .txt h5 {
+  color: #f77ebc;
+}
+body .section2 .card_container .card.pink .txt p {
+  background-color: rgba(233, 72, 117, 0.1);
+}
+body .section2 .card_container .card.pink .txt p em {
+  color: #e94875;
+}
+body .section2 .card_container .card .txt {
+  width: 100%;
+}
+body .section2 .card_container .card .txt .icon {
+  width: 120px;
+  height: 120px;
+  margin: 0 auto 7px;
+}
+body .section2 .card_container .card .txt h3 {
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 30px;
+  letter-spacing: 3px;
+  color: #4668cb;
+  margin: 24px 0 10px;
+  text-align: center;
+}
+body .section2 .card_container .card .txt h3 strong {
+  font-size: 48px;
+  font-weight: 400;
+}
+body .section2 .card_container .card .txt h5 {
+  font-size: 18px;
+  line-height: 28px;
+  letter-spacing: 1px;
+  font-weight: 300;
+  color: #4668cb;
+  margin-bottom: 7px;
+  text-align: center;
+}
+body .section2 .card_container .card .txt p {
+  height: 120px;
+  text-align: left;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 20px;
+  padding: 20px 34px;
+  margin: 0;
+  color: #4a4a4a;
+  background-color: rgba(70, 104, 203, 0.1);
+}
+body .section2 .card_container .card .txt p em {
+  color: #4668cb;
+  font-style: normal;
+}
+body .section2 .card_container .note {
+  left: calc(50% - 272px);
+  top: 300px;
+  position: absolute;
+  width: 544px;
+  font-size: 15px;
+  font-weight: 300;
+  color: #4a4a4a;
+  text-align: left;
+}
+body .section2 .step_container {
+  margin-top: 60px;
+  height: 500px;
+  background: url(../svg/invalid-name4.svg) 50% 100% no-repeat;
+  position: relative;
+}
+body .section2 .step_container h3 {
+  position: absolute;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 1.67;
+  letter-spacing: 3px;
+  text-align: center;
+  color: #f77ebc;
+  left: calc(50% - 5px);
+}
+body .section2 .step_container > div {
+  height: 138px;
+  width: 120px;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 18px;
+  font-weight: 100;
+  line-height: 1.56;
+  letter-spacing: 1px;
+  text-align: center;
+  color: #ffffff;
+}
+body .section2 .step_container > div span {
+  display: block;
+  width: 100%;
+  height: 84px;
+}
+body .section2 .step_container .s1 {
+  top: 100px;
+  right: calc(50% + 35px);
+}
+body .section2 .step_container .s1 img {
+  margin-bottom: 8px;
+}
+body .section2 .step_container .s2 {
+  width: 137px;
+  top: 223px;
+  left: calc(50% + 15px);
+}
+body .section2 .step_container .s2 img {
+  margin-bottom: 5px;
+}
+body .section2 .step_container .s3 {
+  top: 352px;
+  right: calc(50% + 36px);
+}
+body .section2 .step_container .s3 img {
+  margin-bottom: 5px;
+}
+body .section2 .btn_container {
+  margin-top: 135px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+body .section2 .btn_container a {
+  margin-right: 40px;
+}
+body .section2 .btn_container a:last-child {
+  margin-right: 0;
+}
+body .section3 .header {
+  padding: 10px 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+body .section3 .header div {
+  cursor: pointer;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+body .section3 .header div span {
+  cursor: pointer;
+  display: block;
+  font-size: 18px;
+  font-weight: 500;
+  letter-spacing: 10px;
+  text-align: left;
+  line-height: 24px;
+  color: #4a4a4a;
+  margin-right: 5px;
+}
+body .section3 .header div img {
+  cursor: pointer;
+  margin-top: -8px;
+  display: block;
+  width: 30px;
+  height: 30px;
+  transform: rotate(0deg);
+  transition: transform .3s linear;
+}
+body .section3 .header div.active img {
+  transform: rotate(-180deg);
+  transition: transform .3s linear;
+}
+body .section3 .content {
+  display: none;
+  padding: 8px 0 16px;
+}
+body .section3 .content > ol {
+  margin: 0 auto;
+  padding-left: 20px;
+  font-size: 12px;
+  font-weight: 400;
+  letter-spacing: 1px;
+  text-align: left;
+  line-height: 20px;
+  color: #4a4a4a;
+  max-width: 1000px;
+}
+body .section3 .content > ol > li {
+  padding-left: 0;
+}
+body .section3 .content > ol > li > ol {
+  padding-left: 22px;
+}
+body .section3 .content > ol > li > ol li {
+  text-indent: -22px;
+  padding: 0;
+  list-style-type: none;
+  list-style-position: inside;
+  counter-increment: cnt;
+}
+body .section3 .content > ol > li > ol li:before {
+  display: marker;
+  content: "(" counter(cnt) ") ";
+}
+
+/*color-------------------------------------------------------------------------------------*/
+/*---------------------------------------------------
+    LESS Elements 0.9
+  ---------------------------------------------------
+    A set of useful LESS mixins
+    More info at: http://lesselements.com
+  ---------------------------------------------------*/
+@media screen and (max-width: 992px) {
+  body {
+    height: auto;
+  }
+  body .section1 {
+    background-image: url(../svg/invalid-name6.svg);
+    background-size: 740px auto;
+  }
+  body .section1 h1 {
+    height: 124px;
+    margin-top: 101px;
+  }
+  body .section1 h1:before {
+    border-width: 62px 0 62px 40px;
+  }
+  body .section1 h1:after {
+    border-width: 62px 40px 62px 0;
+  }
+  body .section2 {
+    height: 1280px;
+    background: #fdfced url(../svg/invalid-name5.svg) 50% 100% no-repeat;
+  }
+  body .section2 .card_container .role {
+    width: 185px;
+    right: auto;
+    left: 13px;
+    bottom: 0;
+  }
+  body .section2 .step_container {
+    margin-top: 40px;
+  }
+  body .section3 .content {
+    padding: 8px 16px 24px;
+  }
+}
+
+/*color-------------------------------------------------------------------------------------*/
+/*---------------------------------------------------
+    LESS Elements 0.9
+  ---------------------------------------------------
+    A set of useful LESS mixins
+    More info at: http://lesselements.com
+  ---------------------------------------------------*/
+@media screen and (max-width: 600px) {
+  body .button.large {
+    width: 154px;
+  }
+  body .section1 {
+    margin-top: 48px;
+    min-height: 600px;
+    background: #5f7cd1 url(../svg/invalid-name8.svg) 50% 10% no-repeat;
+    background-size: 260px 264px;
+  }
+  body .section1 h1 {
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 32px;
+    letter-spacing: 3px;
+    width: 227px;
+    height: 84px;
+    margin-top: 119px;
+    padding: 8px 0 0;
+  }
+  body .section1 h1:before {
+    left: -20px;
+    border-width: 42px 0 42px 20px;
+  }
+  body .section1 h1:after {
+    right: -20px;
+    border-width: 42px 20px 42px 0;
+  }
+  body .section1 h1 span {
+    width: 120px;
+    height: 120px;
+    background-size: contain;
+    top: -100px;
+    left: -30px;
+  }
+  body .section1 h2 {
+    margin-top: 24px;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: 1px;
+  }
+  body .section2 {
+    height: 1380px;
+    background-image: none;
+  }
+  body .section2 .card_container {
+    flex-direction: column;
+    background: url(../svg/invalid-name9.svg) 50% 100% no-repeat;
+    background-size: 320px 266px;
+    height: 666px;
+  }
+  body .section2 .card_container .role {
+    display: none;
+  }
+  body .section2 .card_container .card {
+    width: 240px;
+    height: 363px;
+    top: -250px;
+    right: calc(50% - 120px);
+  }
+  body .section2 .card_container .card .txt h5 {
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 1px;
+  }
+  body .section2 .card_container .card .txt p {
+    padding: 15px 20px;
+    height: 104px;
+  }
+  body .section2 .card_container .card.pink {
+    top: 129px;
+    left: calc(50% - 120px);
+  }
+  body .section2 .card_container .note {
+    display: inline-block;
+    width: 240px;
+    left: calc(50% - 120px);
+    top: 483px;
+    font-size: 14px;
+  }
+  body .section2 .step_container {
+    margin-top: 24px;
+    height: 527px;
+    background: url(../svg/invalid-name7.svg) 50% 100% no-repeat;
+    background-size: 318px 487px;
+  }
+  body .section2 .step_container h3 {
+    position: relative;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 1.67;
+    letter-spacing: 3px;
+    text-align: center;
+    color: #f77ebc;
+    left: auto;
+  }
+  body .section2 .step_container > div {
+    height: 120px;
+    width: 120px;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 1.56;
+    letter-spacing: 1px;
+    text-align: center;
+    color: #ffffff;
+  }
+  body .section2 .step_container .s1 {
+    top: 95px;
+    right: calc(50% - 15px);
+  }
+  body .section2 .step_container .s1 img {
+    margin-bottom: 8px;
+  }
+  body .section2 .step_container .s2 {
+    width: 137px;
+    top: 220px;
+    left: calc(50%);
+  }
+  body .section2 .step_container .s2 img {
+    margin-bottom: 12px;
+  }
+  body .section2 .step_container .s3 {
+    top: 352px;
+    right: calc(50% - 15px);
+  }
+  body .section2 .step_container .s3 img {
+    margin-bottom: 5px;
+  }
+  body .section2 .btn_container {
+    margin-top: 12px;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+  }
+  body .section2 .btn_container a {
+    margin-right: 0;
+    margin-top: 16px;
+  }
+  body .section2 .btn_container a:last-child {
+    margin-right: 0;
+  }
+  body .section3 .content {
+    padding: 0 16px 14px;
+  }
+}

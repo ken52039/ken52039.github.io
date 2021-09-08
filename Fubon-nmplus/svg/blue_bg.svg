@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1404" height="951" viewBox="0 0 1404 951">
+  <g fill="none" fill-rule="evenodd" opacity=".32">
+    <rect width="32" height="32" x="662.988" y="277.988" stroke="#4668CB" stroke-width="3" opacity=".6" style="mix-blend-mode:overlay" transform="rotate(-13 678.988 293.988)"/>
+    <rect width="32" height="32" x="1109.988" y="408.988" stroke="#4668CB" stroke-width="3" opacity=".6" style="mix-blend-mode:overlay" transform="rotate(-13 1125.988 424.988)"/>
+    <rect width="32" height="32" x="662.988" y="659.988" stroke="#4668CB" stroke-width="3" opacity=".6" style="mix-blend-mode:overlay" transform="rotate(-13 678.988 675.988)"/>
+    <polygon stroke="#4668CB" stroke-linecap="round" stroke-linejoin="round" stroke-width="3" points="17.5 0 35 35 0 35" opacity=".6" style="mix-blend-mode:overlay" transform="translate(1369 16)"/>
+    <polygon stroke="#4668CB" stroke-linecap="round" stroke-linejoin="round" stroke-width="3" points="24.749 7.249 42.249 42.249 7.249 42.249" opacity=".6" style="mix-blend-mode:overlay" transform="rotate(45 -45.922 1233.476)"/>
+    <polygon stroke="#4668CB" stroke-linecap="round" stroke-linejoin="round" stroke-width="3" points="24.749 7.249 42.249 42.249 7.249 42.249" opacity=".6" style="mix-blend-mode:overlay" transform="rotate(154 315.715 95.66)"/>
+    <polygon stroke="#4668CB" stroke-linecap="round" stroke-linejoin="round" stroke-width="3" points="24.749 7.249 42.249 42.249 7.249 42.249" opacity=".6" style="mix-blend-mode:overlay" transform="rotate(145 -110.471 461.463)"/>
+    <circle cx="17.5" cy="17.5" r="17.5" stroke="#4668CB" stroke-width="3" opacity=".6" style="mix-blend-mode:overlay" transform="translate(1087 127)"/>
+    <circle cx="17.5" cy="17.5" r="17.5" stroke="#4668CB" stroke-width="3" opacity=".6" style="mix-blend-mode:overlay" transform="translate(60 529)"/>
+    <circle cx="17.5" cy="17.5" r="17.5" stroke="#4668CB" stroke-width="3" opacity=".6" style="mix-blend-mode:overlay" transform="translate(834 859)"/>
+    <circle cx="17.5" cy="17.5" r="17.5" stroke="#4668CB" stroke-width="3" opacity=".6" style="mix-blend-mode:overlay" transform="translate(191 56)"/>
+    <g fill="#4668CB" opacity=".6" transform="rotate(30 433.956 1686.722)">
+      <path fill-rule="nonzero" d="M3,3 L3,32 L32,32 L32,3 L3,3 Z M-1.13686838e-13,0 L35,0 L35,35 L-1.13686838e-13,35 L-1.13686838e-13,0 Z"/>
+      <polygon points="3 15 32 15 32 12 3 12"/>
+    </g>
+    <g fill="#4668CB" opacity=".6" transform="rotate(-55 517.182 -44.511)">
+      <path fill-rule="nonzero" d="M3,3 L3,32 L32,32 L32,3 L3,3 Z M-1.13686838e-13,0 L35,0 L35,35 L-1.13686838e-13,35 L-1.13686838e-13,0 Z"/>
+      <polygon points="3 15 32 15 32 12 3 12"/>
+    </g>
+    <g fill="#4668CB" opacity=".6" transform="rotate(-55 1536.9 -769.856)">
+      <path fill-rule="nonzero" d="M3,3 L3,32 L32,32 L32,3 L3,3 Z M-1.13686838e-13,0 L35,0 L35,35 L-1.13686838e-13,35 L-1.13686838e-13,0 Z"/>
+      <polygon points="3 15 32 15 32 12 3 12"/>
+    </g>
+    <g fill="#4668CB" opacity=".6" transform="rotate(-130 369.51 317.904)">
+      <path fill-rule="nonzero" d="M3,3 L3,32 L32,32 L32,3 L3,3 Z M-1.13686838e-13,0 L35,0 L35,35 L-1.13686838e-13,35 L-1.13686838e-13,0 Z"/>
+      <polygon points="3 15 32 15 32 12 3 12"/>
+    </g>
+    <g fill="#4668CB" fill-rule="nonzero" opacity=".6" transform="matrix(.86603 .5 .5 -.86603 1232 274.31)">
+      <path d="M3,3 L3,32 L32,32 L32,3 L3,3 Z M0,0 L35,0 L35,35 L0,35 L0,0 Z"/>
+      <polygon points="3 15 32 15 32 12 3 12"/>
+    </g>
+    <circle cx="17.5" cy="17.5" r="17.5" stroke="#4668CB" stroke-width="3" opacity=".6" style="mix-blend-mode:overlay" transform="translate(431 180)"/>
+    <g stroke="#4668CB" stroke-linecap="round" stroke-linejoin="round" stroke-width="3" opacity=".597" transform="translate(934 229)">
+      <polyline points="0 11 11.25 0 22.5 11 33.75 0 45 11" style="mix-blend-mode:overlay"/>
+      <polyline points="0 29 11.25 18 22.5 29 33.75 18 45 29" style="mix-blend-mode:overlay"/>
+    </g>
+    <g stroke="#4668CB" stroke-linecap="round" stroke-linejoin="round" stroke-width="3" opacity=".597" transform="translate(451 535)">
+      <polyline points="0 11 11.25 0 22.5 11 33.75 0 45 11" style="mix-blend-mode:overlay"/>
+      <polyline points="0 29 11.25 18 22.5 29 33.75 18 45 29" style="mix-blend-mode:overlay"/>
+    </g>
+    <g stroke="#4668CB" stroke-linecap="round" stroke-linejoin="round" stroke-width="3" opacity=".597" transform="translate(100 286)">
+      <polyline points="0 11 11.25 0 22.5 11 33.75 0 45 11" style="mix-blend-mode:overlay"/>
+      <polyline points="0 29 11.25 18 22.5 29 33.75 18 45 29" style="mix-blend-mode:overlay"/>
+    </g>
+    <g stroke="#4668CB" stroke-linecap="round" stroke-linejoin="round" stroke-width="3" opacity=".597" transform="translate(1337 495)">
+      <polyline points="0 11 11.25 0 22.5 11 33.75 0 45 11" style="mix-blend-mode:overlay"/>
+      <polyline points="0 29 11.25 18 22.5 29 33.75 18 45 29" style="mix-blend-mode:overlay"/>
+    </g>
+    <g stroke="#4668CB" stroke-linecap="round" stroke-linejoin="round" stroke-width="3" opacity=".597" transform="translate(1037 623)">
+      <polyline points="0 11 11.25 0 22.5 11 33.75 0 45 11" style="mix-blend-mode:overlay"/>
+      <polyline points="0 29 11.25 18 22.5 29 33.75 18 45 29" style="mix-blend-mode:overlay"/>
+    </g>
+  </g>
+</svg>

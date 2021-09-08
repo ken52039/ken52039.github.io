@@ -1,0 +1,532 @@
+/*font-----------------------------------------------------------------------------------*/
+html { font-family:  'Microsoft JhengHei', '微軟正黑體', Verdana, sans-serif;}
+
+/*color-------------------------------------------------------------------------------------*/
+@-webkit-keyframes fancybox-rotate {
+  from {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(359deg);
+    transform: rotate(359deg);
+  }
+}
+@keyframes fancybox-rotate {
+  from {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(359deg);
+    transform: rotate(359deg);
+  }
+}
+/*---------------------------------------------------
+    LESS Elements 0.9
+  ---------------------------------------------------
+    A set of useful LESS mixins
+    More info at: http://lesselements.com
+  ---------------------------------------------------*/
+body {
+  font-size: 16px;
+}
+ul,
+h1,
+h2,
+h3,
+p {
+  margin: 0;
+  padding: 0;
+}
+img {
+  margin-bottom: 0;
+}
+.scrollContainer {
+  width: calc(100% + 25px);
+  height: 100vh;
+  overflow-x: hidden;
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
+}
+.scrollContent {
+  padding-top: 56px;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background: url(../svg/invalid-name-geometry.svg) #011b4e;
+}
+.content {
+  flex: 1 0 auto;
+  width: 100%;
+  max-width: 680px;
+  margin: 11px auto 56px;
+}
+.content > ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.content > ul li {
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 32px;
+  height: 32px;
+  border: 2px solid  rgba(51, 204, 204, 0.6);
+  font-size: 16px;
+  font-weight: 300;
+  color: rgba(51, 204, 204, 0.6);
+}
+.content > ul li.active {
+  border: 2px solid  #3cc;
+  color: #3cc;
+}
+.content > ul li + li {
+  margin-left: 28px;
+  position: relative;
+}
+.content > ul li + li:before {
+  content: '';
+  position: absolute;
+  top: calc(49%);
+  left: -19px;
+  width: 10px;
+  height: 2px;
+  opacity: 0.6;
+  border-radius: 2px;
+  background-color: #3cc;
+}
+.content > ul li.active + li:before,
+.content > ul li + li.active:before {
+  opacity: 1;
+}
+.content .note {
+  margin-top: 12px;
+  display: flex;
+}
+.content .note .mask {
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+  width: 64px;
+  height: 64px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  background-color: #16a0a1;
+  overflow: hidden;
+}
+.content .note p {
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  border-radius: 15px;
+  flex: 1;
+  min-height: 64px;
+  display: flex;
+  padding: 8px 15px;
+  border: 1px solid #16a0a1;
+  margin-left: 12px;
+  position: relative;
+  font-size: 16px;
+  background-color: white;
+  line-height: 1.5;
+  color: #404040;
+}
+.content .note p span {
+  display: inline-block;
+  margin: auto auto auto 0;
+}
+.content .note p:before,
+.content .note p:after {
+  content: '';
+  width: 0;
+  height: 0;
+  position: absolute;
+  top: calc(50% - 4px);
+  left: -5px;
+  border-style: solid;
+  border-width: 4px 4px 4px 0;
+  border-color: transparent #2fb153 transparent transparent;
+}
+.content .note p:after {
+  left: -4px;
+  border-color: transparent white transparent transparent;
+}
+.content .dialog {
+  -webkit-border-top-right-radius: 8px;
+  -webkit-border-bottom-right-radius: 0;
+  -webkit-border-bottom-left-radius: 0;
+  -webkit-border-top-left-radius: 8px;
+  -moz-border-radius-topright: 8px;
+  -moz-border-radius-bottomright: 0;
+  -moz-border-radius-bottomleft: 0;
+  -moz-border-radius-topleft: 8px;
+  border-top-right-radius: 8px;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+  border-top-left-radius: 8px;
+  -moz-background-clip: padding-box;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+  padding: 24px 92px 25px;
+  margin-top: 16px;
+  background-color: white;
+}
+.content .dialog h1 {
+  margin-bottom: 16px;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 1px;
+  color: #316fc9;
+}
+.content .dialog .current {
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  border-radius: 8px;
+  padding: 16px 18px 25px 16px;
+  margin-bottom: 24px;
+  background-color: #f5f5f5;
+}
+.content .dialog .current h2 {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 1px;
+  color: #404040;
+}
+.content .dialog .current p {
+  margin-top: 5px;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 1.5;
+  letter-spacing: 1px;
+  color: #404040;
+}
+.content .dialog .current p mark {
+  display: inline-block;
+  background: transparent;
+  color: #2fb153;
+}
+.content .dialog .current p img {
+  cursor: pointer;
+  width: 13px;
+  margin-left: 5px;
+}
+.content .dialog .radio {
+  display: flex;
+  flex-direction: column;
+}
+.content .dialog .radio > label {
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  border-radius: 8px;
+  cursor: pointer;
+  display: flex;
+  padding: 16px 15px 25px 14px;
+}
+.content .dialog .radio > label:nth-child(1) {
+  background-color: rgba(47, 177, 83, 0.1);
+}
+.content .dialog .radio > label:nth-child(2) {
+  background-color: rgba(47, 177, 83, 0.2);
+}
+.content .dialog .radio > label:nth-child(3) {
+  background-color: rgba(47, 177, 83, 0.4);
+}
+.content .dialog .radio > label input {
+  display: none;
+}
+.content .dialog .radio > label input + label {
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+  flex-shrink: 0;
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  margin-top: 2px;
+  border: 1px solid #2fb153;
+  background-color: white;
+  position: relative;
+}
+.content .dialog .radio > label input:checked + label:before {
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+  content: '';
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  background-color: #279fbc;
+  position: absolute;
+  left: 3px;
+  top: 3px;
+}
+.content .dialog .radio > label div {
+  margin-left: 10px;
+}
+.content .dialog .radio > label div h2 {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 1px;
+  color: #404040;
+}
+.content .dialog .radio > label div p {
+  margin-top: 5px;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 1.5;
+  letter-spacing: 1px;
+  color: #404040;
+}
+.content .dialog .radio > label div p mark {
+  display: inline-block;
+  background: transparent;
+  color: #2fb153;
+}
+.content .dialog .radio > label div p img {
+  cursor: pointer;
+  width: 13px;
+  margin-left: 5px;
+}
+.content .dialog .radio > label + label {
+  margin-top: 16px;
+}
+.content .dialog .buttons {
+  margin-top: 40px;
+  text-align: center;
+}
+.content .dialog .buttons a {
+  display: inline-block;
+  width: 140px;
+  height: 48px;
+  border: solid 1px #00abd0;
+  border-radius: 100px;
+  line-height: 48px;
+  background-color: #ffffff;
+  color: #00abd0;
+}
+.content .dialog .buttons .color {
+  border: none;
+  background: #00abd0; 
+  color: white;
+}
+.content .dialog .buttons a + a {
+  margin-left: 40px;
+}
+.content .read-more {
+  -webkit-border-top-right-radius: 0;
+  -webkit-border-bottom-right-radius: 8px;
+  -webkit-border-bottom-left-radius: 8px;
+  -webkit-border-top-left-radius: 0;
+  -moz-border-radius-topright: 0;
+  -moz-border-radius-bottomright: 8px;
+  -moz-border-radius-bottomleft: 8px;
+  -moz-border-radius-topleft: 0;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 8px;
+  border-bottom-left-radius: 8px;
+  border-top-left-radius: 0;
+  -moz-background-clip: padding-box;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+  background: #f5f5f5;
+}
+.content .read-more > span {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  height: 32px;
+  font-size: 12px;
+  font-weight: 300;
+  letter-spacing: 1px;
+  text-align: center;
+  color: black;
+}
+.content .read-more > span img {
+  margin-left: 8px;
+}
+.content .read-more > span.active img {
+  -webkit-transform: rotate(180deg);
+  -moz-transform: rotate(180deg);
+  -o-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  transform: rotate(180deg);
+}
+.content .read-more > div {
+  display: none;
+  padding: 8px 32px 24px;
+}
+.content .read-more > div > ol {
+  width: 100%;
+  font-size: 12px;
+  line-height: 20px;
+  color: #4a4a4a;
+  padding-left: 13px;
+}
+.content .read-more > div > ol > li .fancybox {
+  color: #316fc9;
+  cursor: pointer;
+  text-decoration: underline;
+}
+.content .read-more > div > ol > li > ol {
+  padding: 0;
+  padding-left: 24px;
+  list-style-type: none;
+  counter-reset: section;
+}
+.content .read-more > div > ol > li > ol > li {
+  list-style: disc;
+}
+.content.kyper .note .mask {
+  background-color: #279fbc;
+}
+.content.kyper .note p {
+  border: 1px solid #279fbc;
+}
+.content.kyper .note p:before {
+  border-color: transparent #279fbc transparent transparent;
+}
+.content.kyper .dialog .current p mark {
+  color: #279fbc;
+}
+.content.kyper .dialog .radio > label:nth-child(1) {
+  background-color: rgba(39, 159, 188, 0.1);
+}
+.content.kyper .dialog .radio > label:nth-child(2) {
+  background-color: rgba(39, 159, 188, 0.2);
+}
+.content.kyper .dialog .radio > label:nth-child(3) {
+  background-color: rgba(39, 159, 188, 0.4);
+}
+.content.kyper .dialog .radio > label input + label {
+  border: 1px solid #279fbc;
+}
+.content.kyper .dialog .radio > label input:checked + label:before {
+  background-color: #279fbc;
+}
+.content.kyper .dialog .radio > label div p mark {
+  color: #279fbc;
+}
+
+/*color-------------------------------------------------------------------------------------*/
+@-webkit-keyframes fancybox-rotate {
+  from {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(359deg);
+    transform: rotate(359deg);
+  }
+}
+@keyframes fancybox-rotate {
+  from {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(359deg);
+    transform: rotate(359deg);
+  }
+}
+/*---------------------------------------------------
+    LESS Elements 0.9
+  ---------------------------------------------------
+    A set of useful LESS mixins
+    More info at: http://lesselements.com
+  ---------------------------------------------------*/
+@media screen and (max-width: 992px) {
+  .scrollContainer {
+    width: auto;
+  }
+  .content {
+    padding-left: 44px;
+    padding-right: 44px;
+    max-width: none;
+  }
+}
+
+/*color-------------------------------------------------------------------------------------*/
+@-webkit-keyframes fancybox-rotate {
+  from {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(359deg);
+    transform: rotate(359deg);
+  }
+}
+@keyframes fancybox-rotate {
+  from {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(359deg);
+    transform: rotate(359deg);
+  }
+}
+/*---------------------------------------------------
+    LESS Elements 0.9
+  ---------------------------------------------------
+    A set of useful LESS mixins
+    More info at: http://lesselements.com
+  ---------------------------------------------------*/
+@media screen and (max-width: 600px) {
+  .scrollContent {
+    padding-top: 48px;
+  }
+  .content {
+    padding-left: 8px;
+    padding-right: 8px;
+  }
+  .content .note {
+    margin-top: 35px;
+    position: relative;
+  }
+  .content .note .mask {
+    z-index: 1;
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    top: -25px;
+    left: 0;
+    -webkit-box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
+    -moz-box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
+  }
+  .content .note .mask img {
+    width: 26px;
+  }
+  .content .note p {
+    padding: 24px 16px 15px;
+    margin-left: 0;
+  }
+  .content .note p:before,
+  .content .note p:after {
+    content: none;
+  }
+  .content .dialog {
+    padding: 24px 16px;
+  }
+  .content .dialog .buttons {
+    display: flex;
+    margin-left: -8px;
+    margin-right: -8px;
+  }
+  .content .dialog .buttons a {
+    flex: 1;
+  }
+  .content .dialog .buttons a + a {
+    margin-left: 8px;
+  }
+}

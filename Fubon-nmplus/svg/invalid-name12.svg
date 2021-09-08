@@ -1,0 +1,182 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="405" height="109" viewBox="0 0 405 109">
+  <defs>
+    <rect id="機器人拿金幣-a" width="30" height="8" rx=".75"/>
+    <rect id="機器人拿金幣-c" width="30" height="8" rx=".75"/>
+    <rect id="機器人拿金幣-e" width="30" height="8" rx=".75"/>
+    <rect id="機器人拿金幣-g" width="30" height="8" rx=".75"/>
+    <rect id="機器人拿金幣-i" width="30" height="8" rx=".75"/>
+    <rect id="機器人拿金幣-k" width="30" height="8" rx=".75"/>
+    <rect id="機器人拿金幣-m" width="30" height="8" rx=".75"/>
+    <rect id="機器人拿金幣-o" width="30" height="8" rx=".75"/>
+    <rect id="機器人拿金幣-q" width="30" height="8" rx=".75"/>
+    <rect id="機器人拿金幣-s" width="30" height="8" rx=".75"/>
+    <rect id="機器人拿金幣-u" width="30" height="8" rx=".75"/>
+    <rect id="機器人拿金幣-w" width="30" height="8" rx=".75"/>
+    <rect id="機器人拿金幣-y" width="30" height="8" rx=".75"/>
+    <rect id="機器人拿金幣-A" width="30" height="8" rx=".75"/>
+  </defs>
+  <g fill="none" fill-rule="evenodd">
+    <g transform="matrix(-1 0 0 1 190.875 27)">
+      <polygon fill="#C5C5C5" fill-rule="nonzero" points="25.688 62.625 30.188 62.625 30.188 81 25.688 81"/>
+      <polygon fill="#C5C5C5" fill-rule="nonzero" points="47.063 62.625 51.563 62.625 51.563 81 47.063 81"/>
+      <path fill="#C5C5C5" fill-rule="nonzero" d="M59.4618165,46.8081554 L59.4618165,42.3081554 L60.9531994,42.3081554 C68.7205199,42.3081554 75.8535144,38.0207818 79.4980187,31.1615649 L83.0419949,24.4915489 L87.0158848,26.6029938 L83.4719085,33.2730098 C79.0464391,41.6020588 70.3849457,46.8081554 60.9531994,46.8081554 L59.4618165,46.8081554 Z" transform="rotate(38 73.239 35.65)"/>
+      <g transform="rotate(-4 68.403 1.705)">
+        <rect width="57.375" height="66" x="6" fill="#E1E1E1"/>
+        <rect width="12" height="66" x="6" fill="#C5C5C5"/>
+        <g transform="translate(31.875 15)">
+          <polygon fill="#E82087" points="12.963 2.439 15.588 9.564 10.338 9.564"/>
+          <rect width="5.625" height="8.25" fill="#4668CB" rx="2.813"/>
+          <rect width="5.25" height="8.25" x="18.325" fill="#4668CB" rx="2.625"/>
+        </g>
+        <path fill="#E1E1E1" fill-rule="nonzero" d="M10.3863846,26.1740033 L13.7398981,28.5759967 L5.25500303,40.4220786 C3.57308692,42.7702651 4.02060155,46.0236781 6.2740551,47.8305452 L9.82779885,50.6800127 L7.24735933,53.8982353 L3.69361558,51.0487678 C-0.269354455,47.8711739 -1.05636295,42.1496546 1.90148952,38.0200853 L10.3863846,26.1740033 Z"/>
+      </g>
+    </g>
+    <g transform="rotate(-16 180.346 -253.553)">
+      <circle cx="15" cy="15" r="15" fill="#FAC343"/>
+      <circle cx="15" cy="15" r="12.857" fill="#F5AC02" stroke="#FFF" stroke-width=".75"/>
+      <path fill="#FFF" d="M15.1661147,7.5 C16.9091066,7.5 18.2786002,7.85274836 19.2538457,8.57899499 C20.2913409,9.34674142 20.8930881,10.5502358 21.0383374,12.1687283 L18.6313486,12.1687283 C18.4238496,11.2557325 18.0296014,10.5917356 17.4901039,10.1974875 C16.9506064,9.78248939 16.1206103,9.59574026 15.0416153,9.59574026 C14.1078696,9.59574026 13.4023729,9.72023968 12.9043752,9.98998843 C12.2818781,10.301237 11.9913795,10.8199846 11.9913795,11.5254813 C11.9913795,12.1479784 12.3233779,12.666726 13.0288746,13.0402243 C13.3401232,13.2062235 14.1908692,13.517472 15.5603629,13.95322 C17.5731035,14.5757171 18.8595975,15.0737148 19.4405948,15.4057133 C20.7270889,16.1734597 21.3703359,17.2317048 21.3703359,18.6011984 C21.3703359,19.9291922 20.8515883,20.9874373 19.8140931,21.7551838 C18.7765979,22.5021803 17.3033548,22.8964284 15.4151135,22.8964284 C13.589122,22.8964284 12.1573787,22.5436801 11.1406334,21.8381834 C9.89563919,20.9666874 9.21089237,19.5971938 9.10714286,17.7089526 L11.5141317,17.7089526 C11.6801309,18.8294473 12.0743791,19.6386936 12.7176261,20.1159414 C13.2986234,20.5309394 14.1908692,20.7591884 15.4151135,20.7591884 C16.4941085,20.7591884 17.3656045,20.5724392 17.9881016,20.2196909 C18.6105987,19.8461926 18.9425971,19.3689448 18.9425971,18.7464477 C18.9425971,17.9579514 18.4653494,17.3354543 17.5523536,16.8789564 C17.261855,16.7337071 16.3073594,16.4017086 14.668117,15.9037109 C12.8421255,15.3227136 11.7008808,14.9077156 11.2651328,14.6587167 C10.1238881,13.9739699 9.56364074,12.9779745 9.56364074,11.6707306 C9.56364074,10.3634867 10.1031382,9.32599151 11.223633,8.57899499 C12.2611282,7.85274836 13.5683721,7.5 15.1661147,7.5 Z"/>
+      <rect width="2.679" height="2.143" x="13.929" y="5.893" fill="#FFF"/>
+      <rect width="2.679" height="2.143" x="13.929" y="22.5" fill="#FFF"/>
+    </g>
+    <g transform="translate(26.625 84.75)">
+      <g transform="translate(0 15.75)">
+        <mask id="機器人拿金幣-b" fill="#fff">
+          <use xlink:href="#機器人拿金幣-a"/>
+        </mask>
+        <use fill="#F5AC02" xlink:href="#機器人拿金幣-a"/>
+        <rect width="32.143" height="1.5" x="-1.071" fill="#FAC343" mask="url(#機器人拿金幣-b)" style="mix-blend-mode:hard-light"/>
+        <rect width="1.071" height="6.5" x="3.214" y="1.5" fill="#FAC343" mask="url(#機器人拿金幣-b)" style="mix-blend-mode:hard-light"/>
+        <rect width="1.071" height="6.5" x="12.857" y="1.5" fill="#FAC343" mask="url(#機器人拿金幣-b)" style="mix-blend-mode:hard-light"/>
+        <rect width="1.071" height="6.5" x="22.5" y="1.5" fill="#FAC343" mask="url(#機器人拿金幣-b)" style="mix-blend-mode:hard-light"/>
+      </g>
+      <g transform="translate(0 7.875)">
+        <mask id="機器人拿金幣-d" fill="#fff">
+          <use xlink:href="#機器人拿金幣-c"/>
+        </mask>
+        <use fill="#F5AC02" xlink:href="#機器人拿金幣-c"/>
+        <rect width="32.143" height="1.5" x="-1.071" fill="#FAC343" mask="url(#機器人拿金幣-d)" style="mix-blend-mode:hard-light"/>
+        <rect width="1.071" height="6.5" x="3.214" y="1.5" fill="#FAC343" mask="url(#機器人拿金幣-d)" style="mix-blend-mode:hard-light"/>
+        <rect width="1.071" height="6.5" x="12.857" y="1.5" fill="#FAC343" mask="url(#機器人拿金幣-d)" style="mix-blend-mode:hard-light"/>
+        <rect width="1.071" height="6.5" x="22.5" y="1.5" fill="#FAC343" mask="url(#機器人拿金幣-d)" style="mix-blend-mode:hard-light"/>
+      </g>
+      <mask id="機器人拿金幣-f" fill="#fff">
+        <use xlink:href="#機器人拿金幣-e"/>
+      </mask>
+      <use fill="#F5AC02" xlink:href="#機器人拿金幣-e"/>
+      <rect width="32.143" height="1.5" x="-1.071" fill="#FAC343" mask="url(#機器人拿金幣-f)" style="mix-blend-mode:hard-light"/>
+      <rect width="1.071" height="6.5" x="3.214" y="1.5" fill="#FAC343" mask="url(#機器人拿金幣-f)" style="mix-blend-mode:hard-light"/>
+      <rect width="1.071" height="6.5" x="12.857" y="1.5" fill="#FAC343" mask="url(#機器人拿金幣-f)" style="mix-blend-mode:hard-light"/>
+      <rect width="1.071" height="6.5" x="22.5" y="1.5" fill="#FAC343" mask="url(#機器人拿金幣-f)" style="mix-blend-mode:hard-light"/>
+    </g>
+    <g transform="translate(265.5 92.625)">
+      <g transform="translate(0 7.875)">
+        <mask id="機器人拿金幣-h" fill="#fff">
+          <use xlink:href="#機器人拿金幣-g"/>
+        </mask>
+        <use fill="#F5AC02" xlink:href="#機器人拿金幣-g"/>
+        <rect width="32.143" height="1.5" x="-1.071" fill="#FAC343" mask="url(#機器人拿金幣-h)" style="mix-blend-mode:hard-light"/>
+        <rect width="1.071" height="6.5" x="3.214" y="1.5" fill="#FAC343" mask="url(#機器人拿金幣-h)" style="mix-blend-mode:hard-light"/>
+        <rect width="1.071" height="6.5" x="12.857" y="1.5" fill="#FAC343" mask="url(#機器人拿金幣-h)" style="mix-blend-mode:hard-light"/>
+        <rect width="1.071" height="6.5" x="22.5" y="1.5" fill="#FAC343" mask="url(#機器人拿金幣-h)" style="mix-blend-mode:hard-light"/>
+      </g>
+      <mask id="機器人拿金幣-j" fill="#fff">
+        <use xlink:href="#機器人拿金幣-i"/>
+      </mask>
+      <use fill="#F5AC02" xlink:href="#機器人拿金幣-i"/>
+      <rect width="32.143" height="1.5" x="-1.071" fill="#FAC343" mask="url(#機器人拿金幣-j)" style="mix-blend-mode:hard-light"/>
+      <rect width="1.071" height="6.5" x="3.214" y="1.5" fill="#FAC343" mask="url(#機器人拿金幣-j)" style="mix-blend-mode:hard-light"/>
+      <rect width="1.071" height="6.5" x="12.857" y="1.5" fill="#FAC343" mask="url(#機器人拿金幣-j)" style="mix-blend-mode:hard-light"/>
+      <rect width="1.071" height="6.5" x="22.5" y="1.5" fill="#FAC343" mask="url(#機器人拿金幣-j)" style="mix-blend-mode:hard-light"/>
+    </g>
+    <g transform="translate(372.375 100.125)">
+      <mask id="機器人拿金幣-l" fill="#fff">
+        <use xlink:href="#機器人拿金幣-k"/>
+      </mask>
+      <use fill="#F5AC02" xlink:href="#機器人拿金幣-k"/>
+      <rect width="32.143" height="1.5" x="-1.071" fill="#FAC343" mask="url(#機器人拿金幣-l)" style="mix-blend-mode:hard-light"/>
+      <rect width="1.071" height="6.5" x="3.214" y="1.5" fill="#FAC343" mask="url(#機器人拿金幣-l)" style="mix-blend-mode:hard-light"/>
+      <rect width="1.071" height="6.5" x="12.857" y="1.5" fill="#FAC343" mask="url(#機器人拿金幣-l)" style="mix-blend-mode:hard-light"/>
+      <rect width="1.071" height="6.5" x="22.5" y="1.5" fill="#FAC343" mask="url(#機器人拿金幣-l)" style="mix-blend-mode:hard-light"/>
+    </g>
+    <g transform="translate(65.625 76.875)">
+      <g transform="translate(0 23.625)">
+        <mask id="機器人拿金幣-n" fill="#fff">
+          <use xlink:href="#機器人拿金幣-m"/>
+        </mask>
+        <use fill="#F5AC02" xlink:href="#機器人拿金幣-m"/>
+        <rect width="32.143" height="1.5" x="-1.071" fill="#FAC343" mask="url(#機器人拿金幣-n)" style="mix-blend-mode:hard-light"/>
+        <rect width="1.071" height="6.5" x="3.214" y="1.5" fill="#FAC343" mask="url(#機器人拿金幣-n)" style="mix-blend-mode:hard-light"/>
+        <rect width="1.071" height="6.5" x="12.857" y="1.5" fill="#FAC343" mask="url(#機器人拿金幣-n)" style="mix-blend-mode:hard-light"/>
+        <rect width="1.071" height="6.5" x="22.5" y="1.5" fill="#FAC343" mask="url(#機器人拿金幣-n)" style="mix-blend-mode:hard-light"/>
+      </g>
+      <g transform="translate(0 15.75)">
+        <mask id="機器人拿金幣-p" fill="#fff">
+          <use xlink:href="#機器人拿金幣-o"/>
+        </mask>
+        <use fill="#F5AC02" xlink:href="#機器人拿金幣-o"/>
+        <rect width="32.143" height="1.5" x="-1.071" fill="#FAC343" mask="url(#機器人拿金幣-p)" style="mix-blend-mode:hard-light"/>
+        <rect width="1.071" height="6.5" x="3.214" y="1.5" fill="#FAC343" mask="url(#機器人拿金幣-p)" style="mix-blend-mode:hard-light"/>
+        <rect width="1.071" height="6.5" x="12.857" y="1.5" fill="#FAC343" mask="url(#機器人拿金幣-p)" style="mix-blend-mode:hard-light"/>
+        <rect width="1.071" height="6.5" x="22.5" y="1.5" fill="#FAC343" mask="url(#機器人拿金幣-p)" style="mix-blend-mode:hard-light"/>
+      </g>
+      <g transform="translate(0 7.875)">
+        <mask id="機器人拿金幣-r" fill="#fff">
+          <use xlink:href="#機器人拿金幣-q"/>
+        </mask>
+        <use fill="#F5AC02" xlink:href="#機器人拿金幣-q"/>
+        <rect width="32.143" height="1.5" x="-1.071" fill="#FAC343" mask="url(#機器人拿金幣-r)" style="mix-blend-mode:hard-light"/>
+        <rect width="1.071" height="6.5" x="3.214" y="1.5" fill="#FAC343" mask="url(#機器人拿金幣-r)" style="mix-blend-mode:hard-light"/>
+        <rect width="1.071" height="6.5" x="12.857" y="1.5" fill="#FAC343" mask="url(#機器人拿金幣-r)" style="mix-blend-mode:hard-light"/>
+        <rect width="1.071" height="6.5" x="22.5" y="1.5" fill="#FAC343" mask="url(#機器人拿金幣-r)" style="mix-blend-mode:hard-light"/>
+      </g>
+      <mask id="機器人拿金幣-t" fill="#fff">
+        <use xlink:href="#機器人拿金幣-s"/>
+      </mask>
+      <use fill="#F5AC02" xlink:href="#機器人拿金幣-s"/>
+      <rect width="32.143" height="1.5" x="-1.071" fill="#FAC343" mask="url(#機器人拿金幣-t)" style="mix-blend-mode:hard-light"/>
+      <rect width="1.071" height="6.5" x="3.214" y="1.5" fill="#FAC343" mask="url(#機器人拿金幣-t)" style="mix-blend-mode:hard-light"/>
+      <rect width="1.071" height="6.5" x="12.857" y="1.5" fill="#FAC343" mask="url(#機器人拿金幣-t)" style="mix-blend-mode:hard-light"/>
+      <rect width="1.071" height="6.5" x="22.5" y="1.5" fill="#FAC343" mask="url(#機器人拿金幣-t)" style="mix-blend-mode:hard-light"/>
+    </g>
+    <g transform="translate(304.5 76.875)">
+      <g transform="translate(0 23.625)">
+        <mask id="機器人拿金幣-v" fill="#fff">
+          <use xlink:href="#機器人拿金幣-u"/>
+        </mask>
+        <use fill="#F5AC02" xlink:href="#機器人拿金幣-u"/>
+        <rect width="32.143" height="1.5" x="-1.071" fill="#FAC343" mask="url(#機器人拿金幣-v)" style="mix-blend-mode:hard-light"/>
+        <rect width="1.071" height="6.5" x="3.214" y="1.5" fill="#FAC343" mask="url(#機器人拿金幣-v)" style="mix-blend-mode:hard-light"/>
+        <rect width="1.071" height="6.5" x="12.857" y="1.5" fill="#FAC343" mask="url(#機器人拿金幣-v)" style="mix-blend-mode:hard-light"/>
+        <rect width="1.071" height="6.5" x="22.5" y="1.5" fill="#FAC343" mask="url(#機器人拿金幣-v)" style="mix-blend-mode:hard-light"/>
+      </g>
+      <g transform="translate(0 15.75)">
+        <mask id="機器人拿金幣-x" fill="#fff">
+          <use xlink:href="#機器人拿金幣-w"/>
+        </mask>
+        <use fill="#F5AC02" xlink:href="#機器人拿金幣-w"/>
+        <rect width="32.143" height="1.5" x="-1.071" fill="#FAC343" mask="url(#機器人拿金幣-x)" style="mix-blend-mode:hard-light"/>
+        <rect width="1.071" height="6.5" x="3.214" y="1.5" fill="#FAC343" mask="url(#機器人拿金幣-x)" style="mix-blend-mode:hard-light"/>
+        <rect width="1.071" height="6.5" x="12.857" y="1.5" fill="#FAC343" mask="url(#機器人拿金幣-x)" style="mix-blend-mode:hard-light"/>
+        <rect width="1.071" height="6.5" x="22.5" y="1.5" fill="#FAC343" mask="url(#機器人拿金幣-x)" style="mix-blend-mode:hard-light"/>
+      </g>
+      <g transform="translate(0 7.875)">
+        <mask id="機器人拿金幣-z" fill="#fff">
+          <use xlink:href="#機器人拿金幣-y"/>
+        </mask>
+        <use fill="#F5AC02" xlink:href="#機器人拿金幣-y"/>
+        <rect width="32.143" height="1.5" x="-1.071" fill="#FAC343" mask="url(#機器人拿金幣-z)" style="mix-blend-mode:hard-light"/>
+        <rect width="1.071" height="6.5" x="3.214" y="1.5" fill="#FAC343" mask="url(#機器人拿金幣-z)" style="mix-blend-mode:hard-light"/>
+        <rect width="1.071" height="6.5" x="12.857" y="1.5" fill="#FAC343" mask="url(#機器人拿金幣-z)" style="mix-blend-mode:hard-light"/>
+        <rect width="1.071" height="6.5" x="22.5" y="1.5" fill="#FAC343" mask="url(#機器人拿金幣-z)" style="mix-blend-mode:hard-light"/>
+      </g>
+      <mask id="機器人拿金幣-B" fill="#fff">
+        <use xlink:href="#機器人拿金幣-A"/>
+      </mask>
+      <use fill="#F5AC02" xlink:href="#機器人拿金幣-A"/>
+      <rect width="32.143" height="1.5" x="-1.071" fill="#FAC343" mask="url(#機器人拿金幣-B)" style="mix-blend-mode:hard-light"/>
+      <rect width="1.071" height="6.5" x="3.214" y="1.5" fill="#FAC343" mask="url(#機器人拿金幣-B)" style="mix-blend-mode:hard-light"/>
+      <rect width="1.071" height="6.5" x="12.857" y="1.5" fill="#FAC343" mask="url(#機器人拿金幣-B)" style="mix-blend-mode:hard-light"/>
+      <rect width="1.071" height="6.5" x="22.5" y="1.5" fill="#FAC343" mask="url(#機器人拿金幣-B)" style="mix-blend-mode:hard-light"/>
+    </g>
+  </g>
+</svg>

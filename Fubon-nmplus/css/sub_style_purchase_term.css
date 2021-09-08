@@ -1,0 +1,326 @@
+/*font-----------------------------------------------------------------------------------*/
+html { font-family: Verdana, 'Microsoft JhengHei', '微軟正黑體', sans-serif;}
+/*@font-face {
+  font-family: 'cwTeXHei';
+  font-style: normal;
+  font-weight: 500;
+  src: url(//fonts.gstatic.com/ea/cwtexhei/v3/cwTeXHei-zhonly.eot);
+  src: url(//fonts.gstatic.com/ea/cwtexhei/v3/cwTeXHei-zhonly.eot?#iefix) format('embedded-opentype'), url(//fonts.gstatic.com/ea/cwtexhei/v3/cwTeXHei-zhonly.woff2) format('woff2'), url(//fonts.gstatic.com/ea/cwtexhei/v3/cwTeXHei-zhonly.woff) format('woff'), url(//fonts.gstatic.com/ea/cwtexhei/v3/cwTeXHei-zhonly.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Noto Sans TC';
+  font-style: normal;
+  font-weight: 100;
+  src: url(//fonts.gstatic.com/ea/notosanstc/v1/NotoSansTC-Thin.woff2) format('woff2'), url(//fonts.gstatic.com/ea/notosanstc/v1/NotoSansTC-Thin.woff) format('woff'), url(//fonts.gstatic.com/ea/notosanstc/v1/NotoSansTC-Thin.otf) format('opentype');
+}
+@font-face {
+  font-family: 'Noto Sans TC';
+  font-style: normal;
+  font-weight: 300;
+  src: url(//fonts.gstatic.com/ea/notosanstc/v1/NotoSansTC-Light.woff2) format('woff2'), url(//fonts.gstatic.com/ea/notosanstc/v1/NotoSansTC-Light.woff) format('woff'), url(//fonts.gstatic.com/ea/notosanstc/v1/NotoSansTC-Light.otf) format('opentype');
+}
+@font-face {
+  font-family: 'Noto Sans TC';
+  font-style: normal;
+  font-weight: 400;
+  src: url(//fonts.gstatic.com/ea/notosanstc/v1/NotoSansTC-Regular.woff2) format('woff2'), url(//fonts.gstatic.com/ea/notosanstc/v1/NotoSansTC-Regular.woff) format('woff'), url(//fonts.gstatic.com/ea/notosanstc/v1/NotoSansTC-Regular.otf) format('opentype');
+}
+@font-face {
+  font-family: 'Noto Sans TC';
+  font-style: normal;
+  font-weight: 500;
+  src: url(//fonts.gstatic.com/ea/notosanstc/v1/NotoSansTC-Medium.woff2) format('woff2'), url(//fonts.gstatic.com/ea/notosanstc/v1/NotoSansTC-Medium.woff) format('woff'), url(//fonts.gstatic.com/ea/notosanstc/v1/NotoSansTC-Medium.otf) format('opentype');
+}
+@font-face {
+  font-family: 'Noto Sans TC';
+  font-style: normal;
+  font-weight: 700;
+  src: url(//fonts.gstatic.com/ea/notosanstc/v1/NotoSansTC-Bold.woff2) format('woff2'), url(//fonts.gstatic.com/ea/notosanstc/v1/NotoSansTC-Bold.woff) format('woff'), url(//fonts.gstatic.com/ea/notosanstc/v1/NotoSansTC-Bold.otf) format('opentype');
+}
+@font-face {
+  font-family: 'Noto Sans TC';
+  font-style: normal;
+  font-weight: 900;
+  src: url(//fonts.gstatic.com/ea/notosanstc/v1/NotoSansTC-Black.woff2) format('woff2'), url(//fonts.gstatic.com/ea/notosanstc/v1/NotoSansTC-Black.woff) format('woff'), url(//fonts.gstatic.com/ea/notosanstc/v1/NotoSansTC-Black.otf) format('opentype');
+}*/
+
+/*color-------------------------------------------------------------------------------------*/
+@-webkit-keyframes fancybox-rotate {
+  from {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(359deg);
+    transform: rotate(359deg);
+  }
+}
+@keyframes fancybox-rotate {
+  from {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(359deg);
+    transform: rotate(359deg);
+  }
+}
+/*---------------------------------------------------
+    LESS Elements 0.9
+  ---------------------------------------------------
+    A set of useful LESS mixins
+    More info at: http://lesselements.com
+  ---------------------------------------------------*/
+body {
+  font-size: 16px;
+  color: #4a4a4a;
+}
+img {
+  margin: 0;
+}
+p,
+ul,
+ol,
+h1,
+h2 {
+  margin: 0;
+  padding: 0;
+}
+.scrollContainer {
+  width: calc(100% + 25px);
+  /*height: 100vh;*/ height: auto;
+  overflow-x: hidden;
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
+}
+.scrollContent {
+  width: 100%;
+  margin-top: 56px;
+  background: url('../svg/invalid-name-geometry.svg') #011b4e center;
+}
+.content {
+  max-width: 680px;
+  padding-top: 24px;
+  margin: 0 auto;
+}
+.content .dialog {
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  border-radius: 8px;
+  padding: 40px 32px;
+  background-color: white;
+}
+.content .dialog h1 {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 1px;
+  text-align: center;
+  color: #316fc9;
+}
+.content .dialog h1 span {
+  display: inline-block;
+  width: 426px;
+}
+.content .dialog > ul {
+  font-size: 14px;
+  list-style-type: none;
+  margin-top: 24px;
+  letter-spacing: 1px;
+}
+.content .dialog > ul > li > ul {
+  list-style-type: none;
+}
+.content .dialog > ul > li > ul > li {
+  margin-top: 8px;
+}
+.content .dialog > ul > li > ul > li p {
+  color: #7f7f7f;
+  font-weight: 300;
+}
+.content .dialog > ul > li > ul > li > ul {
+  padding-left: 45px;
+  position: relative;
+  color: #7f7f7f;
+  font-weight: 300;
+  list-style: none;
+}
+.content .dialog > ul > li > ul > li > ul li {
+  margin-top: 4px;
+}
+.content .dialog > ul > li > ul > li > ul li span {
+  position: absolute;
+  left: 0;
+  border-top: 0;
+}
+.content .dialog > ul > li > ul > li > ul li ul {
+  list-style: none;
+  padding-left: 47px;
+  position: relative;
+}
+.content .dialog > ul > li > ul > li > ul li ul li span {
+  left: -7px;
+}
+.content .dialog > ul > li > ul > li > ul li ul li ul {
+  list-style: decimal;
+  padding-left: 0;
+  margin-left: -12px;
+}
+.content .dialog > ul > li > ul > li > ul li ul li ul li {
+  padding-left: 10px;
+}
+.content .dialog > ul ~ p {
+  font-weight: 300;
+  font-size: 14px;
+  color: #7f7f7f;
+}
+.content .dialog > ul ~ p:nth-of-type(1) {
+  margin-top: 8px;
+}
+.content .dialog table {
+  margin-left: -92px;
+  margin-top: 16px;
+  border: .5px solid #e0e0e0;
+}
+.content .dialog table tr td {
+  border-top: .5px solid #e0e0e0;
+  border-right: 0px solid #e0e0e0;
+  border-bottom: 0px solid #e0e0e0;
+  border-left: 0px solid #e0e0e0;
+  padding: 8px;
+  font-weight: 300;
+}
+.content .dialog table tr td:nth-child(1) {
+  width: 166px;
+}
+.content .dialog table tr td:nth-child(2) {
+  border-left: 1px solid #e0e0e0;
+}
+.content .dialog table tr td:nth-child(2) span {
+  color: #404040;
+  position: initial;
+  display: inline;
+  margin-right: 0;
+}
+.content .dialog table tr td:nth-child(2) > ul {
+  list-style: none;
+  padding-left: 34px;
+}
+.content .dialog table tr td:nth-child(2) > ul li span {
+  position: absolute;
+  left: 0px;
+  color: #7f7f7f;
+  width: 28px;
+}
+.content .dialog table tr td:nth-child(2) > ul li ul {
+  padding-left: 0;
+}
+.content .dialog table tr td b {
+  font-weight: 300;
+  color: #404040;
+}
+.content .dialog table + p.note {
+  padding-left: 0;
+  margin-left: -92px;
+  margin-bottom: 8px;
+  margin-top: 8px;
+}
+
+/*color-------------------------------------------------------------------------------------*/
+@-webkit-keyframes fancybox-rotate {
+  from {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(359deg);
+    transform: rotate(359deg);
+  }
+}
+@keyframes fancybox-rotate {
+  from {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(359deg);
+    transform: rotate(359deg);
+  }
+}
+/*---------------------------------------------------
+    LESS Elements 0.9
+  ---------------------------------------------------
+    A set of useful LESS mixins
+    More info at: http://lesselements.com
+  ---------------------------------------------------*/
+@media screen and (max-width: 992px) {
+  .scrollContainer {
+    width: 100vw;
+  }
+  .content {
+    max-width: none;
+    padding-left: 44px;
+    padding-right: 44px;
+  }
+}
+
+/*color-------------------------------------------------------------------------------------*/
+@-webkit-keyframes fancybox-rotate {
+  from {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(359deg);
+    transform: rotate(359deg);
+  }
+}
+@keyframes fancybox-rotate {
+  from {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(359deg);
+    transform: rotate(359deg);
+  }
+}
+/*---------------------------------------------------
+    LESS Elements 0.9
+  ---------------------------------------------------
+    A set of useful LESS mixins
+    More info at: http://lesselements.com
+  ---------------------------------------------------*/
+@media screen and (max-width: 600px) {
+  .scrollContent {
+    margin-top: 48px;
+  }
+  .content {
+    padding: 0;
+  }
+  .content .dialog {
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    border-radius: 0;
+    padding: 24px;
+  }
+  .content .dialog h1 span {
+    width: 100%;
+  }
+  .content .dialog table {
+    margin-left: -92px;
+  }
+  .content .dialog table tr td:nth-child(1) {
+    width: 76px;
+  }
+  .content .dialog table:nth-of-type(2) tr td {
+    display: block;
+    width: 100%;
+  }
+  .content .dialog table:nth-of-type(2) tr td:nth-child(2) {
+    border-left: 0;
+  }
+  .content .dialog table + p.note {
+    margin-left: -92px;
+  }
+}

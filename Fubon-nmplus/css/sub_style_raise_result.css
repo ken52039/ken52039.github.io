@@ -1,0 +1,316 @@
+/*font-----------------------------------------------------------------------------------*/
+html { font-family:  'Microsoft JhengHei', '微軟正黑體', Verdana, sans-serif;}
+
+/*color-------------------------------------------------------------------------------------*/
+@-webkit-keyframes fancybox-rotate {
+  from {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(359deg);
+    transform: rotate(359deg);
+  }
+}
+@keyframes fancybox-rotate {
+  from {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(359deg);
+    transform: rotate(359deg);
+  }
+}
+/*---------------------------------------------------
+    LESS Elements 0.9
+  ---------------------------------------------------
+    A set of useful LESS mixins
+    More info at: http://lesselements.com
+  ---------------------------------------------------*/
+body {
+  font-size: 16px;
+  color: #4a4a4a;
+}
+img {
+  margin: 0;
+}
+p,
+ol,
+h1,
+h2 {
+  margin: 0;
+  padding: 0;
+}
+.scrollContainer {
+  width: calc(100% + 25px);
+  height: 100vh;
+  overflow-x: hidden;
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
+}
+.scrollContent {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  min-height: 100vh;
+  padding-top: 56px;
+  background: url('../svg/invalid-name-geometry.svg') #011b4e center;
+} 
+.success-content,
+.error-content,
+.unknown-content {
+  flex: 1 0 auto;
+  width: 100%;
+  max-width: 680px;
+  margin: 96px auto 40px;
+  position: relative;
+}
+.success-content > img,
+.error-content > img,
+.unknown-content > img {
+  position: absolute;
+  left: calc(50% - 16px);
+  top: -16px;
+}
+.success-content > div,
+.error-content > div,
+.unknown-content > div {
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  border-radius: 8px;
+  overflow: hidden;
+  -webkit-box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.6);
+  -moz-box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.6);
+  box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.6);
+}
+.success-content > div .banner,
+.error-content > div .banner,
+.unknown-content > div .banner {
+  padding: 32px 0 24px;
+  text-align: center;
+  background-color: #279fbc;
+}
+.success-content > div .banner img,
+.error-content > div .banner img,
+.unknown-content > div .banner img {
+  height: 80px;
+}
+.success-content > div .banner h1,
+.error-content > div .banner h1,
+.unknown-content > div .banner h1 {
+  margin-top: 8px;
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 1.44;
+  letter-spacing: 1px;
+  text-align: center;
+  color: #ffffff;
+}
+.success-content > div .banner p,
+.error-content > div .banner p,
+.unknown-content > div .banner p {
+  margin-top: 16px;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 1.57;
+  letter-spacing: 1px;
+  text-align: center;
+  color: #ffffff;
+}
+.success-content > div .message,
+.error-content > div .message,
+.unknown-content > div .message {
+  background-color: white;
+  padding: 16px 0 24px;
+}
+.success-content > div .message p,
+.error-content > div .message p,
+.unknown-content > div .message p {
+  width: 364px;
+  margin: 0 auto;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 1.57;
+  letter-spacing: 1px;
+  color: #000000;
+}
+.success-content > div .message ol,
+.error-content > div .message ol,
+.unknown-content > div .message ol {
+  width: 364px;
+  padding-left: 26px;
+  margin: 0 auto;
+}
+.success-content > div .message ol li,
+.error-content > div .message ol li,
+.unknown-content > div .message ol li {
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 1.57;
+  letter-spacing: 1px;
+  color: #000000;
+}
+.success-content > div .message .buttons,
+.error-content > div .message .buttons,
+.unknown-content > div .message .buttons {
+  margin-top: 40px;
+  text-align: center;
+}
+.success-content > div .message .buttons a,
+.error-content > div .message .buttons a,
+.unknown-content > div .message .buttons a {
+  display: inline-block;
+  width: 140px;
+  height: 48px;
+  border: solid 1px #00abd0;
+  border-radius: 100px;
+  line-height: 48px;
+  background-color: #ffffff;
+  color: #00abd0;
+}
+.success-content > div .message .buttons .color,
+.error-content > div .message .buttons .color,
+.unknown-content > div .message .buttons .color {
+  border: none;
+  background: #00abd0; 
+  color: white;
+}
+.success-content > div .message .buttons a + a,
+.error-content > div .message .buttons a + a,
+.unknown-content > div .message .buttons a + a {
+  margin-left: 40px;
+}
+.success-content > div .message.none,
+.error-content > div .message.none,
+.unknown-content > div .message.none {
+  padding-top: 40px;
+}
+.success-content > div .message.none .buttons,
+.error-content > div .message.none .buttons,
+.unknown-content > div .message.none .buttons {
+  margin-top: 0;
+}
+.success-content.kyper > div .banner,
+.error-content.kyper > div .banner,
+.unknown-content.kyper > div .banner {
+  background-color: #279fbc;
+}
+
+/*color-------------------------------------------------------------------------------------*/
+@-webkit-keyframes fancybox-rotate {
+  from {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(359deg);
+    transform: rotate(359deg);
+  }
+}
+@keyframes fancybox-rotate {
+  from {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(359deg);
+    transform: rotate(359deg);
+  }
+}
+/*---------------------------------------------------
+    LESS Elements 0.9
+  ---------------------------------------------------
+    A set of useful LESS mixins
+    More info at: http://lesselements.com
+  ---------------------------------------------------*/
+@media screen and (max-width: 992px) {
+  .scrollContainer {
+    width: 100%;
+  }
+  .success-content,
+  .error-content,
+  .unknown-content {
+    max-width: none;
+    padding-left: 44px;
+    padding-right: 44px;
+  }
+}
+
+/*color-------------------------------------------------------------------------------------*/
+@-webkit-keyframes fancybox-rotate {
+  from {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(359deg);
+    transform: rotate(359deg);
+  }
+}
+@keyframes fancybox-rotate {
+  from {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(359deg);
+    transform: rotate(359deg);
+  }
+}
+/*---------------------------------------------------
+    LESS Elements 0.9
+  ---------------------------------------------------
+    A set of useful LESS mixins
+    More info at: http://lesselements.com
+  ---------------------------------------------------*/
+@media screen and (max-width: 600px) {
+  .scrollContent {
+    padding-top: 48px;
+  }
+  .success-content,
+  .error-content,
+  .unknown-content {
+    margin-top: 40px;
+    padding-left: 8px;
+    padding-right: 8px;
+  }
+  .success-content > div .banner,
+  .error-content > div .banner,
+  .unknown-content > div .banner {
+    padding-left: 32px;
+    padding-right: 32px;
+  }
+  .success-content > div .message,
+  .error-content > div .message,
+  .unknown-content > div .message {
+    padding: 16px 32px 24px;
+  }
+  .success-content > div .message p,
+  .error-content > div .message p,
+  .unknown-content > div .message p {
+    width: auto;
+  }
+  .success-content > div .message ol,
+  .error-content > div .message ol,
+  .unknown-content > div .message ol {
+    width: auto;
+  }
+  .success-content > div .message .buttons,
+  .error-content > div .message .buttons,
+  .unknown-content > div .message .buttons {
+    display: flex;
+    margin-left: -24px;
+    margin-right: -24px;
+  }
+  .success-content > div .message .buttons a,
+  .error-content > div .message .buttons a,
+  .unknown-content > div .message .buttons a {
+    flex: 1;
+  }
+  .success-content > div .message .buttons a + a,
+  .error-content > div .message .buttons a + a,
+  .unknown-content > div .message .buttons a + a {
+    margin-left: 8px;
+  }
+}

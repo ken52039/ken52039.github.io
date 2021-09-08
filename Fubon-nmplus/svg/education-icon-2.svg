@@ -1,0 +1,68 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="240" height="240" viewBox="0 0 240 240">
+    <defs>
+        <path id="a" d="M39 45h50v50H39z"/>
+        <path id="b" d="M93 46a7 7 0 0 1 7 7v42H86V53a7 7 0 0 1 7-7z"/>
+        <path id="c" d="M10 48h30c5.523 0 10 4.477 10 10v40H0V58c0-5.523 4.477-10 10-10z"/>
+        <path id="d" d="M6 50a6 6 0 0 1 6 6v42H0V56a6 6 0 0 1 6-6z"/>
+        <rect id="e" width="12" height="12" x="14" rx="6"/>
+        <rect id="f" width="12" height="12" rx="6"/>
+    </defs>
+    <g fill="none" fill-rule="evenodd">
+        <circle cx="120" cy="120" r="120" fill="#4668CB"/>
+        <path fill="#859BDD" fill-rule="nonzero" d="M43.235 40.518A111.062 111.062 0 0 0 29.627 56.4a5.5 5.5 0 0 0 8.99 6.338 100.062 100.062 0 0 1 12.26-14.309 5.5 5.5 0 0 0-7.642-7.911zm59.646-29.7a109.909 109.909 0 0 0-46.116 18.553 5.5 5.5 0 1 0 6.302 9.016 98.91 98.91 0 0 1 41.506-16.699 5.5 5.5 0 1 0-1.692-10.87z"/>
+        <g transform="translate(148 83)">
+            <rect width="50" height="40" x="5" fill="#91E3E1" rx="1"/>
+            <rect width="10" height="16" x="52" y="12" fill="#91E3E1" rx="1"/>
+            <rect width="10" height="16" y="12" fill="#91E3E1" rx="1"/>
+            <rect width="12" height="12" x="10" y="12" fill="#FFF" rx="6"/>
+            <rect width="12" height="12" x="31" y="12" fill="#FFF" rx="6"/>
+        </g>
+        <path stroke="#91E3E1" stroke-linecap="round" stroke-linejoin="round" stroke-width="14" d="M153.297 135l-13.537 35.094-25.05-13.848"/>
+        <g transform="translate(114 83)">
+            <use fill="#91E3E1" xlink:href="#a"/>
+            <path stroke="#4668CB" stroke-width="2" d="M38 44h52v52H38z"/>
+        </g>
+        <g fill="#FFF">
+            <path d="M167 135h3v14h-3zM161 138h3v8h-3zM173 134h3v16h-3zM179 139h3v6h-3z"/>
+        </g>
+        <g transform="translate(114 83)">
+            <use fill="#91E3E1" xlink:href="#b"/>
+            <path stroke="#4668CB" stroke-width="2" d="M93 45a8 8 0 0 1 8 8v43H85V53a8 8 0 0 1 8-8z"/>
+        </g>
+        <path fill="#91E3E1" d="M168 117h20v14h-20z"/>
+        <g transform="translate(32 80)">
+            <path stroke="#FFF" stroke-linecap="round" stroke-linejoin="round" stroke-width="12" d="M42.8 53.591l11.794 37.424L81 77.285"/>
+            <use fill="#FFF" xlink:href="#c"/>
+            <path stroke="#4668CB" stroke-width="2" d="M10 47h30c6.075 0 11 4.925 11 11v41H-1V58c0-6.075 4.925-11 11-11z"/>
+            <use fill="#FFF" xlink:href="#d"/>
+            <path stroke="#4668CB" stroke-width="2" d="M6 49a7 7 0 0 1 7 7v43H-1V56a7 7 0 0 1 7-7z"/>
+            <path fill="#FFF" d="M18 32h16v21H18z"/>
+            <rect width="32" height="46" x="11" fill="#FFF" rx="16"/>
+            <circle cx="12" cy="26" r="6" fill="#FFF"/>
+            <circle cx="40" cy="26" r="6" fill="#FFF"/>
+            <path fill="#4668CB" d="M32.03 56.696l2.903 32.964a1 1 0 0 1-.22.717l-2.968 3.664a1 1 0 0 1-1.554 0l-2.968-3.664a1 1 0 0 1-.22-.717l2.904-32.964A1.999 1.999 0 0 1 28.968 55v-2h4v2c0 .715-.375 1.342-.938 1.696z"/>
+            <g>
+                <g transform="translate(16 17)">
+                    <use fill="#FFF" xlink:href="#e"/>
+                    <rect width="10" height="10" x="15" y="1" stroke="#4668CB" stroke-width="2" rx="5"/>
+                </g>
+                <g transform="translate(16 17)">
+                    <use fill="#FFF" xlink:href="#f"/>
+                    <rect width="10" height="10" x="1" y="1" stroke="#4668CB" stroke-width="2" rx="5"/>
+                </g>
+                <path fill="#4668CB" d="M27 22h4v2h-4z"/>
+            </g>
+        </g>
+        <g fill="#F37FB9" fill-rule="nonzero">
+            <path d="M117.333 37v5.833a1 1 0 0 0 2 0V37a1 1 0 1 0-2 0zM135.467 42.267l-3.5 4.666a1 1 0 1 1-1.6-1.2l3.5-4.666a1 1 0 0 1 1.6 1.2zM101.2 42.267l3.5 4.666a1 1 0 1 0 1.6-1.2l-3.5-4.666a1 1 0 1 0-1.6 1.2z"/>
+        </g>
+        <g transform="matrix(-1 0 0 1 138 51)">
+            <circle cx="20" cy="20" r="20" fill="#F37FB9"/>
+            <circle cx="20" cy="20" r="17" fill="#EC4196"/>
+            <g fill="#FFF" transform="matrix(1 0 0 -1 18 31)">
+                <rect width="4" height="16" rx="1"/>
+                <rect width="4" height="4" y="18" rx="1"/>
+            </g>
+        </g>
+    </g>
+</svg>

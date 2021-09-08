@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 22.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="圖層_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 80 80" style="enable-background:new 0 0 80 80;" xml:space="preserve">
+<style type="text/css">
+	.st0{filter:url(#b);}
+	.st1{fill:#2AD3B8;}
+	.st2{fill:#FFFFFF;}
+	.st3{fill:none;stroke:#316FC9;stroke-linecap:round;stroke-linejoin:round;}
+</style>
+<filter  filterUnits="objectBoundingBox" height="105.1%" id="b" width="105.4%" x="-2.7%" y="-2.1%">
+	<feOffset  dy="1" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+	<feGaussianBlur  in="shadowOffsetOuter1" result="shadowBlurOuter1" stdDeviation="2"></feGaussianBlur>
+	<feColorMatrix  in="shadowBlurOuter1" result="shadowMatrixOuter1" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.2 0">
+		</feColorMatrix>
+	<feMerge>
+		<feMergeNode  in="shadowMatrixOuter1"></feMergeNode>
+		<feMergeNode  in="SourceGraphic"></feMergeNode>
+	</feMerge>
+</filter>
+<g>
+	<g transform="translate(-80 -32)" class="st0">
+		<path class="st1" d="M122,87.1v18.3l-4,0.6V87.1H122z"/>
+		<g transform="rotate(-40 142.837 -89.582)">
+			<path class="st1" d="M10,33c6.7-4.9,10-10.4,10-16.5C20,10.4,16.7,4.9,10,0C3.3,4.9,0,10.4,0,16.5S3.3,28.1,10,33z"/>
+			<path class="st2" d="M10,9L10,9c0.6,0,1,0.4,1,1l0,14c0,0.6-0.4,1-1,1l0,0c-0.6,0-1-0.4-1-1l0-14C9,9.4,9.4,9,10,9z"/>
+		</g>
+		<g transform="rotate(40 -19.173 212.33)">
+			<path class="st1" d="M9,28c6-4.2,9-8.8,9-14c0-5.2-3-9.8-9-14C3,4.2,0,8.8,0,14S3,23.8,9,28z"/>
+			<path class="st2" d="M9,8L9,8c0.6,0,1,0.4,1,1l0,10c0,0.6-0.4,1-1,1l0,0c-0.6,0-1-0.4-1-1L8,9C8,8.4,8.4,8,9,8z"/>
+		</g>
+		<path class="st2" d="M120,61c5,0,9-4,9-9c0-3.3-3-7.3-9-12c-6,4.7-9,8.7-9,12C111,57,115,61,120,61z"/>
+		<path class="st3" d="M114,52c0,3.3,2.7,6,6,6"/>
+	</g>
+</g>
+</svg>

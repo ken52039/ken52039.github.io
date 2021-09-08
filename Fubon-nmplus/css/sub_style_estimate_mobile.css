@@ -1,0 +1,311 @@
+@charset "UTF-8";
+html { font-family: Verdana, 'Microsoft JhengHei', '微軟正黑體', sans-serif;
+-webkit-overflow-scrolling: touch;} 
+
+.pc-show {display:none!important;}
+.mo-show {display:block!important;} 
+
+.main-wrap {display:block; width:100%; padding:0; margin:48px 0 0 0!important;
+-webkit-box-sizing: border-box;
+-moz-box-sizing: border-box;
+box-sizing: border-box;}
+
+footer {display:block; width:100%; color:#fff; padding:20px 30px; position: static; z-index: 1;}
+footer .logos {text-align:center;}
+footer img.f-logo  { width:120px; display:inline-block; padding:10px 0 3px 0; }
+footer .nano-logo { display:inline-block; font-size:15px; padding:5px 0 0 20px; }
+footer .links {text-align: center; font-size:14px; margin:20px 0 0 0; line-height: 240%;} 
+footer .M-footer-CRM {margin:0 auto; width:100px;}
+footer .copyright {color:#fff; font-size:13px; margin:20px 0; text-align: center; line-height: 180%; }
+ 
+.w3-right { }
+
+.fubon-logo span {  padding-top:3px; }
+
+/* KV --*/ 
+.KV-estmate{  
+	padding:35px 10% 40px 12%; 
+	background:#a4dcb5 url(../img/estmate/KV_M.jpg) no-repeat center top;
+	background-size: 100%; 
+	width: 100%;
+	height:360px; 
+	line-height: 150%; font-size:28px;
+-webkit-box-sizing: border-box;
+-moz-box-sizing: border-box;
+box-sizing: border-box; }
+.KV-tree { background: url(../img/estmate/KV-tree.gif) no-repeat left top;
+  background-size: 85%; margin:10px auto;  
+ width:170px; height:211px;} 
+.KV-estmate .txt-L {font-size:42px;  }
+.KV-estmate .txt-M {font-size:34px;  }
+
+@media only screen 
+and (min-device-width : 414px) 
+and (max-device-width : 736px) 
+and (orientation : portrait) {
+.KV-estmate{  
+	padding:40px 10% 40px 10%;  
+	height:400px; font-size:30px; }
+.KV-tree { background: url(../img/estmate/KV-tree.gif) no-repeat left top;
+  background-size: 93%;   
+ width:170px; height:211px;} 
+.KV-estmate .txt-L {font-size:42px;  }
+.KV-estmate .txt-M {font-size:36px;  }
+} /*iPhone Plus in portrait*/
+
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) 
+and (orientation : portrait) { 
+.KV-estmate{  
+	padding:35px 10% 40px 12%; 
+	background:#a4dcb5 url(../img/estmate/KV_M.jpg) no-repeat center top;
+	background-size: 375px; 
+	width: 100%;
+	height:360px; } 
+} /*iPad9.7 in portrait*/  
+
+a:link.btn-promo, a:visited.btn-promo { 
+  font-size: 18px;  
+  padding: 5px 15px;
+  border-radius:8px;
+}
+a:link.btn-dark, a:visited.btn-dark {
+  font-size: 18px;  
+  padding: 5px 15px;
+  border-radius:8px;
+} 
+
+h2 {font-size:22px; font-weight:800; text-align:center; }
+
+/*---toggle---*/
+.box-close .award {
+    height: 427px; overflow-y: hidden;}
+.box-open .award {
+    height: auto;overflow-y: hidden;}
+
+.box-wrap .toggle { 
+	width: 70px;
+	height: 16px;
+	display:block;
+    position:relative; 
+    margin:-23px 5px 0 0;
+}
+.box-wrap.box-open .toggle:after {
+    content: "";
+	background: url(../img/index/arrow-up.png) no-repeat left top;
+	background-size: 70px 16px;
+	width: 70px;
+	height: 16px;
+	display:block;
+}
+.box-wrap.box-close .toggle:after {
+    content: "";
+	background: url(../img/index/arrow-down.png) no-repeat left top;
+	background-size: 70px 16px;
+	width: 70px;
+	height: 16px;
+	display:block;
+} 
+.box-wrap { width: 90%; margin: 0 auto 40px auto;}
+
+
+/*slide*/ 
+.carousel {
+position: relative;  
+width:96%;
+margin:0 auto;
+}
+
+#slides {
+overflow: hidden;
+position: relative;
+width: 70%; margin:0 auto;
+height: 340px;  
+}
+
+#slides ul {
+list-style: none;
+width:100%;
+height:250px;
+margin: 0;
+padding: 0;
+position: relative;
+}
+
+ #slides li {
+width:100%;
+height:250px;
+float:left;
+text-align: center;
+position: relative; 
+}
+/* Styling for prev and next buttons */
+.btn-bar{
+    width: 100%;
+    margin: 0 auto;
+    display: block;
+    position: relative;  
+}
+
+#buttons { width: 100%; padding:0; margin:0 auto;  }
+
+#buttons a {  
+text-align:center;
+display:block;
+font-size:40px; 
+line-height:100%;
+margin:90px 0 0 0;
+color:#fff;
+text-decoration:none; 
+padding:0;
+width:40px;}
+a#prev:hover, a#next:hover { color:#FFF; } 
+#prev { float:left; }
+#next { float:right; }
+
+
+/*POPUP*/
+.button { }
+.button:hover { }
+
+.overlay-pop { 
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.5); 
+  visibility: hidden;
+  opacity: 0;
+}
+.overlay-pop:target {
+  visibility: visible;
+  opacity: 1;
+}
+
+.popup {   
+  margin: 70px auto;
+  padding: 3px;
+  background: #fff;
+  border-radius: 10px;
+  width: 300px;
+  height:320px;  
+  position: relative;   
+  overflow: hidden;
+  z-index: 99999998;
+}
+
+.popup h2 {
+  margin-top: 0;
+  color: #333; 
+}
+.popup .close {
+  position: absolute; 
+  width:25px; height:28px; dispaly:block; 
+  background: url("../img/index/ico_close.png") no-repeat left top;
+  background-size: 25px;  
+  top: 20px;
+  right: 10px; 
+  z-index: 99999999;
+}
+.popup .close:active {
+ width:25px; height:28px;
+ background: url("../img/index/ico_close_hover.png") no-repeat left top;
+ background-size: 25px;
+}
+.popup .content { height:490px; overflow-y: scroll; }
+.popup .content iframe { width:100%; height:480px; overflow: hidden; }
+
+/* universal ========================================*/
+/*font-size*/ 
+.f-12 { font-size: 12px; }
+.f-13 { font-size: 12px; }
+.f-14 { font-size: 12px; }
+.f-15 { font-size: 13px; }
+.f-16 { font-size: 13px; }
+.f-18 { font-size: 14px; }
+.f-20 {	font-size: 16px; }
+.f-22 { font-size: 17px; }
+.f-24 { font-size: 18px; }
+.f-28 {	font-size: 20px; }
+.f-30 {	font-size: 22px; }
+.f-36 {	font-size: 24px; }
+.f-48 {	font-size: 30px; }
+.f-60 {	font-size: 48px; } 
+
+*按鈕*/ 	
+a:link.btn, a:visited.btn { 	
+  font-size: 18px; 	
+  padding: 12px 15px; 	
+} 
+
+/* Grid */
+.one_half, .one_third, .two_third, .one_quarter, .two_quarter, .three_quarter {
+	display: block;
+	float: none;
+	width: auto;
+	margin: 0 0 10px 0;
+	padding: 0;}
+
+/*POPUP*/ 
+.h1 {font-weight:600; font-size:20px; color:#666; text-align: center; line-height: 220%; margin:10px 0 0 0 ;}
+.p-intro {width:90%; margin:0 auto; color:#666; font-size:14px; text-align: center; line-height:180%;  }
+.p-date {width:90%; margin:0 auto; color:#999; font-size:12px; text-align: center; line-height:180%;  }
+.preformance { width:100%; padding:10px 5px;}
+
+.p-table { width:96%; margin:0 auto; border:1px solid #ccc; font-size:12px;color:#999; margin:0 auto 10px auto;}
+.p-table th { background-color:#f4f4f4; padding:5px; }
+.p-table td { background-color:#fff; padding:5px; text-align: center;}
+
+.chart { width:96%; margin:0 auto 10px auto;}
+.chart .title  {background-color:#ddd; width:100%; margin:0 auto; font-size:14px; font-weight:100;line-height: 240%;text-align: center;}
+.chart img {border:1px solid #ddd; width:100%; }
+
+::placeholder { /* CSS 3 標準 */ 
+   font-size:14px;  letter-spacing: 1px;
+} 
+::-webkit-input-placeholder { /* Chrome, Safari */ 
+ font-size:14px; letter-spacing: 1px;   
+} 
+:-ms-input-placeholder { /* IE 10+ */ 
+  font-size:14px; letter-spacing: 1px;  
+}
+::-moz-placeholder { /* Firefox 19+ */ 
+  font-size:14px; letter-spacing: 1px; 
+  opacity: 1; 
+}
+
+/*tabset*/
+.tabset > input[type="radio"] {
+  position: absolute;
+  left: -200vw; }
+
+.tabset {  width: 96%; margin:0 auto;  }
+.tabset > label { 
+  padding: 15px 20px 10px 20px;
+  border: 3px solid transparent;
+  border-bottom: 0;
+  cursor: pointer; 
+  font-size:16px; font-weight:900;  letter-spacing: 2px; }
+
+.tabset > label::after {
+  content: "";
+  position: absolute;
+  left: 15px;
+  bottom: 10px; 
+  height: 4px;  
+}
+
+.tabset > input:checked + label { 
+  border-bottom: 3px solid #fff; border-top-left-radius: 10px; border-top-right-radius: 10px;
+  margin-bottom: -3px; }
+
+.tab-panel {
+  padding: 20px 10px; font-size:14px; 
+  border-top: 3px solid #02d7f3; 
+} 
+
+.pie1, .pie2, .pie3, .pie4 {width:200px; height:200px; display:block;  margin:8px auto 12px auto;}
+.tabset  input { border:0; border-bottom:2px solid #02d7f3; padding:5px 10px; margin:0 5px;  font-size:18px; letter-spacing: 2px; height:34px;  }
+

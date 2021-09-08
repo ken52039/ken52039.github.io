@@ -1,0 +1,69 @@
+/* Component Needs */
+.pc-tab > input,
+.pc-tab section > div {
+  display: none;
+}
+
+#tab1:checked ~ section .tab1,
+#tab2:checked ~ section .tab2 {
+  display:  block;  
+}
+
+#tab1:checked ~ nav .tab1,
+#tab2:checked ~ nav .tab2  {
+  color: red;
+}
+
+/* Visual Styles */
+*, *:after, *:before {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.pc-tab {
+  width: 100%; 
+  margin: 20px auto 0 auto;
+}
+.pc-tab ul {
+  list-style: none;
+  margin: 0;  
+  padding: 0; 
+}
+.pc-tab ul li label { 
+  float: left; width:50%;
+  padding: 10px 5px; 
+  margin:0 0 15px 0;
+  background: #ccc; 
+  color: #fff; font-size:18px;
+  text-align: center;  border-right:1px solid #fff!important;   
+}
+
+.pc-tab ul li label:hover {
+  background: #3999cb; color:#fff;    
+}
+ 
+.pc-tab ul li:not(:last-child) label {
+  border-right-width: 0;
+}
+.pc-tab section { 
+  clear: both;
+}
+.pc-tab section div {
+  padding: 0;
+  width: 100%;    
+} 
+
+#tab1:checked ~ nav .tab1 label  {
+  background: #6ab27e;  
+  color: #fff;  
+  position: relative;
+}
+
+#tab2:checked ~ nav .tab2 label  {
+  background: #3999cb;  
+  color: #fff;  
+  position: relative;
+}
+ 
+ 

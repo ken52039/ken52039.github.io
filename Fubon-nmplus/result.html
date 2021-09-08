@@ -1,0 +1,878 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+
+<head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+    <meta content="utf-8" http-equiv="encoding">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title>富邦奈米投</title>
+    <!--MAIN CSS-->
+    <link rel="stylesheet" href="js/node_modules/w3-css/4/w3pro.css">
+    <link rel="stylesheet" href="js/node_modules/@fancyapps/fancybox/dist/jquery.fancybox.min.css" />
+    <link rel="stylesheet" href="css/main_style.css">
+    <!--MAIN JS-->
+    <script src="js/node_modules/jquery/dist/jquery.js"></script>
+    <script src="js/mobile-chrome-vh-fix/mobile-chrome-vh-fix.js"></script>
+    <script src="js/main_fun.js"></script>
+    <script src="js/script.js"></script>
+    <!--SUB LINK-->
+    <link rel="stylesheet" href="css/sub_style_result.css">
+    <link rel="stylesheet" href="js/node_modules/slick-carousel/slick/slick.css">
+    <link rel="stylesheet" href="js/node_modules/slick-carousel/slick/slick-theme.css">
+    <link rel="stylesheet" href="css/new_result.css">
+    <script src="js/node_modules/@fancyapps/fancybox/dist/jquery.fancybox.min.js"></script>
+    <script src='js/node_modules/zingtouch/dist/zingtouch.min.js'></script>
+    <script src="js/node_modules/highcharts/highcharts.src.js"></script>
+    <script src="js/node_modules/highcharts/highcharts-more.js"></script>
+    <script src="js/node_modules/highcharts/modules/variable-pie.js"></script>
+    <script src="js/node_modules/browser-detect/dist/browser-detect.min.js"></script>
+    <script src="js/node_modules/slick-carousel/slick/slick.min.js"></script>
+    <script src="js/node_modules/gsap/TweenMax.js"></script>
+    <script src="js/sub_fun_projection_chart.js"></script>
+    <script src="js/sub_fun_historical_chart.js"></script>
+    <script src="js/sub_fun_allocation_chart.js"></script>
+    <script src="js/sub_fun_result.js"></script>
+    <script src="js/jquery-ui.js"></script>
+    <script language="JavaScript" type="text/JavaScript">
+        function showdiv(targetid,objN){
+   
+      var target=document.getElementById(targetid);
+      var clicktext=document.getElementById(objN)
+
+            if (target.style.display=="block"){
+                target.style.display="none";
+                clicktext.innerText="點我看過去歷史績效+";
+  
+
+            } else {
+                target.style.display="block";
+                clicktext.innerText='點我看過去歷史績效-';
+            }   
+}
+        $( function() {
+    $( "#tabs1,#tabs2" ).tabs();
+  } );
+</script>
+</head>
+
+<body class="fixbody">
+    <a href="" target="_blank" class="promo">新戶首筆享首月免信管費</a>
+    <nav class="sub_menu">
+        <ul>
+            <li scrollto="adjust_panel_section" class="active"><a href="#adjust_panel_section">你的專屬規劃</a></li>
+            <li scrollto="allocation_chart_section"><a href="#allocation_chart_section">投資組合</a></li>
+            <li scrollto="projection_chart_section"><a href="#projection_chart_section">投資報酬</a></li>
+        </ul>
+    </nav>
+    <div class="scrollContainer">
+        <div class="content">
+            <!--你的專屬計畫-->
+            <div class="talk"><strong>你的<b>專屬投資規劃</b>出爐囉！</strong></div>
+            <div id="adjust_panel_section" class="section1 sections clearfix">
+                <div class="panel">
+                    <div class="content">
+                        <div class="section">
+                            <div class="colum_group">
+                                <div class="dropdown warp info">
+                                    <label>投資術</label>
+                                    <button type="button">
+                                        <input id="search_mode_keeper" type="text" name="search_mode" readonly='readonly' tabindex="-1">
+                                        <img class="arrow" src="svg/black.svg">
+                                    </button>
+                                    <ul>
+                                        <li><a value="2">智能投資術-ETF</a></li>
+                                        <li><a value="1">AI投資術-基金</a></li>
+                                    </ul>
+                                </div>
+                                <div class="dropdown warp info">
+                                    <label>投組風險偏好</label>
+                                    <button type="button">
+                                        <input id="risk_keeper" type="text" readonly='readonly' name="risk_add" tabindex="-1">
+                                        <img class="arrow" src="svg/black.svg">
+                                    </button>
+                                    <ul>
+                                        <li><a value="1">Level1</a></li>
+                                        <li><a value="2">Level2</a></li>
+                                        <li><a value="3">Level3</a></li>
+                                        <li><a value="4">Level4</a></li>
+                                    </ul>
+                                </div>
+                                <div class="dropdown warp">
+                                    <label>投資方式</label>
+                                    <button type="button">
+                                        <textarea id="mode_keeper" tabindex="-1" type="text" readonly='readonly' name="mode"></textarea>
+                                        <img class="arrow" src="svg/black.svg">
+                                    </button>
+                                    <ul>
+                                        <li><a value="2">每個月定期投資</a></li>
+                                        <li><a value="1">一筆錢一次投入</a></li>
+                                        <li><a value="3">一筆錢一次投入，<br class="w3-hide-large w3-hide-medium" />
+                                                搭配每個月定期投資</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <a href="javascript:" class="more-btn">查看詳細內容 <img src="svg/result/more-arrow.png"></a>
+                        <div class="sub_section" style="display: none;" id="more-show">
+                            <div class="colum_group">
+                                <div class="textinput">
+                                    <label>投資金額</label>
+                                    <div>
+                                        <input id="once_keeper" tabindex="3" type="tel" name="once" maxlength="4">
+                                        <span class="unit">美元</span>
+                                    </div>
+                                    <span>請輸入2~1000的整數數字</span>
+                                </div>
+                                <div class="textinput">
+                                    <label>每月投資USD</label>
+                                    <div>
+                                        <input id="perMonth_keeper" tabindex="3" type="tel" name="perMonth" maxlength="7">
+                                        <span class="unit">元</span>
+                                    </div>
+                                    <span>請以千元為單位，輸入3,000~1,000,000 的整數</span>
+                                </div>
+                                <div class="textinput">
+                                    <label>單筆投入USD</label>
+                                    <div>
+                                        <input id="mix_once_keeper" tabindex="3" type="tel" name="mix_once" maxlength="4">
+                                        <span class="unit">萬元</span>
+                                    </div>
+                                    <span>請輸入2~1000的整數數字</span>
+                                </div>
+                            </div>
+                            <div class="colum_group">
+                                <div class="textinput">
+                                    <label>投資時間</label>
+                                    <div>
+                                        <input id="years_keeper" tabindex="2" type="tel" name="years">
+                                        <span class="unit">年</span>
+                                    </div>
+                                    <span>請輸入3~30的整數數字</span>
+                                </div>
+                            </div>
+                            <div class="colum_group">
+                                <div class="textinput">
+                                    <label>每月投資USD</label>
+                                    <div>
+                                        <input id="mix_perMonth_keeper" tabindex="4" type="tel" name="mix_perMonth" maxlength="7">
+                                        <span class="unit">元</span>
+                                    </div>
+                                    <span>請以千元為單位，輸入3,000~1,000,000 的整數</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+            </div>
+            <div id="historical_chart_section" class="section4" style="display:none">&nbsp; </div>
+            <!--/你的專屬計畫-->
+
+            <!--專屬投組-->
+            <div id="allocation_chart_section" class="section3">
+                <div id="tabs1">
+                    <ul>
+                        <li><a href="#tabs1-1">投組配置</a></li>
+                        <li><a href="#tabs1-2">歷史績效</a></li>
+                    </ul>
+                    <div id="tabs1-1">
+                        <div class="chart">
+                            <div class="content pie">
+                                <div class="chart-titile">該投組近5年報酬率：<b>8.2<small>%</small></b></div>
+                                <div class="chart_body">
+                                    <div class="now_select"> <span id="weight"></span> <span id="name"></span> </div>
+                                    <div id="touch_area">
+                                        <div id="dountChart"></div>
+                                    </div>
+                                </div>
+                                <div class="list_body">
+                                    <div class="pie_item_container">
+                                        <div id="pie_item"></div>
+                                    </div>
+                                    <div class="list">
+                                        <div class="title">
+                                            <div class="item"> <span>投資標的</span> <span>配置金額(美金)</span> <span>佔比</span> </div>
+                                        </div>
+                                        <div class="content"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="f-16 f-b w90pct center">
+                                <a data-fancybox data-src="#popup2" href="javascript:;" class="title-right-link">產業類別 <img src="svg/result/result_go_btn3.svg"></a>
+                                股票型ETF <br>
+                                <span class="f-14 f-gray">透過買進一籃子的股票追蹤各國市場的主要指數！</span>
+                            </div>
+                            <div class="chart-wrap"> 股票型ETF - 表格表格表格表格表格表格表格表格 </div>
+                            <div class="f-16 f-b w90pct center">債券型ETF <br>
+                                <span class="f-14 f-gray">收納一籃子的債券，波動程度相對低於股票市場喔！</span>
+                            </div>
+                            <div class="chart-wrap"> 債券型ETF - 表格表格表格表格表格表格表格表格 </div>
+                            <div class="f-16 f-b w90pct center">現金</div>
+                            <div class="chart-wrap"> 現金 - 表格表格表格表格表格表格表格表格 </div>
+                            <div class="footer gray memo">
+                                <h5>小提醒：因無法完整評估你的所有情況，例如經濟狀況與財務需要、稅務概況、投資回收期間長短等，故系統所提供之投資組合建議僅供參考，未必完全適用於個別客戶，你可自行選擇適合的投組風險等級。</h5>
+                            </div>
+                            <div class="footer gray"> <a id="search_mode_3" href="iframe_investment_3.html">閱讀ETF投資須知</a> </div>
+                        </div>
+                    </div>
+                    <div id="tabs1-2">
+                        <div id="contentid">
+                            <div class="section-R" style="float: none;margin: auto;">
+                                <!--BLOCK  年化報酬 -->
+                                <div class="type-txt pct">
+                                    <div class="lh140">此投資組合的<br>
+                                        平均年化報酬 </div>
+                                    <div class="circle f-green">12.5<span class="f-14">%</span></div>
+                                </div>
+                                <!--BLOCK 5年可存 -->
+                                <!--<div class="type-txt cube-box"> 
+                    <div>此組合5年可存到<br><span class="f-green dollar">2,005,810<span class="f-14">美元</span> </span></div> 
+					<div>平均年化報酬率<br><span class="f-green dollar">15.6<span class="f-14">%</span></span></div>
+				    <div class=""><img src="img/role_cube/emoji-robot-03.png" width="60" class="" alt=""/></div>
+				</div>-->
+
+
+                            </div>
+                            <div class="f-15 lh180 mt10 mb10">專屬投資組合過去的歷史績效
+                                <div class="f-12 lh140 tar right mt5">歷史績效計算說明<a href="" class="info-1"></a></div>
+                            </div>
+                            <div class="tabset">
+                                <!-- Tab 1 -->
+                                <input type="radio" name="tabset" id="tab1" aria-controls="">
+                                <label for="tab1">1年</label>
+                                <!-- Tab 2 -->
+                                <input type="radio" name="tabset" id="tab2" aria-controls="">
+                                <label for="tab2">3年</label>
+                                <!-- Tab 3 -->
+                                <input type="radio" name="tabset" id="tab3" aria-controls="">
+                                <label for="tab3">5年</label>
+                                <!-- Tab 4 -->
+                                <input type="radio" name="tabset" id="tab4" aria-controls="" checked>
+                                <label for="tab4">15年</label>
+                                <div class="tab-panels">
+                                    <section id="" class="tab-panel"> line chart1 </section>
+                                    <section id="" class="tab-panel"> line chart2 </section>
+                                    <section id="" class="tab-panel"> line chart3 </section>
+                                    <section id="tab" class="tab-panel">
+                                        <div class="f-12 f-gray">計算期間：2006年1月 - 2020年12月</div>
+                                        <div class="f-13 f-gray">持有15年累積報酬率：<strong class="f-blue">172%</strong> <br>
+                                            平均年化報酬率：<strong class="f-blue">8%</strong> </div>
+                                        <div class="slds-p-top--medium">
+                                            <svg class="quiz-graph">
+                                                <defs>
+                                                    <pattern id="grid" width="50" height="50" patternUnits="userSpaceOnUse">
+                                                        <path d="M 50 0 L 0 0 0 50" fill="none" stroke="#e5e5e5" stroke-width="1"></path>
+                                                    </pattern>
+                                                </defs>
+                                                <rect x="50" width="calc(100% - 50px)" height="300px" fill="url(#grid)" stroke="gray"></rect>
+                                                <g class="x-labels">
+                                                    <text x="150" y="320">2014</text>
+                                                    <text x="250" y="320">2015</text>
+                                                    <text x="350" y="320">2016</text>
+                                                    <text x="450" y="320">2017</text>
+                                                    <text x="550" y="320">2018</text>
+                                                    <text x="650" y="320">2019</text>
+                                                    <text x="750" y="320">2020</text>
+                                                </g>
+                                                <g class="y-labels">
+                                                    <text x="42" y="55">200%</text>
+                                                    <text x="42" y="105">150%</text>
+                                                    <text x="42" y="155">100%</text>
+                                                    <text x="42" y="205">50%</text>
+                                                    <text x="42" y="255">0%</text>
+                                                    <text x="42" y="305">-50%</text>
+                                                </g>
+                                                <linearGradient id="grad" x1="0%" y1="0%" x2="0%" y2="100%">
+                                                    <stop offset="0%" style="stop-color:rgba(99,224,238,.5);stop-opacity:1"></stop>
+                                                    <stop offset="100%" style="stop-color:white;stop-opacity:0"></stop>
+                                                </linearGradient>
+                                                <polyline fill="url(#grad)" stroke="#34becd" stroke-width="0" points="
+            50,300
+            51,0
+            150,100
+            250,80
+            350,160
+            450,100
+            550,100
+            650,150
+            750,200
+            750,300
+            "></polyline>
+                                                <polyline fill="none" stroke="#34becd" stroke-width="2" points="
+            50,0
+            150,100
+            250,80
+            350,160
+            450,100
+            550,100
+            650,150
+            750,200
+            "></polyline>
+                                                <g>
+                                                    <circle class="quiz-graph-start-dot" cx="50" cy="0" data-value="7.2" r="6"></circle>
+                                                    <circle class="quiz-graph-dot" cx="150" cy="100" data-value="8.1" r="6" q-title="2014" answer-count="200" percent-value="66%"></circle>
+                                                    <circle class="quiz-graph-dot" cx="250" cy="80" data-value="7.7" r="6" q-title="2015" answer-count="220" percent-value="73%"></circle>
+                                                    <circle class="quiz-graph-dot" cx="350" cy="160" data-value="6.8" r="6" q-title="2016" answer-count="140" percent-value="46%"></circle>
+                                                    <circle class="quiz-graph-dot" cx="450" cy="100" data-value="6.7" r="6" q-title="2017" answer-count="200" percent-value="66%"></circle>
+                                                    <circle class="quiz-graph-dot" cx="550" cy="100" data-value="6.7" r="6" q-title="2018" answer-count="200" percent-value="66%"></circle>
+                                                    <circle class="quiz-graph-dot" cx="650" cy="150" data-value="6.7" r="6" q-title="2019" answer-count="150" percent-value="50%"></circle>
+                                                    <circle class="quiz-graph-dot" cx="750" cy="200" data-value="6.7" r="6" q-title="2020" answer-count="100" percent-value="33%"></circle>
+                                                </g>
+                                            </svg>
+                                        </div>
+                                    </section>
+                                </div>
+                            </div>
+                            <!--/tabset-->
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--/專屬投組-->
+
+            <!--模擬未來投報-->
+            <div id="projection_chart_section" class="section2">
+                <div id="tabs2">
+                    <ul>
+                        <li style="width: 100%;"><a href="#tabs2-1" style="border-radius: 12px 12px 0 0;">模擬報酬</a></li>
+                    </ul>
+                    <div id="tabs2-1">
+                        <div class="chart">
+                            <div class="content projection">
+                                <div class="summary">
+                                    <h3 class="dollar2"><span class="title">&nbsp;累積投資金額 </span><span id="projection_principal"><strong class="f-b f-16">4,500 </strong>美元</span></h3>
+                                    <h3 class="good"><span class="title">&nbsp;一般情況</span><span id="projection_good"><strong class="f-b f-16">5,810 </strong>美元</span> </h3>
+                                    <h3 class="bad"><span class="title">&nbsp;較差情況</span><span id="projection_bad"><strong class="f-b f-16">4,700 </strong>美元</span> </h3>
+                                </div>
+                                <div class="chart_body" id="areaChart"></div>
+                            </div>
+                            <div class="memo">
+                                <h5>小提醒：投資一定有風險，若遇較差情況時，你的投資可能會少於較差情況的試算結果。</h5>
+                            </div>
+                            <div class="footer"><a id="search_mode_3" href="iframe_investment_3.html">閱讀ETF投資須知</a> </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--/模擬未來投報-->
+
+            <div class="mo-show mt15"></div>
+
+            <!--使用者分享-->
+            <div id="uders_commend" class="sections clearfix mb50">
+                <div class="header">
+                    <h1>大家為什麼選擇投資「奈米投」</h1>
+                    <span>已帶領23,600位投資人踏入全球投資領域 <br><span class="f-13 f-gray">(資料期間：上線至2020.12.27)</span></span>
+                </div>
+                <hr style="margin:5px auto 10px auto;">
+                <div class="carousel">
+                    <div class="btn-bar">
+                        <div id="buttons"><a id="prev" href="#">
+                                << /a><a id="next" href="#">></a> </div>
+                    </div>
+                    <div id="slides">
+                        <ul>
+                            <li class="slide">
+                                <div class="quoteContainer">
+                                    <div class="recommend">
+                                        <a href="" target="_blank">
+                                            <div class="quote-phrase">
+                                                <div class="news-left"><img src="img/result/recommend_pic1.png" alt="" /></div>
+                                                <div class="news-right">
+                                                    <div class="recommend-title recommend-ellip-1">超高CP值的理財方式</div>
+                                                    <div class="recommend-txt recommend-ellip-2">平常下班都八、九點，回到家還要做家事、幫小孩洗澡，完全沒有時間吸收理財資訊。有了奈米投，從此不需要煩惱美國總統誰當選，隨時都有專家幫忙看管我的錢，是CP值超高的投資方式。</div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="slide">
+                                <div class="quoteContainer">
+                                    <div class="recommend"> <a href="" target="_blank">
+                                            <div class="quote-phrase">
+                                                <div class="news-left"><img src="img/result/recommend_pic2.png" alt="" /></div>
+                                                <div class="news-right">
+                                                    <div class="recommend-title recommend-ellip-1">有專家照顧，投資好安心</div>
+                                                    <div class="recommend-txt recommend-ellip-2">我很喜歡投資但總是看不懂，就愛跟著PTT亂跟風，永遠追高殺低、小賺大賠，但投了奈米投之後，有專家幫我操、幫我顧，真的讓我很安心！</div>
+                                                </div>
+                                            </div>
+                                        </a> </div>
+                                </div>
+                            </li>
+                            <li class="slide">
+                                <div class="quoteContainer">
+                                    <div class="recommend"> <a href="" target="_blank">
+                                            <div class="quote-phrase">
+                                                <div class="news-left"><img src="img/result/recommend_pic3.png" alt="" /></div>
+                                                <div class="news-right">
+                                                    <div class="recommend-title recommend-ellip-1">定期定額適合懶惰又忙碌的我</div>
+                                                    <div class="recommend-txt recommend-ellip-2">不用動腦、也不用自己盯盤選標的，非常適合懶惰及繁忙的人！本身從奈米投一上市就開始投了，目前每月定期定額投資，偶爾登入看績效，超方便!</div>
+                                                </div>
+                                            </div>
+                                        </a> </div>
+                                </div>
+                            </li>
+                            <li class="slide">
+                                <div class="quoteContainer">
+                                    <div class="recommend"> <a href="" target="_blank">
+                                            <div class="quote-phrase">
+                                                <div class="news-left"><img src="img/result/recommend_pic4.png" alt="" /></div>
+                                                <div class="news-right">
+                                                    <div class="recommend-title recommend-ellip-1">投資就從小額開始，建立信心好幫手</div>
+                                                    <div class="recommend-txt recommend-ellip-2">我是投資新手，很怕選錯投資產品，所以想從小額投資開始建立信心。奈米投其實是一個不錯的投資入門產品，真的很推薦對投資沒概念的人使用~</div>
+                                                </div>
+                                            </div>
+                                        </a> </div>
+                                </div>
+                            </li>
+                            <li class="slide">
+                                <div class="quoteContainer">
+                                    <div class="recommend"> <a href="" target="_blank">
+                                            <div class="quote-phrase">
+                                                <div class="news-left"><img src="img/result/recommend_pic5.png" alt="" /></div>
+                                                <div class="news-right">
+                                                    <div class="recommend-title recommend-ellip-1">利用定期定額投資，快速掌握市場波動</div>
+                                                    <div class="recommend-txt recommend-ellip-2">奈米投是我剛入社會的第一個理財商品，在前陣子市場漲跌很大時，靠著定期定額投資，也沒錯過低點！p.s.現在我都用多筆計畫，更彈性管理資產～</div>
+                                                </div>
+                                            </div>
+                                        </a> </div>
+                                </div>
+                            </li>
+                            <li class="slide">
+                                <div class="quoteContainer">
+                                    <div class="recommend"> <a href="" target="_blank">
+                                            <div class="quote-phrase">
+                                                <div class="news-left"><img src="img/result/recommend_pic6.png" alt="" /></div>
+                                                <div class="news-right">
+                                                    <div class="recommend-title recommend-ellip-1">推薦長期持有奈米投，享受配息現金流</div>
+                                                    <div class="recommend-txt recommend-ellip-2">依我一年半的投資經驗&觀察，奈米投會配息，所以推薦放長期。我自己喜歡「每個月」單筆申購，保持資金流動性。 </div>
+                                                </div>
+                                            </div>
+                                        </a> </div>
+                                </div>
+                            </li>
+                            <li class="slide">
+                                <div class="quoteContainer">
+                                    <div class="recommend"> <a href="" target="_blank">
+                                            <div class="quote-phrase">
+                                                <div class="news-left"><img src="img/result/recommend_pic7.png" alt="" /></div>
+                                                <div class="news-right">
+                                                    <div class="recommend-title recommend-ellip-1">專家操盤、自動調整投組，不用擔心進場時間！</div>
+                                                    <div class="recommend-txt recommend-ellip-2">我是投資運氣非常差的人，買什麼賠什麼，直到我遇到奈米投，了解之後才知道，專家操盤、自動調整投組內容真的很厲害，不論市場好壞都可以進場！</div>
+                                                </div>
+                                            </div>
+                                        </a> </div>
+                                </div>
+                            </li>
+                            <li class="slide">
+                                <div class="quoteContainer">
+                                    <div class="recommend"> <a href="" target="_blank">
+                                            <div class="quote-phrase">
+                                                <div class="news-left"><img src="img/result/recommend_pic8.png" alt="" /></div>
+                                                <div class="news-right">
+                                                    <div class="recommend-title recommend-ellip-1">適合作為累積核心資產的投資工具</div>
+                                                    <div class="recommend-txt recommend-ellip-2">相較自行研究投資個股，奈米投充分體現「全球多元分散」、「投資標的隨時汰弱留強」、「追求長期財富成長」的投資理念，非常適合作為財富累積核心資產~ </div>
+                                                </div>
+                                            </div>
+                                        </a> </div>
+                                </div>
+                            </li>
+                            <li class="slide">
+                                <div class="quoteContainer">
+                                    <div class="recommend"> <a href="" target="_blank">
+                                            <div class="quote-phrase">
+                                                <div class="news-left"><img src="img/result/recommend_pic9.png" alt="" /></div>
+                                                <div class="news-right">
+                                                    <div class="recommend-title recommend-ellip-1">使用體驗很棒的投資方式</div>
+                                                    <div class="recommend-txt recommend-ellip-2">奈米投很簡單不用選投資標的，而且有投資專家幫我隨市場自動調整投組，我投資1年半以來體驗都很棒，超級推薦~</div>
+                                                </div>
+                                            </div>
+                                        </a> </div>
+                                </div>
+                            </li>
+                            <li class="slide">
+                                <div class="quoteContainer">
+                                    <div class="recommend"> <a href="" target="_blank">
+                                            <div class="quote-phrase">
+                                                <div class="news-left"><img src="img/result/recommend_pic10.png" alt="" /></div>
+                                                <div class="news-right">
+                                                    <div class="recommend-title recommend-ellip-1">簡單又能小額投資的平台</div>
+                                                    <div class="recommend-txt recommend-ellip-2">我之前沒有投資經驗，但又很想嘗試，奈米投只要台幣約3,000元就可以投資全球股市，我覺得用起來還滿簡單的!</div>
+                                                </div>
+                                            </div>
+                                        </a> </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!--/使用者分享-->
+
+            <!--右邊fix按鈕-->
+            <div class="fix_btn">
+                <a data-fancybox data-src="#popup1" href="javascript:;">重新試算 <img src="svg/result/result_go_btn1.svg"></a>
+                <a href="">點我開始投 <img src="svg/result/result_go_btn2.svg"></a>
+            </div>
+            <!--/右邊fix按鈕-->
+
+            <!--調整投資方式-->
+            <div class="popup" style="display: none;" id="popup2">
+                <strong>產業類別</strong>
+                <ul class="category-list">
+                    <li>資訊科技 <span>38<small>%</small></span></li>
+                    <li>金融服務 <span>17<small>%</small></span></li>
+                    <li>半導體產業 <span>12<small>%</small></span></li>
+                    <li>通訊電信 <span>9<small>%</small></span></li>
+                    <li>醫療服務 <span>7<small>%</small></span></li>
+                    <li>能源產業 <span>5<small>%</small></span></li>
+                    <li>其他 <span>12<small>%</small></span></li>
+                </ul>
+            </div>
+
+            <!--調整投資方式-->
+            <div class="popup" style="display: none;" id="popup1">
+                <strong>調整投資方式</strong>
+                <form>
+                    <fieldset>
+                        <label>投資市場</label>
+                        <div class="right">
+                            <select id="select">
+                                <option value="world">全球市場</option>
+                                <option>台灣市場</option>
+                            </select>
+                            <b class="select-title" id="select-title">全球市場</b>
+                        </div>
+                    </fieldset>
+                    <div id="world">
+                        <fieldset>
+                            <label>投資目標</label>
+                            <div class="right">
+                                <select id="select1-1">
+                                    <option value="請選擇">請選擇</option>
+                                    <option>旅遊購物</option>
+                                    <option>準備創業圓夢基金</option>
+                                    <option>準備購屋頭期款</option>
+                                    <option>存小孩教育費</option>
+                                    <option>增加收入提早退休</option>
+                                    <option>不為什麼，就是要有錢</option>
+                                </select>
+                                <b class="select-title" id="select-title1-1">請選擇</b>
+                            </div>
+                        </fieldset>
+                        <fieldset>
+                            <label>投資心態</label>
+                            <div class="right">
+                                <select id="select1-2">
+                                    <option value="請選擇">請選擇</option>
+                                    <option>我只想穩穩賺，不想承受太大的波動</option>
+                                    <option>我想要安心賺，可承受一點市場波動</option>
+                                    <option>我追求資產穩健成長，可承受市場波動</option>
+                                    <option>我追求資產加速增值，可承受市場波動</option>
+                                </select>
+                                <b class="select-title" id="select-title1-2">請選擇</b>
+                            </div>
+                        </fieldset>
+                        <fieldset>
+                            <label>投資方式</label>
+                            <div class="right">
+                                <select id="select1-3">
+                                    <option value="請選擇">請選擇</option>
+                                    <option>一筆錢一次投入</option>
+                                    <option>每個月定期投資</option>
+                                    <option>一筆錢一次投入，搭配每月定期投資</option>
+                                </select>
+                                <b class="select-title" id="select-title1-3">請選擇</b>
+                            </div>
+                        </fieldset>
+                        <fieldset style="display: none;" id="money1-input">
+                            <label for="money1">單筆投資金額</label>
+                            <div class="right">
+                                <div class="title">美金</div>
+                                <input type="tel" min="35" max="250000" placeholder="請輸入數字" id="money1" class="small">
+                                <small>請輸入35~250,000的整數</small>
+                                <div class="unit">元</div>
+                            </div>
+                        </fieldset>
+                    </div>
+                    <div id="taiwan" style="display: none;">
+                        <fieldset>
+                            <label>投資心態</label>
+                            <div class="right">
+                                <select id="select2-1">
+                                    <option value="請選擇">請選擇</option>
+                                    <option>我比較保守，只想讓資產穩穩成長</option>
+                                    <option>我偏好領配息，追求穩定收益</option>
+                                    <option>我看好永續議題，追求企業永續成長</option>
+                                    <option>我喜歡超前部署，掌握未來新趨勢</option>
+                                </select>
+                                <b class="select-title" id="select-title2-1">請選擇</b>
+                            </div>
+                        </fieldset>
+                        <fieldset>
+                            <label>投資方式</label>
+                            <div class="right">
+                                <select id="select2-2">
+                                    <option value="請選擇">請選擇</option>
+                                    <option>一筆錢一次投入</option>
+                                    <option>每個月定期投資</option>
+                                    <option>一筆錢一次投入，搭配每月定期投資</option>
+                                </select>
+                                <b class="select-title" id="select-title2-2">請選擇</b>
+                            </div>
+                        </fieldset>
+                        <fieldset style="display: none;" id="money2-input">
+                            <label for="money2">單筆投資金額</label>
+                            <div class="right">
+                                <div class="title">台幣</div>
+                                <input type="tel" min="1000" max="10000000" placeholder="請輸入數字" id="money2" class="small">
+                                <small>請輸入1,000~10,000,000的整數</small>
+                                <div class="unit">元</div>
+                            </div>
+                        </fieldset>
+                        <fieldset>
+                            <label>配息方式</label>
+                            <div class="right">
+                                <select id="select2-3">
+                                    <option value="請選擇">請選擇</option>
+                                    <option>配息再投資</option>
+                                    <option>配息入帳戶</option>
+                                </select>
+                                <b class="select-title" id="select-title2-3">請選擇</b>
+                            </div>
+                        </fieldset>
+                    </div>
+                    <fieldset>
+                        <label for="time">投資期間</label>
+                        <div class="right">
+                            <input type="tel" min="1" max="30" placeholder="請輸入數字" id="time">
+                            <small>請輸入1~30的整數</small>
+                            <div class="unit">年</div>
+                        </div>
+                    </fieldset>
+                    <fieldset class="submit">
+                        <button>重新試算 <img src="svg/result/icon-return-web.svg"></button>
+                    </fieldset>
+                </form>
+            </div>
+            <script>
+                $('.more-btn').on('click', function() {
+                    $(this).hide();
+                    $('#more-show').show();
+                });
+
+                $(document).ready(function() {
+                    $('#time').on('input', function(e) {
+                        var n = $('#time').val();
+                        $('#time+small').hide();
+
+                        if (n < 1) {
+                            $('#time+small').show();
+                        }
+
+                        if (n > 30) {
+                            $('#time+small').show();
+                        }
+
+                    });
+                    $('#money1').on('input', function(e) {
+
+                        var n = $('#money1').val();
+                        $('#money1+small').hide();
+
+                        if (n < 35) {
+                            $('#money1+small').show();
+                        }
+
+                        if (n > 250000) {
+                            $('#money1+small').show();
+                        }
+
+                    });
+                    $('#money2').on('input', function(e) {
+                        var n = $('#money2').val();
+                        $('#money2+small').hide();
+
+                        if (n < 1000) {
+                            $('#money2+small').show();
+                        }
+
+                        if (n > 10000000) {
+                            $('#money2+small').show();
+                        }
+
+                    });
+                });
+
+                $('#select').on('change', function() {
+                    if (this.value == "world") {
+                        $('#world').show();
+                        $('#taiwan').hide();
+                    } else {
+                        $('#taiwan').show();
+                        $('#world').hide();
+                    }
+                    $('#select-title').text($('option:selected', this).text());
+                }).change();
+                $('#select1-1').on('change', function() {
+                    $('#select-title1-1').text($('option:selected', this).text());
+                    if (this.value == "請選擇") {
+                        $('#select-title1-1').css("color", "#828282");
+                    } else {
+                        $('#select-title1-1').css("color", "#191919");
+                    }
+                }).change();
+                $('#select1-2').on('change', function() {
+                    $('#select-title1-2').text($('option:selected', this).text());
+                    if (this.value == "請選擇") {
+                        $('#select-title1-2').css("color", "#828282");
+                    } else {
+                        $('#select-title1-2').css("color", "#191919");
+                    }
+
+                }).change();
+                $('#select1-3').on('change', function() {
+                    $('#select-title1-3').text($('option:selected', this).text());
+                    if (this.value == "請選擇") {
+                        $('#select-title1-3').css("color", "#828282");
+                        $('#money1-input').hide();
+                    } else {
+                        $('#select-title1-3').css("color", "#191919");
+                        $('#money1-input').show();
+                    }
+
+                }).change();
+                $('#select2-1').on('change', function() {
+                    $('#select-title2-1').text($('option:selected', this).text());
+                    if (this.value == "請選擇") {
+                        $('#select-title2-1').css("color", "#828282");
+                    } else {
+                        $('#select-title2-1').css("color", "#191919");
+                    }
+
+                }).change();
+                $('#select2-2').on('change', function() {
+                    $('#select-title2-2').text($('option:selected', this).text());
+                    if (this.value == "請選擇") {
+                        $('#select-title2-2').css("color", "#828282");
+                        $('#money2-input').hide();
+                    } else {
+                        $('#select-title2-2').css("color", "#191919");
+                        $('#money2-input').show();
+                    }
+
+                }).change();
+                $('#select2-3').on('change', function() {
+                    $('#select-title2-3').text($('option:selected', this).text());
+                    if (this.value == "請選擇") {
+                        $('#select-title2-3').css("color", "#828282");
+                    } else {
+                        $('#select-title2-3').css("color", "#191919");
+                    }
+
+                }).change();
+            </script>
+            <!--/調整投資方式-->
+        </div>
+        <!--content end -->
+
+        <!--buy button-->
+        <div class="new-plan pc-show"> <img src="svg/robot-02.svg" alt=""> <a href="#">新增<br>
+                計畫</a> </div>
+        <!--<button onclick="self.location.href='result_edit.html'" tabindex="6" class="button outline large pc-show" type="button">點我開始投</button>-->
+    </div>
+    <!--scrollContainer end -->
+
+    <!--buy button-->
+    <a href="" class="buy-btn mo-show"><img src="img/result/icon_go.png" width="30" alt="" />點我開始投</a>
+
+    <!-- FOOTER START -->
+    <footer>
+        <div class="logos"><a href="https://nmplusinvestment.fubon.com/nmi-frontend/index.html"><img src="img/logo.png" class="f-logo" />奈米投</a></div>
+        <div class="pc-show">© 台北富邦銀行 版權所有<br>
+            ・建議瀏覽器版本： Chrome63 或 Safari11 或 FireFox57 以上&nbsp;&nbsp; &nbsp;&nbsp;・最佳解析度1440X1024 &nbsp;&nbsp;・24H服務專線：02-8751-6665 </div>
+        <div class="clearfix"></div>
+        <div class="mo-show links"> <a href="">我的投資</a> <br>
+            <a href="https://nmplusinvestment.fubon.com/nmi-frontend/nano.html">打造投資計畫</a><br>
+            <a href="https://www.fubon.com/banking/event/hot/20200203/index.html" target="_blank">理財小學堂</a><br>
+            <a href="">Q&amp;A</a><br>
+            <a href="https://liff.line.me/1557519568-jxPoZzmg" target="_blank">綁定LINE官方帳號</a> <br>
+            <a href="javascript:void(0)" class="M-footer-CRM" onclick="openOnlineQA();">數位客服</a>
+        </div>
+        <div class="mo-show copyright"> ・建議瀏覽器版本：<br>
+            Chrome63 或 Safari11 或 FireFox57 以上<br>
+            ・最佳解析度1440X1024<br>
+            ・24H服務專線：02-8751-6665<br>
+            © 台北富邦銀行 版權所有</div>
+    </footer>
+    <!-- FOOTER END -->
+
+    <!-- NAVIGATION BAR START -->
+    <header class="w3-bar">
+        <script>
+            /*<![CDATA[*/
+            window.window.path_nmif0201 = /*/nmi-frontend/nmif0201*/ 'bbbb';
+            window.path_nmif0202 = /*/nmi-frontend/nmif0202*/ 'bbbb';
+            window.path_nmif0203 = /*/nmi-frontend/nmif0203*/ 'bbbb';
+            window.path_nmif0204 = /*/nmi-frontend/nmif0204*/ 'bbbb';
+            window.path_nmif0205 = /*/nmi-frontend/nmif0205*/ 'bbbb';
+            window.path_nmif0301 = /*/nmi-frontend/nmif0301*/ 'bbbb';
+            window.path_nmif0302 = /*/nmi-frontend/nmif0302*/ 'bbbb';
+            window.path_nmif0303 = /*/nmi-frontend/nmif0303*/ 'bbbb';
+            window.path_nmif0304 = /*/nmi-frontend/nmif0304*/ 'bbbb';
+            window.path_nmif0401 = /*/nmi-frontend/nmif0401*/ 'bbbb';
+            window.path_nmif0402 = /*/nmi-frontend/nmif0402*/ 'bbbb';
+            window.path_nmif0403 = /*/nmi-frontend/nmif0403*/ 'bbbb';
+            window.path_nmif0404 = /*/nmi-frontend/nmif0404*/ 'bbbb';
+            window.path_nmif0501 = /*/nmi-frontend/nmif0501*/ 'bbbb';
+            window.path_nmif0502 = /*/nmi-frontend/nmif0502*/ 'bbbb';
+            window.path_nmif0503 = /*/nmi-frontend/nmif0503*/ 'bbbb';
+            window.path_nmif0504 = /*/nmi-frontend/nmif0504*/ 'bbbb';
+            window.path_nmif0505 = /*/nmi-frontend/nmif0505*/ 'bbbb';
+            window.path_nmif0506 = /*/nmi-frontend/nmif0506*/ 'bbbb';
+            window.path_nmif0507 = /*/nmi-frontend/nmif0507*/ 'bbbb';
+            window.path_nmif0508 = /*/nmi-frontend/nmif0508*/ 'bbbb';
+            window.path_plan = /*/nmi-frontend/plan*/ 'bbbb';
+            window.path_purchase = /*/nmi-frontend/purchase*/ 'bbbb';
+            window.path_nmif0601 = /*/nmi-frontend/nmif0601*/ 'bbbb';
+            window.path_kyc_step1 = /*/nmi-frontend/kyc_step1*/ 'bbbb';
+            window.path_kyc_step2 = /*/nmi-frontend/kyc_step2*/ 'bbbb';
+            window.path_kyc_result = /*/nmi-frontend/kyc_result*/ 'bbbb';
+            window.path_dashboard = /*/nmi-frontend/dashboard*/ 'bbbb';
+            window.path_index = /*/nmi-frontend/index.html*/ 'bbbb';
+            window.path_contract_term1_1 = /*/nmi-frontend/contract_term1_1*/ 'bbbb';
+            window.path_contract_term1_2 = /*/nmi-frontend/contract_term1_2*/ 'bbbb';
+            window.path_contract_term1_3 = /*/nmi-frontend/contract_term1_3*/ 'bbbb';
+            window.path_contract_term1_4 = /*/nmi-frontend/contract_term1_4*/ 'bbbb';
+            window.path_contract_term2_2 = /*/nmi-frontend/contract_term2_2*/ 'bbbb';
+            window.path_contract_term2_3 = /*/nmi-frontend/contract_term2_3*/ 'bbbb';
+            window.path_contract_term2_4 = /*/nmi-frontend/contract_term2_4*/ 'bbbb';
+            window.path_nano = /*/nmi-frontend/nano.html*/ 'bbbb';
+            window.path_result = /*/nmi-frontend/result*/ 'bbbb';
+            /*]]>*/
+        </script>
+        <div class="overlay"></div>
+        <div class="nav_container">
+            <button class="w3-bar-item w3-button nav-hamburger w3-hide-large"> <span class="hamburger-icon"></span> </button>
+            <a href="index.html" class="w3-bar-item fubon-logo">台北富邦銀行<span>奈米投</span></a>
+            <nav class="w3-right" role="navigation"> <a href="index.html" class="w3-bar-item fubon-logo w3-hide-large">台北富邦銀行<span>奈米投</span></a> <a href="https://www.fubon.com/banking/event/hot/20200203/index.html" class="w3-bar-item" target="_blank">理財小學堂 </a> <a class="w3-bar-item fancybox.iframe" data-type="iframe" data-src="iframe_faq.html">Q&amp;A</a> <a href="https://liff.line.me/1557519568-jxPoZzmg" target="_blank" class="w3-bar-item mo-show">綁定LINE官方帳號</a> <a href="nano.html" class="w3-bar-item nano">打造投資計畫</a> <a name="login" id="dashboardlogin" class="w3-bar-item dashboardLogin dashboard" onclick="javascript: setAfterLoginUrl('dashboard')">我的投資</a> <a href="https://esrv.taipeifubon.com.tw/WebChatFubon/QAiframe/qqa.html?fromDevice=nano" class="w3-bar-item CRM menuSpItem" target="_blank">數位客服</a> <a id="loginElement" href="iframe_login" class="w3-bar-item login" onclick="javascript: setAfterLoginUrl(undefined)">登入</a> </nav>
+            <button id="loginElementMobile" class="w3-bar-item w3-button nav-login w3-hide-large"> <img src="img/sign-in-new.png"> </button>
+            <button id="dashboardloginBtn" class="w3-bar-item w3-button nav-investment w3-hide-large dashboardLogin dashboard" onclick="javascript: setAfterLoginUrl('dashboard')"> <img src="img/investment.png"> </button>
+        </div>
+        <form method="post" action="dashboard" id="goToDashboard">
+            <input type="hidden" name="_csrf" value="ff037c33-16cf-402c-afaa-edf42dfa37db" />
+            <input type="hidden" name="as_sfid" value="AAAAAAVOptD5Zgtfv1Nm6yk8Lo2jft4AKOInNItTo_7k6CngNeTlgzMwPaazMrARulizusJglmUoeVS6r02rFP4GBXmeHBpdYgbSJQnZyxEpM34jOOUF-iW_q5vgoryH_3Dmhk4=" />
+            <input type="hidden" name="as_fid" value="e5b069b5e5ac3e91444d0e5b9ea0ad8f0818ef3e" />
+        </form>
+        <form method="GET" action="index.html" id="goToIndex">
+            <input type="hidden" name="as_sfid" value="AAAAAAXGgg3ufgZIbYp4SRFqBqHrYMW4HXU7qRwblfR0XDhTk8a00C2oZDn3ZLhH0FC335rMsk-rXODAJ5B3YB9qIwWdgE0LDhPy_NsSF-uyZE3txDQgD9qKYJ4Skp-jwoezq_A=" />
+            <input type="hidden" name="as_fid" value="dcfef7060248c7d18728cce15f7db51a41d5f8b9" />
+        </form>
+        <input type="hidden" name="warningAlert" value="N">
+    </header>
+    <!-- NAVIGATION BAR END -->
+
+</body>
+
+</html>
