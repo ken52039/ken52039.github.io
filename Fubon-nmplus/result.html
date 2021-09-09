@@ -19,6 +19,7 @@
     <link rel="stylesheet" href="css/sub_style_result.css">
     <link rel="stylesheet" href="js/node_modules/slick-carousel/slick/slick.css">
     <link rel="stylesheet" href="js/node_modules/slick-carousel/slick/slick-theme.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/simplebar/5.3.5/simplebar.css">
     <link rel="stylesheet" href="css/new_result.css">
     <script src="js/node_modules/@fancyapps/fancybox/dist/jquery.fancybox.min.js"></script>
     <script src='js/node_modules/zingtouch/dist/zingtouch.min.js'></script>
@@ -33,6 +34,7 @@
     <script src="js/sub_fun_allocation_chart.js"></script>
     <script src="js/sub_fun_result.js"></script>
     <script src="js/jquery-ui.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/simplebar/5.3.5/simplebar.min.js"></script>
     <script language="JavaScript" type="text/JavaScript">
         function showdiv(targetid,objN){
    
@@ -107,11 +109,12 @@
                                 </div>
                             </div>
                         </div>
+                        <a href="javascript:" class="more-btn hide-btn1">隱藏詳細內容 <img src="svg/result/more-arrow.png"></a>
                     </div>
                     <div class="clearfix"></div>
                 </div>
 
-                <!--<div class="panel">
+                <div class="panel">
                     <div class="content">
                         <div class="section">
                             <div class="colum_group">
@@ -152,9 +155,10 @@
                                 </div>
                             </div>
                         </div>
+                        <a href="javascript:" class="more-btn hide-btn2">隱藏詳細內容 <img src="svg/result/more-arrow.png"></a>
                     </div>
                     <div class="clearfix"></div>
-                </div>-->
+                </div>
             </div>
             <div id="historical_chart_section" class="section4" style="display:none">&nbsp; </div>
             <!--/你的專屬計畫-->
@@ -210,11 +214,11 @@
                         <div id="contentid">
                             <div class="section-R" style="float: none;margin: auto;">
                                 <!--BLOCK  年化報酬 -->
-                                <div class="type-txt pct">
+                                <!--<div class="type-txt pct">
                                     <div class="lh140">此投資組合的<br>
                                         平均年化報酬 </div>
                                     <div class="circle f-green">12.5<span class="f-14">%</span></div>
-                                </div>
+                                </div>-->
                                 <!--BLOCK 5年可存 -->
                                 <!--<div class="type-txt cube-box"> 
                     <div>此組合5年可存到<br><span class="f-green dollar">2,005,810<span class="f-14">美元</span> </span></div> 
@@ -326,7 +330,7 @@
             <div id="projection_chart_section" class="section2">
                 <div id="tabs2">
                     <ul>
-                        <li style="width: 100%;"><a href="#tabs2-1" style="border-radius: 12px 12px 0 0;">模擬報酬</a></li>
+                        <li style="width: 100%;"><a href="#tabs2-1" style="border-radius: 5px 5px 0 0;">模擬報酬</a></li>
                     </ul>
                     <div id="tabs2-1">
                         <div class="chart">
@@ -347,162 +351,6 @@
                 </div>
             </div>
             <!--/模擬未來投報-->
-
-            <div class="mo-show mt15"></div>
-
-            <!--使用者分享-->
-            <div id="uders_commend" class="sections clearfix mb50">
-                <div class="header">
-                    <h1>大家為什麼選擇投資「奈米投」</h1>
-                    <span>已帶領23,600位投資人踏入全球投資領域 <br><span class="f-13 f-gray">(資料期間：上線至2020.12.27)</span></span>
-                </div>
-                <hr style="margin:5px auto 10px auto;">
-                <div class="carousel">
-                    <div class="btn-bar">
-                        <div id="buttons">
-                            <a id="prev" href="#">＜</a>
-                            <a id="next" href="#">＞</a>
-                        </div>
-                    </div>
-                    <div id="slides">
-                        <ul>
-                            <li class="slide">
-                                <div class="quoteContainer">
-                                    <div class="recommend">
-                                        <a href="" target="_blank">
-                                            <div class="quote-phrase">
-                                                <div class="news-left"><img src="img/result/recommend_pic1.png" alt="" /></div>
-                                                <div class="news-right">
-                                                    <div class="recommend-title recommend-ellip-1">超高CP值的理財方式</div>
-                                                    <div class="recommend-txt recommend-ellip-2">平常下班都八、九點，回到家還要做家事、幫小孩洗澡，完全沒有時間吸收理財資訊。有了奈米投，從此不需要煩惱美國總統誰當選，隨時都有專家幫忙看管我的錢，是CP值超高的投資方式。</div>
-                                                </div>
-                                            </div>
-                                        </a>
-                                    </div>
-                                </div>
-                            </li>
-                            <li class="slide">
-                                <div class="quoteContainer">
-                                    <div class="recommend"> <a href="" target="_blank">
-                                            <div class="quote-phrase">
-                                                <div class="news-left"><img src="img/result/recommend_pic2.png" alt="" /></div>
-                                                <div class="news-right">
-                                                    <div class="recommend-title recommend-ellip-1">有專家照顧，投資好安心</div>
-                                                    <div class="recommend-txt recommend-ellip-2">我很喜歡投資但總是看不懂，就愛跟著PTT亂跟風，永遠追高殺低、小賺大賠，但投了奈米投之後，有專家幫我操、幫我顧，真的讓我很安心！</div>
-                                                </div>
-                                            </div>
-                                        </a> </div>
-                                </div>
-                            </li>
-                            <li class="slide">
-                                <div class="quoteContainer">
-                                    <div class="recommend"> <a href="" target="_blank">
-                                            <div class="quote-phrase">
-                                                <div class="news-left"><img src="img/result/recommend_pic3.png" alt="" /></div>
-                                                <div class="news-right">
-                                                    <div class="recommend-title recommend-ellip-1">定期定額適合懶惰又忙碌的我</div>
-                                                    <div class="recommend-txt recommend-ellip-2">不用動腦、也不用自己盯盤選標的，非常適合懶惰及繁忙的人！本身從奈米投一上市就開始投了，目前每月定期定額投資，偶爾登入看績效，超方便!</div>
-                                                </div>
-                                            </div>
-                                        </a> </div>
-                                </div>
-                            </li>
-                            <li class="slide">
-                                <div class="quoteContainer">
-                                    <div class="recommend"> <a href="" target="_blank">
-                                            <div class="quote-phrase">
-                                                <div class="news-left"><img src="img/result/recommend_pic4.png" alt="" /></div>
-                                                <div class="news-right">
-                                                    <div class="recommend-title recommend-ellip-1">投資就從小額開始，建立信心好幫手</div>
-                                                    <div class="recommend-txt recommend-ellip-2">我是投資新手，很怕選錯投資產品，所以想從小額投資開始建立信心。奈米投其實是一個不錯的投資入門產品，真的很推薦對投資沒概念的人使用~</div>
-                                                </div>
-                                            </div>
-                                        </a> </div>
-                                </div>
-                            </li>
-                            <li class="slide">
-                                <div class="quoteContainer">
-                                    <div class="recommend"> <a href="" target="_blank">
-                                            <div class="quote-phrase">
-                                                <div class="news-left"><img src="img/result/recommend_pic5.png" alt="" /></div>
-                                                <div class="news-right">
-                                                    <div class="recommend-title recommend-ellip-1">利用定期定額投資，快速掌握市場波動</div>
-                                                    <div class="recommend-txt recommend-ellip-2">奈米投是我剛入社會的第一個理財商品，在前陣子市場漲跌很大時，靠著定期定額投資，也沒錯過低點！p.s.現在我都用多筆計畫，更彈性管理資產～</div>
-                                                </div>
-                                            </div>
-                                        </a> </div>
-                                </div>
-                            </li>
-                            <li class="slide">
-                                <div class="quoteContainer">
-                                    <div class="recommend"> <a href="" target="_blank">
-                                            <div class="quote-phrase">
-                                                <div class="news-left"><img src="img/result/recommend_pic6.png" alt="" /></div>
-                                                <div class="news-right">
-                                                    <div class="recommend-title recommend-ellip-1">推薦長期持有奈米投，享受配息現金流</div>
-                                                    <div class="recommend-txt recommend-ellip-2">依我一年半的投資經驗&觀察，奈米投會配息，所以推薦放長期。我自己喜歡「每個月」單筆申購，保持資金流動性。 </div>
-                                                </div>
-                                            </div>
-                                        </a> </div>
-                                </div>
-                            </li>
-                            <li class="slide">
-                                <div class="quoteContainer">
-                                    <div class="recommend"> <a href="" target="_blank">
-                                            <div class="quote-phrase">
-                                                <div class="news-left"><img src="img/result/recommend_pic7.png" alt="" /></div>
-                                                <div class="news-right">
-                                                    <div class="recommend-title recommend-ellip-1">專家操盤、自動調整投組，不用擔心進場時間！</div>
-                                                    <div class="recommend-txt recommend-ellip-2">我是投資運氣非常差的人，買什麼賠什麼，直到我遇到奈米投，了解之後才知道，專家操盤、自動調整投組內容真的很厲害，不論市場好壞都可以進場！</div>
-                                                </div>
-                                            </div>
-                                        </a> </div>
-                                </div>
-                            </li>
-                            <li class="slide">
-                                <div class="quoteContainer">
-                                    <div class="recommend"> <a href="" target="_blank">
-                                            <div class="quote-phrase">
-                                                <div class="news-left"><img src="img/result/recommend_pic8.png" alt="" /></div>
-                                                <div class="news-right">
-                                                    <div class="recommend-title recommend-ellip-1">適合作為累積核心資產的投資工具</div>
-                                                    <div class="recommend-txt recommend-ellip-2">相較自行研究投資個股，奈米投充分體現「全球多元分散」、「投資標的隨時汰弱留強」、「追求長期財富成長」的投資理念，非常適合作為財富累積核心資產~ </div>
-                                                </div>
-                                            </div>
-                                        </a> </div>
-                                </div>
-                            </li>
-                            <li class="slide">
-                                <div class="quoteContainer">
-                                    <div class="recommend"> <a href="" target="_blank">
-                                            <div class="quote-phrase">
-                                                <div class="news-left"><img src="img/result/recommend_pic9.png" alt="" /></div>
-                                                <div class="news-right">
-                                                    <div class="recommend-title recommend-ellip-1">使用體驗很棒的投資方式</div>
-                                                    <div class="recommend-txt recommend-ellip-2">奈米投很簡單不用選投資標的，而且有投資專家幫我隨市場自動調整投組，我投資1年半以來體驗都很棒，超級推薦~</div>
-                                                </div>
-                                            </div>
-                                        </a> </div>
-                                </div>
-                            </li>
-                            <li class="slide">
-                                <div class="quoteContainer">
-                                    <div class="recommend"> <a href="" target="_blank">
-                                            <div class="quote-phrase">
-                                                <div class="news-left"><img src="img/result/recommend_pic10.png" alt="" /></div>
-                                                <div class="news-right">
-                                                    <div class="recommend-title recommend-ellip-1">簡單又能小額投資的平台</div>
-                                                    <div class="recommend-txt recommend-ellip-2">我之前沒有投資經驗，但又很想嘗試，奈米投只要台幣約3,000元就可以投資全球股市，我覺得用起來還滿簡單的!</div>
-                                                </div>
-                                            </div>
-                                        </a> </div>
-                                </div>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-            <!--/使用者分享-->
         </div>
         <!--content end -->
 
@@ -517,13 +365,17 @@
         <div class="popup info" style="display: none;" id="info1">
             <strong>投資術</strong>
             <br>
-            <p>奈米投數位理財服務分為兩種投資術，皆有奈米投投資團隊每日幫你盯盤，主動為你的投資汰弱留強。</p>
-            <p>奈米投分為兩種投資術：</p>
-            <ul class="list">
-                <li><span class="blue">奈米1號</span>：投資的是在<span class="blue">英國倫敦交易所交易的ETF</span>，提供「4種風險等級」投資組合，<span class="blue">從保守到積極，35元美金即可投資全世界</span>，輕鬆參與歐美、新興市場趨勢發展。英國倫敦交易所掛牌的ETF相較美國掛牌的ETF更具稅務優勢。</li>
-                <li><span class="blue">奈米2號</span>：投資的是<span class="blue">台灣證券交易所交易的ETF</span>，提供「4種投資主題」投資組合，<span class="blue">台幣1000元即可投資</span>，不論你是投資新手，還是有經驗的投資人，主題式投資幫助你突破盲點、強化策略，讓投資成為一件輕鬆的事。</li>
-            </ul>
-            <p>(皆不含倍數槓桿型及反向型ETF)</p>
+            <div class="overflow" data-simplebar>
+                <p>
+                    奈米投數位理財服務分為兩種投資術，皆有奈米投投資團隊每日幫你盯盤，主動為你的投資汰弱留強。
+                    <br>奈米投分為兩種投資術：
+                </p>
+                <ul class="list">
+                    <li><span class="blue">奈米1號</span>：投資的是在<span class="blue">英國倫敦交易所交易的ETF</span>，提供「4種風險等級」投資組合，<span class="blue">從保守到積極，35元美金即可投資全世界</span>，輕鬆參與歐美、新興市場趨勢發展。英國倫敦交易所掛牌的ETF相較美國掛牌的ETF更具稅務優勢。</li>
+                    <li><span class="blue">奈米2號</span>：投資的是<span class="blue">台灣證券交易所交易的ETF</span>，提供「4種投資主題」投資組合，<span class="blue">台幣1000元即可投資</span>，不論你是投資新手，還是有經驗的投資人，主題式投資幫助你突破盲點、強化策略，讓投資成為一件輕鬆的事。</li>
+                </ul>
+                <p>(皆不含倍數槓桿型及反向型ETF)</p>
+            </div>
         </div>
 
         <!--彈窗投資組合說明-->
@@ -548,44 +400,52 @@
                         <li><a href="#sm-tabs1-4">Level 4</a></li>
                     </ul>
                     <div id="sm-tabs1-1">
-                        <ul class="list">
-                            <li>個人風險屬性至少為<span class="green">C1保守型客戶</span>。</li>
-                            <li>投資方法：<span class="green">以債券型ETF為主</span>，建構出保守型投資組合。</li>
-                            <li>投資範圍：符合英國金融法規，於倫敦交易所掛牌交易之交易所買賣基金ETF(不含倍數槓桿型及反向型ETF)及現金存款。</li>
-                            <li>依15年期歷史數據回測，本策略之長期年化目標波動率約為7.8%。</li>
-                            <li>投組中債券型ETF加上現金之投資比重不低於投資組合之60%。</li>
-                            <li>分散投資於至少10檔以上之ETF標的。</li>
-                        </ul>
+                        <div class="sm-overflow" data-simplebar>
+                            <ul class="list">
+                                <li>個人風險屬性至少為<span class="green">C1保守型客戶</span>。</li>
+                                <li>投資方法：<span class="green">以債券型ETF為主</span>，建構出保守型投資組合。</li>
+                                <li>投資範圍：符合英國金融法規，於倫敦交易所掛牌交易之交易所買賣基金ETF(不含倍數槓桿型及反向型ETF)及現金存款。</li>
+                                <li>依15年期歷史數據回測，本策略之長期年化目標波動率約為7.8%。</li>
+                                <li>投組中債券型ETF加上現金之投資比重不低於投資組合之60%。</li>
+                                <li>分散投資於至少10檔以上之ETF標的。</li>
+                            </ul>
+                        </div>
                     </div>
                     <div id="sm-tabs1-2">
-                        <ul class="list">
-                            <li>個人風險屬性至少為<span class="green">C1保守型客戶</span>。</li>
-                            <li>投資方法：<span class="green">以債券型搭配成熟市場股票型的ETF為主</span>，建構出穩健型投資組合。</li>
-                            <li>投資範圍：符合英國金融法規，於倫敦交易所掛牌交易之交易所買賣基金ETF(不含倍數槓桿型及反向型ETF)及現金存款。</li>
-                            <li>依15年期歷史數據回測，本策略之長期年化目標波動率約為7.8%。</li>
-                            <li>投組中債券型ETF加上現金之投資比重不低於投資組合之40%，非成熟國家股票型ETF之投資比重不高於投資組合之20%。</li>
-                            <li>分散投資於至少10檔以上之ETF標的。</li>
-                        </ul>
+                        <div class="sm-overflow" data-simplebar>
+                            <ul class="list">
+                                <li>個人風險屬性至少為<span class="green">C1保守型客戶</span>。</li>
+                                <li>投資方法：<span class="green">以債券型搭配成熟市場股票型的ETF為主</span>，建構出穩健型投資組合。</li>
+                                <li>投資範圍：符合英國金融法規，於倫敦交易所掛牌交易之交易所買賣基金ETF(不含倍數槓桿型及反向型ETF)及現金存款。</li>
+                                <li>依15年期歷史數據回測，本策略之長期年化目標波動率約為7.8%。</li>
+                                <li>投組中債券型ETF加上現金之投資比重不低於投資組合之40%，非成熟國家股票型ETF之投資比重不高於投資組合之20%。</li>
+                                <li>分散投資於至少10檔以上之ETF標的。</li>
+                            </ul>
+                        </div>
                     </div>
                     <div id="sm-tabs1-3">
-                        <ul class="list">
-                            <li>個人風險屬性至少為<span class="green">C2穩健型客戶</span>。</li>
-                            <li>投資方法：<span class="green">以債券型搭配成熟市場股票型與新興市場股票型的ETF為主</span>，建構出成長型投資組合。</li>
-                            <li>投資範圍：符合英國金融法規，於倫敦交易所掛牌交易之交易所買賣基金ETF(不含倍數槓桿型及反向型ETF)及現金存款。</li>
-                            <li>依15年期歷史數據回測，本策略之長期年化目標波動率約為12.3%。</li>
-                            <li>投組中債券型ETF加上現金之投資比重不低於投資組合之20%，非成熟國家股票型ETF之投資比重不高於投資組合之30%。</li>
-                            <li>分散投資於至少10檔以上之ETF標的。</li>
-                        </ul>
+                        <div class="sm-overflow" data-simplebar>
+                            <ul class="list">
+                                <li>個人風險屬性至少為<span class="green">C2穩健型客戶</span>。</li>
+                                <li>投資方法：<span class="green">以債券型搭配成熟市場股票型與新興市場股票型的ETF為主</span>，建構出成長型投資組合。</li>
+                                <li>投資範圍：符合英國金融法規，於倫敦交易所掛牌交易之交易所買賣基金ETF(不含倍數槓桿型及反向型ETF)及現金存款。</li>
+                                <li>依15年期歷史數據回測，本策略之長期年化目標波動率約為12.3%。</li>
+                                <li>投組中債券型ETF加上現金之投資比重不低於投資組合之20%，非成熟國家股票型ETF之投資比重不高於投資組合之30%。</li>
+                                <li>分散投資於至少10檔以上之ETF標的。</li>
+                            </ul>
+                        </div>
                     </div>
                     <div id="sm-tabs1-4">
-                        <ul class="list">
-                            <li>個人風險屬性至少為<span class="green">C3成長型客戶</span>。</li>
-                            <li>投資方法：<span class="green">以成熟市場股票型搭配新興市場股票型ETF為主</span>，建構出積極型投資組合。</li>
-                            <li>投資範圍：符合英國金融法規，於倫敦交易所掛牌交易之交易所買賣基金ETF(不含倍數槓桿型及反向型ETF)及現金存款。</li>
-                            <li>依15年期歷史數據回測，本策略之長期年化目標波動率約為15.4%。</li>
-                            <li>投組中成熟國家股票型ETF之投資比重不低於投資組合之60%。</li>
-                            <li>分散投資於至少10檔以上之ETF標的。</li>
-                        </ul>
+                        <div class="sm-overflow" data-simplebar>
+                            <ul class="list">
+                                <li>個人風險屬性至少為<span class="green">C3成長型客戶</span>。</li>
+                                <li>投資方法：<span class="green">以成熟市場股票型搭配新興市場股票型ETF為主</span>，建構出積極型投資組合。</li>
+                                <li>投資範圍：符合英國金融法規，於倫敦交易所掛牌交易之交易所買賣基金ETF(不含倍數槓桿型及反向型ETF)及現金存款。</li>
+                                <li>依15年期歷史數據回測，本策略之長期年化目標波動率約為15.4%。</li>
+                                <li>投組中成熟國家股票型ETF之投資比重不低於投資組合之60%。</li>
+                                <li>分散投資於至少10檔以上之ETF標的。</li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -600,43 +460,51 @@
                         <li><a href="#sm-tabs2-4">趨勢投</a></li>
                     </ul>
                     <div id="sm-tabs2-1">
-                        <ul class="list">
-                            <li>個人風險屬性至少為<span class="blue">C1保守型客戶</span>。</li>
-                            <li>投資方法：<span class="blue">以債券型ETF為主</span>，為保守型投資操作。</li>
-                            <li>投資範圍：以國內證券投資信託事業在中華民國境內募集發行及上市(櫃)交易之新臺幣計價ETF（不含槓桿型及反向型ETF）為投資標的，建立分散投資在全球債券型和臺灣股票型的投資組合。</li>
-                            <li>依15年期歷史數據回測，本策略之長期年化目標波動率約為4.5%。</li>
-                            <li>債券型ETF加上現金之投資比重不低於投資組合之60%。</li>
-                            <li>需分散投資於至少5檔以上之ETF標的。</li>
-                        </ul>
+                        <div class="sm-overflow" data-simplebar>
+                            <ul class="list">
+                                <li>個人風險屬性至少為<span class="blue">C1保守型客戶</span>。</li>
+                                <li>投資方法：<span class="blue">以債券型ETF為主</span>，為保守型投資操作。</li>
+                                <li>投資範圍：以國內證券投資信託事業在中華民國境內募集發行及上市(櫃)交易之新臺幣計價ETF（不含槓桿型及反向型ETF）為投資標的，建立分散投資在全球債券型和臺灣股票型的投資組合。</li>
+                                <li>依15年期歷史數據回測，本策略之長期年化目標波動率約為4.5%。</li>
+                                <li>債券型ETF加上現金之投資比重不低於投資組合之60%。</li>
+                                <li>需分散投資於至少5檔以上之ETF標的。</li>
+                            </ul>
+                        </div>
                     </div>
                     <div id="sm-tabs2-2">
-                        <ul class="list">
-                            <li>個人風險屬性至少為<span class="blue">C1保守型客戶</span>。</li>
-                            <li>投資方法：<span class="blue">以債券搭配高股息股票、REITs及特別股型ETF為主</span>，為安穩型投資操作。</li>
-                            <li>投資範圍：以國內證券投資信託事業在中華民國境內募集發行及上市(櫃)交易之新臺幣計價ETF（不含槓桿型及反向型ETF）為投資標的，建立分散投資在全球債券型和臺灣股票型的投資組合。</li>
-                            <li>依15年期歷史數據回測，本策略之長期年化目標波動率約為7.5%。</li>
-                            <li>債券型ETF加上現金之投資比重不低於投資組合之40%。</li>
-                            <li>需分散投資於至少5檔以上之ETF標的。</li>
-                        </ul>
+                        <div class="sm-overflow" data-simplebar>
+                            <ul class="list">
+                                <li>個人風險屬性至少為<span class="blue">C1保守型客戶</span>。</li>
+                                <li>投資方法：<span class="blue">以債券搭配高股息股票、REITs及特別股型ETF為主</span>，為安穩型投資操作。</li>
+                                <li>投資範圍：以國內證券投資信託事業在中華民國境內募集發行及上市(櫃)交易之新臺幣計價ETF（不含槓桿型及反向型ETF）為投資標的，建立分散投資在全球債券型和臺灣股票型的投資組合。</li>
+                                <li>依15年期歷史數據回測，本策略之長期年化目標波動率約為7.5%。</li>
+                                <li>債券型ETF加上現金之投資比重不低於投資組合之40%。</li>
+                                <li>需分散投資於至少5檔以上之ETF標的。</li>
+                            </ul>
+                        </div>
                     </div>
                     <div id="sm-tabs2-3">
-                        <ul class="list">
-                            <li>個人風險屬性至少為<span class="blue">C2穩健型客戶</span>。</li>
-                            <li>投資方法：<span class="blue">以永續題材之股票及債券型ETF為主</span>，為穩健型投資操作。</li>
-                            <li>投資範圍：以國內證券投資信託事業在中華民國境內募集發行及上市(櫃)交易之新臺幣計價ETF（不含槓桿型及反向型ETF）為投資標的，建立分散投資在全球債券型和臺灣股票型的投資組合。依15年期歷史數據回測，本策略之長期年化目標波動率約為10.5%。</li>
-                            <li>債券型ETF加上現金之投資比重不低於投資組合之20%。</li>
-                            <li>需分散投資於至少5檔以上之ETF標的。</li>
-                        </ul>
+                        <div class="sm-overflow" data-simplebar>
+                            <ul class="list">
+                                <li>個人風險屬性至少為<span class="blue">C2穩健型客戶</span>。</li>
+                                <li>投資方法：<span class="blue">以永續題材之股票及債券型ETF為主</span>，為穩健型投資操作。</li>
+                                <li>投資範圍：以國內證券投資信託事業在中華民國境內募集發行及上市(櫃)交易之新臺幣計價ETF（不含槓桿型及反向型ETF）為投資標的，建立分散投資在全球債券型和臺灣股票型的投資組合。依15年期歷史數據回測，本策略之長期年化目標波動率約為10.5%。</li>
+                                <li>債券型ETF加上現金之投資比重不低於投資組合之20%。</li>
+                                <li>需分散投資於至少5檔以上之ETF標的。</li>
+                            </ul>
+                        </div>
                     </div>
                     <div id="sm-tabs2-4">
-                        <ul class="list">
-                            <li>個人風險屬性至少為<span class="blue">C3成長型客戶</span>。</li>
-                            <li>投資方法：<span class="blue">以市場指數、大型股及主題式股票型ETF為主</span>，為成長型投資操作。</li>
-                            <li>投資範圍：以國內證券投資信託事業在中華民國境內募集發行及上市(櫃)交易之新臺幣計價ETF（不含槓桿型及反向型ETF）為投資標的，建立分散投資在全球債券型和臺灣股票型的投資組合。</li>
-                            <li>依15年期歷史數據回測，本策略之長期年化目標波動率約為15%。</li>
-                            <li>股票型ETF之投資比重不低於投資組合之60%。</li>
-                            <li>需分散投資於至少5檔以上之ETF標的。</li>
-                        </ul>
+                        <div class="sm-overflow" data-simplebar>
+                            <ul class="list">
+                                <li>個人風險屬性至少為<span class="blue">C3成長型客戶</span>。</li>
+                                <li>投資方法：<span class="blue">以市場指數、大型股及主題式股票型ETF為主</span>，為成長型投資操作。</li>
+                                <li>投資範圍：以國內證券投資信託事業在中華民國境內募集發行及上市(櫃)交易之新臺幣計價ETF（不含槓桿型及反向型ETF）為投資標的，建立分散投資在全球債券型和臺灣股票型的投資組合。</li>
+                                <li>依15年期歷史數據回測，本策略之長期年化目標波動率約為15%。</li>
+                                <li>股票型ETF之投資比重不低於投資組合之60%。</li>
+                                <li>需分散投資於至少5檔以上之ETF標的。</li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -646,16 +514,18 @@
         <div class="popup info" style="display: none;" id="info3">
             <strong>ETF投資須知</strong>
             <br>
-            <ul class="list number">
-                <li><i>1.</i>本文宣網站頁面並非為ETF/股票(以下簡稱本商品)銷售之要約或要約之引誘。本行未就本商品之收益或盈虧為任何保證，亦不分擔投資風險。</li>
-                <li><i>2.</i>本商品投資並非存款；亦非屬存款保險承保範圍，客戶投資本商品前應自行了解判斷並自負盈虧。</li>
-                <li><i>3.</i>投資人於交易前應充分了解本商品之性質及相關財務、會計、稅制或法律等事宜，自行審度本身財務狀況及風險承受程度，始決定是否進行投資，以免因交易遭到無法承受之損失。</li>
-                <li><i>4.</i>本商品投資之各項風險均應由客戶自行承擔，相關風險包括市場風險、匯兌風險、投資風險、流動性風險及信用風險等，最大可能損失為全部投資本金。</li>
-                <li><i>5.</i>本商品過去的績效不代表未來的表現，其價格可能上漲或下跌。</li>
-                <li><i>6.</i>本商品之公開資訊可由國內外有價證券交易所或該公司官方網站上獲得，客戶應自行了解相關資訊。</li>
-                <li><i>7.</i>外幣投資及外幣存款可能產生匯兌收益或損失，投資人承作各幣別存款或投資仍應審慎評估，並自行承擔因此產生之風險。</li>
-                <li><i>8.</i>奈米投平台本頁面上所提供的資料只供參考用途，未經台北富邦銀行(本行)同意，不得複製、轉載或為任何散佈。本行將盡力提供正確之資訊，惟本行對於所載資料之完整性、即時性和正確性不做任何擔保，如有錯誤或疏漏，本行或關係企業與其任何董事或受僱人，並不負任何法律責任。投資人應自行判斷資料內容之正確性。</li>
-            </ul>
+            <div class="overflow" data-simplebar>
+                <ul class="list number">
+                    <li><i>1.</i>本文宣網站頁面並非為ETF/股票(以下簡稱本商品)銷售之要約或要約之引誘。本行未就本商品之收益或盈虧為任何保證，亦不分擔投資風險。</li>
+                    <li><i>2.</i>本商品投資並非存款；亦非屬存款保險承保範圍，客戶投資本商品前應自行了解判斷並自負盈虧。</li>
+                    <li><i>3.</i>投資人於交易前應充分了解本商品之性質及相關財務、會計、稅制或法律等事宜，自行審度本身財務狀況及風險承受程度，始決定是否進行投資，以免因交易遭到無法承受之損失。</li>
+                    <li><i>4.</i>本商品投資之各項風險均應由客戶自行承擔，相關風險包括市場風險、匯兌風險、投資風險、流動性風險及信用風險等，最大可能損失為全部投資本金。</li>
+                    <li><i>5.</i>本商品過去的績效不代表未來的表現，其價格可能上漲或下跌。</li>
+                    <li><i>6.</i>本商品之公開資訊可由國內外有價證券交易所或該公司官方網站上獲得，客戶應自行了解相關資訊。</li>
+                    <li><i>7.</i>外幣投資及外幣存款可能產生匯兌收益或損失，投資人承作各幣別存款或投資仍應審慎評估，並自行承擔因此產生之風險。</li>
+                    <li><i>8.</i>奈米投平台本頁面上所提供的資料只供參考用途，未經台北富邦銀行(本行)同意，不得複製、轉載或為任何散佈。本行將盡力提供正確之資訊，惟本行對於所載資料之完整性、即時性和正確性不做任何擔保，如有錯誤或疏漏，本行或關係企業與其任何董事或受僱人，並不負任何法律責任。投資人應自行判斷資料內容之正確性。</li>
+                </ul>
+            </div>
         </div>
         
         <!--彈窗歷史績效計算說明-->
@@ -753,7 +623,7 @@
                         </div>
                     </fieldset>
                     <fieldset style="display: none;" id="money1-input">
-                        <label for="money1">單筆投資金額</label>
+                        <label for="money1" id="title1">單筆投資金額</label>
                         <div class="right">
                             <div class="title">美金</div>
                             <input type="tel" min="35" max="250000" placeholder="請輸入數字" id="money1" class="small">
@@ -800,7 +670,7 @@
                         </div>
                     </fieldset>
                     <fieldset style="display: none;" id="money2-input">
-                        <label for="money2">單筆投資金額</label>
+                        <label for="money2" id="title2">單筆投資金額</label>
                         <div class="right">
                             <div class="title">台幣</div>
                             <input type="tel" min="1000" max="10000000" placeholder="請輸入數字" id="money2" class="small">
@@ -834,11 +704,6 @@
             </form>
         </div>
         <!--/調整投資方式-->
-
-        <!--buy button-->
-        <div class="new-plan pc-show"> <img src="svg/robot-02.svg" alt=""> <a href="#">新增<br>
-                計畫</a> </div>
-        <!--<button onclick="self.location.href='result_edit.html'" tabindex="6" class="button outline large pc-show" type="button">點我開始投</button>-->
     </div>
     <!--scrollContainer end -->
 
@@ -957,9 +822,9 @@
         } else if ($.trim($("#select1-3").val()) == "請選擇") {
             alert("請確實選擇投資方式");
         } else if (m1 < 35) {
-            alert("請確認單筆投資金額");
+            alert("請確認投資金額");
         } else if (m1 > 250000) {
-            alert("請確認單筆投資金額");
+            alert("請確認投資金額");
         } else if (t1 < 1) {
             alert("請確認投資期間");
         } else if (t1 > 30) {
@@ -977,9 +842,9 @@
         } else if ($.trim($("#select2-2").val()) == "請選擇") {
             alert("請確實選擇投資方式");
         } else if (m2 < 35) {
-            alert("請確認單筆投資金額");
+            alert("請確認投資金額");
         } else if (m2 > 250000) {
-            alert("請確認單筆投資金額");
+            alert("請確認投資金額");
         } else if ($.trim($("#select2-3").val()) == "請選擇") {
             alert("請確實選擇配息方式");
         } else if (t2 < 1) {
@@ -993,12 +858,26 @@
 
     $('.more-btn1').on('click', function() {
         $(this).hide();
+        $('.hide-btn1').css('display','block');
         $('#more-show1').show();
+    });
+    
+    $('.hide-btn1').on('click', function() {
+        $(this).hide();
+        $('.more-btn1').css('display','block');
+        $('#more-show1').hide();
     });
 
     $('.more-btn2').on('click', function() {
         $(this).hide();
+        $('.hide-btn2').css('display','block');
         $('#more-show2').show();
+    });
+    
+    $('.hide-btn2').on('click', function() {
+        $(this).hide();
+        $('.more-btn2').css('display','block');
+        $('#more-show2').hide();
     });
 
     $(document).ready(function() {
@@ -1093,6 +972,12 @@
             $('#select-title1-3').css("color", "#191919");
             $('#money1-input').show();
         }
+        
+        if (this.value == "每個月定期投資") {
+            $('#title1').text('每月投資金額');
+        } else {
+            $('#title1').text('單筆投資金額');
+        }
 
     }).change();
     $('#select2-1').on('change', function() {
@@ -1112,6 +997,12 @@
         } else {
             $('#select-title2-2').css("color", "#191919");
             $('#money2-input').show();
+        }
+        
+        if (this.value == "每個月定期投資") {
+            $('#title2').text('每月投資金額');
+        } else {
+            $('#title2').text('單筆投資金額');
         }
 
     }).change();

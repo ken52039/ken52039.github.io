@@ -1,10 +1,11 @@
-@import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;600&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;500;600;700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;600;700&display=swap');
 
 body .scrollContainer .content .chart {
     -webkit-border-radius: 0 0 8px 8px;
     -moz-border-radius: 0 0 8px 8px;
     border-radius: 0 0 8px 8px;
-    font-family: "Rajdhani", "Noto Sans TC", "Helvetica Neue", Helvetica, Arial, "SourceHanSansTW", "Microsoft JhengHei", "微軟正黑體", sans-serif;
+    font-family: "Rajdhani", "Noto Sans TC", "Microsoft JhengHei", "微軟正黑體", sans-serif !important;
 }
 
 #contentid {
@@ -13,6 +14,10 @@ body .scrollContainer .content .chart {
     border-radius: 0 0 8px 8px;
     background-color: #ffffff;
     margin-top: 0;
+}
+
+.sections {
+    padding: 10px 20px 20px 20px;
 }
 
 .content .ui-tabs .ui-tabs-nav {
@@ -44,11 +49,11 @@ body .scrollContainer .content .chart {
 }
 
 .content .ui-tabs .ui-tabs-nav li:first-of-type a {
-    border-radius: 12px 0 0 0;
+    border-radius: 5px 0 0 0;
 }
 
 .content .ui-tabs .ui-tabs-nav li:last-of-type a {
-    border-radius: 0 12px 0 0;
+    border-radius: 0 5px 0 0;
 }
 
 .content .ui-tabs .ui-tabs-nav li.ui-tabs-active a {
@@ -102,7 +107,7 @@ body .scrollContainer .content .chart {
 }
 
 .title-right-link {
-    font-size: 14px;
+    font-size: 16px;
     font-weight: 500;
     float: right;
     color: #15bd7a;
@@ -142,12 +147,12 @@ body .scrollContainer .content .chart {
 
 .talk strong {
     display: block;
-    width: 216px;
+    width: 270px;
     line-height: 36px;
     text-align: center;
-    font-size: 16px;
+    font-size: 20px;
     font-weight: normal;
-    color: #0087d5;
+    color: #191919;
     background: #fff;
     border-radius: 8px;
     margin: 10px 0 0 80px;
@@ -168,7 +173,7 @@ body .scrollContainer .content .chart {
 
 .talk strong b {
     font-weight: normal;
-    color: #191919;
+    color: #0087d5;
 }
 
 .popup {
@@ -382,8 +387,8 @@ body .scrollContainer .content .chart {
     font-size: 16px;
     font-weight: 500;
     color: #191919;
-    line-height: 30px;
-    margin: 0;
+    line-height: 25px;
+    margin: 0 0 10px 0;
     padding: 0;
 }
 
@@ -411,8 +416,8 @@ body .scrollContainer .content .chart {
     font-size: 16px;
     font-weight: 500;
     color: #191919;
-    line-height: 30px;
-    margin: 0;
+    line-height: 25px;
+    margin: 0 0 10px 0;
     padding: 0;
     position: relative;
 }
@@ -459,7 +464,7 @@ body .scrollContainer .content .chart {
 .popup .link label span {
     display: block;
     background: #ecf6fa;
-    font-size: 18px;
+    font-size: 20px;
     font-weight: 500;
     letter-spacing: 1px;
     color: #828282;
@@ -521,7 +526,7 @@ body .scrollContainer .content .chart {
 .popup .ui-tabs .ui-tabs-nav li a {
     display: block;
     line-height: 33px;
-    font-size: 20px;
+    font-size: 18px;
     font-weight: 600;
     text-align: center;
     color: #15bd7a;
@@ -529,6 +534,22 @@ body .scrollContainer .content .chart {
 
 .popup .ui-tabs .ui-tabs-nav.blue li a {
     color: #0087d5;
+}
+
+.popup .overflow {
+    overflow: auto;
+    max-height: 60vh;
+    padding: 0 5px;
+}
+
+.popup .sm-overflow {
+    overflow: auto;
+    max-height: 40vh;
+    padding: 0 5px;
+}
+
+.simplebar-scrollbar::before {
+    background-color: gray;
 }
 
 .colum_group {
@@ -600,11 +621,25 @@ body .scrollContainer .content .chart {
     color: #191919;
 }
 
+.hide-btn1,
+.hide-btn2 {
+    display: none;
+}
+
 .more-btn img {
     display: inline-block;
     vertical-align: middle;
     width: 10px;
     margin: 0 0 0 5px;
+}
+
+.hide-btn1 img,
+.hide-btn2 img {
+    -moz-transform:rotate(180deg); 
+    -webkit-transform:rotate(180deg); 
+    -o-transform:rotate(180deg); 
+    -ms-transform:rotate(180deg); 
+    transform:rotate(180deg);
 }
 
 .popup-link {
@@ -629,6 +664,10 @@ body .scrollContainer .content .chart {
 }
 
 @media screen and (max-width: 768px) {
+    body .scrollContainer .content .section1, body .scrollContainer .content .section2, body .scrollContainer .content .section3 {
+        margin: 0 auto 30px auto;
+    }
+    
     .fix_btn {
         top: auto;
         bottom: 0;
@@ -655,7 +694,8 @@ body .scrollContainer .content .chart {
 }
 
 @media screen and (max-width: 600px) {
-    body .scrollContainer .content .chart {
+    body .scrollContainer .content .chart,
+    body .scrollContainer .content .panel {
         margin-top: 0;
     }
 
@@ -682,8 +722,8 @@ body .scrollContainer .content .chart {
     }
 
     .talk strong {
-        width: 200px;
-        font-size: 14px;
+        width: 220px;
+        font-size: 16px;
         margin: 10px 0 0 60px;
     }
 
@@ -692,7 +732,7 @@ body .scrollContainer .content .chart {
     }
 
     .popup.info {
-        padding: 30px 13px 40px 13px;
+        padding: 30px 10px 40px 10px;
     }
 
     .popup form fieldset label {
@@ -712,6 +752,12 @@ body .scrollContainer .content .chart {
     .popup form fieldset.submit button img {
         margin: 0 0 0 10px;
         width: 15px;
+    }
+    
+    .popup .list li,
+    .popup p {
+        font-size: 14px;
+        line-height: 20px;
     }
 }
 
