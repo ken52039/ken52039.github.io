@@ -8,6 +8,12 @@ body .scrollContainer .content .chart {
     font-family: "Rajdhani", "Noto Sans TC", "Microsoft JhengHei", "微軟正黑體", sans-serif !important;
 }
 
+*,
+*:before,
+*:after {
+    font-family: "Rajdhani", "Noto Sans TC", "Microsoft JhengHei", "微軟正黑體", sans-serif !important;
+}
+
 #contentid {
     -webkit-border-radius: 0 0 8px 8px;
     -moz-border-radius: 0 0 8px 8px;
