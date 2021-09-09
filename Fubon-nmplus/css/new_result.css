@@ -265,7 +265,7 @@ body .scrollContainer .content .chart {
     background: none;
     border: 0;
     border-bottom: solid 1px #0087d5;
-    text-align: right;
+    text-align: center;
     color: #0087d5;
     font-size: 24px;
     font-weight: 600;
