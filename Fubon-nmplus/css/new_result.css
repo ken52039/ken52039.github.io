@@ -597,6 +597,7 @@ body .scrollContainer .content .chart {
     border: 0;
     cursor: default;
     padding: 0;
+    color: #191919 !important;
 }
 
 .dropdown button input,
