@@ -8,20 +8,23 @@ body .scrollContainer .content .chart {
     font-family: "Rajdhani", "Noto Sans TC", "Microsoft JhengHei", "微軟正黑體", sans-serif !important;
 }
 
-body .scrollContainer {
-    position: fixed;
-    top: 80px;
-    margin: 0 !important;
-    height: calc(100vh - 140px);
-    width: 100vw !important;
-    overflow: hidden;
-    overflow-y: auto;
-}
-
 *,
 *:before,
 *:after {
     font-family: "Rajdhani", "Noto Sans TC", "Microsoft JhengHei", "微軟正黑體", sans-serif !important;
+}
+
+.promo {
+    top: 75px;
+}
+
+body .sub_menu {
+    top: 120px;
+}
+
+body .scrollContainer {
+    top: 20px;
+    position: relative;
 }
 
 #contentid {
@@ -685,12 +688,32 @@ body .scrollContainer {
     padding-right: 20px;
 }
 
+#mobile-footer {
+        width: 100%;
+    }
+
+@media screen and (max-width: 1279px) {
+    .promo {
+        top: 60px;
+    }
+}
+
 @media screen and (max-width: 768px) {
 
     body .scrollContainer .content .section1,
     body .scrollContainer .content .section2,
     body .scrollContainer .content .section3 {
         margin: 0 auto 30px auto;
+    }
+    
+    body .scrollContainer {
+        position: fixed;
+        top: 100px;
+        margin: 0 !important;
+        height: calc(100vh - 140px);
+        width: 100vw !important;
+        overflow: hidden;
+        overflow-y: auto;
     }
 
     .fix_btn {

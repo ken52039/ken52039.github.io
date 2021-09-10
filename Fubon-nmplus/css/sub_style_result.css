@@ -2653,39 +2653,6 @@ header .nav_container .fubon-logo span {
   top:5px; }
 }  
 
-/*20201202 footer*/
-footer {display:block; width:100%; background-color: #27c788; color:#fff; font-size:14px; line-height: 200%; padding:20px 30px 30px 30px; position: static; z-index: 1;
--webkit-box-sizing: border-box;  
--moz-box-sizing: border-box;
-box-sizing: border-box; }
- 
-footer .logos {font-size:16px; font-weight:bold; padding:0 0 5px 0;  margin:10px 0;   } 
-footer img.f-logo  { width:125px; padding:0; margin:-10px 8px 0 0;  vertical-align: middle;  }   
-.pc-show {display:block!important;}
-.mo-show {display:none!important;} 
-
-@media screen and (max-width: 768px) {  
-footer {display:block; width:100%; background-color: #27c788; color:#fff; font-size:14px; line-height: 200%; padding:20px 30px 100px 30px; position: static; z-index: 1;
--webkit-box-sizing: border-box;  border:1px solid #27c788;
--moz-box-sizing: border-box;
-box-sizing: border-box; }
-footer .logos {text-align:center; font-size:16px;  padding:0;  margin:5px 0;  }  
-footer img.f-logo  { width:125px; margin:-10px 8px 0 0;  }  
-footer .links {text-align: center; font-size:14px; margin:10px 0 0 0; line-height: 240%;} 
-footer .M-footer-CRM {margin:0 auto; width:100px;}  
-footer .copyright {color:#fff; font-size:13px; margin:20px 0; text-align: center; line-height: 180%; }
-.pc-show {display:none!important;}
-.mo-show {display:block!important;} 
-}    
-
-@media only screen 
-and (min-device-width : 768px) 
-and (max-device-width : 1024px) 
-and (orientation : portrait) { 
-footer {width: 100%;  border:1px solid #27c788; }
-} /*iPad9.7 in portrait */
-
-
 .recommend {
 width:100%;  
 padding: 0; margin:0 auto;  

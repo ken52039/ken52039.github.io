@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>footer</title>
+    <link rel="stylesheet" href="./dist/footer.min.css" />
+  </head>
+  <body>
+    <div id="footer">
+      <div class="footer-paragraph-wrap">
+        <div id="paragraph-toggle" class="paragraph-toggle">
+          奈米投警語<span></span>
+        </div>
+        <p id="paragraph-content" class="paragraph-content">
+          1.信託財產之管理運用並非絕無風險，本行以往之經理績效不保證指定信託運用信託財產之最低收益；本行除盡善良管理人之注意義務外，不負責指定運用信託財產之盈虧，亦不保證最低之收益，委託人簽約前應詳閱「奈米投指定營運範圍或方法單獨管理運用金錢信託投資國內外有價證券信託契約條款」(下稱「奈米投約定條款」)。<br />
+          2.本文宣並非為奈米投指定單獨管理運用金錢信託服務(以下簡稱本商品)銷售之要約或要約之引誘。本行未就本商品之收益或盈虧為任何保證，亦不分擔投資風險。<br />
+          3.本商品投資並非存款；亦非屬存款保險承保範圍，客戶投資本商品前應自行了解判斷並自負盈虧。<br />
+          4.投資人於交易前應充分了解本商品之性質及相關財務、會計、稅制或法律等事宜，自行審度本身財務狀況及風險承受程度，始決定是否進行投資，以免因交易遭到無法承受之損失。<br />
+          5.本商品投資之各項風險均應由客戶自行承擔，相關風險包括市場風險、匯兌風險、投資風險、流動性風險及信用風險等，最大可能損失為全部投資本金。<br />
+          6.本商品過去的績效不代表未來的表現，其價格可能上漲或下跌。投資風險之詳細資料請參閱「奈米投約定條款」風險告知事項。<br />
+          7.新興市場之主要投資風險除包含一般股票型基金之投資組合跌價與匯率風險外，與成熟市場相比須承受較高之政治與金融管理風險，而因市值及制度性因素，流動性風險也相對較高，新興市場投資組合波動性普遍高於成熟市場。投資均涉及風險且不負任何抵抗投資虧損之擔保。<br />
+          8.本文提及之經濟走勢預測不必然代表商品之績效。<br />
+          9.本商品之公開訊息可由國內外有價證券交易所或該公司官方網站上獲得，客戶應自行了解相關資訊。<br />
+          10.外幣投資及外幣存款可能產生匯兌收益或損失，投資人承作各幣別存款或投資仍應審慎評估，並自行承擔因此產生之風險。<br />
+          11.本頁面上所提供的資料只供參考用途
+          ，未經台北富邦銀行(本行)同意，不得複製、轉載或為任何散佈。本行將盡力提供正確之資訊，惟本行對於所載資料之完整性、即時性和正確性不做任何擔保，如有錯誤或疏漏，本行或關係企業與其任何董事或受僱人，並不負任何法律責任。投資人應自行判斷資料內容之正確性。
+        </p>
+      </div>
+      <div class="footer-bottom-wrap">
+        <div class="links-section">
+          <img
+            class="footer-logo"
+            src="./img/footer/logo-white-web.svg"
+            alt="台北富邦銀行 奈米投"
+          />
+          <div class="links-wrap">
+            <div class="outer-container">
+              <div class="container">
+                <a class="main-item" href="javascript:;">我的投資</a>
+                <a class="main-item" href="javascript:;">打造投資計畫</a>
+              </div>
+              <div class="container">
+                <div class="main-item">投資術</div>
+                <a class="sub-item" href="javascript:;">奈米1號-佈局全球</a>
+                <a class="sub-item" href="javascript:;">奈米2號-投資台灣</a>
+              </div>
+            </div>
+            <div class="outer-container">
+              <div class="container">
+                <a class="main-item" href="javascript:;">理財小學堂</a>
+                <a class="main-item" href="javascript:;">Q&A</a>
+              </div>
+              <div class="container">
+                <a class="main-item" href="javascript:;">綁定LINE官方帳號</a>
+                <a class="main-item" href="javascript:;">數位客服</a>
+              </div>
+            </div>
+          </div>
+          <hr />
+        </div>
+        <div class="bottom-desc">
+          <p>
+            建議瀏覽器版本：<br />Chrome63、Safari11 或 FireFox57
+            以上&nbsp;&nbsp;&nbsp;&nbsp; <br />最佳解析度：1440 x 1024
+            px&nbsp;&nbsp;&nbsp;&nbsp;<br />24 小時服務專線：(02)-8751-6665
+          </p>
+          <p>© 台北富邦銀行 版權所有</p>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      function slideToggle(t, e, o) {
+        0 === t.clientHeight ? j(t, e, o, !0) : j(t, e, o);
+      }
+      function j(t, e, o, i) {
+        void 0 === e && (e = 400),
+          void 0 === i && (i = !1),
+          (t.style.overflow = "hidden"),
+          i && (t.style.display = "block");
+        var p,
+          l = window.getComputedStyle(t),
+          n = parseFloat(l.getPropertyValue("height")),
+          a = parseFloat(l.getPropertyValue("padding-top")),
+          s = parseFloat(l.getPropertyValue("padding-bottom")),
+          r = parseFloat(l.getPropertyValue("margin-top")),
+          d = parseFloat(l.getPropertyValue("margin-bottom")),
+          g = n / e,
+          y = a / e,
+          m = s / e,
+          u = r / e,
+          h = d / e;
+        window.requestAnimationFrame(function l(x) {
+          void 0 === p && (p = x);
+          var f = x - p;
+          i
+            ? ((t.style.height = g * f + "px"),
+              (t.style.paddingTop = y * f + "px"),
+              (t.style.paddingBottom = m * f + "px"),
+              (t.style.marginTop = u * f + "px"),
+              (t.style.marginBottom = h * f + "px"))
+            : ((t.style.height = n - g * f + "px"),
+              (t.style.paddingTop = a - y * f + "px"),
+              (t.style.paddingBottom = s - m * f + "px"),
+              (t.style.marginTop = r - u * f + "px"),
+              (t.style.marginBottom = d - h * f + "px")),
+            f >= e
+              ? ((t.style.height = ""),
+                (t.style.paddingTop = ""),
+                (t.style.paddingBottom = ""),
+                (t.style.marginTop = ""),
+                (t.style.marginBottom = ""),
+                (t.style.overflow = ""),
+                i || (t.style.display = "none"),
+                "function" == typeof o && o())
+              : window.requestAnimationFrame(l);
+        });
+      }
+
+      var $slideTarget = document.getElementById("paragraph-content");
+      document
+        .querySelector("#footer .paragraph-toggle")
+        .addEventListener("click", function () {
+          this.classList.toggle("opened");
+          slideToggle($slideTarget, 300);
+        });
+    </script>
+  </body>
+</html>
