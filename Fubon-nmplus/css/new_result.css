@@ -718,7 +718,7 @@ body .scrollContainer .content .section3 {
 
 body .scrollContainer .content .chart .content.projection .summary h3 .title,
 body .scrollContainer .content .chart .content.projection .summary h3 #projection_good, body .scrollContainer .content .chart .content.projection .summary h3 #projection_bad, body .scrollContainer .content .chart .content.projection .summary h3 #projection_principal {
-    font-weight: 500;
+    font-weight: bolder;
 }
 
 @media screen and (max-width: 1279px) {
