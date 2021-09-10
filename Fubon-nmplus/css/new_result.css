@@ -22,6 +22,13 @@ body .sub_menu {
     top: 130px;
 }
 
+.sub_menu li:last-of-type {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+}
+
 body .scrollContainer {
     top: 30px;
     position: relative;
@@ -177,7 +184,7 @@ body .scrollContainer .content .section3 {
     line-height: 36px;
     text-align: center;
     font-size: 20px;
-    font-weight: normal;
+    font-weight: 300;
     color: #191919;
     background: #fff;
     border-radius: 8px;
@@ -198,7 +205,7 @@ body .scrollContainer .content .section3 {
 }
 
 .talk strong b {
-    font-weight: normal;
+    font-weight: 300;
     color: #0087d5;
 }
 
@@ -207,6 +214,11 @@ body .scrollContainer .content .section3 {
     width: 90%;
     overflow: visible;
     padding: 30px 100px 42px 80px;
+    height: calc(50vh + 125px);
+}
+
+.popup * {
+    font-weight: normal !important;
 }
 
 .popup.info {
@@ -411,7 +423,7 @@ body .scrollContainer .content .section3 {
 
 .popup p {
     font-size: 16px;
-    font-weight: 500;
+    font-weight: normal;
     color: #191919;
     line-height: 25px;
     margin: 0 0 10px 0;
@@ -440,7 +452,7 @@ body .scrollContainer .content .section3 {
 .popup .list li {
     display: block;
     font-size: 16px;
-    font-weight: 500;
+    font-weight: normal;
     color: #191919;
     line-height: 25px;
     margin: 0 0 10px 0;
@@ -789,7 +801,6 @@ body .scrollContainer .content .section3 {
 
     .popup {
         padding: 30px 33px 37px 21px;
-        height: calc(50vh + 125px);
     }
 
     .popup.info {
