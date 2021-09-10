@@ -722,7 +722,7 @@ body .scrollContainer .content .section3 {
 }
 
 @media screen and (max-width: 768px) {
-    body {
+    /* body {
         overflow: hidden !important;
     }
     
@@ -735,7 +735,7 @@ body .scrollContainer .content .section3 {
         overflow: hidden;
         overflow-y: auto;
         padding-top: 10px;
-    }
+    } */
 
     body .scrollContainer .content .section1,
     body .scrollContainer .content .section2,
