@@ -728,6 +728,13 @@
         touch: false,
         clickSlide: false,
         clickOutside: false,
+        closeClick: false, // prevents closing when clicking INSIDE fancybox
+        helpers: {
+            overlay: {
+                closeClick: false
+            } // prevents closing when clicking OUTSIDE fancybox
+        }
+
     });
 
     if ($(window).width() < 768) {
