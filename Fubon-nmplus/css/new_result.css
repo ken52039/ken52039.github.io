@@ -579,7 +579,8 @@ body .scrollContainer .content .section3 {
 }
 
 .popup .overflow {
-    overflow: scroll;
+    overflow: hidden;
+    overflow-y: auto;
     max-height: 50vh;
     padding: 0 5px;
 }
