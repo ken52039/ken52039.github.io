@@ -79,13 +79,13 @@
                                     </button>
                                 </div>
                                 <div class="dropdown warp">
-                                    <a data-fancybox class="fancybox" data-src="#info1" href="javascript:">投資術</a>
+                                    <a data-fancybox data-src="#info1" href="javascript:">投資術</a>
                                     <button type="button">
                                         奈米1號-全球ETF
                                     </button>
                                 </div>
                                 <div class="dropdown warp info">
-                                    <a data-fancybox class="fancybox" data-src="#info2" href="javascript:">投資組合</a>
+                                    <a data-fancybox data-src="#info2" href="javascript:">投資組合</a>
                                     <button type="button">
                                         Level 3
                                     </button>
@@ -119,13 +119,13 @@
                         <div class="section">
                             <div class="colum_group">
                                 <div class="dropdown warp">
-                                    <a data-fancybox class="fancybox" data-src="#info1" href="javascript:">投資術</a>
+                                    <a data-fancybox data-src="#info1" href="javascript:">投資術</a>
                                     <button type="button">
                                         奈米2號-台灣ETF
                                     </button>
                                 </div>
                                 <div class="dropdown warp info">
-                                    <a data-fancybox class="fancybox" data-src="#info2" href="javascript:">投資組合</a>
+                                    <a data-fancybox data-src="#info2" href="javascript:">投資組合</a>
                                     <button type="button">
                                         Level 3
                                     </button>
@@ -193,7 +193,7 @@
                                 </div>
                             </div>
                             <div class="f-16 f-b w90pct center">
-                                <a data-fancybox class="fancybox" data-src="#popup2" href="javascript:" class="title-right-link">產業類別 <img src="svg/result/result_go_btn3.svg"></a>
+                                <a data-fancybox data-src="#popup2" href="javascript:" class="title-right-link">產業類別 <img src="svg/result/result_go_btn3.svg"></a>
                                 股票型ETF <br>
                                 <span class="f-14 f-gray">透過買進一籃子的股票追蹤各國市場的主要指數！</span>
                             </div>
@@ -207,7 +207,7 @@
                             <div class="footer gray memo">
                                 <h5>小提醒：因無法完整評估你的所有情況，例如經濟狀況與財務需要、稅務概況、投資回收期間長短等，故系統所提供之投資組合建議僅供參考，未必完全適用於個別客戶，你可自行選擇適合的投組風險等級。</h5>
                             </div>
-                            <div class="popup-link"> <a data-fancybox class="fancybox" data-src="#info3" href="javascript:"><span>閱讀ETF投資須知</span></a> </div>
+                            <div class="popup-link"> <a data-fancybox data-src="#info3" href="javascript:"><span>閱讀ETF投資須知</span></a> </div>
                         </div>
                     </div>
                     <div id="tabs1-2">
@@ -229,7 +229,7 @@
 
                             </div>
                             <div class="f-15 lh180 mt10 mb10">
-                                <div class="popup-link"><a data-fancybox class="fancybox" data-src="#info4" href="javascript:"><span>歷史績效計算說明</span></a></div>
+                                <div class="popup-link"><a data-fancybox data-src="#info4" href="javascript:"><span>歷史績效計算說明</span></a></div>
                                 專屬投資組合過去的歷史績效
                             </div>
                             <div class="tabset">
@@ -345,7 +345,7 @@
                             <div class="memo">
                                 <h5>小提醒：投資一定有風險，若遇較差情況時，你的投資可能會少於較差情況的試算結果。</h5>
                             </div>
-                            <div class="popup-link"><a data-fancybox class="fancybox" data-src="#info5" href="javascript:"><span>投資報酬模擬說明</span></a> </div>
+                            <div class="popup-link"><a data-fancybox data-src="#info5" href="javascript:"><span>投資報酬模擬說明</span></a> </div>
                         </div>
                     </div>
                 </div>
@@ -356,7 +356,7 @@
 
         <!--右邊fix按鈕-->
         <div class="fix_btn">
-            <a data-fancybox class="fancybox" data-src="#popup1" href="javascript:">重新試算 <img src="svg/result/result_go_btn1.svg"></a>
+            <a data-fancybox data-src="#popup1" href="javascript:">重新試算 <img src="svg/result/result_go_btn1.svg"></a>
             <a href="">點我開始投 <img src="svg/result/result_go_btn2.svg"></a>
         </div>
         <!--/右邊fix按鈕-->
@@ -798,11 +798,6 @@
 
 </body>
 <script>
-    $(".fancybox").fancybox({
-        clickSlide: false,
-        clickOutside: false
-    });
-
     $(function() {
         $("#tabs1,#tabs2,#sm-tabs1,#sm-tabs2").tabs();
     });

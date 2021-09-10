@@ -8,6 +8,10 @@ body .scrollContainer .content .chart {
     font-family: "Rajdhani", "Noto Sans TC", "Microsoft JhengHei", "微軟正黑體", sans-serif !important;
 }
 
+body.fancybox-active {
+    height: 100vh;
+}
+
 *,
 *:before,
 *:after {
