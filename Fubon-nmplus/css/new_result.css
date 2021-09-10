@@ -548,7 +548,7 @@ body.fancybox-active {
 
 .popup .overflow {
     overflow: auto;
-    max-height: 60vh;
+    max-height: 50vh;
     padding: 0 5px;
 }
 
@@ -666,7 +666,13 @@ body.fancybox-active {
     background: url('../svg/blue.svg') no-repeat right top;
     background-size: 16px 16px;
     height: 16px;
-    margin: 0 40px 24px 0;
+    margin: 0 20px 24px 0;
+}
+
+.popup-link.special {
+    margin: 0px 5px 20px 0;
+    position: relative;
+    top: 50px;
 }
 
 .popup-link span {
