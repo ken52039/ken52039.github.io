@@ -785,4 +785,8 @@ body.fancybox-active {
     .fix_btn a img {
         margin: 0 0 5px 0;
     }
+    
+    .popup-link.special {
+        top: 15px;
+    }
 }
