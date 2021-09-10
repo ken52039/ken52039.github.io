@@ -393,8 +393,8 @@ body .scrollContainer .content .section3 {
 
 .popup .category-list li {
     display: block;
-    line-height: 27px;
-    padding: 20px 0 15px 0;
+    line-height: 25px;
+    padding: 15px 0 10px 0;
     border-bottom: solid 1px #cbedfa;
     font-size: 18px;
     font-weight: 500;
@@ -737,6 +737,12 @@ body .scrollContainer .content .section3 {
     body .scrollContainer .content .section2,
     body .scrollContainer .content .section3 {
         margin: 0 auto 20px auto;
+    }
+
+    .popup .category-list li {
+        line-height: 20px;
+        font-size: 15px;
+        padding: 2.2vh 0 1.5vh 0;
     }
 
     .fix_btn {
