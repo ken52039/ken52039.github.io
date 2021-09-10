@@ -8,8 +8,17 @@ body .scrollContainer .content .chart {
     font-family: "Rajdhani", "Noto Sans TC", "Microsoft JhengHei", "微軟正黑體", sans-serif !important;
 }
 
-body.fancybox-active {
-    height: 100vh;
+body .scrollContainer {
+    position: fixed;
+    top: 80px;
+    margin: 0 !important;
+    height: calc(100vh - 70px);
+    width: 100vw;
+    overflow-y: auto;
+}
+
+footer {
+    padding-bottom: 100px;
 }
 
 *,
@@ -437,7 +446,7 @@ body.fancybox-active {
     display: block;
     position: absolute;
     left: -15px;
-    top: 12px;
+    top: 7px;
     width: 5px;
     height: 5px;
     background: #000;
@@ -646,11 +655,11 @@ body.fancybox-active {
 
 .hide-btn1 img,
 .hide-btn2 img {
-    -moz-transform:rotate(180deg); 
-    -webkit-transform:rotate(180deg); 
-    -o-transform:rotate(180deg); 
-    -ms-transform:rotate(180deg); 
-    transform:rotate(180deg);
+    -moz-transform: rotate(180deg);
+    -webkit-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    transform: rotate(180deg);
 }
 
 .popup-link {
@@ -680,10 +689,13 @@ body.fancybox-active {
 }
 
 @media screen and (max-width: 768px) {
-    body .scrollContainer .content .section1, body .scrollContainer .content .section2, body .scrollContainer .content .section3 {
+
+    body .scrollContainer .content .section1,
+    body .scrollContainer .content .section2,
+    body .scrollContainer .content .section3 {
         margin: 0 auto 30px auto;
     }
-    
+
     .fix_btn {
         top: auto;
         bottom: 0;
@@ -710,6 +722,7 @@ body.fancybox-active {
 }
 
 @media screen and (max-width: 600px) {
+
     body .scrollContainer .content .chart,
     body .scrollContainer .content .panel {
         margin-top: 0;
@@ -769,7 +782,7 @@ body.fancybox-active {
         margin: 0 0 0 10px;
         width: 15px;
     }
-    
+
     .popup .list li,
     .popup p {
         font-size: 14px;
@@ -785,7 +798,7 @@ body.fancybox-active {
     .fix_btn a img {
         margin: 0 0 5px 0;
     }
-    
+
     .popup-link.special {
         top: 15px;
     }
