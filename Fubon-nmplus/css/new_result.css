@@ -710,7 +710,7 @@ body .scrollContainer {
         position: fixed;
         top: 100px;
         margin: 0 !important;
-        height: calc(100vh - 140px);
+        height: calc(100% - 100px);
         width: 100vw !important;
         overflow: hidden;
         overflow-y: auto;
