@@ -67,7 +67,7 @@
     <div class="scrollContainer">
         <div class="content">
             <div class="talk"><strong>你的<b>專屬投資規劃</b>出爐囉！</strong></div>
-            
+
             <!--你的專屬計畫-->
             <div id="adjust_panel_section" class="section1 sections clearfix">
                 <div class="panel">
@@ -339,7 +339,7 @@
                 </div>
             </div>
             <!--/模擬未來投報-->
-            
+
             <div id="historical_chart_section" class="section4" style="display:none">&nbsp; </div>
         </div>
         <!--content end -->
@@ -722,12 +722,11 @@
 
     $(".fancybox").fancybox({
         touch: false,
+        closeClick: false, // prevents closing when clicking INSIDE fancybox
         helpers: {
             overlay: {
-                css: {
-                    'overflow': 'hidden'
-                }
-            }
+                closeClick: false
+            } // prevents closing when clicking OUTSIDE fancybox
         }
     });
     $(function() {
