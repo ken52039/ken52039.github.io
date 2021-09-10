@@ -547,7 +547,7 @@ body.fancybox-active {
 }
 
 .popup .overflow {
-    overflow: hidden;
+    overflow: scroll;
     max-height: 50vh;
     padding: 0 5px;
 }
