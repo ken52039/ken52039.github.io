@@ -561,7 +561,7 @@
         </div>
 
         <!--彈窗調整投資方式-->
-        <div class="popup" style="display: none;" id="popup1">
+        <div class="popup" style="display: none;height: auto;" id="popup1">
             <strong>調整投資方式</strong>
             <form>
                 <fieldset>
@@ -697,12 +697,6 @@
             </form>
         </div>
         <!--/調整投資方式-->
-
-        <!-- FOOTER START -->
-        <div id="mobile-footer">
-
-        </div>
-        <!-- FOOTER END -->
     </div>
     <!--scrollContainer end -->
 
@@ -721,12 +715,7 @@
 </body>
 <script>
     $("#header").load("header.html");
-
-    if ($(window).width() < 769) {
-        $("#mobile-footer").load("footer.html");
-    } else {
-        $("#footer").load("footer.html");
-    }
+    $("#footer").load("footer.html");
 
     $(".fancybox").fancybox({
         helpers: {
