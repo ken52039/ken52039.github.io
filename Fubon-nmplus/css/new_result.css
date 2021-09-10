@@ -213,7 +213,7 @@ body .scrollContainer .content .section3 {
     max-width: 660px;
     width: 90%;
     overflow: visible;
-    padding: 30px 100px 42px 80px;
+    padding: 30px 80px 42px 80px;
     height: calc(50vh + 125px);
 }
 
@@ -800,7 +800,7 @@ body .scrollContainer .content .section3 {
     }
 
     .popup {
-        padding: 30px 33px 37px 21px;
+        padding: 30px 21px 37px 21px;
     }
 
     .popup.info {
