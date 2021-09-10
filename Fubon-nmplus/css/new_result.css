@@ -246,6 +246,10 @@ body .scrollContainer .content .section3 {
     color: #0087d5;
 }
 
+.popup form {
+    padding-right: 20px;
+}
+
 .popup form fieldset {
     padding: 0;
     margin: 30px 0 0 0;
@@ -718,7 +722,7 @@ body .scrollContainer .content .section3 {
 }
 
 @media screen and (max-width: 768px) {
-    /* body {
+    body {
         overflow: hidden !important;
     }
     
@@ -731,7 +735,7 @@ body .scrollContainer .content .section3 {
         overflow: hidden;
         overflow-y: auto;
         padding-top: 10px;
-    } */
+    }
 
     body .scrollContainer .content .section1,
     body .scrollContainer .content .section2,

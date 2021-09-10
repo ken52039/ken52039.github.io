@@ -67,7 +67,7 @@
     <div class="scrollContainer">
         <div class="content">
             <div class="talk"><strong>你的<b>專屬投資規劃</b>出爐囉！</strong></div>
-            
+
             <!--你的專屬計畫-->
             <div id="adjust_panel_section" class="section1 sections clearfix">
                 <div class="panel">
@@ -339,7 +339,7 @@
                 </div>
             </div>
             <!--/模擬未來投報-->
-            
+
             <div id="historical_chart_section" class="section4" style="display:none">&nbsp; </div>
         </div>
         <!--content end -->
@@ -700,6 +700,11 @@
             </form>
         </div>
         <!--/調整投資方式-->
+
+        <!-- FOOTER START -->
+        <footer id="mobile-footer">
+
+        </footer>
     </div>
     <!--scrollContainer end -->
 
@@ -718,18 +723,19 @@
 </body>
 <script>
     $("#header").load("header.html");
-    $("#footer").load("footer.html");
 
     $(".fancybox").fancybox({
         touch: false,
-        helpers: {
-            overlay: {
-                css: {
-                    'overflow': 'hidden'
-                }
-            }
-        }
+        clickSlide: false,
+        clickOutside: false,
     });
+
+    if ($(window).width() < 768) {
+        $("#mobile-footer").load("footer.html");
+    } else {
+        $("#footer").load("footer.html");
+    }
+
     $(function() {
         $("#tabs1,#tabs2,#sm-tabs1,#sm-tabs2").tabs();
     });
