@@ -42,11 +42,11 @@ body.blur-bg .fancybox-bg {
 }
 
 .promo {
-    top: 75px;
+    top: 60px;
 }
 
 body .sub_menu {
-    top: 130px;
+    top: 115px;
 }
 
 .sub_menu li:last-of-type {
@@ -57,7 +57,7 @@ body .sub_menu {
 }
 
 body .scrollContainer {
-    top: 30px;
+    top: 15px;
     position: relative;
     padding-bottom: 30px;
 }
