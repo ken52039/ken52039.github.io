@@ -652,13 +652,13 @@ body .scrollContainer .content .section3 {
 .popup .overflow {
     overflow: hidden;
     overflow-y: auto;
-    max-height: 50vh;
+    max-height: calc(100% - 60px);
     padding: 0 5px;
 }
 
 .popup .sm-overflow {
     overflow: auto;
-    max-height: calc(50vh - 125px);
+    max-height: 255px;
     padding: 0 5px;
 }
 
@@ -899,6 +899,14 @@ body .scrollContainer .content .chart .content.projection .summary h3 #projectio
     .popup {
         padding: 30px 21px 37px 21px;
         max-height: none;
+    }
+    
+    .popup .overflow {
+        max-height: calc(100% - 60px);
+    }
+    
+    .popup .sm-overflow {
+        max-height: calc(50vh - 125px);;
     }
 
     .popup.info {
