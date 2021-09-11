@@ -5,7 +5,7 @@ body .scrollContainer .content .chart {
     -webkit-border-radius: 0 0 8px 8px;
     -moz-border-radius: 0 0 8px 8px;
     border-radius: 0 0 8px 8px;
-    font-family: "Rajdhani", "Noto Sans TC", "Microsoft JhengHei", "微軟正黑體", sans-serif !important;
+    font-family:  "Noto Sans TC", "PingFang TC", Microsoft JhengHei, "MicroSoft JhengHei", "微軟正黑體", serif !important;
 }
 
 body:before {
@@ -34,11 +34,15 @@ body.blur-bg:before {
 body.blur-bg .fancybox-bg {
     display: none;
 }
+body{
+font-family:  "Noto Sans TC", "PingFang TC", Microsoft JhengHei, "MicroSoft JhengHei", "微軟正黑體", serif;
+}
 
-*,
-*:before,
-*:after {
-    font-family: "Rajdhani", "Noto Sans TC", "Microsoft JhengHei", "微軟正黑體", sans-serif !important;
+
+.popup *,
+.popup *:before,
+.popup *:after {
+    font-family: "Noto Sans TC", "PingFang TC", Microsoft JhengHei, "MicroSoft JhengHei", "微軟正黑體", serif !important;
 }
 
 .promo {
@@ -238,6 +242,7 @@ body .scrollContainer .content .section3 {
     font-size: 36px;
     font-weight: 600;
     color: #0087d5;
+    vertical-align: bottom;
 }
 
 .chart-titile b small {
