@@ -124,7 +124,7 @@ body .scrollContainer .content .section3 {
 .fix_btn {
     position: fixed;
     right: 0;
-    top: 30vh;
+    top: 40%;
     z-index: 99;
 }
 
@@ -839,8 +839,10 @@ body .scrollContainer .content .chart .content.projection .summary h3 #projectio
     .fix_btn a {
         float: left;
         width: 50%;
-        height: 50px;
+        height: 60px;
         text-align: center;
+        border: 0;
+        padding-top: 17.5px;
     }
 
     .fix_btn a:first-of-type {
