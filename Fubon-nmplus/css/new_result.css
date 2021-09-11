@@ -825,16 +825,24 @@ body .scrollContainer .content .chart .content.projection .summary h3 #projectio
     .fix_btn a {
         float: left;
         width: 50%;
+        height: 50px;
         text-align: center;
     }
 
     .fix_btn a:first-of-type {
         margin-bottom: 0;
     }
+    
+    .fix_btn a span {
+        display: inline-block;
+        vertical-align: middle;
+    }
 
     .fix_btn a img {
         position: relative;
-        right: 0;
+        right: auto;
+        left: auto;
+        bottom: auto;
         margin: 0 0 5px 10px;
         display: inline-block;
         vertical-align: middle;
