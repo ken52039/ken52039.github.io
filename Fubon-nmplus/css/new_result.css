@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;500;600;700&display=swap");
-@import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@500;700;900&display=swap');
 
 body .scrollContainer .content .chart {
     -webkit-border-radius: 0 0 8px 8px;
@@ -151,8 +151,19 @@ body .scrollContainer .content .section3 {
     margin-bottom: 20px;
 }
 
+.fix_btn a:first-of-type:hover {
+    border-color: #004f7d;
+    color: #004f7d;
+}
+
 .fix_btn a:last-of-type {
     background-color: #0087d5;
+    color: #fff;
+}
+
+.fix_btn a:last-of-type:hover {
+    background-color: #004f7d;
+    border-color: #004f7d;
     color: #fff;
 }
 
