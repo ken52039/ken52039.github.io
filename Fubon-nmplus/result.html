@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="js/node_modules/w3-css/4/w3pro.css">
     <link rel="stylesheet" href="js/node_modules/@fancyapps/fancybox/dist/jquery.fancybox.min.css" />
     <link rel="stylesheet" href="css/main_style.css">
+    <link rel="shortcut icon" href="favicon.ico">
     <!--MAIN JS-->
     <script src="js/node_modules/jquery/dist/jquery.js"></script>
     <script src="js/mobile-chrome-vh-fix/mobile-chrome-vh-fix.js"></script>
@@ -52,9 +53,42 @@
             }   
 }
 </script>
+
+    <!-- Google Tag Manager -->
+
+    <script>
+        (function(w, d, s, l, i) {
+            w[l] = w[l] || [];
+            w[l].push({
+                'gtm.start':
+
+                    new Date().getTime(),
+                event: 'gtm.js'
+            });
+            var f = d.getElementsByTagName(s)[0],
+
+                j = d.createElement(s),
+                dl = l != 'dataLayer' ? '&l=' + l : '';
+            j.async = true;
+            j.src =
+
+                'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+            f.parentNode.insertBefore(j, f);
+
+        })(window, document, 'script', 'dataLayer', 'GTM-PBZZNB7');
+    </script>
+
+    <!-- End Google Tag Manager -->
+
 </head>
 
 <body class="fixbody">
+    <!-- Google Tag Manager (noscript) -->
+
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PBZZNB7" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+
+    <!-- End Google Tag Manager (noscript) -->
+
     <a href="" target="_blank" class="promo">新戶首筆享首月免信管費</a>
     <nav class="sub_menu">
         <ul>
@@ -346,8 +380,14 @@
 
         <!--右邊fix按鈕-->
         <div class="fix_btn">
-            <a data-fancybox class="fancybox" data-src="#popup1" href="javascript:">重新試算 <img src="svg/result/result_go_btn1.svg"></a>
-            <a href="">點我開始投 <img src="svg/result/result_go_btn2.svg"></a>
+            <a data-fancybox class="fancybox" data-src="#popup1" href="javascript:">
+                <span>重新試算</span>
+                <img src="svg/result/result_go_btn1.svg">
+            </a>
+            <a href="">
+                <span>立即投資</span>
+                <img src="svg/result/result_go_btn2.svg">
+            </a>
         </div>
         <!--/右邊fix按鈕-->
 
@@ -730,8 +770,13 @@
             overlay: {
                 closeClick: false
             }
+        },
+        beforeShow: function() {
+            $("body").addClass('blur-bg');
+        },
+        beforeClose: function() {
+            $("body").removeClass('blur-bg');
         }
-
     });
 
     // if ($(window).width() < 768) {

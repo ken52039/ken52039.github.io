@@ -202,7 +202,7 @@
   font-family: "Noto Sans TC", "PingFang TC", Microsoft JhengHei, "MicroSoft JhengHei", "微軟正黑體", serif;
   font-weight: 500;
   font-size: 16px;
-  height: 75px;
+  height: 60px;
   width: 100%;
   -webkit-box-shadow: 0 4px 12px 0 rgba(25, 25, 25, 0.15);
           box-shadow: 0 4px 12px 0 rgba(25, 25, 25, 0.15);
@@ -285,6 +285,7 @@
 @media (max-width: 1279px) {
   #header .inner-wrap .links-wrap {
     position: fixed;
+    z-index: 1;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -293,18 +294,12 @@
         -ms-flex-align: start;
             align-items: flex-start;
     top: 60px;
-    left: -100%;
+    left: 0;
     width: 100%;
     height: auto;
+    display: none;
     background-color: #ecf6fa;
-    padding: 10px 0;
-    -webkit-transition-duration: 0.3s;
-            transition-duration: 0.3s;
-  }
-  #header .inner-wrap .links-wrap.show {
-    -webkit-transition-duration: 0.3s;
-            transition-duration: 0.3s;
-    left: 0;
+    padding: 10px 0 20px;
   }
 }
 
@@ -332,7 +327,7 @@
   #header .inner-wrap .links-wrap .header-link {
     font-size: 16px;
     margin: 0;
-    padding: 10px 0px 10px 45px;
+    padding: 15px 0px 15px 45px;
     width: 100%;
   }
 }
@@ -431,6 +426,7 @@
     display: none;
     pointer-events: none;
     visibility: hidden;
+    padding: 10px 0;
   }
   #header .inner-wrap .links-wrap .header-link.header-list-link .inner-list.show {
     display: block;
@@ -468,11 +464,11 @@
 
 @media (max-width: 1279px) {
   #header .inner-wrap .links-wrap .header-link.header-list-link .inner-list a {
-    padding-left: 60px;
     font-size: 14px;
     -webkit-box-pack: start;
         -ms-flex-pack: start;
             justify-content: flex-start;
+    padding: 10px 0 10px 60px;
   }
   #header .inner-wrap .links-wrap .header-link.header-list-link .inner-list a:nth-child(1) {
     color: #15bd7a;
@@ -526,7 +522,7 @@
 #header .inner-wrap .btns-wrap a {
   display: inline-block;
   width: 100px;
-  height: 40px;
+  height: 36px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;

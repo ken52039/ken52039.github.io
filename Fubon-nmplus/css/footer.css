@@ -200,10 +200,11 @@
 
 #footer {
   font-family: "Noto Sans TC", "PingFang TC", Microsoft JhengHei, "MicroSoft JhengHei", "微軟正黑體", serif;
+  font-weight: normal !important;
 }
 
 #footer .footer-paragraph-wrap {
-  background-color: #0087d5;
+  background-color: #339fdd;
   color: #fff;
 }
 
@@ -217,9 +218,10 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  font-size: 24px;
+  font-size: 20px;
   cursor: pointer;
   height: 80px;
+  font-weight: normal;
 }
 
 @media (max-width: 1279px) {
@@ -270,20 +272,60 @@
 @media (max-width: 1279px) {
   #footer .footer-paragraph-wrap .paragraph-content {
     font-size: 14px;
-    padding: 7px 32px 32px;
+    padding: 7px 32px 32px 20px;
   }
+}
+
+#footer .footer-paragraph-wrap .paragraph-content li {
+  list-style: decimal;
+  margin-left: 2em;
 }
 
 #footer .footer-bottom-wrap {
   background-color: #a7a9ac;
   padding: 30px 0 30px;
   color: #fff;
+  position: relative;
 }
 
 @media (max-width: 1279px) {
   #footer .footer-bottom-wrap {
     padding: 20px 20px 80px;
   }
+}
+
+#footer .footer-bottom-wrap #btn-footer-go-top {
+  position: absolute;
+  cursor: pointer;
+  left: calc(50% + 600px);
+  top: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media (max-width: 1279px) {
+  #footer .footer-bottom-wrap #btn-footer-go-top {
+    left: auto;
+    right: 10px;
+  }
+}
+
+#footer .footer-bottom-wrap #btn-footer-go-top img {
+  margin-bottom: 10px;
+}
+
+#footer .footer-bottom-wrap #btn-footer-go-top span {
+  font-size: 14px;
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
 }
 
 #footer .footer-bottom-wrap .links-section .footer-logo {
@@ -339,14 +381,12 @@
   font-size: 14px;
   line-height: 2.3;
   margin-bottom: 5px;
-  font-weight: 500;
 }
 
 #footer .footer-bottom-wrap .links-section .links-wrap .outer-container .container .sub-item {
   display: block;
   font-size: 12px;
   line-height: 1.9;
-  font-weight: normal;
 }
 
 @media (max-width: 1279px) {

@@ -1,66 +1,52 @@
-<!DOCTYPE html>
-<html lang="zh-Hant">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>header</title>
-    <link rel="stylesheet" href="./dist/header.min.css" />
-  </head>
-  <body>
-    <div id="header">
-      <div class="inner-wrap">
-        <a href="javascript:;">
-          <img
-            class="header-logo"
-            src="./img/header/logo-header-web.svg"
-            alt="台北富邦銀行 奈米投"
-          />
-        </a>
-        <div class="links-wrap">
-          <a class="header-link" href="javascript:;">打造投資計畫</a>
-          <div class="header-link header-list-link">
-            <div class="btn-list-toggle">
-              投資術<span class="toggle-mark"></span>
-            </div>
-            <div class="inner-list">
-              <a href="javascript:;">奈米1號 <span>佈局全球</span></a>
-              <a href="javascript:;">奈米2號 <span>投資台灣</span></a>
-            </div>
-          </div>
-          <a class="header-link" href="javascript:;">理財小學堂</a>
-          <a class="header-link" href="javascript:;">Q&A</a>
-          <a class="header-link" href="javascript:;">綁定LINE官方帳號</a>
-          <a class="header-link" href="javascript:;">數位客服</a>
+<link rel="stylesheet" href="./dist/header.min.css" />
+<div id="header">
+  <div class="inner-wrap">
+    <a href="javascript:;">
+      <img
+        class="header-logo"
+        src="./img/header/logo-header.png"
+        alt="台北富邦銀行 奈米投"
+      />
+    </a>
+    <div id="header-links-wrap" class="links-wrap">
+      <a class="header-link" href="javascript:;">打造投資計畫</a>
+      <div class="header-link header-list-link">
+        <div class="btn-list-toggle">
+          投資術<span class="toggle-mark"></span>
         </div>
-        <div class="btns-wrap">
-          <a class="btn-my-investment draw-border" href="javascript:;"
-            >我的投資</a
-          >
-          <a class="btn-login" href="javascript:;">登入</a>
+        <div class="inner-list">
+          <a href="javascript:;">奈米1號 <span>佈局全球</span></a>
+          <a href="javascript:;">奈米2號 <span>投資台灣</span></a>
         </div>
-        <button id="header-hamburger" type="button"></button>
       </div>
+      <a class="header-link" href="javascript:;">理財小學堂</a>
+      <a class="header-link" href="javascript:;">Q&A</a>
+      <a class="header-link" href="javascript:;">綁定LINE官方帳號</a>
+      <a class="header-link" href="javascript:;">數位客服</a>
     </div>
-    <script>
-      document
-        .getElementById("header-hamburger")
-        .addEventListener("click", function () {
-          this.classList.toggle("show");
-          document.querySelector("#header").classList.toggle("show");
-          document
-            .querySelector("#header .links-wrap")
-            .classList.toggle("show");
-        });
+    <div class="btns-wrap">
+      <a class="btn-my-investment draw-border" href="javascript:;">我的投資</a>
+      <a class="btn-login" href="javascript:;">登入</a>
+    </div>
+    <button id="header-hamburger" type="button"></button>
+  </div>
+</div>
+<script src="./js/slideToggle.js"></script>
+<script>
+  var $slideTargetHeader = document.getElementById("header-links-wrap");
+  document
+    .getElementById("header-hamburger")
+    .addEventListener("click", function () {
+      this.classList.toggle("show");
+      document.querySelector("#header").classList.toggle("show");
+      document.querySelector("#header .links-wrap").classList.toggle("show");
+      slideToggle($slideTargetHeader, 400);
+    });
 
-      document
-        .querySelector("#header .btn-list-toggle")
-        .addEventListener("click", function () {
-          this.classList.toggle("show");
-          document
-            .querySelector("#header .inner-list")
-            .classList.toggle("show");
-        });
-    </script>
-  </body>
-</html>
+  document
+    .querySelector("#header .btn-list-toggle")
+    .addEventListener("click", function () {
+      this.classList.toggle("show");
+      document.querySelector("#header .inner-list").classList.toggle("show");
+    });
+</script>

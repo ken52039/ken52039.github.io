@@ -1,11 +1,38 @@
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;500;600;700&display=swap");
-@import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@500&display=swap');
 
 body .scrollContainer .content .chart {
     -webkit-border-radius: 0 0 8px 8px;
     -moz-border-radius: 0 0 8px 8px;
     border-radius: 0 0 8px 8px;
     font-family: "Rajdhani", "Noto Sans TC", "Microsoft JhengHei", "微軟正黑體", sans-serif !important;
+}
+
+body:before {
+    content: "";
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 9999;
+    backdrop-filter: blur(2px);
+    background: rgba(25, 25, 25, 0.7);
+    opacity: 0;
+    transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    pointer-events: none;
+}
+
+body.blur-bg:before {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+body.blur-bg .fancybox-bg {
+    display: none;
 }
 
 *,
@@ -102,15 +129,20 @@ body .scrollContainer .content .section3 {
 }
 
 .fix_btn a {
-    width: 176px;
+    width: 80px;
     display: block;
-    line-height: 60px;
-    padding: 0 20px;
+    height: 80px;
+    padding: 10px 20px 0 20px;
     border: solid 1px #0087d5;
-    font-size: 20px;
+    font-size: 18px;
     font-weight: bold;
     letter-spacing: 1px;
     position: relative;
+}
+
+.fix_btn a span {
+    display: block;
+    line-height: 25px;
 }
 
 .fix_btn a:first-of-type {
@@ -130,13 +162,40 @@ body .scrollContainer .content .section3 {
     width: 20px;
     height: 7px;
     right: 20px;
-    top: 0;
-    bottom: 0;
+    left: 0;
+    right: 0;
+    bottom: 10px;
     margin: auto;
 }
 
-.fancybox-is-open .fancybox-bg {
-    opacity: 0.7;
+.fix_btn a:hover img {
+    animation: arrow-link 1s;
+}
+
+@-webkit-keyframes arrow-link {
+    0% {
+        -webkit-transform: translateX(0px);
+        transform: translateX(0px);
+        opacity: 1
+    }
+
+    48% {
+        -webkit-transform: translateX(20px);
+        transform: translateX(20px);
+        opacity: 0
+    }
+
+    50% {
+        -webkit-transform: translateX(-20px);
+        transform: translateX(-20px);
+        opacity: 0
+    }
+
+    100% {
+        -webkit-transform: translateX(0px);
+        transform: translateX(0px);
+        opacity: 1
+    }
 }
 
 .title-right-link {
@@ -717,7 +776,9 @@ body .scrollContainer .content .section3 {
 }
 
 body .scrollContainer .content .chart .content.projection .summary h3 .title,
-body .scrollContainer .content .chart .content.projection .summary h3 #projection_good, body .scrollContainer .content .chart .content.projection .summary h3 #projection_bad, body .scrollContainer .content .chart .content.projection .summary h3 #projection_principal {
+body .scrollContainer .content .chart .content.projection .summary h3 #projection_good,
+body .scrollContainer .content .chart .content.projection .summary h3 #projection_bad,
+body .scrollContainer .content .chart .content.projection .summary h3 #projection_principal {
     font-weight: bolder;
 }
 
