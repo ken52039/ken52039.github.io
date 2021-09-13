@@ -217,7 +217,7 @@ body .scrollContainer .content .section3 {
     font-size: 16px;
     font-weight: 500;
     float: right;
-    color: #15bd7a;
+    color: #0087d5;
     line-height: 20px;
 }
 
@@ -476,7 +476,7 @@ body .scrollContainer .content .section3 {
 .popup .category-list li {
     display: block;
     line-height: 25px;
-    padding: 15px 0 9px 0;
+    padding: 10px 0 9px 0;
     border-bottom: solid 1px #cbedfa;
     font-size: 18px;
     font-weight: 500;
@@ -501,6 +501,13 @@ body .scrollContainer .content .section3 {
 .popup .category-list li span small {
     font-size: 20px;
     letter-spacing: 0.63px;
+}
+
+.popup .category-list-p {
+    font-size: 14px;
+    color: #828282;
+    line-height: 20px;
+    margin: 20px 0 0 0;
 }
 
 .popup p {
@@ -645,7 +652,7 @@ body .scrollContainer .content .section3 {
 
 .popup .ui-tabs .ui-tabs-nav li a {
     display: block;
-    line-height: 33px;
+    line-height: 30px;
     font-size: 18px;
     font-weight: 600;
     text-align: center;
@@ -661,6 +668,10 @@ body .scrollContainer .content .section3 {
     overflow-y: auto;
     max-height: calc(100% - 60px);
     padding: 0 5px;
+}
+
+.popup .overflow.category {
+    max-height: calc(100% - 100px);
 }
 
 .popup .sm-overflow {
@@ -832,7 +843,7 @@ body .scrollContainer .content .chart .content.projection .summary h3 #projectio
     .popup .category-list li {
         line-height: 20px;
         font-size: 15px;
-        padding: 2.2vh 0 1.5vh 0;
+        padding: 1.5vh 0;
     }
 
     .fix_btn {
@@ -911,7 +922,7 @@ body .scrollContainer .content .chart .content.projection .summary h3 #projectio
     }
     
     .popup .overflow {
-        max-height: calc(100% - 60px);
+        max-height: calc(100% - 110px);
     }
     
     .popup .sm-overflow {
