@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org" lang="zh-Hant-TW">
+
+<head th:with="timestamp=${#dates.format(#dates.createNow(),'yyyyMMddHHmm')}">
+    <meta HTTP-EQUIV="PRAGMA" CONTENT="NO-CACHE">
+    <!-- IE可能不見得有效 -->
+    <meta HTTP-EQUIV="EXPIRES" CONTENT="0">
+    <!-- 設定成馬上就過期 -->
+    <meta HTTP-EQUIV="CACHE-CONTROL" CONTENT="NO-CACHE">
+    <!-- 與第一行是同樣的作用 -->
+    <meta name="_csrf" th:content="${_csrf.token}"/>
+    <meta name="_csrf_header" th:content="${_csrf.headerName}"/>
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+    <meta content="utf-8" http-equiv="encoding">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title>富邦奈米投</title>
+<!--MAIN CSS-->
+<link rel="stylesheet" href="js/node_modules/w3-css/4/w3pro.css">
+<link rel="stylesheet" href="js/node_modules/@fancyapps/fancybox/dist/jquery.fancybox.min.css"/>
+<link rel="stylesheet" href="css/main_style.css">
+<!--MAIN JS--> 
+<script src="js/node_modules/jquery/dist/jquery.js"></script> 
+<script src="js/mobile-chrome-vh-fix/mobile-chrome-vh-fix.js"></script> 
+<script src="js/main_fun.js"></script> 
+<!--SUB LINK-->
+<link rel="stylesheet" href="css/sub_style_faq.css">
+<script src="js/node_modules/@fancyapps/fancybox/dist/jquery.fancybox.min.js"></script>
+
+<!-- For Search Bar -->
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+<script src="js/sub_style_faq_search.js"></script>
+<script src="js/jquery.highlight-5.js"></script>
+	<style>
+	  /****** UI需確認 ******/
+	  /* 刪除按鈕定位 */
+	  #searchDelIcon {
+	    position: absolute;
+	    top: 50%;
+	    transform: translateY(-50%);
+	    right: 50px;
+	    font-size: 16px;
+	  }
+	
+	  /* 顯示搜尋關鍵字字數 */
+	  #searchKeyLength {
+	    font-size: 10px;
+	    color: gray;
+	    position: relative;
+	    top: -35px;
+	    left: 5px;
+	  }
+	
+	  /* 錯誤訊息 */
+	  #searchKeyError {
+	    font-size: 12px;
+	    color: #f77ebc;
+	    position: relative;
+	    top: -34px;
+	    left: 12px;
+	  }
+	
+	  /* 搜尋到的關鍵字選取反白顏色 */
+	
+	  button > .highlight {
+	    background-color: #f77ebc;
+	  }
+	
+	  button.QA > .highlight, .highlight {
+	    background-color: yellow;
+	  }
+	
+	  .emNotBold {
+	    font-weight: normal;
+	  }
+	  
+	  .noticePinkNoLine {
+	  	text-decoration: none!important;
+	  }
+	</style>
+    <link rel="stylesheet" href="css/faq.css">
+</head>
+<body>
+<!-- MAIN CONTAINER START -->
+<div id="content-wrapper" class="scrollContainer">
+  <div class="scrollContent">
+    <div class="content-qa">
+        <div class="qa-title">
+            <div>
+                <h1>Q&A</h1>
+                <p>您的問題或許可以在這裡得到解答</p>
+                <!--Searchbar--> 
+                <div class="search">
+
+                <input type="text" class="searchTerm" placeholder="請輸入關鍵字" maxlength="10">
+                <!------ 刪除按鈕(以js動態加入) ------>
+                <!-- <i id="searchDelIcon" class="fas fa-times-circle" style="display: none;"></i> -->
+                <button type="submit" class="searchButton"> 
+                </button>
+                </div>
+
+                <!------ 關鍵字字數 ------>
+                <span id="searchKeyLength">0/10</span>
+                <!------ 錯誤訊息 ------>
+                <span id="searchKeyError" class="noticePink noticePinkNoLine"></span>
+            </div>
+        </div>
+      <div class="faq-wrap"> 
+        <!--第一大類--> 
+		<div  id="cat-1">
+        <button onclick="myFunctionA()" class="tab active">認識奈米投</button>
+        <div id="myDIV-A" style="display:block">
+          <div><!--Q1-1-->
+            <button onclick="myFunction1()" class="QA">奈米投是什麼？</button>
+            <div id="QA-DIV1" style="display:none">
+              <ol>
+                <li>奈米投是一個數位<span class="em">理財服務</span>，透過簡單的線上操作流程，即可針對旅遊、買房、退休等理財目標，打造客製化投資計畫，提供你優質的ETF投資組合。</li>
+                <li>專業投資顧問團隊將會每日幫你盯緊市場與經濟情勢，主動將投資汰弱留強，讓你不用親自費心盯盤，節省寶貴時間。只要一台手機，即可全面掌握所有投資交易現況與最新績效表現，是方便又透明的投資工具。</li>
+                <li>小額就可輕鬆投資，只需要35美元<span class="em">約當台幣1000元起</span>，就可擁有全球多元化配置的ETF投資組合<span class="em">（奈米1號佈局全球ETF、奈米2號佈局台灣ETF）</span>，降低投資風險。</li>
+              </ol>
+              <div><a href="https://nmplusinvestment.fubon.com/nmi-frontend/nano.html?utm_source=nano&utm_medium=QA&utm_campaign=QA" class="faq-go">立即體驗</a></div>
+            </div>
+          </div>
+          <div><!--Q1-2-->
+            <button onclick="myFunction2()" class="QA">與我自己投資有何不同？</button>
+            <div id="QA-DIV2" style="display:none"><span class="em">奈米投投資團隊每日幫你盯緊市場與經濟情勢</span>，主動為你的投資汰弱留強，<span class="em">自動完成投資調整</span>，不用再自己費心盯盤，省下大量時間和精力，協助你擁有穩健策略與紀律型投資，有效地累積財富、專注生活實現人生夢想。<br>
+              奈米投不僅讓您<span class="em">免開證券戶</span>，就可以直接投資國內外ETF，並透過<span class="em">Fractional share切小股</span>技術將投資ETF的最小單位細切到0.0001股，只要<span class="em">約當台幣1000元</span>起，就可擁有全球多元分散配置的ETF組合，讓投資理財更Easy。
+              <div><a href="https://nmplusinvestment.fubon.com/nmi-frontend/nano.html?utm_source=nano&utm_medium=QA&utm_campaign=QA" class="faq-go">立即體驗</a></div>
+            </div>
+          </div>
+		  <div><!--Q1-3-->  
+            <button onclick="myFunction3()" class="QA">與其他投資產品相比有何優勢？</button>
+            <div id="QA-DIV3" style="display:none">奈米投有別於其他投資產品具有四大特色：
+			<ol><li><span class="em">資產配置&nbsp;&nbsp;多元分散</span>：投資組合以<span class="em">低成本</span>的ETF為主，資產配置橫跨趨勢產業股票、公司及政府債、外匯、房產、新興市場等。</li><li><span class="em">層層過濾&nbsp;&nbsp;嚴選標的</span>：<span class="em">精選41+檔ETF</span>，為你嚴選符合預期「報酬率」、「波動度」的投資組合，每個投資組合都至少<span class="em">涵蓋8,000檔的股票與債券。</span></li><li><span class="em">專利技術&nbsp;&nbsp;領先同業</span>：透過<span class="em">Fractional share切小股</span>技術，讓你透過小額投資，享受高性價比的理財體驗。</li><li><span class="em">嚴控風險&nbsp;&nbsp;專家盯盤</span>：投資專家團隊每月檢視投資組合內容，透過奈米投<span class="em">「再平衡機制」</span>將投資組合配置適當調整，即時因應市場動態。</li></ol> 
+              <div><a href="https://nmplusinvestment.fubon.com/nmi-frontend/nano.html?utm_source=nano&utm_medium=QA&utm_campaign=QA" class="faq-go">立即體驗</a></div>
+            </div>
+          </div>
+		  <div><!--Q1-4--> 
+            <button onclick="myFunction4()" class="QA">奈米投的投資團隊</button>
+            <div id="QA-DIV4" style="display:none"> 奈米投是由台北富邦銀行投資團隊提供專業投資服務，並結合國際級專家擔任顧問，讓一般人也能以低廉的投資成本，享受國際級的尊榮理財服務：<br>		   
+<span class="em">奈米1號</span>：聘請<span class="em">英國最大線上資產管理公司Nutmeg</span>擔任投資顧問，Nutmeg投資團隊專精於多元資產配置，曾管理歐洲央行、歐洲皇室、退休基金與私人銀行等代操帳戶，除了傳統的總經與產業分析外，也利用量化分析從歷史大數據中，海選能帶來超額收益的「大概率」事件、制定投資策略<br>
+<span class="em">奈米2號</span>：聘請<span class="em">富邦投信</span>擔任投資顧問，富邦投信專精於國內外各區域經濟動向，專注發展國內外股票、債券等多樣化投資產品，為全方位投資專家。
+              <div><a href="https://nmplusinvestment.fubon.com/nmi-frontend/nano.html?utm_source=nano&utm_medium=QA&utm_campaign=QA" class="faq-go">立即體驗</a></div>
+            </div>
+          </div>
+		  <div><!--Q1-5-->
+            <button onclick="myFunction5()" class="QA">奈米投的投資帳戶是什麼類型？</button>
+            <div id="QA-DIV5" style="display:none"> 奈米投運用<span class="em">「指定單獨管理運用金錢信託」</span>為您進行投資，根據奈米投-指定營運範圍或方法單獨管理運用金錢信託投資國內外有價證劵信託：<br>
+一、以信託方式由本行單獨設帳管理您所交付之資產，並於<span class="em">約定之範圍內為您進行投資與調整</span>。<br>
+二、信託財產之管理運用並非絕無風險，本行除盡善良管理人注意及忠實義務外，不擔保信託財產投資之盈虧，亦不保證最低收益。 
+              <div><a href="https://nmplusinvestment.fubon.com/nmi-frontend/nano.html?utm_source=nano&utm_medium=QA&utm_campaign=QA" class="faq-go">立即體驗</a></div>
+            </div>
+          </div> 
+        </div>
+		</div>
+		  
+		  <!--第二大類--> 
+		<div id="cat-2">
+        <button onclick="myFunctionB()" class="tab">投資標的</button>
+        <div id="myDIV-B" style="display:none">
+          <div><!--Q2-1-->
+            <button onclick="myFunction6()" class="QA">奈米1號與奈米2號的差異是什麼？</button>
+            <div id="QA-DIV6" style="display:none">
+				奈米投是一個數位理財服務，透過簡單的線上操作流程，即可針對旅遊、買房、退休等理財目標，打造客製化投資計畫，提供你優質的ETF投資組合。<br>奈米投分為兩種投資術：
+              <ul> 
+                <li><span class="em">奈米1號</span>：投資的是<span class="em">在英國倫敦交易所交易的ETF</span>，提供「4種風險等級」投資組合，<span class="em">從保守到積極，35元美金即可投資全世界</span>，輕鬆參與歐美、新興市場趨勢發展。英國倫敦交易所掛牌的ETF相較美國掛牌的ETF更具稅務優勢。</li>
+                <li><span class="em">奈米2號</span>：投資的是<span class="em">台灣證券交易所交易的ETF</span>，提供「4種投資主題」投資組合(穩穩投、高息投、永續投、趨勢投)，<span class="em">台幣1000元即可投資</span>，不論你是投資新手，還是有經驗的投資人，主題式投資幫助你突破盲點、強化策略，讓投資成為一件輕鬆的事。<br>(皆不含倍數槓桿型及反向型ETF) </li>
+              </ul>
+              <div><a href="https://nmplusinvestment.fubon.com/nmi-frontend/nano.html?utm_source=nano&utm_medium=QA&utm_campaign=QA" class="faq-go">立即體驗</a></div>
+            </div>
+          </div>
+          <div><!--Q2-2--> 
+            <button onclick="myFunction7()" class="QA">ETF跟基金有何不同？</button>
+            <div id="QA-DIV7" style="display:none">◆ 什麼是ETF <br>
+ETF是一種以較低的成本費用去貼近特定指數表現的投資工具，指數走勢與整體市場或追蹤標的之漲跌幾乎同步。<span class="em">一檔ETF即有一籃子投資標的使風險分散</span>，與基金相似；而交易可直接於證券市場買賣，類似股票，因此ETF可說是介於基金與股票之間的理財商品。
+              <div><a href="https://nmplusinvestment.fubon.com/nmi-frontend/nano.html?utm_source=nano&utm_medium=QA&utm_campaign=QA" class="faq-go">立即體驗</a></div>
+				<br>
+				◆ 什麼是基金<br>
+專業機構如資產管理公司/證券投資信託公司以發行受益憑證的方式，利用其背後的研究團隊的專業替募集來的整包資金進行操作管理。投資標的可配置於不同的市場與金融商品(如股票、債券、期貨、權證、存款等)。簡單來說，共同基金就是一種「群眾集資、風險共擔、投資獲利共享」的投資方式。 
+            </div>
+          </div>
+			<div><!--Q2-3--> 
+            <button onclick="myFunction8()" class="QA">投資標的的ETF是如何挑選？</button>
+            <div id="QA-DIV8" style="display:none">
+              ETF的挑選除了反應該ETF所追蹤的標竿指數(Benchmark)是否配合市場展望，其他因素如：追蹤指數的能力、持有成本、基金規模、買賣價差等，都是ETF篩選時考量的因素。
+              <div><a href="https://nmplusinvestment.fubon.com/nmi-frontend/nano.html?utm_source=nano&utm_medium=QA&utm_campaign=QA" class="faq-go">立即體驗</a></div>
+            </div>
+          </div> 
+        </div>
+		</div>
+		  
+		  <!--第三大類--> 
+		<div  id="cat-3">
+        <button onclick="myFunctionC()" class="tab">申購資格&流程</button>
+        <div id="myDIV-C" style="display:none">
+          <div><!--Q3-1-->
+            <button onclick="myFunction9()" class="QA">申購資格</button>
+            <div id="QA-DIV9" style="display:none">
+              只要你是本國人，且僅具台灣稅籍，同時擁有<span class="em">台北富邦銀行的存款帳戶(包含數位存款帳戶)</span>，就可用網路/行動銀行的帳號、密碼來使用奈米投的專業理財服務，打造您專屬的投資計畫。
+              <div><a href="https://nmplusinvestment.fubon.com/nmi-frontend/nano.html?utm_source=nano&utm_medium=QA&utm_campaign=QA" class="faq-go">立即體驗</a></div>
+            </div>
+          </div>
+          <div><!--Q3-2--> 
+            <button onclick="myFunction10()" class="QA">如何投資奈米投？</button>
+            <div id="QA-DIV10" style="display:none">投資奈米投，只要簡單4步驟：
+				<ol><li><span class="em">線上對話、設定目標</span>：登入奈米投網站後，完成線上對話，輸入你的理財目標與需求。</li><li><span class="em">量身打造的投資建議</span>：立即為你提供量身打造的投資建議與適合您的投資組合。</li><li><span class="em">開始啟動投資計畫</span>：簽訂指單信託契約後，開始啟動投資計畫開始啟動(還沒有富邦帳戶？<a href="https://www.fubon.com/banking/event/hot/20190315/index.html?utm_source=nano&utm_medium=QA&utm_campaign=QA" target="_blank">點我開戶</a>)。</li><li> <span class="em">專人管理、透明投資</span>：奈米投投資團隊持續為你監控並隨市場變化調整投資組合，在手機上即可掌握最新投資狀況與投資組合績效。</li></ol>  
+              <div><a href="https://nmplusinvestment.fubon.com/nmi-frontend/nano.html?utm_source=nano&utm_medium=QA&utm_campaign=QA" class="faq-go">立即體驗</a></div>
+            </div>
+          </div>
+		  <div><!--Q3-3--> 
+            <button onclick="myFunction11()" class="QA">投資方式與最低投資金額</button>
+            <div id="QA-DIV11" style="display:none">奈米投提供【一筆錢一次投入】、【每個月定期投資】、【一筆錢一次投入、搭配每個月定期投資】三種的投資方式。<br>
+◆ 投資金額：<br>
+<span class="em">奈米1號：最低35美元，最高上限為250,000美元。<br>
+奈米2號：最低台幣1000元，最高上限為台幣1,000萬元。 </span>
+              <div><a href="https://nmplusinvestment.fubon.com/nmi-frontend/nano.html?utm_source=nano&utm_medium=QA&utm_campaign=QA" class="faq-go">立即體驗</a></div>
+            </div>
+          </div>
+		  <div><!--Q3-4--> 
+            <button onclick="myFunction12()" class="QA">有交易時間的限制嗎？</button>
+            <div id="QA-DIV12" style="display:none"> 奈米投為數位理財服務，<span class="em">24小時</span>都可於線上進行申購、加碼、變更等交易申請。
+              <div><a href="https://nmplusinvestment.fubon.com/nmi-frontend/nano.html?utm_source=nano&utm_medium=QA&utm_campaign=QA" class="faq-go">立即體驗</a></div><br><br>
+				* 依據指定單獨管理運用金錢信託的契約規範，台北富邦銀行於投資策略所概括指定之營運範圍或方法內具有運用決定權，奈米投專家將依專業判斷調整實際交易時機。
+            </div>
+          </div>
+		  <div><!--Q3-5--> 
+            <button onclick="myFunction13()" class="QA">如何選擇適合我的投資組合？</button>
+            <div id="QA-DIV13" style="display:none">奈米投會透過與你聰明對話的流程，了解你的投資偏好，提供你適配的投資組合。 
+              <div><a href="https://nmplusinvestment.fubon.com/nmi-frontend/nano.html?utm_source=nano&utm_medium=QA&utm_campaign=QA" class="faq-go">立即體驗</a></div>
+            </div>
+          </div> 
+		  <div><!--Q3-6--> 
+            <button onclick="myFunction14()" class="QA">可以幫小孩申購奈米投嗎？</button>
+            <div id="QA-DIV14" style="display:none">未成年客戶若<span class="em">曾於 2019/2/1 後簽署新版【未成年開戶/往來事項申請法定代理人同意書】即可申購奈米投</span>，而若<span class="em">未曾於簽署之未成年客戶，僅可在一定金額 (奈米1號為1000 美元 以內；奈米2號為台幣3萬元 以內)  進行投資</span>。客戶若要提高投資金額，可由法定代理人攜帶本人及未成年人之身分證件，至臨櫃簽署新版【未成年開戶/往來事項申請法定代理人同意書】，來提高投資金額。 
+              <div><a href="https://nmplusinvestment.fubon.com/nmi-frontend/nano.html?utm_source=nano&utm_medium=QA&utm_campaign=QA" class="faq-go">立即體驗</a></div>
+            </div>
+          </div> 
+			<div><!--Q3-7--> 
+            <button onclick="myFunction15()" class="QA">申購後可以取消契約嗎?</button>
+            <div id="QA-DIV15" style="display:none">你送出投資計畫申購申請後，可於以下時間點以前提出取消申請，逾時即無法進行取消：
+			<ul><li><span class="em">單筆申購、單筆+定期定額申購</span>：需於投資計畫<span class="em">申請日的隔一營業日上午11:00以前提出</span>。</li><li><span class="em">定期定額</span>：需於<span class="em">所選定扣款日上午11:00以前提出</span>。</li></ul> 
+ 投資計畫經確定取消後，將返還管理費折抵優惠﹔且無法再恢復，如欲再次申購投資計畫，需重新辦理。 
+              <div><a href="https://nmplusinvestment.fubon.com/nmi-frontend/nano.html?utm_source=nano&utm_medium=QA&utm_campaign=QA" class="faq-go">立即體驗</a></div>
+            </div>
+          </div> 		
+        </div>
+		</div>
+		  
+		  <!--第四大類--> 
+		<div  id="cat-4">
+        <button onclick="myFunctionD()" class="tab">扣款</button>
+        <div id="myDIV-D" style="display:none">
+          <div><!--Q4-1--> 
+            <button onclick="myFunction16()" class="QA">扣款方式</button>
+            <div id="QA-DIV16" style="display:none">
+              <span class="em">奈米1號</span>以<span class="em">「美元」</span>作為投資幣別，你可於申購頁面中確認扣款方式及帳戶時，你可以選擇「直接扣美金」，或選擇「由奈米投先幫你換成美金，再扣款」，由奈米投輕鬆為你完成換匯手續。<br>
+<span class="em">奈米2號</span>則以<span class="em">「台幣」</span>作為投資幣別，你可於申購時選擇欲扣款之帳戶即可。 
+              <div><a href="https://nmplusinvestment.fubon.com/nmi-frontend/nano.html?utm_source=nano&utm_medium=QA&utm_campaign=QA" class="faq-go">立即體驗</a></div>
+            </div>
+          </div>
+          <div><!--Q4-2-->
+            <button onclick="myFunction17()" class="QA">何時進行扣款呢？</button>
+            <div id="QA-DIV17" style="display:none">投資計畫<span class="em">生效日通常為客戶完成操作的次一營業日 </span>
+				<ol><li><span class="em">單筆投資</span>：於投資計畫生效<span class="em">當天下午1:00~2:00</span>進行扣款。</li><li><span class="em">定期定額</span>：於投資計畫生效後的<span class="em">約定扣款日當天下午1:00~2:00</span>進行扣款 (第一個扣款日可為契約生效日當天)。</li><li>首次單筆 + 定期定額：扣款日分別同上。</li><li>單筆加碼：於客戶操作完成的次一營業日生效，並於生效日當天下午1:00~2:00進行扣款。</li></ol>  
+              <div><a href="https://nmplusinvestment.fubon.com/nmi-frontend/nano.html?utm_source=nano&utm_medium=QA&utm_campaign=QA" class="faq-go">立即體驗</a></div>
+            </div>
+          </div>
+		  <div><!--Q4-3-->  
+            <button onclick="myFunction18()" class="QA">扣款金額何時開始投資？</button>
+            <div id="QA-DIV18" style="display:none"><ol><li><span class="em">奈米1號</span>：原則上投資計畫將於扣款日後(不含當日)，<span class="em">最近期的週二或週五交易日</span>，為你配置投資組合(當天需同時為倫敦交易所與台北富邦銀行的營業日)。<br><span class="em">奈米2號</span>：原則上投資計畫將於扣款日後(不含當日)，<span class="em">次一營業日交易</span>，為你配置投資組合(當天需為台北富邦銀行的營業日)。</li>
+                     </li><li>惟當契約進行投資組合再平衡調整時，最多需３個營業日後，加碼申請才會生效。</li></ol>
+              <div><a href="https://nmplusinvestment.fubon.com/nmi-frontend/nano.html?utm_source=nano&utm_medium=QA&utm_campaign=QA" class="faq-go">立即體驗</a></div>
+            </div>
+          </div>
+		  <div><!--Q4-4-->
+            <button onclick="myFunction19()" class="QA">定期定額的扣款天期</button>
+            <div id="QA-DIV19" style="display:none"> 若採定期定額扣款，可自由選擇 1 到 31 日任一個扣款日投資，若該月無此扣款日，則順延至下一營業日扣款 (扣款日遇假日則順延至下一營業日扣款)。
+              <div><a href="https://nmplusinvestment.fubon.com/nmi-frontend/nano.html?utm_source=nano&utm_medium=QA&utm_campaign=QA" class="faq-go">立即體驗</a></div> 
+            </div>
+          </div>
+		  <div><!--Q4-5-->
+            <button onclick="myFunction20()" class="QA">一個月可以扣款多次嗎？</button>
+            <div id="QA-DIV20" style="display:none">建議你可以申購多筆計畫且分別設定不同扣款日期，彈性管理資產，達到分散風險的好處。 
+              <div><a href="https://nmplusinvestment.fubon.com/nmi-frontend/nano.html?utm_source=nano&utm_medium=QA&utm_campaign=QA" class="faq-go">立即體驗</a></div>
+            </div>
+          </div> 
+		  <div><!--Q4-6--> 
+            <button onclick="myFunction21()" class="QA">帳戶扣款失敗會如何？</button>
+            <div id="QA-DIV21" style="display:non">若定期定額扣款日當天帳戶餘額不足，則視同當月不投資，並<span class="em">不會補扣</span>，要等到下個月的扣款日才會再為你扣款投資。<br>
+                而當定期定額首3次扣款皆失敗時，該投資計畫即終止；若為單筆+定期定額投資，當契約生效日的首次單筆扣款失敗時，該投資計畫即終止。 
+              <div><a href="https://nmplusinvestment.fubon.com/nmi-frontend/nano.html?utm_source=nano&utm_medium=QA&utm_campaign=QA" class="faq-go">立即體驗</a></div>
+            </div>
+          </div> 
+        </div>
+		</div>
+		
+		<!--第五大類--> 
+		<div  id="cat-5">
+        <button onclick="myFunctionE()" class="tab">收費</button>
+        <div id="myDIV-E" style="display:none">
+          <div><!--Q5-1-->
+            <button onclick="myFunction22()" class="QA">奈米投會收哪些費用？</button>
+            <div id="QA-DIV22" style="display:none">
+             <span class="em">奈米1號：只收取年化1%信託管理費</span>，不再收取其他費用，投資與贖回也都不額外收交易費用。<br><span class="em">奈米2號：收取年化1%信託管理費，另代收投資組合證券交易買賣費用各0.04%及交易稅費0.1%。</span>
+              <div><a href="https://nmplusinvestment.fubon.com/nmi-frontend/nano.html?utm_source=nano&utm_medium=QA&utm_campaign=QA" class="faq-go">立即體驗</a></div>
+            </div>
+          </div>
+          <div><!--Q5-2-->  
+            <button onclick="myFunction23()" class="QA">奈米投費用的計算方式</button>
+            <div id="QA-DIV23" style="display:none">投資計畫生效日通常為客戶完成操作的次一營業日 
+				<span class="em">信託管理費：採取每日計算、按月收取；依各投資計畫的每日帳戶市值來計算</span><br> 
+<strong>依各投資計畫分別收取牌告年化1%信託管理費</strong>，並依每月實際持有的天數及該計畫每日的帳戶市值(含該計畫所投資的商品及現金部位)計算，採每日計算、隔月第一個營業日收費，並以四捨五入法統計至小數點第二位，從投資計畫裡的現金部位扣除。<br><br>
+<span class="em">奈米2號之代收投資組合證券交易買賣費用</span>：以實際投資組合買入及賣出標的之市值分別收取0.04%費用，採每次交易時計算，賣出投組標的時一併收取。<br>
+<span class="em">奈米2號之代收交易稅</span>：依實際投組賣出標的之市值收取0.1%證券交易稅，採每次交易時計算，賣出投組標的時一併收取。 
+              <div><a href="https://nmplusinvestment.fubon.com/nmi-frontend/nano.html?utm_source=nano&utm_medium=QA&utm_campaign=QA" class="faq-go">立即體驗</a></div>
+            </div>
+          </div>
+		  <div><!--Q5-3--> 
+            <button onclick="myFunction24()" class="QA">費用扣款方式</button>
+            <div id="QA-DIV24" style="display:none"><span class="em">會自動扣抵，不須額外繳納。</span><br>
+信託管理費：於次月第一個營業日直接自該計畫的現金部位扣除信託管理費，若於每月收取信託管理費之日，客戶指定之帳戶餘額不足，則將遞延至次月並與次月應收之信託管理費合併收取，若帳戶餘額持續不足，將持續遞延。若該計畫設定全部贖回，會從贖回款項扣除所有應收信託管理費後再返還予指定存款帳戶。<br>
+投資組合交易買賣費用及交易稅：將於投組標的賣出時，一併從該計畫之成交金額及投組現金部位扣除。 
+              <div><a href="https://nmplusinvestment.fubon.com/nmi-frontend/nano.html?utm_source=nano&utm_medium=QA&utm_campaign=QA" class="faq-go">立即體驗</a></div>
+            </div>
+          </div> 
+        </div>
+		</div>
+		
+		<!--第六大類--> 
+		<div  id="cat-6">
+        <button onclick="myFunctionF()" class="tab">變更&贖回</button>
+        <div id="myDIV-F" style="display:none">
+          <div><!--Q6-1--> 
+            <button onclick="myFunction25()" class="QA">投資組合何時會調整更動？</button>
+            <div id="QA-DIV25" style="display:none"><ol><li>顧問策略：投資團隊解讀總體經濟與觀察各投資市場，當對市場的觀點改變，有必要調整各市場的加、減碼比例時，將啟動「再平衡機制」幫你應對市場變化。</li><li>市場變化：當投資市場的價格劇烈變動，導致投資組合內各標的與目標投組的比重出現較大幅度的差異時，將啟動「再平衡機制」幫你應對市場變化。</li><li>自行變更：你可於【我的投資】中隨時調整你的投資組合。  </li></ol> 
+              <div><a href="https://nmplusinvestment.fubon.com/nmi-frontend/nano.html?utm_source=nano&utm_medium=QA&utm_campaign=QA" class="faq-go">立即體驗</a></div>
+            </div>
+          </div>
+          <div><!--Q6-2-->
+            <button onclick="myFunction26()" class="QA">投資組合內的標的及權重可以調整嗎？</button>
+            <div id="QA-DIV26" style="display:none">奈米投是一個自動導航的投資平台，你無需為投資操心，更不用花費時間處理惱人的再平衡調整交易指示。奈米投的投資專家們每天持續解讀總體經濟數據與觀察各投資市場之變化，當有需要調整投資組合時，會即時提供投資組合的調整。我們相信，這樣的做法較能因應瞬息萬變的金融市場環境。 
+              <div><a href="https://nmplusinvestment.fubon.com/nmi-frontend/nano.html?utm_source=nano&utm_medium=QA&utm_campaign=QA" class="faq-go">立即體驗</a></div>
+            </div>
+          </div>
+		  <div><!--Q6-3--> 
+            <button onclick="myFunction27()" class="QA">調整投資組合需要多久的時間？</button>
+            <div id="QA-DIV27" style="display:none"><ol><li>於當日23：59前(含)完成變更申請者，將於<span class="em">次一營業日生效</span><br>
+<span class="em">奈米1號</span>：原則上於<span class="em">生效日後</span>(不含當日)，<span class="em">最近期的週二或週五交易日</span>，依照你變更後的投組風險等級，為你配置投資組合(當天需同時為倫敦交易所與台北富邦銀行的營業日)。<br>
+<span class="em">奈米2號</span>：原則上於生效日後(不含當日)<span class="em">次一交易日</span>，為你配置投資組合(當天需為台北富邦銀行的營業日)。</li><li>惟當契約進行投資組合再平衡調整時，最多需３個營業日後，變更權申請才會生效。</li></ol>	 
+              <div><a href="https://nmplusinvestment.fubon.com/nmi-frontend/nano.html?utm_source=nano&utm_medium=QA&utm_campaign=QA" class="faq-go">立即體驗</a></div>
+            </div>
+          </div> 
+			<div><!--Q6-4-->
+            <button onclick="myFunction28()" class="QA">可增加投資金額嗎？</button>
+            <div id="QA-DIV28" style="display:none">於奈米投網站【我的投資】，點選【加碼】，選擇要單筆加碼，或增加每月定期投入的金額。 
+              <div><a href="https://nmplusinvestment.fubon.com/nmi-frontend/nano.html?utm_source=nano&utm_medium=QA&utm_campaign=QA" class="faq-go">立即體驗</a></div>
+            </div>
+          </div>
+			<div><!--Q6-5-->
+            <button onclick="myFunction29()" class="QA">扣款方式可以變更嗎？天期可調整嗎？何時生效？</button>
+            <div id="QA-DIV29" style="display:none"><ol><li>奈米1號扣款方式分為直接扣美金或扣台幣換美金投資。投資計畫設定後，仍可變更扣款方式；奈米2號則皆以台幣為扣款幣別。</li><li>你隨時於奈米投網站【我的投資】，點選【變更】，調整你的扣款帳號、每月扣款日期、每月扣款金額，或選擇暫停扣款、恢復扣款。</li></ol> 
+無論是進行奈米投的變更扣款金額、日期，或是暫停及恢復扣款等交易，都只要在扣款日前一天的晚上 23:59 前操作完成(無營業日問題)，於次一營業日生效時，就會依客戶的新設定進行奈米投相關交易。 
+              <div><a href="https://nmplusinvestment.fubon.com/nmi-frontend/nano.html?utm_source=nano&utm_medium=QA&utm_campaign=QA" class="faq-go">立即體驗</a></div>
+            </div>
+          </div>
+			<div><!--Q6-6--> 
+            <button onclick="myFunction30()" class="QA">如何贖回？贖回金額多久會入帳？</button>
+            <div id="QA-DIV30" style="display:none"><ol><li>你可隨時於奈米投網站【我的投資】，點選【贖回】。</li>
+				<li>贖回金額入帳時間會依你申請的時間而所有不同
+					    <ol><li><span class="em">奈米1號</span>：原則上若你於<span class="em">「上週五至本週一」送出贖回申請，贖回金額最晚會於本週五入帳</span>。若你於<span class="em">「本週二至四」送出贖回申請，贖回金額最晚會於下週三入帳</span>。<br>
+							<span class="em">奈米2號</span>：原則上將於你送出<span class="em">贖回申請之次3個營業日入帳</span>。</li><li>惟當契約進行投資組合再平衡調整時，最多需３個營業日後，贖回申請才會生效。</li></ol>
+				</li></ol> 
+              <div><a href="https://nmplusinvestment.fubon.com/nmi-frontend/nano.html?utm_source=nano&utm_medium=QA&utm_campaign=QA" class="faq-go">立即體驗</a></div>
+            </div>
+          </div>
+			<div><!--Q6-7--> 
+            <button onclick="myFunction31()" class="QA">可以部分贖回嗎？</button>
+            <div id="QA-DIV31" style="display:none">你在奈米投的投資計畫<span class="em">無法部分贖回</span>，建議你可以申購多筆計畫分別管理，彈性管理資產，達到分散風險的好處。
+              <div><a href="https://nmplusinvestment.fubon.com/nmi-frontend/nano.html?utm_source=nano&utm_medium=QA&utm_campaign=QA" class="faq-go">立即體驗</a></div>
+            </div>
+          </div>  
+        </div>
+		</div>
+		
+		<!--第七大類--> 
+		<div  id="cat-7">
+        <button onclick="myFunctionG()" class="tab">稅賦&配息</button>
+        <div id="myDIV-G" style="display:none">
+          <div><!--Q7-1--> 
+            <button onclick="myFunction33()" class="QA">奈米1號相關的稅賦有哪些？</button>
+            <div id="QA-DIV33" style="display:none"><ol><li>海外：奈米1號投資標的皆為於愛爾蘭或盧森堡註冊，並於英國倫敦交易所掛牌的ETF，該些ETF的註冊國與美國均有稅務協定，享有股利稅減半優惠，以及0%的股息預扣稅率，且英國倫敦交易所對ETF交易不收取印花稅(交易稅)。</li><li>國內：依台灣財政部稅務規定，投資奈米投1號的收益投資收益來源分別納入【海外所得】與【綜合所得稅之利息所得】計算相關稅賦。</li></ol> 
+				上述稅賦說明僅供參考，相關資料請參閱財政部相關法令規範，惟台北富邦銀行不保證其正確性及完整性，如有錯誤及疏漏，本行與其任何董事或受僱人，恕不負任何法律責任。本資料依編製時之相關規定提供，如稅務法令修訂變動，以上資料未及更新之處，請以變動後法令為準。
+              <div><a href="https://nmplusinvestment.fubon.com/nmi-frontend/nano.html?utm_source=nano&utm_medium=QA&utm_campaign=QA" class="faq-go">立即體驗</a></div>
+            </div>
+          </div>
+          <div><!--Q7-2-->
+            <button onclick="myFunction34()" class="QA">奈米2號相關的稅賦有哪些？</button>
+            <div id="QA-DIV34" style="display:none">依台灣財政部稅務規定，投資收益納入【海外所得】、【綜合所得稅之利息所得、股利所得】計算相關稅賦；另賣出時需支付【證券交易稅】；另依衛生福利部全民健康保險法第31條規定，若單次給付股利金額達台幣２萬元者，需扣取【二代健保補充保費】。 <br><br>
+上述稅賦說明僅供參考，相關資料請參閱財政部及衛生福利部相關法令規範，惟台北富邦銀行不保證其正確性及完整性，如有錯誤及疏漏，本行與其任何董事或受僱人，恕不負任何法律責任。本資料依編製時之相關規定提供，如稅務法令修訂變動，以上資料未及更新之處，請以變動後法令為準。 
+              <div><a href="https://nmplusinvestment.fubon.com/nmi-frontend/nano.html?utm_source=nano&utm_medium=QA&utm_campaign=QA" class="faq-go">立即體驗</a></div>
+            </div>
+          </div>
+		  <div><!--Q7-3-->  
+            <button onclick="myFunction35()" class="QA">ETF配息會入到我的帳戶嗎？</button>
+            <div id="QA-DIV35" style="display:none">奈米投之ETF配息分為「配息再投資」及「配息入帳戶」，奈米1號屬於「配息再投資」，奈米2號則依你選擇「配息再投資」或「配息入帳戶」進行配息。<br><br>
+<span class="em">配息再投資</span>：將ETF配息直接進行再投資，透過複利效應，將客戶財富最大化，因此，ETF若有配息並不會入到你的存款帳戶裡，而是進到該投資計畫的現金部位；當客戶你有再加碼或於配息後，投資團隊會根據現金部位佔整體投組比例狀況，再為其進行投資配置。<br>
+<span class="em">配息入帳戶</span>：當發生ETF配息時，將ETF現金股利配息至你的存款帳戶中。(依全民健康保險法第31條規定，其單次給付股利金額達台幣２萬元者，應按規定之二代健保補充保險費率扣取補充保險費。) 
+				<div><a href="https://nmplusinvestment.fubon.com/nmi-frontend/nano.html?utm_source=nano&utm_medium=QA&utm_campaign=QA" class="faq-go">立即體驗</a></div>
+            </div>
+          </div> 
+			<div><!--Q7-4-->
+            <button onclick="myFunction36()" class="QA">奈米2號選擇【配息入帳戶】，配息什麼時候入帳?</button>
+            <div id="QA-DIV36" style="display:none">奈米投是以投資組合方式來投資，申購時我們幫您把錢配置在約9~15檔ETF中，若你選擇【配息入帳戶】，配息時間將依每檔ETF公告之配息發放日發放現金股利（每次發放時間不一定，但ETF有配息會盡速入給你唷！） 
+<ul><li>若你要查詢累積配息金額及配息紀錄，可至【<a href="" target="_blank" class="f-blue">我的投資</a>】查詢</li><li>若你想收到配息提醒，可立即綁定【<a href="" target="_blank" class="f-blue">北富銀LINE官方帳號</a>】，即可收到 「奈米投配息入帳通知」</li></ul>  
+<img th:src="@{img/QA-1.png}" class="w100pct" alt=""/> 
+              <div><a href="https://nmplusinvestment.fubon.com/nmi-frontend/nano.html?utm_source=nano&utm_medium=QA&utm_campaign=QA" class="faq-go">立即體驗</a></div>
+            </div>
+          </div> 
+        </div>
+		</div>
+		
+		<!--第八大類--> 
+		<div  id="cat-8">
+        <button onclick="myFunctionH()" class="tab">售後服務</button>
+        <div id="myDIV-H" style="display:none">
+          <div><!--Q8-1-->
+            <button onclick="myFunction37()" class="QA">售後服務有哪些？</button>
+            <div id="QA-DIV37" style="display:none"><ol><li>每月寄送電子對帳單到您在本行留存的email，可隨時掌握最新投資組合績效表現。</li><li>每月於理財小學堂提供「經理人聊天室」及「投資月報」等投資觀點、市場看法與投資策略，建立良好的理財觀念。</li></ol> 
+              <div><a href="https://nmplusinvestment.fubon.com/nmi-frontend/nano.html?utm_source=nano&utm_medium=QA&utm_campaign=QA" class="faq-go">立即體驗</a></div>
+            </div>
+          </div>
+          <div><!--Q8-2-->
+            <button onclick="myFunction38()" class="QA">查詢我投資的明細資料</button>
+            <div id="QA-DIV38" style="display:none">於奈米投網站【我的投資】可隨時查詢你的投資計畫明細，包含每一個投資計畫的參考市值、投資金額、參考損益、已入帳現金配息、投資報酬率、投資組合內容與每一次的投資調整紀錄。
+              <div><a href="https://nmplusinvestment.fubon.com/nmi-frontend/nano.html?utm_source=nano&utm_medium=QA&utm_campaign=QA" class="faq-go">立即體驗</a></div>
+            </div>
+          </div> 
+        </div>
+		</div>  
+        <!-- partial --> 
+        <script src="js/sub_style_faq.js"></script> 
+		
+		<div class="QA-notice">奈米投相關交易之投資時間須知：
+			<ol>
+                <li>如遇台灣或英國市場休市，或因市場波動、系統或網路傳輸異常(包括但不限於斷線、斷電、網路壅塞)，或有不可抗力因素，奈米投專家會基於對市場情勢、交易操作等專業判斷，決定實際的交易時間。惟如係於系統或網路傳輸異常期間申請交易並經台北富邦銀行受理者，台北富邦銀行將在系統或網路傳輸恢復正常後之營業時間進行交易(由台北富邦銀行全權決定信託資產之投資交易時機)。</li>
+                <li>依據指定單獨管理運用金錢信託的契約規範，台北富邦銀行於投資策略所概括指定之營運範圍或方法內具有運用決定權，奈米投專家將依專業判斷調整實際交易時機。</li>
+            </ol> 
+        </div> 
+      </div>
+		
+	 
+	  
+	  
+    </div> 
+  </div> 
+<!-- MAIN CONTAINER END --> 
+
+<!-- NAVIGATION BAR START-->
+<div id="header"></div>
+<!-- NAVIGATION BAR END --> 
+
+<!-- FOOTER START -->
+<div id="footer"></div>
+<!-- FOOTER END -->
+
+</body>
+<script>
+    $("#header").load("header.html");
+    $("#footer").load("footer.html");
+    
+    $(".faq-wrap button.tab").click(function() {
+        $(this).toggleClass('active');
+    });
+    $(".faq-wrap .QA").click(function() {
+        $(this).toggleClass('active');
+    });
+    $("#myDIV-A > div, #myDIV-B > div, #myDIV-C > div, #myDIV-D > div, #myDIV-E > div, #myDIV-F > div, #myDIV-G > div, #myDIV-H > div").click(function() {
+        $(this).toggleClass('active');
+    });
+</script>
+</html>

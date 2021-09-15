@@ -1,0 +1,42 @@
+.faq-wrap button.tab + div {
+    display: block !important;
+    max-height: 0;
+    overflow: hidden !important;
+    transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -webkit-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+}
+
+.faq-wrap button.tab.active + div {
+    max-height: 1000vh;
+    overflow: hidden !important;
+    margin-bottom: 8px !important;
+}
+
+.QA + div {
+    display: block !important;
+    max-height: 0;
+    transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -webkit-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+    overflow: hidden !important;
+    padding: 0 52px 0 87px !important;
+}
+
+.QA.active + div {
+    max-height: 1000vh;
+    overflow: hidden !important;
+    padding: 33px 52px 31px 87px !important;
+}
+
+@media screen and (max-width: 768px) {
+    .QA + div {
+        padding: 0 9px 0 15px !important;
+    }
+
+    .QA.active + div {
+        padding: 22px 9px 23px 15px !important;
+    }
+}
