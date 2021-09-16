@@ -167,10 +167,10 @@ body {
     -o-transform: rotate(180deg);
     -ms-transform: rotate(180deg);
     transform: rotate(180deg);
-    transition: all 0.5s ease-in-out;
-    -moz-transition: all 0.5s ease-in-out;
-    -webkit-transition: all 0.5s ease-in-out;
-    -o-transition: all 0.5s ease-in-out;
+    transition: all 0.4s ease-in-out;
+    -moz-transition: all 0.4s ease-in-out;
+    -webkit-transition: all 0.4s ease-in-out;
+    -o-transition: all 0.4s ease-in-out;
 }
 
 .faq-wrap button.tab.active:after {
@@ -203,6 +203,23 @@ body {
     border-bottom: solid 1.5px #cbedfa;
 }
 
+.faq-wrap button.tab + div {
+    display: block !important;
+    max-height: 0;
+    overflow: hidden !important;
+    transition: all 0.4s ease-in-out;
+    -moz-transition: all 0.4s ease-in-out;
+    -webkit-transition: all 0.4s ease-in-out;
+    -o-transition: all 0.4s ease-in-out;
+}
+
+.faq-wrap button.tab.active + div,
+.faq-wrap button.tab + div.active {
+    max-height: 1000vh;
+    overflow: hidden !important;
+    margin-bottom: 8px !important;
+}
+
 #myDIV-A > div.active,
 #myDIV-B > div.active,
 #myDIV-C > div.active,
@@ -226,10 +243,10 @@ body {
 }
 
 .QA {
-    padding: 20px 55px 20px 88px;
+    padding: 28px 55px 28px 88px;
     font-size: 24px;
     font-weight: normal;
-    line-height: 36px;
+    line-height: 20px;
     letter-spacing: 0.75px;
     color: #191919;
     border: 0 !important;
@@ -266,10 +283,10 @@ body {
     -o-transform: rotate(360deg);
     -ms-transform: rotate(360deg);
     transform: rotate(360deg);
-    transition: all 0.5s ease-in-out;
-    -moz-transition: all 0.5s ease-in-out;
-    -webkit-transition: all 0.5s ease-in-out;
-    -o-transition: all 0.5s ease-in-out;
+    transition: all 0.4s ease-in-out;
+    -moz-transition: all 0.4s ease-in-out;
+    -webkit-transition: all 0.4s ease-in-out;
+    -o-transition: all 0.4s ease-in-out;
 }
 
 .QA.active:after {
@@ -320,7 +337,6 @@ body {
 #QA-DIV36,
 #QA-DIV37,
 #QA-DIV38 {
-    padding: 33px 52px 31px 87px;
     background: #ecf6fa;
     font-size: 20px;
     font-weight: normal;
@@ -329,14 +345,28 @@ body {
     color: #191919;
 }
 
-.faq-wrap li {
-    margin: 15px 0 0 40px;
-    text-align: justify;
-    text-justify: inter-ideograph;
+.QA + div {
+    display: block !important;
+    max-height: 0;
+    transition: all 0.4s ease-in-out;
+    -moz-transition: all 0.4s ease-in-out;
+    -webkit-transition: all 0.4s ease-in-out;
+    -o-transition: all 0.4s ease-in-out;
+    overflow: hidden !important;
+    padding: 0 52px 0 87px !important;
 }
 
-.faq-wrap li:first-of-type {
-    margin-top: 0;
+.QA.active + div,
+.QA + div.active {
+    max-height: 150vh;
+    overflow: hidden !important;
+    padding: 33px 52px 31px 87px !important;
+}
+
+.faq-wrap li {
+    margin: 15px 0 15px 40px;
+    text-align: justify;
+    text-justify: inter-ideograph;
 }
 
 .em {
@@ -501,7 +531,7 @@ body {
     }
 
     .QA {
-        padding: 11px 35px 15px 28px;
+        padding: 15px 35px 20px 28px;
         font-size: 16px;
         letter-spacing: 0.5px;
     }
@@ -556,14 +586,22 @@ body {
     #QA-DIV36,
     #QA-DIV37,
     #QA-DIV38 {
-        padding: 22px 9px 23px 15px;
         font-size: 14px;
         line-height: 20px;
         letter-spacing: 0.7px;
     }
+    
+    .QA + div {
+        padding: 0 9px 0 15px !important;
+    }
+
+    .QA.active + div,
+    .QA + div.active {
+        padding: 22px 9px 23px 15px !important;
+    }
 
     .faq-wrap li {
-        margin: 15px 0 0 30px;
+        margin: 15px 0 15px 30px;
     }
 
     .faq-wrap a:link.faq-go,

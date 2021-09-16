@@ -4,7 +4,7 @@
     20210829 整理邏輯
 */
 
-$(function() {
+$(function () {
 
     var allCategories = $("div[id^=cat]");
     var allCategoriesBlock = $("div[id^=cat] > div[id^=myDIV]");
@@ -45,45 +45,49 @@ $(function() {
 
     // 篩選搜尋關鍵字，並展開答案
     function faqSearch(keyword) {
-        
+
         // 換關鍵字搜尋時，無論如何所有答案都要關閉
-        $(allAnswers).hide();
-        
+        $(allCategoriesBlock).removeClass('active');
+        $(allQuestions).removeClass('active');
+        $(allAnswers).removeClass('active');
+
         // 若關鍵字為空，重新收合所有標籤
         if ($(".searchTerm").val() == "") {
             $(allCategories).show();
-            $(allCategoriesBlock).hide();
+            $(allCategoriesBlock).removeClass('active');
+            $(allQuestions).removeClass('active');
+            $(allAnswers).removeClass('active');
             // $(allQuestions).show();
             // $(allAnswers).hide();
             return;
         }
-        
-        allCategories.filter(function() {
+
+        allCategories.filter(function () {
             // 類別是否有找到
-            if ( $(this).children("button").text().indexOf(keyword) > -1 ) {
-                $(this).find("div[id^=myDIV]").show();
+            if ($(this).children("button").text().indexOf(keyword) > -1) {
+                $(this).find("div[id^=myDIV]").addClass('active');
             } else {
-                $(this).find("div[id^=myDIV]").hide();
+                $(this).find("div[id^=myDIV]").removeClass('active');
             }
         });
 
-        allQuestions.filter(function() {
-            if ($(this).text().indexOf(keyword) > -1 ) {
-                $(this).closest("div[id^=myDIV]").show();
-                $(this).next().show();
+        allQuestions.filter(function () {
+            if ($(this).text().indexOf(keyword) > -1) {
+                $(this).closest("div[id^=myDIV]").addClass('active');
+                $(this).next().addClass('active');
             }
         });
 
-        allAnswers.filter(function() {
-            if ($(this).text().indexOf(keyword) > -1 ) {
-                $(this).closest("div[id^=myDIV]").show();
-                $(this).show();
+        allAnswers.filter(function () {
+            if ($(this).text().indexOf(keyword) > -1) {
+                $(this).closest("div[id^=myDIV]").addClass('active');
+                $(this).addClass('active');
             }
         });
     }
 
     // 點搜尋按鈕，觸發關鍵字搜尋
-    $(".searchButton").on("click", function() {
+    $(".searchButton").on("click", function () {
         var faqSearchKeyStr = $(".searchTerm").val();
         if (isMatchesReg(faqSearchKeyStr)) {
             faqSearch(faqSearchKeyStr);
@@ -93,20 +97,24 @@ $(function() {
 
     // 輸入時，觸發計算字數功能、檢查合法輸入值
     // 按 enter 時同點擊搜尋按鈕
-    $(".searchTerm").on("keyup", function(e) {
+    $(".searchTerm").on("keyup", function (e) {
         faqKeyLengthCal();
-        if (isMatchesReg($(this).val())
-                && e.key === "Enter") {
+        if (isMatchesReg($(this).val()) &&
+            e.key === "Enter") {
             $(".searchButton").trigger("click");
         }
     });
 
     // 文字刪除(X)按鈕
-    $(".search").on("click", "#searchDelIcon", function() {
+    $(".search").on("click", "#searchDelIcon", function () {
         $(".searchTerm").val("");
         $(allCategories).removeHighlight();
         faqKeyLengthCal();
         $(".searchTerm").trigger("focus");
+
+        $(allCategoriesBlock).removeClass('active');
+        $(allQuestions).removeClass('active');
+        $(allAnswers).removeClass('active');
     });
-    
+
 });

@@ -10,11 +10,15 @@
     <!-- 與第一行是同樣的作用 -->
     <meta name="_csrf" th:content="${_csrf.token}"/>
     <meta name="_csrf_header" th:content="${_csrf.headerName}"/>
-    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
     <meta content="text/html;charset=utf-8" http-equiv="Content-Type">
     <meta content="utf-8" http-equiv="encoding">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-    <title>富邦奈米投</title>
+    <title>台北富邦銀行數位理財奈米投</title>
+    <meta name="description" content="「奈米投」是台北富邦銀行提供的數位理財服務，約1000台幣即可投，由投資專家為你精選出ETF投資組合，每日幫你盯盤，主動為你的投資汰弱留強！享受省心、輕鬆的理財體驗">
+    <meta name="keywords" content="數位投資、數位理財、奈米投、台北富邦銀行、Nutmeg、理財機器人、機器人理財、奈米1號、奈米2號、ETF">
+    <meta property="og:description" content="「奈米投」是台北富邦銀行提供的數位理財服務，約1000台幣即可投，由投資專家為你精選出ETF投資組合，每日幫你盯盤，主動為你的投資汰弱留強！享受省心、輕鬆的理財體驗">
+    <meta property="og:image" content="" />
+    <link rel="shortcut icon" href="favicon.ico">
 <!--MAIN CSS-->
 <link rel="stylesheet" href="js/node_modules/w3-css/4/w3pro.css">
 <link rel="stylesheet" href="js/node_modules/@fancyapps/fancybox/dist/jquery.fancybox.min.css"/>
@@ -467,6 +471,12 @@ ETF是一種以較低的成本費用去貼近特定指數表現的投資工具�
 <script>
     $("#header").load("header.html");
     $("#footer").load("footer.html");
+    
+    $(".searchTerm").keydown(function() {
+        $('.faq-wrap button.tab').removeClass('active');
+        $('.faq-wrap .QA').removeClass('active');
+        $('#myDIV-A > div, #myDIV-B > div, #myDIV-C > div, #myDIV-D > div, #myDIV-E > div, #myDIV-F > div, #myDIV-G > div, #myDIV-H > div').removeClass('active');
+    });
     
     $(".faq-wrap button.tab").click(function() {
         $(this).toggleClass('active');
