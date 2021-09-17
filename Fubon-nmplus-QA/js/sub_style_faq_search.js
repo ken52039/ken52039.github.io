@@ -118,6 +118,7 @@ $(function () {
         $(allCategoriesBlock).removeClass('active');
         $(allQuestions).removeClass('active');
         $(allAnswers).removeClass('active');
+        $('.faq-wrap button.tab').removeClass('active');
     });
 
 });
