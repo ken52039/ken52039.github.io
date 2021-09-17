@@ -6,6 +6,33 @@ body {
     color: #191919;
 }
 
+body:before {
+    content: "";
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 9999;
+    backdrop-filter: blur(2px);
+    background: rgba(25, 25, 25, 0.7);
+    opacity: 0;
+    transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    pointer-events: none;
+}
+
+body.blur-bg:before {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+body.blur-bg .fancybox-bg {
+    display: none;
+}
+
 #header {
     font-family: "Noto Sans TC", "PingFang TC", Microsoft JhengHei, "MicroSoft JhengHei", "微軟正黑體", serif !important;
 }
@@ -441,6 +468,402 @@ body {
     }
 }
 
+.popup {
+    max-width: 660px;
+    width: 90%;
+    overflow: visible;
+    padding: 30px 80px 42px 80px;
+    height: calc(50vh + 125px);
+    max-height: 500px;
+    text-align: justify; 
+    text-justify: inter-ideograph; 
+}
+
+.popup * {
+    font-weight: normal !important;
+}
+
+.popup.info {
+    padding: 30px 60px;
+}
+
+.popup .fancybox-close-small {
+    width: 20px;
+    height: 20px;
+    top: -35px;
+    background: url(../img/faq/close-popup.svg) no-repeat;
+    background-size: 100%;
+}
+
+.popup .fancybox-close-small:after {
+    display: none;
+}
+
+.popup strong {
+    display: block;
+    font-size: 24px;
+    font-weight: bold;
+    line-height: 36px;
+    text-align: center;
+    color: #0087d5;
+}
+
+.popup form {
+    padding-right: 20px;
+}
+
+.popup form fieldset {
+    padding: 0;
+    margin: 30px 0 0 0;
+    border: 0;
+}
+
+.popup form fieldset:after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.popup form fieldset label {
+    float: left;
+    width: 100px;
+    font-size: 14px;
+    font-weight: normal;
+    color: #828282;
+    line-height: 20px;
+}
+
+.popup form fieldset .right {
+    float: right;
+    width: 320px;
+    font-size: 16px;
+    color: #191919;
+    line-height: 24px;
+    position: relative;
+}
+
+.popup form fieldset select {
+    opacity: 0;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 1;
+    width: 100%;
+    height: 32px;
+}
+
+.popup form fieldset .select-title {
+    display: block;
+    width: 100%;
+    padding: 0 40px 7px 0;
+    background: url(../svg/result/arrow-down.png) right 10px center no-repeat;
+    background-size: 15px 9px;
+    border-bottom: solid 1px #0087d5;
+    font-size: 16px;
+    color: #828282;
+    line-height: 24px;
+    font-weight: normal;
+}
+
+.popup form > fieldset .select-title {
+    color: #191919;
+}
+
+.popup form fieldset input {
+    width: 100%;
+    background: none;
+    border: 0;
+    border-bottom: solid 1px #0087d5;
+    text-align: center;
+    color: #0087d5;
+    font-size: 24px;
+    font-weight: 600;
+    border-radius: 0 !important;
+    padding: 0 !important;
+}
+
+.popup form fieldset input.small {
+    display: inline-block;
+    vertical-align: middle;
+    width: calc(100% - 40px);
+}
+
+.popup form fieldset input::placeholder {
+    font-size: 16px;
+    color: #828282;
+    line-height: 24px;
+    font-weight: normal;
+    text-align: left;
+    opacity: 1;
+}
+
+.popup form fieldset input + small {
+    display: block;
+    font-size: 12px;
+    font-weight: normal;
+    line-height: 20px;
+    margin-top: 7px;
+    color: #0087d5;
+}
+
+.popup form fieldset .title {
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 16px;
+    font-weight: normal;
+    color: #191919;
+    line-height: 24px;
+    width: 35px;
+}
+
+.popup form fieldset .unit {
+    position: absolute;
+    right: -21px;
+    top: 0;
+    font-size: 16px;
+    font-weight: normal;
+    color: #191919;
+}
+
+.popup form fieldset.submit {
+    margin: 50px 0 0 0;
+    text-align: center;
+}
+
+.popup form fieldset.submit button {
+    width: 200px;
+    height: 70px;
+    margin: 0px auto;
+    background: #0087d5;
+    border: 0;
+    font-size: 24px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    color: #fff;
+    cursor: pointer;
+}
+
+.popup form fieldset.submit button img {
+    margin: 0 0 0 12px;
+    width: 17px;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.popup .category-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+.popup .category-list li {
+    display: block;
+    line-height: 25px;
+    padding: 10px 0 9px 0;
+    border-bottom: solid 1px #cbedfa;
+    font-size: 18px;
+    font-weight: 500;
+    color: #191919;
+}
+
+.popup .category-list li:after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.popup .category-list li span {
+    float: right;
+    font-size: 26px;
+    font-weight: 600;
+    letter-spacing: 0.81px;
+    text-align: right;
+    color: #0087d5;
+}
+
+.popup .category-list li span small {
+    font-size: 20px;
+    letter-spacing: 0.63px;
+}
+
+.popup .category-list-p {
+    font-size: 14px;
+    color: #828282;
+    line-height: 20px;
+    margin: 20px 0 0 0;
+}
+
+.popup p {
+    font-size: 16px;
+    font-weight: normal;
+    color: #191919;
+    line-height: 25px;
+    margin: 0 0 10px 0;
+    padding: 0;
+}
+
+.popup p small {
+    display: block;
+    font-size: 14px;
+    color: #828282;
+}
+
+.popup .blue {
+    color: #0087d5;
+}
+
+.popup .green {
+    color: #15bd7a;
+}
+
+.popup .list {
+    margin: 0 0 0 20px;
+    padding: 0;
+}
+
+.popup .list li {
+    display: block;
+    font-size: 16px;
+    font-weight: normal;
+    color: #191919;
+    line-height: 25px;
+    margin: 0 0 10px 0;
+    padding: 0;
+    position: relative;
+}
+
+.popup .list li:before {
+    content: "";
+    display: block;
+    position: absolute;
+    left: -15px;
+    top: 7px;
+    width: 5px;
+    height: 5px;
+    background: #000;
+}
+
+.popup .list.number li:before {
+    display: none;
+}
+
+.popup .list.number li i {
+    display: block;
+    position: absolute;
+    left: -20px;
+    top: 0;
+    font-style: normal;
+}
+
+.popup .link {
+    margin: 20px 0 0 0;
+}
+
+.popup .link:after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.popup .link label {
+    float: left;
+    width: 50%;
+    line-height: 45px;
+}
+
+.popup .link label span {
+    display: block;
+    background: #ecf6fa;
+    font-size: 20px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    color: #828282;
+    text-align: center;
+    cursor: pointer;
+}
+
+.popup .link label input {
+    display: none;
+}
+
+.popup .link label.active span {
+    background: #15bd7a;
+    color: #fff;
+}
+
+.popup .link label:last-of-type.active span {
+    background: #0087d5;
+}
+
+.popup input + div {
+    display: none;
+}
+
+.popup input:checked + div {
+    display: block;
+}
+
+.popup .ui-tabs .ui-tabs-nav {
+    padding: 0;
+    margin: 20px 0;
+    list-style: none;
+    border-bottom: solid 0.7px #15bd7a;
+}
+
+.popup .ui-tabs .ui-tabs-nav.blue {
+    border-bottom: solid 0.7px #0087d5;
+}
+
+.popup .ui-tabs .ui-tabs-nav:after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.popup .ui-tabs .ui-tabs-nav li {
+    float: left;
+    width: 25%;
+}
+
+.popup .ui-tabs .ui-tabs-nav li.ui-tabs-active {
+    border-bottom: solid 4px #15bd7a;
+}
+
+.popup .ui-tabs .ui-tabs-nav.blue li.ui-tabs-active {
+    border-bottom: solid 4px #0087d5;
+}
+
+.popup .ui-tabs .ui-tabs-nav li a {
+    display: block;
+    line-height: 30px;
+    font-size: 18px;
+    font-weight: 600;
+    text-align: center;
+    color: #15bd7a;
+}
+
+.popup .ui-tabs .ui-tabs-nav.blue li a {
+    color: #0087d5;
+}
+
+.popup .overflow {
+    overflow: hidden;
+    overflow-y: auto;
+    max-height: calc(100% - 60px);
+    padding: 0 5px;
+}
+
+.popup .overflow.category {
+    max-height: calc(100% - 100px);
+}
+
+.popup .sm-overflow {
+    overflow: auto;
+    max-height: 255px;
+    padding: 0 5px;
+}
+
 @media screen and (max-width: 1150px) {
     .faq-wrap {
         padding: 0 20px;
@@ -619,5 +1042,47 @@ body {
         width: 17px;
         height: 6px;
         right: 36px;
+    }
+    
+    .popup {
+        padding: 30px 21px 37px 21px;
+        max-height: none;
+    }
+    
+    .popup .overflow {
+        max-height: calc(100% - 110px);
+    }
+    
+    .popup .sm-overflow {
+        max-height: calc(50vh - 125px);;
+    }
+
+    .popup.info {
+        padding: 30px 10px 40px 10px;
+    }
+
+    .popup form fieldset label {
+        width: 60px;
+    }
+
+    .popup form fieldset .right {
+        width: calc(100% - 100px);
+    }
+
+    .popup form fieldset.submit button {
+        width: 166px;
+        height: 48px;
+        font-size: 16px;
+    }
+
+    .popup form fieldset.submit button img {
+        margin: 0 0 0 10px;
+        width: 15px;
+    }
+
+    .popup .list li,
+    .popup p {
+        font-size: 14px;
+        line-height: 20px;
     }
 }

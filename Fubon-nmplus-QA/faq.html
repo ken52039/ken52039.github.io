@@ -35,6 +35,7 @@
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
 <script src="js/sub_style_faq_search.js"></script>
 <script src="js/jquery.highlight-5.js"></script>
+    <script src="js/jquery-ui.js"></script>
 	<style>
 	  /****** UI需確認 ******/
 	  /* 刪除按鈕定位 */
@@ -243,7 +244,7 @@
           </div>
 		  <div><!--Q3-5--> 
             <button onclick="myFunction13()" class="QA">如何選擇適合我的投資組合？</button>
-              <div id="QA-DIV13" style="display:none">奈米投會透過與你聰明對話的流程，了解你的投資偏好及風險承受度後，提供你適配的投資組合<a href="">(i)</a>。 
+              <div id="QA-DIV13" style="display:none">奈米投會透過與你聰明對話的流程，了解你的投資偏好及風險承受度後，提供你適配的投資組合<a data-fancybox data-src="#info2" href="javascript:" class="fancybox">(i)</a>。 
               <div style="text-align:center;"><a href="https://nmplusinvestment.fubon.com/nmi-frontend/nano.html?utm_source=nano&utm_medium=QA&utm_campaign=QA" class="faq-go">立即體驗</a></div>
             </div>
           </div> 
@@ -519,10 +520,164 @@
 <div id="footer"></div>
 <!-- FOOTER END -->
 
+    <!--彈窗投資組合說明-->
+        <div class="popup info" style="display: none;" id="info2">
+            <strong>投資組合說明</strong>
+            <div class="link">
+                <label for="one" class="active" id="link1">
+                    <span>奈米1號</span>
+                </label>
+                <label for="two" id="link2">
+                    <span>奈米2號</span>
+                </label>
+            </div>
+
+            <input type="radio" name="popup-sm-tab" checked id="one" style="display: none;">
+            <div>
+                <div id="sm-tabs1">
+                    <ul>
+                        <li><a href="#sm-tabs1-1">Level 1</a></li>
+                        <li><a href="#sm-tabs1-2">Level 2</a></li>
+                        <li><a href="#sm-tabs1-3">Level 3</a></li>
+                        <li><a href="#sm-tabs1-4">Level 4</a></li>
+                    </ul>
+                    <div id="sm-tabs1-1">
+                        <div class="sm-overflow" data-simplebar>
+                            <ul class="list">
+                                <li>個人風險屬性至少為<span class="green">C1保守型客戶</span>。</li>
+                                <li>投資方法：<span class="green">以債券型ETF為主</span>，建構出保守型投資組合。</li>
+                                <li>投資範圍：符合英國金融法規，於倫敦交易所掛牌交易之交易所買賣基金ETF(不含倍數槓桿型及反向型ETF)及現金存款。</li>
+                                <li>依15年期歷史數據回測，本策略之長期年化目標波動率約為7.8%。</li>
+                                <li>投組中債券型ETF加上現金之投資比重不低於投資組合之60%。</li>
+                                <li>分散投資於至少10檔以上之ETF標的。</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div id="sm-tabs1-2">
+                        <div class="sm-overflow" data-simplebar>
+                            <ul class="list">
+                                <li>個人風險屬性至少為<span class="green">C1保守型客戶</span>。</li>
+                                <li>投資方法：<span class="green">以債券型搭配成熟市場股票型的ETF為主</span>，建構出穩健型投資組合。</li>
+                                <li>投資範圍：符合英國金融法規，於倫敦交易所掛牌交易之交易所買賣基金ETF(不含倍數槓桿型及反向型ETF)及現金存款。</li>
+                                <li>依15年期歷史數據回測，本策略之長期年化目標波動率約為7.8%。</li>
+                                <li>投組中債券型ETF加上現金之投資比重不低於投資組合之40%，非成熟國家股票型ETF之投資比重不高於投資組合之20%。</li>
+                                <li>分散投資於至少10檔以上之ETF標的。</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div id="sm-tabs1-3">
+                        <div class="sm-overflow" data-simplebar>
+                            <ul class="list">
+                                <li>個人風險屬性至少為<span class="green">C2穩健型客戶</span>。</li>
+                                <li>投資方法：<span class="green">以債券型搭配成熟市場股票型與新興市場股票型的ETF為主</span>，建構出成長型投資組合。</li>
+                                <li>投資範圍：符合英國金融法規，於倫敦交易所掛牌交易之交易所買賣基金ETF(不含倍數槓桿型及反向型ETF)及現金存款。</li>
+                                <li>依15年期歷史數據回測，本策略之長期年化目標波動率約為12.3%。</li>
+                                <li>投組中債券型ETF加上現金之投資比重不低於投資組合之20%，非成熟國家股票型ETF之投資比重不高於投資組合之30%。</li>
+                                <li>分散投資於至少10檔以上之ETF標的。</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div id="sm-tabs1-4">
+                        <div class="sm-overflow" data-simplebar>
+                            <ul class="list">
+                                <li>個人風險屬性至少為<span class="green">C3成長型客戶</span>。</li>
+                                <li>投資方法：<span class="green">以成熟市場股票型搭配新興市場股票型ETF為主</span>，建構出積極型投資組合。</li>
+                                <li>投資範圍：符合英國金融法規，於倫敦交易所掛牌交易之交易所買賣基金ETF(不含倍數槓桿型及反向型ETF)及現金存款。</li>
+                                <li>依15年期歷史數據回測，本策略之長期年化目標波動率約為15.4%。</li>
+                                <li>投組中成熟國家股票型ETF之投資比重不低於投資組合之60%。</li>
+                                <li>分散投資於至少10檔以上之ETF標的。</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <input type="radio" name="popup-sm-tab" id="two" style="display: none;">
+            <div>
+                <div id="sm-tabs2">
+                    <ul class="blue">
+                        <li><a href="#sm-tabs2-1">穩穩投</a></li>
+                        <li><a href="#sm-tabs2-2">高息投</a></li>
+                        <li><a href="#sm-tabs2-3">永續投</a></li>
+                        <li><a href="#sm-tabs2-4">趨勢投</a></li>
+                    </ul>
+                    <div id="sm-tabs2-1">
+                        <div class="sm-overflow" data-simplebar>
+                            <ul class="list">
+                                <li>個人風險屬性至少為<span class="blue">C1保守型客戶</span>。</li>
+                                <li>投資方法：<span class="blue">以債券型ETF為主</span>，為保守型投資操作。</li>
+                                <li>投資範圍：以國內證券投資信託事業在中華民國境內募集發行及上市(櫃)交易之新臺幣計價ETF（不含槓桿型及反向型ETF）為投資標的，建立分散投資在全球債券型和臺灣股票型的投資組合。</li>
+                                <li>依15年期歷史數據回測，本策略之長期年化目標波動率約為4.5%。</li>
+                                <li>債券型ETF加上現金之投資比重不低於投資組合之60%。</li>
+                                <li>需分散投資於至少5檔以上之ETF標的。</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div id="sm-tabs2-2">
+                        <div class="sm-overflow" data-simplebar>
+                            <ul class="list">
+                                <li>個人風險屬性至少為<span class="blue">C1保守型客戶</span>。</li>
+                                <li>投資方法：<span class="blue">以債券搭配高股息股票、REITs及特別股型ETF為主</span>，為安穩型投資操作。</li>
+                                <li>投資範圍：以國內證券投資信託事業在中華民國境內募集發行及上市(櫃)交易之新臺幣計價ETF（不含槓桿型及反向型ETF）為投資標的，建立分散投資在全球債券型和臺灣股票型的投資組合。</li>
+                                <li>依15年期歷史數據回測，本策略之長期年化目標波動率約為7.5%。</li>
+                                <li>債券型ETF加上現金之投資比重不低於投資組合之40%。</li>
+                                <li>需分散投資於至少5檔以上之ETF標的。</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div id="sm-tabs2-3">
+                        <div class="sm-overflow" data-simplebar>
+                            <ul class="list">
+                                <li>個人風險屬性至少為<span class="blue">C2穩健型客戶</span>。</li>
+                                <li>投資方法：<span class="blue">以永續題材之股票及債券型ETF為主</span>，為穩健型投資操作。</li>
+                                <li>投資範圍：以國內證券投資信託事業在中華民國境內募集發行及上市(櫃)交易之新臺幣計價ETF（不含槓桿型及反向型ETF）為投資標的，建立分散投資在全球債券型和臺灣股票型的投資組合。依15年期歷史數據回測，本策略之長期年化目標波動率約為10.5%。</li>
+                                <li>債券型ETF加上現金之投資比重不低於投資組合之20%。</li>
+                                <li>需分散投資於至少5檔以上之ETF標的。</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div id="sm-tabs2-4">
+                        <div class="sm-overflow" data-simplebar>
+                            <ul class="list">
+                                <li>個人風險屬性至少為<span class="blue">C3成長型客戶</span>。</li>
+                                <li>投資方法：<span class="blue">以市場指數、大型股及主題式股票型ETF為主</span>，為成長型投資操作。</li>
+                                <li>投資範圍：以國內證券投資信託事業在中華民國境內募集發行及上市(櫃)交易之新臺幣計價ETF（不含槓桿型及反向型ETF）為投資標的，建立分散投資在全球債券型和臺灣股票型的投資組合。</li>
+                                <li>依15年期歷史數據回測，本策略之長期年化目標波動率約為15%。</li>
+                                <li>股票型ETF之投資比重不低於投資組合之60%。</li>
+                                <li>需分散投資於至少5檔以上之ETF標的。</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
 </body>
 <script>
     $("#header").load("header.html");
     $("#footer").load("footer.html");
+    
+    $(function() {
+        $("#sm-tabs1,#sm-tabs2").tabs();
+    });
+    
+    $(".fancybox").fancybox({
+        'touch': false,
+        'clickSlide': false,
+        'clickOutside': false,
+        'closeClick': false,
+        helpers: {
+            overlay: {
+                closeClick: false
+            }
+        },
+        beforeShow: function() {
+            $("body").addClass('blur-bg');
+        },
+        beforeClose: function() {
+            $("body").removeClass('blur-bg');
+        }
+    });
     
     $(".searchTerm").keydown(function() {
         $('.faq-wrap button.tab').removeClass('active');
