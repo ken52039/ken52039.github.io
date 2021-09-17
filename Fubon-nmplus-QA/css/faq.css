@@ -159,6 +159,7 @@ body.blur-bg .fancybox-bg {
     background: url(../img/faq/search-close.png) center no-repeat;
     background-size: 100%;
     z-index: 9;
+    display: block;
 }
 
 #searchKeyLength {
