@@ -240,7 +240,6 @@ body.blur-bg .fancybox-bg {
     -o-transition: all 0.4s ease-in-out;
 }
 
-.faq-wrap button.tab.active + div,
 .faq-wrap button.tab + div.active {
     max-height: 1000vh;
     overflow: hidden !important;
@@ -383,7 +382,6 @@ body.blur-bg .fancybox-bg {
     padding: 0 52px 0 87px !important;
 }
 
-.QA.active + div,
 .QA + div.active {
     max-height: 150vh;
     overflow: hidden !important;
@@ -1019,7 +1017,6 @@ body.blur-bg .fancybox-bg {
         padding: 0 9px 0 15px !important;
     }
 
-    .QA.active + div,
     .QA + div.active {
         padding: 22px 9px 23px 15px !important;
     }

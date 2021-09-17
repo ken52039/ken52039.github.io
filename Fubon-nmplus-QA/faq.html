@@ -114,7 +114,7 @@
         <!--第一大類--> 
 		<div  id="cat-1">
         <button onclick="myFunctionA()" class="tab active">認識奈米投</button>
-        <div id="myDIV-A" style="display:block">
+        <div id="myDIV-A" style="display:none" class="active">
           <div><!--Q1-1-->
             <button onclick="myFunction1()" class="QA">奈米投是什麼？</button>
             <div id="QA-DIV1" style="display:none">
@@ -697,9 +697,11 @@
     
     $(".faq-wrap button.tab").click(function() {
         $(this).toggleClass('active');
+        $(this).next().toggleClass('active');
     });
     $(".faq-wrap .QA").click(function() {
         $(this).toggleClass('active');
+        $(this).next().toggleClass('active');
     });
     $("#myDIV-A > div, #myDIV-B > div, #myDIV-C > div, #myDIV-D > div, #myDIV-E > div, #myDIV-F > div, #myDIV-G > div, #myDIV-H > div").click(function() {
         $(this).toggleClass('active');

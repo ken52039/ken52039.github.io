@@ -75,6 +75,7 @@ $(function () {
             if ($(this).text().indexOf(keyword) > -1) {
                 $(this).closest("div[id^=myDIV]").addClass('active');
                 $(this).next().addClass('active');
+                $(this).addClass('active');
             }
         });
 
