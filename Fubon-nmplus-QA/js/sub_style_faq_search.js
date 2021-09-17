@@ -76,6 +76,7 @@ $(function () {
                 $(this).closest("div[id^=myDIV]").addClass('active');
                 $(this).next().addClass('active');
                 $(this).addClass('active');
+                $(this).parent().find('button').addClass('active');
             }
         });
 
@@ -83,6 +84,7 @@ $(function () {
             if ($(this).text().indexOf(keyword) > -1) {
                 $(this).closest("div[id^=myDIV]").addClass('active');
                 $(this).addClass('active');
+                $(this).parent().parent().parent().find('button').addClass('active');
             }
         });
     }
