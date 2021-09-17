@@ -661,6 +661,16 @@
         $("#sm-tabs1,#sm-tabs2").tabs();
     });
     
+    $(".popup #link1").click(function() {
+        $(this).addClass('active');
+        $('.popup #link2').removeClass('active');
+    });
+
+    $(".popup #link2").click(function() {
+        $(this).addClass('active');
+        $('.popup #link1').removeClass('active');
+    });
+    
     $(".fancybox").fancybox({
         'touch': false,
         'clickSlide': false,
