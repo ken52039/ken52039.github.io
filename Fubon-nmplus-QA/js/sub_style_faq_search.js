@@ -13,9 +13,6 @@ $(function () {
 
     // 計算搜尋輸入框字數
     function faqKeyLengthCal() {
-        $(".searchTerm").next().append(
-            '<i id="searchDelIcon" class="fas fa-times-circle" style="display: none;"></i>'
-        );
         $("#searchKeyLength").text($(".searchTerm").val().length + "/10");
         if ($(".searchTerm").val() != "") {
             $("#searchDelIcon").show();

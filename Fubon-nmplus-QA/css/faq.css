@@ -149,12 +149,15 @@ body.blur-bg .fancybox-bg {
 
 #searchDelIcon {
     right: 65px;
-    opacity: 0.5;
+    opacity: 1;
     top: 0;
     bottom: 0;
+    width: 16px;
     height: 16px;
     margin: auto;
     transform: none;
+    background: url(../img/faq/search-close.png) center no-repeat;
+    background-size: 100%;
 }
 
 #searchKeyLength {
