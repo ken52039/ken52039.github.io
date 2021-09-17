@@ -76,6 +76,7 @@ $(function () {
                 $(this).closest("div[id^=myDIV]").addClass('active');
                 $(this).next().addClass('active');
                 $(this).addClass('active');
+                $(this).parent().addClass('active');
                 $(this).parent().find('button').addClass('active');
             }
         });
@@ -117,6 +118,7 @@ $(function () {
 
         $(allCategoriesBlock).removeClass('active');
         $(allQuestions).removeClass('active');
+        $(allQuestions).parent().removeClass('active');
         $(allAnswers).removeClass('active');
         $('.faq-wrap button.tab').removeClass('active');
     });
