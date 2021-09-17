@@ -377,10 +377,11 @@ body {
 .faq-wrap a:visited.faq-go,
 .faq-wrap a:hover.faq-go {
     float: none;
-    width: 180px;
+    display: inline-block;
+    width: auto;
     height: auto;
     line-height: 70px;
-    padding: 0 0 0 19px;
+    padding: 0 60px 0 19px;
     text-align: left;
     border-radius: 0;
     background-color: #0087d5;
@@ -607,9 +608,8 @@ body {
     .faq-wrap a:link.faq-go,
     .faq-wrap a:visited.faq-go,
     .faq-wrap a:hover.faq-go {
-        width: 166px;
         line-height: 48px;
-        padding-left: 36px;
+        padding: 0 60px 0 36px;
         font-size: 16px;
         letter-spacing: 1.14px;
         margin-top: 20px;
