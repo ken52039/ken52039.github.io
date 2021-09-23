@@ -212,6 +212,7 @@ body.blur-bg .fancybox-bg {
     font-weight: normal;
     border: 1px solid #fff;
     color: #000 !important;
+    padding: 0 12px;
 }
 
 .searchTerm:focus {
