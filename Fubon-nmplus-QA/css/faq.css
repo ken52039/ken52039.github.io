@@ -243,6 +243,18 @@ body.blur-bg .fancybox-bg {
     display: block;
 }
 
+@supports (-ms-ime-align:auto) {
+    #searchDelIcon {
+        display: none !important;
+    }
+}
+
+@media all and (-ms-high-contrast:none) {
+    #searchDelIcon {
+        display: none !important;
+    }
+}
+
 #searchKeyLength {
     left: calc(50% - 235px);
     color: #fff;
