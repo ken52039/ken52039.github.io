@@ -251,6 +251,8 @@ body .scrollContainer .content .section3 {
 
 .talk {
     margin-bottom: 25px;
+    background: url(../svg/result/img-robot-mobile@3x.png) no-repeat left center;
+    background-size: 60px 60px;
 }
 
 .talk strong {
@@ -421,12 +423,12 @@ body .scrollContainer .content .section3 {
 }
 
 .popup form fieldset input::-ms-input-placeholder {
-    font-size: 16px;
-    color: #828282;
-    line-height: 24px;
-    font-weight: normal;
-    text-align: left;
-    opacity: 1;
+    font-size: 16px !important;
+    color: #828282 !important;
+    line-height: 24px !important;
+    font-weight: normal !important;
+    text-align: left !important;
+    opacity: 1 !important;
 }
 
 .popup form fieldset input + small {
@@ -895,6 +897,11 @@ body .scrollContainer .content .chart .content.projection .summary h3 #projectio
         margin: 0 0 5px 10px;
         display: inline-block;
         vertical-align: middle;
+    }
+    
+    .talk {
+        background: url(../svg/result/img-robot-mobile@3x.png) no-repeat left center;
+        background-size: 40px 40px;
     }
 }
 

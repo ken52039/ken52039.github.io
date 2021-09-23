@@ -510,6 +510,11 @@ body .scrollContainer .content .section4 {
 body .scrollContainer .content .talk {
   width: 100%;
   position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+  box-sizing: border-box;
 }
 body .scrollContainer .content .talk > img {
   -webkit-border-radius: 40px;
