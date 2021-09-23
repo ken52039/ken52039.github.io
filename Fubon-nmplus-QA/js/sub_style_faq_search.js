@@ -66,6 +66,7 @@ $(function () {
         allQuestions.filter(function () {
             if ($(this).text().indexOf(keyword) > -1) {
                 $(this).closest("div[id^=myDIV]").addClass('active');
+                $(this).parent().parent().parent().find('button.tab').addClass('active');
             }
         });
 
