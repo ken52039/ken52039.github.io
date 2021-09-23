@@ -5,7 +5,7 @@ body .scrollContainer .content .chart {
     -webkit-border-radius: 0 0 8px 8px;
     -moz-border-radius: 0 0 8px 8px;
     border-radius: 0 0 8px 8px;
-    font-family:  "Noto Sans TC", "PingFang TC", Microsoft JhengHei, "MicroSoft JhengHei", "微軟正黑體", serif !important;
+    font-family: "Noto Sans TC", "PingFang TC", Microsoft JhengHei, "MicroSoft JhengHei", "微軟正黑體", serif !important;
 }
 
 body:before {
@@ -34,8 +34,9 @@ body.blur-bg:before {
 body.blur-bg .fancybox-bg {
     display: none;
 }
-body{
-font-family:  "Noto Sans TC", "PingFang TC", Microsoft JhengHei, "MicroSoft JhengHei", "微軟正黑體", serif;
+
+body {
+    font-family: "Noto Sans TC", "PingFang TC", Microsoft JhengHei, "MicroSoft JhengHei", "微軟正黑體", serif;
 }
 
 
@@ -294,8 +295,8 @@ body .scrollContainer .content .section3 {
     padding: 30px 80px 42px 80px;
     height: calc(50vh + 125px);
     max-height: 500px;
-    text-align: justify; 
-    text-justify: inter-ideograph; 
+    text-align: justify;
+    text-justify: inter-ideograph;
 }
 
 .popup * {
@@ -404,6 +405,10 @@ body .scrollContainer .content .section3 {
 @supports (-ms-ime-align:auto) {
     .popup form fieldset input {
         font-size: 16px;
+        color: #828282;
+        line-height: 24px;
+        font-weight: normal;
+        text-align: left;
     }
 }
 
@@ -883,7 +888,7 @@ body .scrollContainer .content .chart .content.projection .summary h3 #projectio
     .fix_btn a:first-of-type {
         margin-bottom: 0;
     }
-    
+
     .fix_btn a span {
         display: inline-block;
         vertical-align: middle;
@@ -898,7 +903,7 @@ body .scrollContainer .content .chart .content.projection .summary h3 #projectio
         display: inline-block;
         vertical-align: middle;
     }
-    
+
     .talk {
         background: url(../svg/result/img-robot-mobile@3x.png) no-repeat left center;
         background-size: 40px 40px;
@@ -944,13 +949,14 @@ body .scrollContainer .content .chart .content.projection .summary h3 #projectio
         padding: 30px 21px 37px 21px;
         max-height: none;
     }
-    
+
     .popup .overflow {
         max-height: calc(100% - 110px);
     }
-    
+
     .popup .sm-overflow {
-        max-height: calc(50vh - 125px);;
+        max-height: calc(50vh - 125px);
+        ;
     }
 
     .popup.info {
