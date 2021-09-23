@@ -336,17 +336,6 @@ body.blur-bg .fancybox-bg {
     margin-bottom: 8px !important;
 }
 
-#myDIV-A > div.active,
-#myDIV-B > div.active,
-#myDIV-C > div.active,
-#myDIV-D > div.active,
-#myDIV-E > div.active,
-#myDIV-F > div.active,
-#myDIV-G > div.active,
-#myDIV-H > div.active {
-    border: 0;
-}
-
 #myDIV-A > div:last-of-type,
 #myDIV-B > div:last-of-type,
 #myDIV-C > div:last-of-type,

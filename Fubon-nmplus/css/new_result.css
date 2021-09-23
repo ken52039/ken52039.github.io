@@ -179,7 +179,7 @@ body .scrollContainer .content .section3 {
     right: 20px;
     left: 0;
     right: 0;
-    bottom: 10px;
+    top: 63px;
     margin: auto;
 }
 
@@ -263,8 +263,9 @@ body .scrollContainer .content .section3 {
     color: #191919;
     background: #fff;
     border-radius: 8px;
-    margin: 10px 0 0 80px;
+    margin: 0 0 0 80px;
     position: relative;
+    top: 10px;
 }
 
 .talk strong:before {
@@ -398,6 +399,12 @@ body .scrollContainer .content .section3 {
     padding: 0 !important;
 }
 
+@supports (-ms-ime-align:auto) {
+    .popup form fieldset input {
+        font-size: 16px;
+    }
+}
+
 .popup form fieldset input.small {
     display: inline-block;
     vertical-align: middle;
@@ -405,6 +412,15 @@ body .scrollContainer .content .section3 {
 }
 
 .popup form fieldset input::placeholder {
+    font-size: 16px;
+    color: #828282;
+    line-height: 24px;
+    font-weight: normal;
+    text-align: left;
+    opacity: 1;
+}
+
+.popup form fieldset input::-ms-input-placeholder {
     font-size: 16px;
     color: #828282;
     line-height: 24px;
