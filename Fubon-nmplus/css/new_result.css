@@ -412,6 +412,16 @@ body .scrollContainer .content .section3 {
     }
 }
 
+@media all and (-ms-high-contrast:none) {
+    .popup form fieldset input {
+        font-size: 16px;
+        color: #828282;
+        line-height: 24px;
+        font-weight: normal;
+        text-align: left;
+    }
+}
+
 .popup form fieldset input.small {
     display: inline-block;
     vertical-align: middle;
