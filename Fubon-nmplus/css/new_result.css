@@ -701,10 +701,11 @@ body .scrollContainer .content .section3 {
 .textinput label {
     float: left;
     line-height: 27px;
+    font-size: 14px;
 }
 
 .dropdown.warp a {
-    font-size: 13px;
+    font-size: 14px;
     font-weight: normal;
     letter-spacing: 1px;
     text-align: left;
