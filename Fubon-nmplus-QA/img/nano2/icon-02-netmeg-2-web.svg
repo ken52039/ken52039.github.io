@@ -1,0 +1,13 @@
+<svg width="80" height="80" xmlns="http://www.w3.org/2000/svg">
+    <g transform="translate(1.5 2.114)" fill="none" fill-rule="evenodd">
+        <ellipse stroke="#0087D5" stroke-width="2.75" cx="27.326" cy="40.341" rx="15.574" ry="15.502"/>
+        <text fill="#0087D5" fill-rule="nonzero" font-family="Rajdhani-Bold, Rajdhani" font-size="22.1" font-weight="bold">
+                    <tspan x="21.48" y="47.666">$</tspan>
+                </text>
+        <path d="M37.191 23.374a2.598 2.598 0 0 1 2.605-2.593h19.87a2.598 2.598 0 0 1 2.605 2.593v29.734a2.598 2.598 0 0 1-2.604 2.592H39.796M44.601 29.621h17.488M47.296 38.085h14.793M47.166 46.562h14.923" stroke="#64B5E4" stroke-width="2.75"/>
+        <path d="M64 66.661c-14.74 12.625-36.705 12.428-51.21-.459C-1.713 53.316-4.206 31.782 6.98 16" stroke="#64B5E4" stroke-width="2.75"/>
+        <path d="M13 9.611c14.605-12.845 36.63-12.81 51.194.08C78.757 22.583 81.223 44.227 69.925 60" stroke="#0087D5" stroke-width="2.75"/>
+        <path stroke="#64B5E4" stroke-width="2.75" d="m55 66 10 1.004L60.605 77"/>
+        <path stroke="#0087D5" stroke-width="2.75" d="M16.65 0 12 10.53 23 12"/>
+    </g>
+</svg>

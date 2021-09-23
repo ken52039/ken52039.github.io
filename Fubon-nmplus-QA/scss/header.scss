@@ -1,0 +1,606 @@
+@mixin web {
+  @media (min-width: 1280px) {
+    @content;
+  }
+}
+
+@mixin pad {
+  @media (max-width: 1279px) {
+    @content;
+  }
+}
+
+@mixin mobile {
+  @media (max-width: 767px) {
+    @content;
+  }
+}
+
+#header {
+  * {
+    box-sizing: border-box;
+  }
+
+  button,
+  li {
+    outline: none;
+  }
+  /* http://meyerweb.com/eric/tools/css/reset/ 
+  v2.0 | 20110126
+  License: none (public domain)
+*/
+
+  html,
+  body,
+  div,
+  span,
+  applet,
+  object,
+  iframe,
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  p,
+  blockquote,
+  pre,
+  a,
+  abbr,
+  acronym,
+  address,
+  big,
+  cite,
+  code,
+  del,
+  dfn,
+  em,
+  img,
+  ins,
+  kbd,
+  q,
+  s,
+  samp,
+  small,
+  strike,
+  strong,
+  sub,
+  sup,
+  tt,
+  var,
+  b,
+  u,
+  i,
+  center,
+  dl,
+  dt,
+  dd,
+  ol,
+  ul,
+  li,
+  fieldset,
+  form,
+  label,
+  legend,
+  table,
+  caption,
+  tbody,
+  tfoot,
+  thead,
+  tr,
+  th,
+  td,
+  article,
+  aside,
+  canvas,
+  details,
+  embed,
+  figure,
+  figcaption,
+  footer,
+  header,
+  hgroup,
+  menu,
+  nav,
+  output,
+  ruby,
+  section,
+  summary,
+  time,
+  mark,
+  audio,
+  video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+  }
+
+  /* HTML5 display-role reset for older browsers */
+  article,
+  aside,
+  details,
+  figcaption,
+  figure,
+  footer,
+  header,
+  hgroup,
+  menu,
+  nav,
+  section,
+  main {
+    display: block;
+  }
+
+  body {
+    line-height: 1;
+  }
+
+  ol,
+  ul,
+  li,
+  a {
+    list-style: none;
+  }
+
+  a {
+    text-decoration: none;
+  }
+
+  //移除input預設樣式 - 自行設定type
+  //button,checkbox,file,hidden,image,password,
+  //radio,reset,submit,text,phone,email
+  // input[type='button'],
+  // input[type='submit'],
+  // input[type='email'] {
+  //   -webkit-appearance: none;
+  // }
+  //
+  //
+  //
+
+  //所有button移除預設樣式
+  button {
+    -webkit-appearance: none;
+    /* Safari 和 Chrome，常用於iOS下移除內建樣式 */
+    -moz-appearance: none;
+    /* FireFox */
+    appearance: none;
+  }
+  //
+  //
+  //
+
+  //移除select預設樣式
+  select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    /* for Chrome Firefox Edge */
+  }
+  select::-ms-expand {
+    display: none;
+    /* for IE11 */
+  }
+  //
+  //
+  //
+
+  //移除textarea預設樣式
+  textarea {
+    -webkit-appearance: none;
+  }
+  //
+  //
+  //
+
+  //解除ios圓角
+  input,
+  button {
+    border-radius: 0;
+  }
+  //
+  //
+  //
+
+  // 移除input number預設樣式
+  input[type="number"] {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: textfield;
+  }
+
+  input[type="number"]::-webkit-inner-spin-button {
+    appearance: none;
+  }
+
+  button {
+    border: none;
+    margin: 0;
+    padding: 0;
+    width: auto;
+    overflow: visible;
+
+    background: transparent;
+
+    /* inherit font & color from ancestor */
+    color: inherit;
+    font: inherit;
+
+    /* Normalize `line-height`. Cannot be changed from `normal` in Firefox 4+. */
+    line-height: normal;
+
+    /* Corrects font smoothing for webkit */
+    -webkit-font-smoothing: inherit;
+    -moz-osx-font-smoothing: inherit;
+
+    /* Corrects inability to style clickable `input` types in iOS */
+    -webkit-appearance: none;
+  }
+  a {
+    color: inherit;
+  }
+}
+
+#header {
+  font-family: "Noto Sans TC", "PingFang TC", Microsoft JhengHei,
+    "MicroSoft JhengHei", "微軟正黑體", serif;
+  font-weight: 500;
+  font-size: 16px;
+  height: 60px;
+  width: 100%;
+  box-shadow: 0 4px 12px 0 rgba(25, 25, 25, 0.15);
+  background-color: #fff;
+  position: fixed;
+  z-index: 99;
+  top: 0;
+  left: 0;
+  @include pad {
+    height: 60px;
+    font-size: 14px;
+    &::before {
+      content: "";
+      position: fixed;
+      top: 60px;
+      left: 0;
+      width: 100%;
+      height: calc(100% - 60px);
+      backdrop-filter: blur(2px);
+      background-color: rgba(25, 25, 25, 0.7);
+      opacity: 0;
+      pointer-events: none;
+      transition-duration: 0.3s;
+    }
+    &.show {
+      &::before {
+        opacity: 1;
+        transition-duration: 0.3s;
+        pointer-events: all;
+      }
+    }
+  }
+  .inner-wrap {
+    height: 100%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    padding: 0 32px;
+    @include pad {
+      padding: 0 20px;
+    }
+    .header-logo {
+      height: 26px;
+      @include pad {
+        height: 21px;
+        margin-top: 3px;
+      }
+    }
+    .links-wrap {
+      display: flex;
+      align-items: center;
+      margin-right: 0;
+      margin-left: auto;
+      height: 100%;
+      font-weight: normal;
+      @include pad {
+        position: fixed;
+        z-index: 1;
+        flex-direction: column;
+        align-items: flex-start;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        height: auto;
+        display: none;
+        background-color: #ecf6fa;
+        padding: 10px 0 20px;
+      }
+      a.header-link {
+        transition: 0.3s;
+        &:hover {
+          transition: 0.3s;
+          color: #0087d5;
+        }
+      }
+      .header-link {
+        display: inline-flex;
+        margin: 0 20px;
+        position: relative;
+        cursor: pointer;
+        @include pad {
+          font-size: 16px;
+          margin: 0;
+          padding: 15px 0px 15px 45px;
+          width: 100%;
+        }
+        &.header-list-link {
+          height: 100%;
+          align-items: center;
+          @include pad {
+            width: 100%;
+            height: auto;
+            flex-direction: column;
+            align-items: flex-start;
+            padding: 0;
+          }
+          &:hover {
+            .toggle-mark {
+              background-image: url(../img/header/close.svg);
+            }
+            .inner-list {
+              opacity: 1;
+              transition-property: opacity;
+              transition-duration: 0.3s;
+              pointer-events: all;
+            }
+          }
+          .btn-list-toggle {
+            &:hover {
+              .toggle-mark {
+                background-image: url(../img/header/close.svg);
+                @include pad {
+                  background-image: url(../img/header/open.svg);
+                }
+              }
+            }
+            @include pad {
+              padding: 10px 0 10px 45px;
+              width: 100%;
+              &.show {
+                .toggle-mark {
+                  background-image: url(../img/header/close.svg) !important;
+                }
+              }
+            }
+            .toggle-mark {
+              display: inline-block;
+              background-size: contain;
+              background-repeat: no-repeat;
+              background-position: center center;
+              width: 11px;
+              height: 12px;
+              background-image: url(../img/header/open.svg);
+              margin-left: 8px;
+            }
+          }
+          .inner-list {
+            position: absolute;
+            top: calc(100% + 8px);
+            left: calc(50% - 80px);
+            width: 160px;
+            box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
+            opacity: 0;
+            transition-property: opacity;
+            transition-duration: 0.3s;
+            pointer-events: none;
+            background-color: #fff;
+            @include pad {
+              position: relative;
+              top: 0;
+              left: 0;
+              width: 100%;
+              box-shadow: none;
+              opacity: 1;
+              display: none;
+              pointer-events: none;
+              visibility: hidden;
+              padding: 10px 0;
+              &.show {
+                display: block;
+                visibility: visible;
+                pointer-events: all;
+              }
+            }
+            &::before {
+              content: "";
+              display: block;
+              position: absolute;
+              top: -8px;
+              left: 0;
+              width: 100%;
+              height: 8px;
+            }
+            a {
+              display: flex;
+              width: 100%;
+              justify-content: center;
+              align-items: center;
+              font-size: 16px;
+              padding: 12px 0;
+              transition: 0.3s;
+              @include pad {
+                font-size: 14px;
+                justify-content: flex-start;
+                padding: 10px 0 10px 60px;
+                &:nth-child(1) {
+                  color: #15bd7a;
+                }
+                &:nth-child(2) {
+                  color: #0087d5;
+                }
+              }
+              &:hover {
+                transition: 0.3s;
+                &:nth-child(1) {
+                  color: #15bd7a;
+                }
+                &:nth-child(2) {
+                  color: #0087d5;
+                }
+              }
+              span {
+                font-size: 14px;
+                margin-left: 0.8em;
+                @include pad {
+                  color: #191919;
+                  margin-left: 0.5em;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    .btns-wrap {
+      display: flex;
+      align-items: center;
+      @include pad {
+        margin-right: 0;
+        margin-left: auto;
+      }
+      a {
+        display: inline-block;
+        width: 100px;
+        height: 36px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition-duration: 0.3s;
+        margin-left: 20px;
+        @include pad {
+          width: auto;
+          height: auto;
+          margin-left: 15px;
+        }
+        &.btn-my-investment {
+          color: #0087d5;
+          background-color: #fff;
+          @include pad {
+            color: #0087d5;
+          }
+          &:hover {
+            transition-duration: 0.3s;
+            color: #004f7d;
+          }
+        }
+        &.btn-login {
+          color: #fff;
+          background-color: #0087d5;
+          @include pad {
+            color: #0087d5;
+            background-color: #fff;
+          }
+          &:hover {
+            transition-duration: 0.3s;
+            background-color: #004f7d;
+            @include pad {
+              background-color: #fff;
+            }
+          }
+        }
+      }
+    }
+    #header-hamburger {
+      display: none;
+      @include pad {
+        display: inline-block;
+        width: 20px;
+        height: 20px;
+        background-image: url(../img/header/header-menu.svg);
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center center;
+        margin-right: 0;
+        margin-left: 20px;
+        cursor: pointer;
+        &.show {
+          background-image: url(../img/header/header-close.svg);
+        }
+      }
+    }
+  }
+}
+
+@mixin btn-border-drawing(
+  $color: #ccc,
+  $hover: black,
+  $width: 2px,
+  $vertical: top,
+  $horizontal: left,
+  $duration: 0.25s
+) {
+  box-shadow: inset 0 0 0 $width $color;
+  color: $color;
+  transition: color $duration $duration/3;
+  position: relative;
+  @include pad {
+    box-shadow: none;
+  }
+
+  &::before,
+  &::after {
+    border: 0 solid transparent;
+    box-sizing: border-box;
+    content: "";
+    pointer-events: none;
+    position: absolute;
+    width: 0;
+    height: 0;
+
+    #{$vertical}: 0;
+    #{$horizontal}: 0;
+    @include pad {
+      display: none;
+    }
+  }
+
+  &::before {
+    $h-side: if($horizontal == "left", "right", "left");
+
+    border-#{$vertical}-width: $width;
+    border-#{$h-side}-width: $width;
+  }
+
+  &::after {
+    $v-side: if($vertical == "top", "bottom", "top");
+
+    border-#{$v-side}-width: $width;
+    border-#{$horizontal}-width: $width;
+  }
+
+  &:hover {
+    color: $hover;
+
+    &::before,
+    &::after {
+      border-color: $hover;
+      transition: border-color 0s, width $duration, height $duration;
+      width: 100%;
+      height: 100%;
+    }
+
+    &::before {
+      transition-delay: 0s, 0s, $duration;
+    }
+
+    &::after {
+      transition-delay: 0s, $duration, 0s;
+    }
+  }
+}
+
+.draw-border {
+  @include btn-border-drawing(#0087d5, #004f7d, 1px, bottom, right);
+}

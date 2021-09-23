@@ -1,0 +1,726 @@
+@import "./config/all";
+@import "./plugin/all";
+@import "./component/all";
+
+$main-color-deep: #098453;
+$main-color-basic: #15bd7a;
+$main-color-light: #99eaad;
+
+body {
+  font-family: "Rajdhani", "Noto Sans TC", "PingFang TC", Microsoft JhengHei,
+    "MicroSoft JhengHei", "微軟正黑體", serif;
+  line-height: 1.35;
+  color: #191919;
+  overflow-x: hidden;
+}
+
+.ff-normal {
+  font-family: "Noto Sans TC", "PingFang TC", Microsoft JhengHei,
+    "MicroSoft JhengHei", "微軟正黑體", serif;
+}
+
+a {
+  color: inherit;
+}
+picture {
+  font-size: 0;
+}
+
+body {
+  padding-top: 75px;
+  @include pad {
+    padding-top: 60px;
+  }
+}
+
+// 標題共用裝飾圖案
+.deco-squares {
+  position: absolute;
+  width: 18px;
+  height: 18px;
+  left: -30px;
+  top: 0.4em;
+  @include pad {
+    width: 12px;
+    height: 12px;
+    left: -20px;
+  }
+  &::before,
+  &::after {
+    content: "";
+    display: inline-block;
+    position: absolute;
+    width: 50%;
+    height: 50%;
+  }
+  &::before {
+    background-color: $main-color-light;
+    top: 0;
+    right: 0;
+  }
+  &::after {
+    background-color: #fff;
+    bottom: 0;
+    left: 0;
+  }
+}
+
+// banner
+#banner-section {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-image: url(../img/nano1/img-kv-nutmeg-1-web@2x.jpg);
+  width: 100%;
+  height: 350px;
+  padding-top: 49px;
+  @include pad {
+    background-image: url(../img/nano1/img-kv-nutmeg-1-mobile@2x.jpg);
+    height: 250px;
+    padding-top: 22px;
+  }
+  .text-wrap {
+    margin: auto;
+    max-width: 1020px;
+    @include pad {
+      max-width: 100%;
+      padding-left: 20px;
+    }
+    h1 {
+      color: $main-color-deep;
+      font-size: 56px;
+      letter-spacing: 8px;
+      font-weight: bold;
+      margin-bottom: 2px;
+      @include pad {
+        font-size: 35px;
+        margin-bottom: 0;
+        letter-spacing: 6px;
+      }
+      span {
+        font-size: 72px;
+        @include pad {
+          font-size: 45px;
+        }
+      }
+    }
+    h2 {
+      color: $main-color-basic;
+      font-size: 38px;
+      font-weight: 500;
+      line-height: 1.5;
+      margin-bottom: 11px;
+      @include pad {
+        font-size: 24px;
+      }
+      span {
+        font-size: 44px;
+        font-weight: 600;
+        @include pad {
+          font-size: 28px;
+        }
+      }
+      br {
+        display: none;
+        @include pad {
+          display: block;
+        }
+      }
+    }
+    p {
+      color: $main-color-deep;
+      font-size: 22px;
+      font-weight: 500;
+      @include pad {
+        font-size: 14px;
+      }
+      span {
+        font-size: 26px;
+        @include pad {
+          font-size: 16px;
+        }
+      }
+    }
+  }
+}
+
+// sec1 slider
+#section1 {
+  overflow-x: hidden;
+  position: relative;
+  padding-top: 74px;
+  padding-bottom: 160px;
+  background-color: #effdf4;
+  @include pad {
+    padding-top: 20px;
+    padding-bottom: 80px;
+  }
+  .sec1-top-deco-bg {
+    position: absolute;
+    z-index: 0;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-image: url(../img/nano1/img-4-level-nutmeg-1-web@2x.jpg);
+    width: 1440px;
+    height: 420px;
+    @include pad {
+      background-image: url(../img/nano1/img-4-level-nutmeg-1-mobile@2x.jpg);
+      background-size: cover;
+      width: 100%;
+      height: 215px;
+    }
+  }
+  .top-nano-panel {
+    width: 1020px;
+    margin: auto;
+    position: relative;
+    @include pad {
+      width: 100%;
+    }
+    h2 {
+      font-size: 34px;
+      font-weight: bold;
+      color: #fff;
+      text-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
+      letter-spacing: 4px;
+      margin-bottom: 15px;
+      position: relative;
+      @include pad {
+        margin-left: 40px;
+        font-size: 26px;
+        margin-bottom: 9px;
+      }
+      .number {
+        font-size: 42px;
+        @include pad {
+          font-size: 32px;
+        }
+      }
+      .others {
+        margin-left: 26px;
+        font-size: 28px;
+        font-weight: 500;
+        letter-spacing: normal;
+        @include pad {
+          font-size: 18px;
+          margin-left: 10px;
+        }
+      }
+    }
+    h3 {
+      color: #fff;
+      font-size: 28px;
+      font-weight: 500;
+      text-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
+      margin-bottom: 43px;
+      @include pad {
+        margin-left: 40px;
+        font-size: 18px;
+        margin-bottom: 39px;
+      }
+      .number {
+        font-size: 30px;
+        @include pad {
+          font-size: 20px;
+        }
+      }
+    }
+    #sec1-slider-tags {
+      display: flex;
+      border-bottom: 1px solid #fff;
+      padding-left: 12px;
+      margin-bottom: 36px;
+      width: 505px;
+      @include pad {
+        justify-content: center;
+        padding-left: 0;
+        width: 350px;
+        margin: auto;
+        margin-bottom: 24px;
+      }
+      li {
+        color: #fff;
+        font-size: 30px;
+        font-weight: 600;
+        text-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+        margin-right: 46px;
+        cursor: pointer;
+        padding-bottom: 16px;
+        @include pad {
+          font-size: 22px;
+          margin-right: 29px;
+          padding-bottom: 0px;
+        }
+        &:last-child {
+          margin-right: 0;
+        }
+        &.now {
+          border-bottom: 7px solid #fff;
+          @include pad {
+            border-width: 3px;
+          }
+        }
+      }
+    }
+  }
+  #sec1-slider {
+    position: relative;
+    .card {
+      width: 1020px;
+      background-color: #fff;
+      box-shadow: 0 4px 12px 0 rgba(25, 25, 25, 0.08);
+      padding: 30px 60px 35px;
+      margin: auto;
+      @include pad {
+        width: 320px;
+        padding: 0 0 18px;
+      }
+      .card-top-area {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 30px;
+        @include pad {
+          margin-bottom: 20px;
+          flex-direction: column;
+          position: relative;
+          padding-bottom: 10px;
+          &::after {
+            content: "";
+            position: absolute;
+            bottom: 0;
+            width: 88%;
+            height: 1px;
+            left: 6%;
+            background-color: $main-color-light;
+          }
+        }
+        .card-banner-wrap {
+          position: relative;
+          flex-shrink: 0;
+          width: 300px;
+          height: 300px;
+          margin-right: 60px;
+          padding: 20px 0 0 20px;
+          @include pad {
+            width: 320px;
+            height: 95px;
+            margin-right: 0;
+            margin-bottom: 15px;
+            padding: 15px 0 0 20px;
+          }
+          .card-banner {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 300px;
+            @include pad {
+              width: 320px;
+            }
+          }
+          .banner-type-desc {
+            background-color: $main-color-basic;
+            width: 80px;
+            height: 35px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #fff;
+            font-size: 16px;
+            font-weight: 500;
+            margin-bottom: 3px;
+            position: relative;
+            line-height: 1;
+            @include pad {
+              width: 57px;
+              height: 26px;
+              font-size: 13px;
+              margin-bottom: 4px;
+            }
+          }
+          .level-text {
+            font-size: 52px;
+            font-weight: 600;
+            color: $main-color-deep;
+            position: relative;
+            @include pad {
+              font-size: 36px;
+            }
+          }
+        }
+        .card-info-wrap {
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+          .card-info-top {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            @include pad {
+              padding: 0 12px 0 18px;
+            }
+            .feature-list {
+              li {
+                font-size: 20px;
+                color: #191919;
+                margin-bottom: 20px;
+                display: flex;
+                align-items: center;
+                @include pad {
+                  font-size: 14px;
+                  margin-bottom: 9px;
+                }
+                &::before {
+                  content: "";
+                  display: block;
+                  width: 10px;
+                  height: 10px;
+                  background-color: $main-color-light;
+                  margin-right: 19px;
+                  @include pad {
+                    width: 5px;
+                    height: 5px;
+                    margin-right: 8px;
+                  }
+                }
+                &:last-child {
+                  margin-bottom: 0;
+                }
+              }
+            }
+            .ratio-wrap {
+              display: flex;
+              .ratio-container {
+                .number-text {
+                  font-size: 57px;
+                  font-weight: 600;
+                  color: $main-color-basic;
+                  @include pad {
+                    font-size: 32px;
+                  }
+                  span {
+                    font-size: 35px;
+                    @include pad {
+                      font-size: 20px;
+                    }
+                  }
+                }
+                .type-text {
+                  font-size: 26px;
+                  font-weight: 500;
+                  @include pad {
+                    font-size: 16px;
+                  }
+                }
+              }
+              .divided-line {
+                width: 2px;
+                height: 110px;
+                background-color: #cbedfa;
+                margin: 0 25px;
+                @include pad {
+                  width: 1px;
+                  height: 53px;
+                  margin: 0 10px;
+                }
+              }
+            }
+          }
+          .card-info-bottom {
+            background: linear-gradient(
+                  to top,
+                  $main-color-basic,
+                  $main-color-basic
+                )
+                left top no-repeat,
+              linear-gradient(to right, $main-color-basic, $main-color-basic)
+                left top no-repeat,
+              linear-gradient(to left, $main-color-basic, $main-color-basic)
+                right top no-repeat,
+              linear-gradient(to bottom, $main-color-basic, $main-color-basic)
+                right top no-repeat,
+              linear-gradient(to left, $main-color-basic, $main-color-basic)
+                left bottom no-repeat,
+              linear-gradient(to bottom, $main-color-basic, $main-color-basic)
+                left bottom no-repeat,
+              linear-gradient(to top, $main-color-basic, $main-color-basic)
+                right bottom no-repeat,
+              linear-gradient(to left, $main-color-basic, $main-color-basic)
+                right bottom no-repeat;
+            background-size: 1px 8px, 8px 1px, 1px 8px, 8px 1px;
+            background-color: #effdf4;
+            padding: 22px 30px;
+            @include pad {
+              background: transparent;
+              background-color: #effdf4;
+              padding: 14px 18px 18px;
+              display: none;
+              margin-bottom: 5px;
+            }
+            p {
+              font-size: 16px;
+              line-height: 1.7;
+              @include pad {
+                font-size: 14px;
+              }
+              .rajd-adj {
+                font-size: 18px;
+                font-weight: 500;
+                @include pad {
+                  font-size: 16px;
+                }
+              }
+            }
+          }
+          .btn-card-more-info {
+            display: none;
+            @include pad {
+              display: inline-flex;
+              align-items: center;
+              color: $main-color-basic;
+              font-weight: 500;
+              margin-left: 18px;
+              margin-top: 20px;
+              margin-bottom: 10px;
+              &.active {
+                span {
+                  &::before {
+                    opacity: 0;
+                  }
+                }
+              }
+              span {
+                display: inline-block;
+                width: 12px;
+                height: 12px;
+                position: relative;
+                margin-left: 8px;
+                &::before,
+                &::after {
+                  content: "";
+                  width: 1px;
+                  height: 11px;
+                  position: absolute;
+                  top: 0;
+                  bottom: 0;
+                  left: 0;
+                  right: 0;
+                  margin: auto;
+                  background-color: $main-color-basic;
+                }
+                &::after {
+                  width: 11px;
+                  height: 1px;
+                }
+              }
+            }
+          }
+        }
+      }
+      .card-bottom-area {
+        @include pad {
+          padding: 0 18px;
+        }
+        .card-tags {
+          display: flex;
+          height: 45px;
+          @include pad {
+            height: 30px;
+          }
+          .tag {
+            cursor: pointer;
+            transition: 0.3s;
+            height: 100%;
+            width: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 18px;
+            font-weight: 500;
+            color: #828282;
+            background-color: #effdf4;
+            @include pad {
+              font-size: 14px;
+            }
+            &.active {
+              transition: 0.3s;
+              color: #fff;
+              background-color: $main-color-basic;
+            }
+          }
+        }
+        .card-charts-wrap {
+          border: 1px solid $main-color-light;
+          .card-barchart-wrap {
+            padding: 30px 0 40px;
+            h4 {
+              text-align: center;
+              font-size: 18px;
+              margin-bottom: 20px;
+              @include pad {
+                font-size: 14px;
+                margin-bottom: 10px;
+              }
+            }
+            .barchart-desc {
+              text-align: center;
+              font-size: 16px;
+              color: #828282;
+              font-weight: normal;
+              @include pad {
+                font-size: 11px;
+              }
+              .rajd-adj {
+                font-size: 18px;
+                font-weight: 500;
+                @include pad {
+                  font-size: 13px;
+                }
+              }
+              button {
+                cursor: pointer;
+                border-radius: 50%;
+                border: 1px solid $main-color-basic;
+                color: $main-color-basic;
+                display: inline-flex;
+                justify-content: center;
+                align-items: center;
+                width: 16px;
+                height: 15px;
+                font-size: 11px;
+                font-weight: bold;
+                @include pad {
+                  width: 12px;
+                  height: 12px;
+                  font-size: 9px;
+                }
+              }
+            }
+          }
+          .card-table-wrap {
+            position: relative;
+            padding: 13px 23px 40px;
+            display: none;
+            @include pad {
+              padding: 20px 14px 17px;
+            }
+            .btn-show-industrial-class {
+              color: $main-color-basic;
+              font-size: 14px;
+              font-weight: 500;
+              display: inline-flex;
+              align-items: center;
+              cursor: pointer;
+              position: absolute;
+              top: 20px;
+              right: 23px;
+              @include pad {
+                top: 20px;
+                right: 10px;
+              }
+              img {
+                width: 16px;
+                margin-left: 5px;
+              }
+            }
+            h3 {
+              font-size: 18px;
+              font-weight: 500;
+              margin-top: 15px;
+              @include pad {
+                font-size: 14px;
+                margin-top: 10px;
+              }
+              &:first-of-type {
+                margin-top: 0;
+              }
+              &.fc-green {
+                color: $main-color-basic;
+              }
+              &.fc-blue {
+                color: #0087d5;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+// sec2 英國投資團隊
+#section2 {
+  position: relative;
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 492px;
+    width: 100%;
+    background-color: #effdf4;
+  }
+  h2 {
+    font-size: 36px;
+    font-weight: bold;
+    color: $main-color-basic;
+    text-align: center;
+    margin: 0 auto 18px;
+    @include pad {
+      font-size: 24px;
+      margin-bottom: 10px;
+    }
+    .text-wrap {
+      display: inline-block;
+      position: relative;
+      .deco-squares {
+        top: 5px;
+        &::before {
+          background-color: $main-color-deep;
+        }
+        &::after {
+          background-color: $main-color-light;
+        }
+      }
+    }
+  }
+  h3 {
+    font-size: 28px;
+    font-weight: 500;
+    text-align: center;
+    margin-bottom: 47px;
+    position: relative;
+    @include pad {
+      font-size: 18px;
+      margin-bottom: 30px;
+    }
+  }
+  h4 {
+    color: $main-color-basic;
+    font-size: 30px;
+    font-weight: 500;
+    margin-bottom: 22px;
+    position: relative;
+    text-align: center;
+    @include pad {
+      font-size: 22px;
+      margin-bottom: 15px;
+    }
+  }
+  iframe {
+    display: block;
+    width: 716px;
+    height: 519px;
+    border: solid 3px $main-color-light;
+    background-color: #191919;
+    position: relative;
+    margin: auto;
+    @include pad {
+      width: 334px;
+      height: 232px;
+    }
+  }
+}

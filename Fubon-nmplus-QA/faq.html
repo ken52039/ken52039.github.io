@@ -13,12 +13,12 @@
     <meta content="text/html;charset=utf-8" http-equiv="Content-Type">
     <meta content="utf-8" http-equiv="encoding">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-    <title>台北富邦銀行數位理財奈米投</title>
+    <title>Q&A-台北富邦銀行奈米投</title>
     <meta name="description" content="「奈米投」是台北富邦銀行提供的數位理財服務，約1000台幣即可投，由投資專家為你精選出ETF投資組合，每日幫你盯盤，主動為你的投資汰弱留強！享受省心、輕鬆的理財體驗">
     <meta name="keywords" content="數位投資、數位理財、奈米投、台北富邦銀行、Nutmeg、理財機器人、機器人理財、奈米1號、奈米2號、ETF">
     <meta property="og:description" content="「奈米投」是台北富邦銀行提供的數位理財服務，約1000台幣即可投，由投資專家為你精選出ETF投資組合，每日幫你盯盤，主動為你的投資汰弱留強！享受省心、輕鬆的理財體驗">
     <meta property="og:image" content="" />
-    <link rel="shortcut icon" href="favicon.ico">
+    <link rel="shortcut icon" href="../img/favicon.ico" type="image/x-icon" />
 <!--MAIN CSS-->
 <link rel="stylesheet" href="js/node_modules/w3-css/4/w3pro.css">
 <link rel="stylesheet" href="js/node_modules/@fancyapps/fancybox/dist/jquery.fancybox.min.css"/>
@@ -26,7 +26,8 @@
 <!--MAIN JS--> 
 <script src="js/node_modules/jquery/dist/jquery.js"></script> 
 <script src="js/mobile-chrome-vh-fix/mobile-chrome-vh-fix.js"></script> 
-<script src="js/main_fun.js"></script> 
+<script src="js/main_fun.js"></script>
+<script src="js/loading.js"></script> 
 <!--SUB LINK-->
 <link rel="stylesheet" href="css/sub_style_faq.css">
 <script src="js/node_modules/@fancyapps/fancybox/dist/jquery.fancybox.min.js"></script>
@@ -86,6 +87,10 @@
     <link rel="stylesheet" href="css/faq.css">
 </head>
 <body>
+<!-- loading -->
+<div id="loading-wrap">
+  <div class="lds-ring"><div></div><div></div><div></div><div></div></div>
+</div>
 <!-- MAIN CONTAINER START -->
 <div id="content-wrapper" class="scrollContainer">
   <div class="scrollContent">
@@ -189,11 +194,11 @@
           </div>
           <div><!--Q2-2--> 
             <button onclick="myFunction7()" class="QA">ETF跟基金有何不同？</button>
-            <div id="QA-DIV7" style="display:none">◆ 什麼是ETF<br>
+            <div id="QA-DIV7" style="display:none">▪ 什麼是ETF<br>
                 ETF是一種以較低的成本費用去貼近特定指數表現的投資工具，指數走勢與整體市場或追蹤標的之漲跌幾乎同步。<span class="em">一檔ETF即有一籃子投資標的使風險分散</span>，與基金相似；而交易可直接於證券市場買賣，類似股票，因此ETF可說是介於基金與股票之間的理財商品。
               <div style="text-align:center;"><a href="https://nmplusinvestment.fubon.com/nmi-frontend/nano.html?utm_source=nano&utm_medium=QA&utm_campaign=QA" class="faq-go">立即體驗</a></div>
 				<br>
-				◆ 什麼是基金<br>
+				▪ 什麼是基金<br>
 專業機構如資產管理公司/證券投資信託公司以發行受益憑證的方式，利用其背後的研究團隊的專業替募集來的整包資金進行操作管理。投資標的可配置於不同的市場與金融商品(如股票、債券、期貨、權證、存款等)。簡單來說，共同基金就是一種「群眾集資、風險共擔、投資獲利共享」的投資方式。
             </div>
           </div>
@@ -693,6 +698,7 @@
         $('.faq-wrap button.tab').removeClass('active');
         $('.faq-wrap .QA').removeClass('active');
         $('#myDIV-A > div, #myDIV-B > div, #myDIV-C > div, #myDIV-D > div, #myDIV-E > div, #myDIV-F > div, #myDIV-G > div, #myDIV-H > div').removeClass('active');
+        $('#myDIV-A, #myDIV-B, #myDIV-C, #myDIV-D, #myDIV-E, #myDIV-F, #myDIV-G, #myDIV-H').removeClass('active');
     });
     
     $(".faq-wrap button.tab").click(function() {
@@ -706,5 +712,6 @@
     $("#myDIV-A > div, #myDIV-B > div, #myDIV-C > div, #myDIV-D > div, #myDIV-E > div, #myDIV-F > div, #myDIV-G > div, #myDIV-H > div").click(function() {
         $(this).toggleClass('active');
     });
+
 </script>
 </html>

@@ -61,20 +61,11 @@ $(function () {
 
         allCategories.filter(function () {
             // 類別是否有找到
-            if ($(this).children("button").text().indexOf(keyword) > -1) {
-                $(this).find("div[id^=myDIV]").addClass('active');
-            } else {
-                $(this).find("div[id^=myDIV]").removeClass('active');
-            }
         });
 
         allQuestions.filter(function () {
             if ($(this).text().indexOf(keyword) > -1) {
                 $(this).closest("div[id^=myDIV]").addClass('active');
-                $(this).next().addClass('active');
-                $(this).addClass('active');
-                $(this).parent().addClass('active');
-                $(this).parent().find('button').addClass('active');
             }
         });
 
@@ -82,7 +73,8 @@ $(function () {
             if ($(this).text().indexOf(keyword) > -1) {
                 $(this).closest("div[id^=myDIV]").addClass('active');
                 $(this).addClass('active');
-                $(this).parent().parent().parent().find('button').addClass('active');
+                $(this).parent().parent().parent().find('button.tab').addClass('active');
+                $(this).parent().find('button.QA').addClass('active');
             }
         });
     }

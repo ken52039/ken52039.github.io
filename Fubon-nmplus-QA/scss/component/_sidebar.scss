@@ -1,0 +1,79 @@
+#sidebar {
+  position: fixed;
+  top: 40%;
+  right: 0;
+  @include pad {
+    top: auto;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+  }
+  a {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 80px;
+    height: 80px;
+    font-size: 18px;
+    font-weight: bold;
+    transition: 0.3s;
+    @include pad {
+      width: 50%;
+      flex-direction: row;
+      height: 60px;
+    }
+    &:hover {
+      transition: 0.3s;
+      span {
+        animation: arrow-link 1s;
+      }
+    }
+    br {
+      @include pad {
+        display: none;
+      }
+    }
+    span {
+      display: inline-block;
+      width: 20px;
+      height: 7px;
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: center center;
+      margin-top: 4px;
+      @include pad {
+        margin-top: 0;
+        margin-left: 7px;
+      }
+    }
+    &.link-account {
+      background-color: #fff;
+      color: #0087d5;
+      margin-bottom: 20px;
+      @include pad {
+        margin-bottom: 0;
+      }
+      &:hover {
+        color: #004f7d;
+        span {
+          background-image: url(../img/go-hover.svg);
+        }
+      }
+      span {
+        background-image: url(../img/go.svg);
+      }
+    }
+    &.link-invest {
+      background-color: #0087d5;
+      color: #fff;
+      &:hover {
+        background-color: #004f7d;
+      }
+      span {
+        background-image: url(../img/go-white.svg);
+      }
+    }
+  }
+}

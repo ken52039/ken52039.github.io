@@ -1,0 +1,10 @@
+<svg width="100" height="89" xmlns="http://www.w3.org/2000/svg">
+    <g transform="translate(2 2.286)" fill="none" fill-rule="evenodd">
+        <text fill-rule="nonzero" font-family="Rajdhani-Bold, Rajdhani" font-size="38.592" font-weight="bold" fill="#64B5E4">
+                    <tspan x="24.695" y="64.073">$</tspan>
+                </text>
+        <rect stroke="#0087D5" stroke-width="2.75" x="60.179" y="34.337" width="35.821" height="50.663" rx="3.08"/>
+        <rect stroke="#64B5E4" stroke-width="2.75" x="19.808" y="15.59" width="30.504" height="7.322" rx="3.465"/>
+        <path stroke="#0087D5" stroke-width="2.75" d="M60.609 47.147h35.13M60.609 59.443h35.13M60.609 71.724h35.13M18.625 24.808c-11.71 7.57-22.375 26.07-17.35 40.62 5.025 14.55 26.386 16.54 39.356 15.064 4.86-.59 9.686-1.43 14.46-2.519M50.85 24.886a23.716 23.716 0 0 1 8.1 6.544M24.203 13.211l-4.61-12.125a15.516 15.516 0 0 1 13.57 1.057S40.2 6.247 45.457.96M49.252 1.179l-4.164 11.706M32.225 12.823l-1.506-4.866"/>
+    </g>
+</svg>

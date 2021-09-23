@@ -29,6 +29,84 @@ body.blur-bg:before {
     pointer-events: auto;
 }
 
+@media screen and (min-width: 768px) and (max-width: 1279px) {
+  body {
+    zoom: 1.3;
+  }
+}
+
+#loading-wrap {
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: rgba(20, 40, 38, 0.4);
+  z-index: 999;
+}
+
+#loading-wrap .lds-ring {
+  display: inline-block;
+  position: absolute;
+  top: calc(50% - 40px);
+  left: calc(50% - 40px);
+  width: 80px;
+  height: 80px;
+}
+
+#loading-wrap .lds-ring div {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  display: block;
+  position: absolute;
+  width: 64px;
+  height: 64px;
+  margin: 8px;
+  border: 8px solid #fff;
+  border-radius: 50%;
+  -webkit-animation: lds-ring 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
+          animation: lds-ring 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
+  border-color: #fff transparent transparent transparent;
+}
+
+#loading-wrap .lds-ring div:nth-child(1) {
+  -webkit-animation-delay: -0.45s;
+          animation-delay: -0.45s;
+}
+
+#loading-wrap .lds-ring div:nth-child(2) {
+  -webkit-animation-delay: -0.3s;
+          animation-delay: -0.3s;
+}
+
+#loading-wrap .lds-ring div:nth-child(3) {
+  -webkit-animation-delay: -0.15s;
+          animation-delay: -0.15s;
+}
+
+@-webkit-keyframes lds-ring {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@keyframes lds-ring {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+
 body.blur-bg .fancybox-bg {
     display: none;
 }
@@ -58,6 +136,7 @@ body.blur-bg .fancybox-bg {
     max-width: 1110px;
     margin: 60px auto 120px auto;
     padding: 0;
+    font-family: "Noto Sans TC", "PingFang TC", Microsoft JhengHei, "MicroSoft JhengHei", "微軟正黑體", serif !important;
 }
 
 .QA-notice {
@@ -132,6 +211,7 @@ body.blur-bg .fancybox-bg {
     font-size: 20px;
     font-weight: normal;
     border: 1px solid #fff;
+    color: #000 !important;
 }
 
 .searchTerm:focus {
@@ -421,7 +501,7 @@ body.blur-bg .fancybox-bg {
     border-radius: 0;
     background-color: #0087d5;
     font-size: 24px;
-    font-weight: 500;
+    font-weight: normal;
     letter-spacing: 1px;
     color: #fff;
     margin: 25px auto 0 auto;

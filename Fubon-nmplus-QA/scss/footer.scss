@@ -1,0 +1,409 @@
+@mixin web {
+  @media (min-width: 1280px) {
+    @content;
+  }
+}
+
+@mixin pad {
+  @media (max-width: 1279px) {
+    @content;
+  }
+}
+
+@mixin mobile {
+  @media (max-width: 767px) {
+    @content;
+  }
+}
+
+#footer {
+  * {
+    box-sizing: border-box;
+  }
+
+  button,
+  li {
+    outline: none;
+  }
+  /* http://meyerweb.com/eric/tools/css/reset/ 
+  v2.0 | 20110126
+  License: none (public domain)
+*/
+
+  html,
+  body,
+  div,
+  span,
+  applet,
+  object,
+  iframe,
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  p,
+  blockquote,
+  pre,
+  a,
+  abbr,
+  acronym,
+  address,
+  big,
+  cite,
+  code,
+  del,
+  dfn,
+  em,
+  img,
+  ins,
+  kbd,
+  q,
+  s,
+  samp,
+  small,
+  strike,
+  strong,
+  sub,
+  sup,
+  tt,
+  var,
+  b,
+  u,
+  i,
+  center,
+  dl,
+  dt,
+  dd,
+  ol,
+  ul,
+  li,
+  fieldset,
+  form,
+  label,
+  legend,
+  table,
+  caption,
+  tbody,
+  tfoot,
+  thead,
+  tr,
+  th,
+  td,
+  article,
+  aside,
+  canvas,
+  details,
+  embed,
+  figure,
+  figcaption,
+  footer,
+  header,
+  hgroup,
+  menu,
+  nav,
+  output,
+  ruby,
+  section,
+  summary,
+  time,
+  mark,
+  audio,
+  video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+  }
+
+  /* HTML5 display-role reset for older browsers */
+  article,
+  aside,
+  details,
+  figcaption,
+  figure,
+  footer,
+  header,
+  hgroup,
+  menu,
+  nav,
+  section,
+  main {
+    display: block;
+  }
+
+  body {
+    line-height: 1;
+  }
+
+  ol,
+  ul,
+  li,
+  a {
+    list-style: none;
+  }
+
+  a {
+    text-decoration: none;
+  }
+
+  //移除input預設樣式 - 自行設定type
+  //button,checkbox,file,hidden,image,password,
+  //radio,reset,submit,text,phone,email
+  // input[type='button'],
+  // input[type='submit'],
+  // input[type='email'] {
+  //   -webkit-appearance: none;
+  // }
+  //
+  //
+  //
+
+  //所有button移除預設樣式
+  button {
+    -webkit-appearance: none;
+    /* Safari 和 Chrome，常用於iOS下移除內建樣式 */
+    -moz-appearance: none;
+    /* FireFox */
+    appearance: none;
+  }
+  //
+  //
+  //
+
+  //移除select預設樣式
+  select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    /* for Chrome Firefox Edge */
+  }
+  select::-ms-expand {
+    display: none;
+    /* for IE11 */
+  }
+  //
+  //
+  //
+
+  //移除textarea預設樣式
+  textarea {
+    -webkit-appearance: none;
+  }
+  //
+  //
+  //
+
+  //解除ios圓角
+  input,
+  button {
+    border-radius: 0;
+  }
+  //
+  //
+  //
+
+  // 移除input number預設樣式
+  input[type="number"] {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: textfield;
+  }
+
+  input[type="number"]::-webkit-inner-spin-button {
+    appearance: none;
+  }
+
+  button {
+    border: none;
+    margin: 0;
+    padding: 0;
+    width: auto;
+    overflow: visible;
+
+    background: transparent;
+
+    /* inherit font & color from ancestor */
+    color: inherit;
+    font: inherit;
+
+    /* Normalize `line-height`. Cannot be changed from `normal` in Firefox 4+. */
+    line-height: normal;
+
+    /* Corrects font smoothing for webkit */
+    -webkit-font-smoothing: inherit;
+    -moz-osx-font-smoothing: inherit;
+
+    /* Corrects inability to style clickable `input` types in iOS */
+    -webkit-appearance: none;
+  }
+  a {
+    color: inherit;
+  }
+}
+
+#footer {
+  font-family: "Noto Sans TC", "PingFang TC", Microsoft JhengHei,
+    "MicroSoft JhengHei", "微軟正黑體", serif;
+  font-weight: normal !important;
+  .footer-paragraph-wrap {
+    background-color: #339fdd;
+    color: #fff;
+    .paragraph-toggle {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 20px;
+      cursor: pointer;
+      height: 80px;
+      font-weight: normal;
+      @include pad {
+        height: 62px;
+        font-size: 16px;
+      }
+      &.opened {
+        span {
+          background-image: url(../img/footer/btn-close-white.svg);
+        }
+      }
+      span {
+        display: inline-block;
+        width: 21px;
+        height: 21px;
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-image: url(../img/footer/btn-open-white.svg);
+        margin-left: 17px;
+        @include pad {
+          width: 15px;
+          height: 16px;
+          margin-left: 20px;
+        }
+      }
+    }
+    .paragraph-content {
+      max-width: 1020px;
+      margin: auto;
+      padding: 10px 0 30px;
+      line-height: 1.5;
+      font-size: 16px;
+      transition: height 0.3s ease-in-out;
+      overflow: hidden;
+      &:not(.active) {
+        display: none;
+      }
+      @include pad {
+        font-size: 14px;
+        padding: 7px 32px 32px 20px;
+      }
+      li {
+        list-style: decimal;
+        margin-left: 2em;
+      }
+    }
+  }
+  .footer-bottom-wrap {
+    background-color: #a7a9ac;
+    padding: 30px 0 30px;
+    color: #fff;
+    position: relative;
+    @include pad {
+      padding: 20px 20px 80px;
+    }
+    #btn-footer-go-top {
+      position: absolute;
+      cursor: pointer;
+      left: calc(50% + 600px);
+      top: 20px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      @include pad {
+        left: auto;
+        right: 10px;
+      }
+      img {
+        margin-bottom: 10px;
+      }
+      span {
+        font-size: 14px;
+        transform: rotate(90deg);
+      }
+    }
+    .links-section {
+      .footer-logo {
+        display: block;
+        width: 188px;
+        margin: auto;
+        margin-bottom: 20px;
+        @include pad {
+          width: 165px;
+          margin-bottom: 15px;
+          margin-right: auto;
+          margin-left: 0;
+        }
+      }
+      .links-wrap {
+        display: flex;
+        justify-content: center;
+        .outer-container {
+          display: flex;
+          @include pad {
+            display: block;
+            width: 50%;
+          }
+          .container {
+            margin: 0 25px;
+            @include pad {
+              margin: 0;
+            }
+            .main-item {
+              display: block;
+              font-size: 14px;
+              line-height: 2.3;
+              margin-bottom: 5px;
+            }
+            .sub-item {
+              display: block;
+              font-size: 12px;
+              line-height: 1.9;
+              @include pad {
+                margin-left: 1.2em;
+              }
+            }
+          }
+        }
+      }
+      hr {
+        display: block;
+        max-width: 1140px;
+        margin: 20px auto;
+        height: 1px;
+        background-color: #fff;
+      }
+    }
+    .bottom-desc {
+      text-align: center;
+      color: #fff;
+      font-size: 12px;
+      @include pad {
+        text-align: left;
+      }
+      br {
+        display: none;
+        @include pad {
+          display: block;
+        }
+      }
+      p {
+        line-height: 1.9;
+        &:first-child {
+          margin-bottom: 6px;
+        }
+      }
+    }
+  }
+}
