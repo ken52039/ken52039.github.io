@@ -954,6 +954,10 @@ body.blur-bg .fancybox-bg {
     padding: 0 5px;
 }
 
+body.fancybox-iosfix {
+    position: relative !important;
+}
+
 @media screen and (max-width: 1150px) {
     .faq-wrap {
         padding: 0 20px;
@@ -1029,6 +1033,8 @@ body.blur-bg .fancybox-bg {
 
     .QA-notice {
         margin-top: 30px;
+        font-size: 15px;
+        line-height: 20px;
     }
 
     .faq-wrap button.tab {
